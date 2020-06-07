@@ -1,2 +1,2 @@
-# algorithm-design-manual
-Algorithm Design Manual
+# Algorithms
+Algorithms!
