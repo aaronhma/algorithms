@@ -34,3 +34,6 @@
 # Editor config
 .vscode
 .idea
+
+# CMake Cache
+build
