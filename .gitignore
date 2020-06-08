@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+# Editor config
+.vscode
+.idea
