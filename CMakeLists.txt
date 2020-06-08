@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.11.2)
+project(ALGORITHMS VERSION 0.0.1)
+message(STATUS "Compiling...")
+
+add_executable(linked_list linked_list.cpp)
+add_executable(priority_queue priority_queue.cpp)
+add_executable(hash_table hash_table.cpp)
+add_executable(queue queue.cpp)
+add_executable(stack stack.cpp)
+add_executable(bst binary_search_tree.cpp)
