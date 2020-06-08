@@ -9,7 +9,7 @@
  *  This implementations the binary search tree data structure.
  */
 
-#include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 

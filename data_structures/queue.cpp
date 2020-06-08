@@ -9,7 +9,9 @@
  *  This implementations the queue data structure.
  */
 
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <cassert>
 
 using namespace std;
 

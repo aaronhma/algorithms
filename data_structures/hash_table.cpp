@@ -9,7 +9,9 @@
  *  This implementations the hash table data structure.
  */
 
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <algorithm>
 
 using namespace std;
 

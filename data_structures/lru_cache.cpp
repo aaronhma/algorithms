@@ -9,7 +9,10 @@
  *  This implementations the LRU Cache data structure.
  */
 
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <string>
+#include <cassert>
 
 using namespace std;
 

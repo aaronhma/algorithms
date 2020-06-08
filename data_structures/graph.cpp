@@ -9,7 +9,7 @@
  *  This implementations the graph data structure.
  */
 
-#include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 

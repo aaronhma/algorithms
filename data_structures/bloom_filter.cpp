@@ -9,7 +9,9 @@
  *  This implementations the Bloom Filter data structure.
  */
 
-#include <bits/stdc++.h>
+#include <iostream>
+#include <string>
+#include <vector>
 
 using namespace std;
 
