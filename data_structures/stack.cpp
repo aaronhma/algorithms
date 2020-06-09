@@ -91,7 +91,7 @@ public:
   int getBytes()
   {
     // Source: https://stackoverflow.com/questions/17254425/getting-the-size-in-bytes-of-a-vector
-    int bytes = sizeof(vector<int>) + (sizeof(int) * this->stack.size());
+    int bytes = (sizeof(int) * this->stack.size());
 
     cout << STACK_HEADER << "The stack size (in bytes) is " << to_string(bytes) << "!"
          << "\n";

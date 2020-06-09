@@ -24,13 +24,13 @@ class PriorityQueue
 public:
   PriorityQueue()
   {
-    cout << PRIORITY_QUEUE_HEADER << "Queue created!"
+    cout << PRIORITY_QUEUE_HEADER << "Priority Queue created!"
          << "\n";
   }
 
   ~PriorityQueue()
   {
-    cout << PRIORITY_QUEUE_HEADER << "Queue deleted!"
+    cout << PRIORITY_QUEUE_HEADER << "Priority Queue deleted!"
          << "\n";
   }
 

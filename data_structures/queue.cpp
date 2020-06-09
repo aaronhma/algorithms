@@ -92,7 +92,7 @@ public:
   int getBytes()
   {
     // Source: https://stackoverflow.com/questions/17254425/getting-the-size-in-bytes-of-a-vector
-    int bytes = sizeof(vector<int>) + (sizeof(int) * this->queue.size());
+    int bytes = (sizeof(int) * this->queue.size());
 
     cout << QUEUE_HEADER << "The queue size is " << to_string(bytes) << " bytes!"
          << "\n";
