@@ -63,9 +63,16 @@ public:
   {
     int bytes = this->getBytes();
     int queue_size = this->size;
+
+    vector<int> size;
+
     cout << QUEUE_HEADER << "The number of elements in the queue is: " << to_string(queue_size) << " and " << to_string(bytes) << " bytes!"
          << "\n";
-    return vector<int>{queue_size, bytes};
+
+    size.PB(queue_size);
+    size.PB(bytes);
+
+    return size;
   }
 
   bool isEmpty()

@@ -62,9 +62,16 @@ public:
   {
     int bytes = this->getBytes();
     int stack_size = this->size;
+
+    vector<int> size;
+
     cout << STACK_HEADER << "The number of elements in the stack is: " << to_string(stack_size) << " and " << to_string(bytes) << " bytes!"
          << "\n";
-    return vector<int>{stack_size, bytes};
+
+    size.PB(stack_size);
+    size.PB(bytes);
+
+    return size;
   }
 
   bool isEmpty()

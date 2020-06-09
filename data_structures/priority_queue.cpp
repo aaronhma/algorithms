@@ -55,11 +55,11 @@ public:
     {
       int smallest = this->priority_queue[0];
 
-      for (int i : this->priority_queue)
+      for (int i = 0; i < this->priority_queue.size(); i++)
       {
-        if (i < smallest)
+        if (this->priority_queue[i] < smallest)
         {
-          smallest = i;
+          smallest = this->priority_queue[i];
         }
       }
 
@@ -82,11 +82,11 @@ public:
     {
       int biggest = this->priority_queue[0];
 
-      for (int i : this->priority_queue)
+      for (int i = 0; i < this->priority_queue.size(); i++)
       {
-        if (i > biggest)
+        if (this->priority_queue[i] > biggest)
         {
-          biggest = i;
+          biggest = this->priority_queue[i];
         }
       }
 
@@ -155,9 +155,9 @@ public:
     {
       cout << PRIORITY_QUEUE_HEADER;
 
-      for (int i : this->priority_queue)
+      for (int i = 0; i < this->priority_queue.size(); i++)
       {
-        cout << i << " ";
+        cout << this->priority_queue[i] << " ";
       }
 
       cout << "\n";
@@ -166,7 +166,7 @@ public:
 
 private:
   vector<int> priority_queue;
-  int size = 0;
+  int size = 0; // disable=-Wc++11-extensions
 };
 
 int main()
