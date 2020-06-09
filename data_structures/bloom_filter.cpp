@@ -76,12 +76,12 @@ public:
     {
       if (this->bitmap[hash_mod] == 0)
       {
-        cout << "true\n";
+        cout << BLOOM_FILTER_HEADER << "Couldn't find value in bloom filter!\n";
         return false;
       }
       else
       {
-        cout << "true\n";
+        cout << BLOOM_FILTER_HEADER << "Found value in bloom filter!\n";
         return true;
       }
     }
@@ -95,13 +95,18 @@ private:
 int main()
 {
   /* Bloom Filter test code */
-  BloomFilter *bloom_filter = new BloomFilter(3);
-  vector<string> input = {"cake", "cookies", "muffin", "bananas", "t"};
+  BloomFilter *bloom_filter = new BloomFilter(4);
+  vector<string> input = {"cake", "cookies", "muffin",
+                          "bananas"};
 
   for (string i : input)
   {
     bloom_filter->insert(i);
   }
+
+  bloom_filter->lookup("banana");
+  bloom_filter->lookup("cookies");
+  bloom_filter->lookup("n");
 
   delete bloom_filter;
 
