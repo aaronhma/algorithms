@@ -19,7 +19,8 @@ An example of stack is dinner plates. You place all the dinner plates in a pile 
 Now that you know the basics of stack, let's check out how I implemented the stack:
 
 ```cpp
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 
 using namespace std;
 
