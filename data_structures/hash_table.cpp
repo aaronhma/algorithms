@@ -93,7 +93,7 @@ public:
 
   void sort_by_value()
   {
-    sort(this->hash_table.begin(), this->hash_table.end(), [&, this](const pair<int, int> &a, const pair<int, int> &b) {
+    sort(this->hash_table.begin(), this->hash_table.end(), [](const pair<int, int> &a, const pair<int, int> &b) -> bool {
       return a.second < b.second;
     });
 
