@@ -6,6 +6,8 @@ Source: ([YouTube Video by GCFLearnFree.org](https://www.youtube.com/watch?v=kM9
 
 ## !! ALERT !!
 **Notification #1: Data structures V2 is coming out soon! We have already made the arrays & stack implemenation live with the analysis, but more is coming! Stay tuned!**
+
+
 **Notification #2: The algorithms section is live! More is coming! Stay tuned!**
 
 ## Data Structure
