@@ -33,7 +33,9 @@ A data structure is a container that stores data in a specific layout or an orga
 
 - [ ] 3. [**Stack**](data_structures/stack/readme.md) [source](data_structures/stack.cpp) [Analysis](analysis/stack.md)
 
-- [ ] 4. [**Queue**](data_structures/queue/readme.md) [source](data_structures/queue.cpp) [Priority Queue](data_structures/priority_queue.cpp)
+- [X] 4. [**Queue**](data_structures/queue/README.md) [source](data_structures/queue/include/queue.h)
+
+- [ ] [Priority Queue](data_structures/priority_queue.cpp)
 
 #### Non-Linear Data Structures
 
