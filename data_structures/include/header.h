@@ -9,4 +9,7 @@
 #include <string>
 #include <vector>
 
+#include "macros.h"
+#include "typedef.h"
+
 #endif // HEADER_H_
