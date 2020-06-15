@@ -21,7 +21,7 @@ A data structure is a container that stores data in a specific layout or an orga
 
 #### Linear Data Structures
 
-- [x] 1. [**Array**](data_structures/arrays/readme.md)
+- [x] 1. [**Array**](data_structures/arrays/README.md)
 
 - [ ] 2. [**Linked List**](data_structures/linked-list/readme.md) simple, double, circular, skip. [source](data_structures/linked_list.cpp) [Analysis](analysis/linked_list.md)
 

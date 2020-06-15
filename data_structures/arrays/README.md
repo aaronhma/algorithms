@@ -1,7 +1,7 @@
 # Arrays
 
 <!-- premium button source: leetcode -->
-<div style="background: rgb(255, 183, 77); border-radius: 12px; font-weight: 500; color: white; margin-left: 4px; padding: 2px 10px; display: block; -webkit-box-align: center; font-family: Open Sans, Arial;" data-font=":font-smoothing" data-loaded="true" data-article="arrays" data-premium="true">Premium</div>
+<button style="background: rgb(255, 183, 77); border-radius: 12px; font-weight: 500; color: white; margin-left: 4px; padding: 2px 10px; display: block; -webkit-box-align: center; font-family: Open Sans, Arial;" data-font=":font-smoothing" data-loaded="true" data-article="arrays" data-premium="true">Premium</button>
 
 ## Background
 
