@@ -10,4 +10,6 @@ add_executable(queue queue.cpp)
 add_executable(stack stack.cpp)
 add_executable(bst binary_search_tree.cpp)
 
+add_subdirectory(arrays)
+
 # target_include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_SOURCE_DIR}/include)
