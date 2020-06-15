@@ -4,6 +4,10 @@
 
 Source: ([YouTube Video by GCFLearnFree.org](https://www.youtube.com/watch?v=kM9ASKAni_s))
 
+## !! ALERT !!
+**Notification #1: Data structures V2 is coming out soon! We have already made the arrays & stack implemenation live with the analysis, but more is coming! Stay tuned!**
+**Notification #2: The algorithms section is live! More is coming! Stay tuned!**
+
 ## Data Structure
 
 A data structure is a container that stores data in a specific layout or an organized form. This “layout” allows a data structure to be efficient in some operations and inefficient in others.
