@@ -9,7 +9,6 @@
  *  This file implements the Set data structure.
  */
 #include "../include/header.h"
-#include <cassert>
 
 #define PB push_back
 
@@ -153,7 +152,7 @@ public:
   {
     for (int i = 0; i < in->size(); i++)
     {
-      std::cout << &in[i] << "\n";
+      std::cout << (*in)[i] << "\n";
     }
   }
 
@@ -172,16 +171,14 @@ private:
   }
 };
 
-class DisjointSet : public Set
-{
-};
+#include "include/disjoint_set.h"
 
 int main()
 {
   Set *set_1 = new Set();
   Set *set_2 = new Set();
   Set *back = new Set();
-  // DisjointSet *disjoint_set = new DisjointSet();
+  DisjointSet *disjoint_set = new DisjointSet();
 
   for (int i = 1; i <= 10; i++)
     set_1->insert(i);
@@ -202,5 +199,5 @@ int main()
   delete set_1;
   delete set_2;
   delete back;
-  // delete disjoint_set;
+  delete disjoint_set;
 }
