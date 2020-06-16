@@ -1,4 +1,4 @@
-# Algorithms
+# Algorithms [![C/C++ CI](https://github.com/aaronhma/algorithms/workflows/C/C++%20CI/badge.svg?branch=master)](https://github.com/aaronhma/algorithms/actions)
 
 ![Algorithms Image](https://i.ytimg.com/vi/kM9ASKAni_s/maxresdefault.jpg)
 
