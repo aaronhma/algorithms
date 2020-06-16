@@ -29,75 +29,79 @@ A data structure is a container that stores data in a specific layout or an orga
 
 - [x] 1. [**Array**](data_structures/arrays/README.md)
 
-- [x] 2. [**Linked List**](data_structures/linked_list/README.md) simple, double, circular, skip. [source](data_structures/linked_list.cpp) [Analysis](analysis/linked_list.md)
+- [x] 2. [**Linked List**](data_structures/linked_list/README.md)
 
-- [x] 3. [**Stack**](data_structures/stack/README.md) [source](data_structures/stack.cpp) [Analysis](analysis/stack.md)
+- [x] 3. [**Stack**](data_structures/stack/README.md)
 
-- [x] 4. [**Queue**](data_structures/queue/README.md) [source](data_structures/queue/include/queue.h)
+- [x] 4. [**Queue**](data_structures/queue/README.md)
 
-- [x] [Priority Queue](data_structures/priority_queue.cpp)
+- [x] 5. [**Priority Queue**](data_structures/priority_queue.cpp)
 
 #### Non-Linear Data Structures
 
-- [ ] 5. [**Tree**](data_structures/tree/README.md)
+- [ ] 6. [**Tree**](data_structures/tree/README.md)
 
-- [ ] 6. [**Binary Tree**](data_structures/binary-tree/readme.md)
+- [ ] 7. [**Binary Tree**](data_structures/binary-tree/README.md)
 
-- [ ] 7. [**Binary Search Tree**](data_structures/binary-search-tree/readme.md)
+- [ ] 8. [**Binary Search Tree**](data_structures/binary-search-tree/README.md)
 
-- [ ] 8. [**B-Tree**](data_structures/b-tree/readme.md)
+- [ ] 9. [**B-Tree**](data_structures/b-tree/README.md)
 
-- [ ] 9. [**AVL-Tree**](data_structures/avl-tree/readme.md)
+- [ ] 10. [**AVL-Tree**](data_structures/avl-tree/README.md)
 
-- [ ] 10. [**Heap**](data_structures/heap/readme.md)
+- [ ] 11. [**Heap**](data_structures/heap/README.md)
 
-- [ ] 11. [**Hashing**](data_structures/hashing/readme.md) [source](data_structures/hash_table.cpp)
+- [ ] 12. [**Dictionary**](data_structures/dictionary/README.md)
 
-- [ ] 12. [**Dictionary**](data_structures/dictionary/readme.md)
+- [ ] 13. [**Map**](data_structures/map/README.md)
 
-- [ ] 13. [**Map**](data_structures/map/readme.md)
+- [ ] 14. [**Set**](data_structures/set/README.md) Disjoint Set,
 
-- [ ] 14. [**Set**](data_structures/set/readme.md) Disjoint Set,
+- [ ] 15. [**Tuple**](data_structures/tuple/README.md)
 
-- [ ] 15. [**Tuple**](data_structures/tuple/readme.md)
+- [ ] 16. [**Graph**](data_structures/graph/README.md)
 
-- [ ] 16. [**Graph**](data_structures/graph/readme.md)
+- [x] 17. [**Trie**](data_structures/trie/README.md)
 
-- [x] 17. [**Trie**](data_structures/trie/README.md) [source](data_structures/trie.cpp)
+- [ ] 18. [**Matrix**](data_structures/matrix/README.md)
 
-- [ ] 18. [**Matrix**](data_structures/matrix/readme.md)
+- [ ] 19. [**Segment Tree**](data_structures/segment-tree/README.md)
 
-- [ ] 19. [**Segment Tree**](data_structures/segment-tree/readme.md)
+- [ ] 20. [**Suffix Tree**](data_structures/suffix-tree/README.md)
 
-- [ ] 20. [**Suffix Tree**](data_structures/suffix-tree/readme.md)
+- [x] 21. [**LRU Cache**](data_structures/lru_cache/README.md)
 
-- [x] 21. [**LRU Cache**](data_structures/lru-cache/README.md) [Source](data_structures/lru_cache.cpp)
+- [ ] 22. [**N-ary Tree**](data_structures/n-ary_tree/README.md)
+
+- [ ] 23. [**String**](data_structures/strings/README.md)
 
 ## Algorithms
 
+- [ ] [**Recursion**](algorithms/recursion/README.md)
+
 ### [Sort](https://github.com/TheAlgorithms/C-Plus-Plus/tree/master/sorting)
 
-- [ ] [**Selection Sort**](algorithms/sort/selection-sort/readme.md)
+- [ ] [**Selection Sort**](algorithms/sort/selection-sort/README.md)
 
-- [ ] [**Bubble Sort**](algorithms/sort/bubble-sort/readme.md)
+- [ ] [**Bubble Sort**](algorithms/sort/bubble-sort/README.md)
 
-- [ ] [**Insertion Sort**](algorithms/sort/insertion-sort/readme.md)
+- [ ] [**Insertion Sort**](algorithms/sort/insertion-sort/README.md)
 
-- [ ] [**Merge Sort**](algorithms/sort/merge-sort/readme.md)
+- [ ] [**Merge Sort**](algorithms/sort/merge-sort/README.md)
 
-- [ ] [**Quick Sort**](algorithms/sort/quick-sort/readme.md)
+- [ ] [**Quick Sort**](algorithms/sort/quick-sort/README.md)
 
-- [ ] [**Heap Sort**](algorithms/sort/heap-sort/readme.md)
+- [ ] [**Heap Sort**](algorithms/sort/heap-sort/README.md)
 
-- [ ] [**Tree Sort**](algorithms/sort/tree-sort/readme.md)
+- [ ] [**Tree Sort**](algorithms/sort/tree-sort/README.md)
 
-- [ ] [**Shell Sort**](algorithms/sort/shell-sort/readme.md)
+- [ ] [**Shell Sort**](algorithms/sort/shell-sort/README.md)
 
-- [ ] [**Counting Sort**](algorithms/sort/counting-sort/readme.md)
+- [ ] [**Counting Sort**](algorithms/sort/counting-sort/README.md)
 
-- [ ] [**Redux Sort**](algorithms/sort/redix-sort/readme.md)
+- [ ] [**Redux Sort**](algorithms/sort/redix-sort/README.md)
 
-- [ ] [**Bucket Sort**](algorithms/sort/bucket-sort/readme.md)
+- [ ] [**Bucket Sort**](algorithms/sort/bucket-sort/README.md)
 
 ### [Search](https://github.com/TheAlgorithms/C-Plus-Plus/tree/master/search)
 
