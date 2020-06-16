@@ -10,10 +10,6 @@
  */
 #pragma once
 
-// TODO: Remove include header guards
-#ifndef QUEUE_H_
-#define QUEUE_H_
-
 class Queue
 {
 public:
@@ -187,5 +183,3 @@ private:
   vint queue;
   long unsigned int array_size;
 };
-
-#endif // QUEUE_H_

@@ -1,5 +1,4 @@
-#ifndef LIST_NODE_H_
-#define LIST_NODE_H_
+#pragma once
 
 struct Node
 {
@@ -31,5 +30,3 @@ private:
   Node *head;
   Node *tail;
 };
-
-#endif // LIST_NODE_H_

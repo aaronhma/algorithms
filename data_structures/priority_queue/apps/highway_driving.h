@@ -10,9 +10,6 @@
  */
 #pragma once
 
-#ifndef HIGHWAY_DRIVING_H_
-#define HIGHWAY_DRIVING_H_
-
 struct Car
 {
   int speed;
@@ -33,5 +30,3 @@ struct Car
     return other.speed > speed;
   }
 };
-
-#endif // HIGHWAY_DRIVING_H_

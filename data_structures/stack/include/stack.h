@@ -10,10 +10,6 @@
  */
 #pragma once
 
-// TODO: Remove header include guards
-#ifndef STACK_H_
-#define STACK_H_
-
 #define PB push_back
 #define FAIL -1
 
@@ -137,5 +133,3 @@ public:
 private:
   vint stack;
 };
-
-#endif // STACK_H_

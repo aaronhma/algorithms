@@ -1,5 +1,4 @@
-#ifndef CUBE_H_
-#define CUBE_H_
+#pragma once
 
 class Cube
 {
@@ -16,5 +15,3 @@ public:
 private:
   double length;
 };
-
-#endif // CUBE_H_

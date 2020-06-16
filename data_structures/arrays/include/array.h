@@ -10,10 +10,6 @@
  */
 #pragma once
 
-// TODO: Remove the include guards
-#ifndef ARRAY_H_
-#define ARRAY_H_
-
 #define PB push_back
 #define FAIL -1
 
@@ -150,5 +146,3 @@ private:
     return false;
   }
 };
-
-#endif // ARRAY_H_

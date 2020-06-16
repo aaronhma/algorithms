@@ -10,11 +10,6 @@
  */
 #pragma once
 
-// TODO: Remove include header guards
-
-#ifndef MAP_H_
-#define MAP_H_
-
 class Map
 {
 public:
@@ -94,5 +89,3 @@ public:
 private:
   std::vector<std::pair<int, int>> map;
 };
-
-#endif // MAP_H_
