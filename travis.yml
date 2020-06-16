@@ -1,0 +1,30 @@
+language: cpp
+os: linux
+compiler:
+  - clang
+  - gcc
+  
+  
+ before_install:
+  - g++ --version
+  - clang --versio
+  
+ install:
+  - sudo apt-get -y install cmake
+  - which cmake
+  - cmake --version
+  - sudo apt-get -y install build-essential
+  - which make
+  - make --version
+  
+ script:
+  - mkdir build
+  - cd build
+  - cmake ..
+  - make
+  
+ after_success:
+  - tree
+  
+ after_failure:
+  - tree
