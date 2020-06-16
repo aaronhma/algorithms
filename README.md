@@ -51,29 +51,25 @@ A data structure is a container that stores data in a specific layout or an orga
 
 - [ ] 11. [**Heap**](data_structures/heap/README.md)
 
-- [ ] 12. [**Dictionary**](data_structures/dictionary/README.md)
+- [ ] 12. [**Hash Map**](data_structures/map/README.md)
 
-- [ ] 13. [**Map**](data_structures/map/README.md)
+- [x] 13. [**Set**](data_structures/set/README.md) Disjoint Set,
 
-- [x] 14. [**Set**](data_structures/set/README.md) Disjoint Set,
+- [ ] 14. [**Tuple**](data_structures/tuple/README.md)
 
-- [ ] 15. [**Tuple**](data_structures/tuple/README.md)
+- [ ] 15. [**Graph**](data_structures/graph/README.md)
 
-- [ ] 16. [**Graph**](data_structures/graph/README.md)
+- [x] 16. [**Trie**](data_structures/trie/README.md)
 
-- [x] 17. [**Trie**](data_structures/trie/README.md)
+- [ ] 17. [**Matrix**](data_structures/matrix/README.md)
 
-- [ ] 18. [**Matrix**](data_structures/matrix/README.md)
+- [ ] 18. [**Segment Tree**](data_structures/segment-tree/README.md)
 
-- [ ] 19. [**Segment Tree**](data_structures/segment-tree/README.md)
+- [ ] 19. [**Suffix Tree**](data_structures/suffix-tree/README.md)
 
-- [ ] 20. [**Suffix Tree**](data_structures/suffix-tree/README.md)
+- [x] 20. [**LRU Cache**](data_structures/lru_cache/README.md)
 
-- [x] 21. [**LRU Cache**](data_structures/lru_cache/README.md)
-
-- [ ] 22. [**N-ary Tree**](data_structures/n-ary_tree/README.md)
-
-- [ ] 23. [**String**](data_structures/strings/README.md)
+- [ ] 21. [**N-ary Tree**](data_structures/n-ary_tree/README.md)
 
 ## Algorithms
 
