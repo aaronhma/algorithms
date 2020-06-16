@@ -15,7 +15,7 @@
 
 int main()
 {
-  std::priority_queue<Car> cars;
+  std::priority_queue<Car *> cars;
 
   cars.emplace(5, "My First Car");
   cars.emplace(4, "Best Friend's Car");

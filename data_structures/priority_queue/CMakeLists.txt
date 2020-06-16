@@ -1,7 +1,9 @@
-project(stack)
+project(priority_queue)
 
 # add_executable(${PROJECT_NAME})
 
 # add_library(${PROJECT_NAME} binary_search_tree.cpp)
-add_executable(stack main.cpp)
+add_executable(stl stl.cpp)
+
+# add_subdirectory(apps)
 # target_include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_SOURCE_DIR}/include)
