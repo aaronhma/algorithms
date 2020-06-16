@@ -15,9 +15,9 @@ jobs:
     - uses: actions/checkout@v2
 #     - name: configure
 #       run: ./configure
-    - name: setup project
-      run: mkdir build && cd build
-    - name: build cmake
-      run: cmake ..
-    - name: start make
-      run: make
+    - name: configure
+      run: mkdir build && cd build && cmake .. && make
+#     - name: build cmake
+#       run: cmake ..
+#     - name: start make
+#       run: make
