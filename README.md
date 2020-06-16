@@ -2,7 +2,7 @@
 
 ![Algorithms Image](https://i.ytimg.com/vi/kM9ASKAni_s/maxresdefault.jpg)
 
-Source: ([YouTube Video by GCFLearnFree.org](https://www.youtube.com/watch?v=kM9ASKAni_s))
+([Source](https://www.youtube.com/watch?v=kM9ASKAni_s))
 
 ## !! ALERT !!
 
@@ -29,9 +29,9 @@ A data structure is a container that stores data in a specific layout or an orga
 
 - [x] 1. [**Array**](data_structures/arrays/README.md)
 
-- [ ] 2. [**Linked List**](data_structures/linked-list/readme.md) simple, double, circular, skip. [source](data_structures/linked_list.cpp) [Analysis](analysis/linked_list.md)
+- [x] 2. [**Linked List**](data_structures/linked_list/README.md) simple, double, circular, skip. [source](data_structures/linked_list.cpp) [Analysis](analysis/linked_list.md)
 
-- [ ] 3. [**Stack**](data_structures/stack/readme.md) [source](data_structures/stack.cpp) [Analysis](analysis/stack.md)
+- [x] 3. [**Stack**](data_structures/stack/README.md) [source](data_structures/stack.cpp) [Analysis](analysis/stack.md)
 
 - [x] 4. [**Queue**](data_structures/queue/README.md) [source](data_structures/queue/include/queue.h)
 
@@ -39,7 +39,7 @@ A data structure is a container that stores data in a specific layout or an orga
 
 #### Non-Linear Data Structures
 
-- [ ] 5. [**Tree**](data_structures/tree/readme.md)
+- [ ] 5. [**Tree**](data_structures/tree/README.md)
 
 - [ ] 6. [**Binary Tree**](data_structures/binary-tree/readme.md)
 
@@ -63,7 +63,7 @@ A data structure is a container that stores data in a specific layout or an orga
 
 - [ ] 16. [**Graph**](data_structures/graph/readme.md)
 
-- [ ] 17. [**Trie**](data_structures/trie/readme.md) [source](data_structures/trie.cpp)
+- [x] 17. [**Trie**](data_structures/trie/README.md) [source](data_structures/trie.cpp)
 
 - [ ] 18. [**Matrix**](data_structures/matrix/readme.md)
 
@@ -71,7 +71,7 @@ A data structure is a container that stores data in a specific layout or an orga
 
 - [ ] 20. [**Suffix Tree**](data_structures/suffix-tree/readme.md)
 
-- [ ] 21. [**LRU Cache**](data_structures/lru-cache/readme.md) [Source](data_structures/lru_cache.cpp)
+- [x] 21. [**LRU Cache**](data_structures/lru-cache/README.md) [Source](data_structures/lru_cache.cpp)
 
 ## Algorithms
 
