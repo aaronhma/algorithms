@@ -51,7 +51,7 @@ A data structure is a container that stores data in a specific layout or an orga
 
 - [ ] 11. [**Heap**](data_structures/heap/README.md)
 
-- [ ] 12. [**Hash Map**](data_structures/map/README.md)
+- [X] 12. [**Hash Map**](data_structures/map/README.md)
 
 - [x] 13. [**Set**](data_structures/set/README.md) Disjoint Set,
 
