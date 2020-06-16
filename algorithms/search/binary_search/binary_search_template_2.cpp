@@ -1,7 +1,4 @@
-#include <iostream>
-#include <vector>
-
-#define PB push_back
+#include "../../../data_structures/include/header.h"
 
 using namespace std;
 

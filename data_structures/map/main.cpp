@@ -9,7 +9,6 @@
  *  This file tests the implementation of the Map data structure.
  */
 #include "../include/header.h"
-#include <utility>
 #include "include/map.h"
 
 int main()

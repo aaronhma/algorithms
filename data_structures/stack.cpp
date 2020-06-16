@@ -9,12 +9,10 @@
  *  This implementations the stack data structure.
  */
 
-#include <iostream>
-#include <vector>
+#include "include/header.h"
 
 using namespace std;
 
-#define PB push_back
 #define STACK_HEADER "[STACK] "
 
 /* Stack implementation */

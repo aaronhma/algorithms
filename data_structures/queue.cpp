@@ -9,13 +9,10 @@
  *  This implementations the queue data structure.
  */
 
-#include <iostream>
-#include <vector>
-#include <cassert>
+#include "include/header.h"
 
 using namespace std;
 
-#define PB push_back
 #define QUEUE_HEADER "[QUEUE] "
 
 /* Queue implementation */
@@ -133,12 +130,20 @@ int main()
     queue->enqueue(i);
   }
 
-  assert(queue->getSize()[0] == 10);
+  if (queue->getSize()[0] != 10)
+  {
+    cout << "Wrong answer.\n";
+    abort();
+  }
   queue->printQueue();
   queue->dequeue();
   queue->printQueue();
 
-  assert(queue->getSize()[0] == 9);
+  if (queue->getSize()[0] != 9)
+  {
+    cout << "Wrong answer.\n";
+    abort();
+  }
 
   delete queue;
 

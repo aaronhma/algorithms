@@ -8,13 +8,7 @@
  * @file binary_search_tree.cpp
  *  This implementations the linear search algorithm.
  */
-
-#include <iostream>
-#include <vector>
-
-using namespace std;
-
-#define PB push_back
+#include "../../data_structures/include/header.h"
 
 /* Linear search implementation */
 class LinearSearch
@@ -29,9 +23,9 @@ public:
 
   bool search(int x)
   {
-    for (int i = 0; i < this->arr.size(); i++)
+    for (long unsigned int i = 0; i < this->arr.size(); i++)
     {
-      if (i == x)
+      if (this->arr[i] == x)
         return true;
     }
 
@@ -39,7 +33,7 @@ public:
   }
 
 private:
-  vector<int> arr;
+  std::vector<int> arr;
 };
 
 int main()

@@ -9,14 +9,10 @@
  *  This implementations the LRU Cache data structure.
  */
 
-#include <iostream>
-#include <vector>
-#include <string>
-#include <cassert>
+#include "include/header.h"
 
 using namespace std;
 
-#define PB push_back
 #define LRU_CACHE_HEADER "[LRU CACHE] "
 
 /* LRU Cache implementation */
@@ -99,7 +95,11 @@ int main()
   lru_cache->put(3, "strawberry");
   lru_cache->put(4, "muffins");
 
-  assert(lru_cache->size() == 3);
+  if (lru_cache->size() != 3)
+  {
+    cout << "Wrong answer.\n";
+    abort();
+  }
 
   for (int i = 1; i <= 5; i++)
   {

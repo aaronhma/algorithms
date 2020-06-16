@@ -9,13 +9,10 @@
  *  This implementations the Bloom Filter data structure.
  */
 
-#include <iostream>
-#include <string>
-#include <vector>
+#include "include/header.h"
 
 using namespace std;
 
-#define PB push_back
 #define BLOOM_FILTER_HEADER "[BLOOM FILTER] "
 
 /* Hash function */

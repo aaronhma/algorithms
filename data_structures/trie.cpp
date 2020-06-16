@@ -9,15 +9,11 @@
  *  This implementations the trie data structure.
  */
 
-#include <iostream>
-#include <vector>
-#include <string>
-#include <cassert>
+#include "include/header.h"
 
 using namespace std;
 
 #define TRIE_HEADER "[TRIE] "
-#define PB push_back
 
 /* Implementation of a trie */
 class Trie

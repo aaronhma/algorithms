@@ -8,14 +8,10 @@
  * @file priority_queue.cpp
  *  This implementations the priority queue data structure.
  */
-
-#include <iostream>
-#include <vector>
-#include <algorithm>
+#include "include/header.h"
 
 using namespace std;
 
-#define PB push_back
 #define PRIORITY_QUEUE_HEADER "[PRIORITY QUEUE] "
 
 /* Priority Queue implementation */

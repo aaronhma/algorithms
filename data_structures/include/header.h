@@ -1,10 +1,5 @@
 #pragma once
 
-#include <iostream>
-#include <algorithm>
-#include <string>
-#include <vector>
-#include <queue>
-
-#include "macros.h"
-#include "typedef.h"
+#include "include.h" // Imports
+#include "macros.h"  // Macros
+#include "typedef.h" // Typedef
