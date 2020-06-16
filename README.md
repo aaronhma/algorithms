@@ -5,8 +5,8 @@
 Source: ([YouTube Video by GCFLearnFree.org](https://www.youtube.com/watch?v=kM9ASKAni_s))
 
 ## !! ALERT !!
-**Notification #1: Data structures V2 is coming out soon! We have already made the arrays & stack implemenation live with the analysis, but more is coming! Stay tuned!**
 
+**Notification #1: Data structures V2 is coming out soon! We have already made the arrays & stack implemenation live with the analysis, but more is coming! Stay tuned!**
 
 **Notification #2: The algorithms section is live! More is coming! Stay tuned!**
 
@@ -33,9 +33,9 @@ A data structure is a container that stores data in a specific layout or an orga
 
 - [ ] 3. [**Stack**](data_structures/stack/readme.md) [source](data_structures/stack.cpp) [Analysis](analysis/stack.md)
 
-- [X] 4. [**Queue**](data_structures/queue/README.md) [source](data_structures/queue/include/queue.h)
+- [x] 4. [**Queue**](data_structures/queue/README.md) [source](data_structures/queue/include/queue.h)
 
-- [ ] [Priority Queue](data_structures/priority_queue.cpp)
+- [x] [Priority Queue](data_structures/priority_queue.cpp)
 
 #### Non-Linear Data Structures
 
@@ -71,11 +71,9 @@ A data structure is a container that stores data in a specific layout or an orga
 
 - [ ] 20. [**Suffix Tree**](data_structures/suffix-tree/readme.md)
 
-- [ ] 21. [**LRU Cache**](data_structures/lru-cache/readme.md)  [Source](data_structures/lru_cache.cpp)
-
+- [ ] 21. [**LRU Cache**](data_structures/lru-cache/readme.md) [Source](data_structures/lru_cache.cpp)
 
 ## Algorithms
-
 
 ### [Sort](https://github.com/TheAlgorithms/C-Plus-Plus/tree/master/sorting)
 
@@ -123,15 +121,15 @@ A data structure is a container that stores data in a specific layout or an orga
 
 ### Others
 
-- [ ] [**Dijkstra's Algorithm**]  (shortest path)
+- [ ] [**Dijkstra's Algorithm**] (shortest path)
 
 - [ ] [**Matrix multiplication**]
 
-- [ ] [**Tree Traversals**]  Inorder, Preorder, Postorder
+- [ ] [**Tree Traversals**] Inorder, Preorder, Postorder
 
 - [ ] [**Factorial**]
 
-- [ ] [**Number theory algorithms**]   GCD, inverse of the number using extended euler's algorithm, fast power, prime number, Modular Exponentiation, Sieve of Eratosthenes, Fermat’s theorem, Miller Rabin
+- [ ] [**Number theory algorithms**] GCD, inverse of the number using extended euler's algorithm, fast power, prime number, Modular Exponentiation, Sieve of Eratosthenes, Fermat’s theorem, Miller Rabin
 
 - [ ] [**Probabilistic Methods**]
 
@@ -159,7 +157,7 @@ A data structure is a container that stores data in a specific layout or an orga
 
 - [ ] [**Divide and Conquer algorithms**]
 
- A **divide and conquer** algorithm works by recursively breaking down a problem into two or more sub-problems of the same (or related) type (divide), until these become simple enough to be solved directly (conquer). The solutions to the sub-problems are then combined to give a solution to the original problem.
+A **divide and conquer** algorithm works by recursively breaking down a problem into two or more sub-problems of the same (or related) type (divide), until these become simple enough to be solved directly (conquer). The solutions to the sub-problems are then combined to give a solution to the original problem.
 
 - [ ] [**Dynamic Programming algorithms**]
 
@@ -184,7 +182,6 @@ Backtracking can be applied only for problems which admit the concept of a "part
 - [ ] [**Statistical Method**]
 
 - [ ] [**Geometry**]
-
 
 ### Problem Statements
 

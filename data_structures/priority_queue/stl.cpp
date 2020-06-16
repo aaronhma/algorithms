@@ -9,7 +9,6 @@
  *  This file uses the C++ Standard Library's implementation of a Priority Queue.
  */
 #include "../include/header.h"
-#include <queue>
 
 int main()
 {
@@ -20,10 +19,11 @@ int main()
   queue.push(125);
   queue.push(50);
 
-  while (!queue.empty())
+  while (!queue.empty()) // as long as we still have data in the priority queue...
   {
-    print(queue.top());
-    queue.pop();
+    print("The size of the priority queue is: " + std::to_string(queue.size()) + " elements!");
+    print("Top element: " + std::to_string(queue.top())); // 125 100 75 50 25
+    queue.pop();                                          // pops the max element
   }
 
   return 0;
