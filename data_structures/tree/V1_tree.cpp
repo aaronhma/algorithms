@@ -9,7 +9,7 @@
  *  This implementations the tree data structure.
  */
 
-#include "include/header.h"
+#include "../include/header.h"
 
 using namespace std;
 

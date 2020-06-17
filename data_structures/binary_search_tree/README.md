@@ -1,4 +1,0 @@
-# Binary Search Tree
-
-## Background
-

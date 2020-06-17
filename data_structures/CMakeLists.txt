@@ -3,7 +3,7 @@ project(data_structures)
 # add_executable(${PROJECT_NAME})
 
 # add_library(${PROJECT_NAME} binary_search_tree.cpp)
-add_executable(linked_list linked_list.cpp)
+# add_executable(linked_list linked_list.cpp)
 # OLD: add_executable(priority_queue priority_queue.cpp)
 # add_executable(hash_table hash_table.cpp)
 # OLD: add_executable(queue queue.cpp)
