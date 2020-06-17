@@ -1,6 +1,6 @@
-# Algorithms ![Algorithms CI](https://github.com/aaronhma/algorithms/workflows/Algorithms%20CI/badge.svg) [![Website Status: Passing](https://img.shields.io/badge/website-passing-brightgreen)](http://aaronma.me/algorithms/)
+# Algorithms
 
-![Algorithms Image](https://i.ytimg.com/vi/kM9ASKAni_s/maxresdefault.jpg)
+![Algorithms CI](https://github.com/aaronhma/algorithms/workflows/Algorithms%20CI/badge.svg) [![Website Status: Passing](https://img.shields.io/badge/website-passing-brightgreen)](http://aaronma.me/algorithms/)
 
 ([Source](https://www.youtube.com/watch?v=kM9ASKAni_s))
 
@@ -33,13 +33,13 @@ A data structure is a container that stores data in a specific layout or an orga
 
 #### Non-Linear Data Structures
 
-- [ ] 6. [**Tree**](data_structures/tree/README.md)
+- [x] 6. [**Tree**](data_structures/tree/README.md)
 
-- [ ] 7. [**Binary Tree**](data_structures/binary-tree/README.md)
+- [x] 7. [**Binary Tree**](data_structures/binary_tree/README.md)
 
-- [ ] 8. [**Binary Search Tree**](data_structures/binary-search-tree/README.md)
+- [x] 8. [**Binary Search Tree**](data_structures/binary_search_tree/README.md)
 
-- [ ] 9. [**B-Tree**](data_structures/b-tree/README.md)
+- [x] 9. [**B-Tree**](data_structures/b_tree/README.md)
 
 - [ ] 10. [**AVL-Tree**](data_structures/avl-tree/README.md)
 
@@ -55,15 +55,13 @@ A data structure is a container that stores data in a specific layout or an orga
 
 - [x] 16. [**Trie**](data_structures/trie/README.md)
 
-- [ ] 17. [**Matrix**](data_structures/matrix/README.md)
+- [ ] 17. [**Segment Tree**](data_structures/segment-tree/README.md)
 
-- [ ] 18. [**Segment Tree**](data_structures/segment-tree/README.md)
+- [ ] 18. [**Suffix Tree**](data_structures/suffix-tree/README.md)
 
-- [ ] 19. [**Suffix Tree**](data_structures/suffix-tree/README.md)
+- [x] 19. [**LRU Cache**](data_structures/lru_cache/README.md)
 
-- [x] 20. [**LRU Cache**](data_structures/lru_cache/README.md)
-
-- [ ] 21. [**N-ary Tree**](data_structures/n-ary_tree/README.md)
+- [ ] 20. [**N-ary Tree**](data_structures/n-ary_tree/README.md)
 
 ## Algorithms
 
