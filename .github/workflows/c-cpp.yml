@@ -21,6 +21,6 @@ jobs:
     - name: build project
       run: mkdir build && cd build && cmake .. && make
     - name: run tests
-      run: tree
+      run: find . -print | sed -e "s;[^/]*/;|____;g;s;____|; |;g"
     - name: print repo
-      run: tree
+      run: find . -print | sed -e "s;[^/]*/;|____;g;s;____|; |;g"
