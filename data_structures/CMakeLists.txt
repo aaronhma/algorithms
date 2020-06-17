@@ -8,7 +8,7 @@ project(data_structures)
 # add_executable(hash_table hash_table.cpp)
 # OLD: add_executable(queue queue.cpp)
 # OLD: add_executable(stack stack.cpp)
-add_executable(bst binary_search_tree.cpp)
+# add_executable(bst binary_search_tree.cpp)
 
 add_subdirectory(arrays)
 add_subdirectory(priority_queue)
