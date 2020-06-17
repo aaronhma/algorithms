@@ -9,10 +9,19 @@
  *  This implements the Array data structure.
  */
 #include "../include/header.h"
+#include <sstream>
 
 /* Declarations */
 #define print(message) std::cout << message << std::endl
 typedef std::vector<int> vint;
+
+template<typename T>
+std::string to_string(const T& n)
+{
+    std::ostringstream ss;
+    ss << n;
+    return ss.str();
+}
 
 #include "include/array.h"
 
