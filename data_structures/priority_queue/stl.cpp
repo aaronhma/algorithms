@@ -10,6 +10,14 @@
  */
 #include "../include/header.h"
 
+template<typename T>
+std::string to_string(const T& n)
+{
+    std::ostringstream ss;
+    ss << n;
+    return ss.str();
+}
+
 int main()
 {
   std::priority_queue<int> queue;
@@ -21,8 +29,8 @@ int main()
 
   while (!queue.empty()) // as long as we still have data in the priority queue...
   {
-    print("The size of the priority queue is: " + std::to_string(queue.size()) + " elements!");
-    print("Top element: " + std::to_string(queue.top())); // 125 100 75 50 25
+    print("The size of the priority queue is: " + to_string(queue.size()) + " elements!");
+    print("Top element: " + to_string(queue.top())); // 125 100 75 50 25
     queue.pop();                                          // pops the max element
   }
 
