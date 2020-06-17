@@ -1,4 +1,13 @@
 #include "../../../data_structures/include/header.h"
+#include <sstream>
+
+template <typename T>
+std::string to_string(const T &n)
+{
+  std::ostringstream ss;
+  ss << n;
+  return ss.str();
+}
 
 using namespace std;
 

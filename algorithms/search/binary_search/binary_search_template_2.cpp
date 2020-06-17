@@ -2,6 +2,16 @@
 
 using namespace std;
 
+#include <sstream>
+
+template <typename T>
+std::string to_string(const T &n)
+{
+  std::ostringstream ss;
+  ss << n;
+  return ss.str();
+}
+
 int binarySearch(vector<int> arr, int target)
 {
   int low = 0, high = arr.size() - 1;
