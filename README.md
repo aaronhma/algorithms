@@ -1,4 +1,6 @@
-# Algorithms ![Algorithms CI](https://github.com/aaronhma/algorithms/workflows/Algorithms%20CI/badge.svg) [![Website Status: Passing](https://img.shields.io/badge/website-passing-brightgreen)](http://aaronma.me/algorithms/)
+# Algorithms
+
+![Algorithms CI](https://github.com/aaronhma/algorithms/workflows/Algorithms%20CI/badge.svg) [![Website Status: Passing](https://img.shields.io/badge/website-passing-brightgreen)](http://aaronma.me/algorithms/)
 
 ![Algorithms Image](https://i.ytimg.com/vi/kM9ASKAni_s/maxresdefault.jpg)
 
