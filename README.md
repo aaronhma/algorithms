@@ -73,21 +73,23 @@ A data structure is a container that stores data in a specific layout or an orga
 
 ## Algorithms
 
-- [ ] [**Recursion**](algorithms/recursion/README.md)
+- [ ] [**Recursion**](https://www.techiedelight.com/Tags/recursion/)
+
+- [] [Hashing](https://www.techiedelight.com/Tags/hashing/)
 
 ### [Sort](https://github.com/TheAlgorithms/C-Plus-Plus/tree/master/sorting)
 
-- [ ] [**Selection Sort**](algorithms/sort/selection-sort/README.md)
+- [ ] [**Selection Sort**](https://www.techiedelight.com/selection-sort-iterative-recursive/)
 
-- [ ] [**Bubble Sort**](algorithms/sort/bubble-sort/README.md)
+- [ ] [**Bubble Sort**](https://www.techiedelight.com/bubble-sort-iterative-recursive/)
 
-- [ ] [**Insertion Sort**](algorithms/sort/insertion-sort/README.md)
+- [ ] [**Insertion Sort**](https://www.techiedelight.com/insertion-sort-iterative-recursive/)
 
-- [ ] [**Merge Sort**](algorithms/sort/merge-sort/README.md)
+- [ ] [**Merge Sort**](https://www.techiedelight.com/merge-sort/)
 
-- [ ] [**Quick Sort**](algorithms/sort/quick-sort/README.md)
+- [ ] [**Quick Sort**](https://www.techiedelight.com/quicksort/)
 
-- [ ] [**Heap Sort**](algorithms/sort/heap-sort/README.md)
+- [ ] [**Heap Sort**](https://www.techiedelight.com/heap-sort-place-place-implementation-c-c/)
 
 - [ ] [**Tree Sort**](algorithms/sort/tree-sort/README.md)
 
@@ -103,7 +105,7 @@ A data structure is a container that stores data in a specific layout or an orga
 
 - [ ] [**Linear search**](algorithms/search/linear-search/readme.md)
 
-- [ ] [**Binary search**](algorithms/search/binary-search/readme.md) ([Source](algorithms/search/binary_search.cpp))
+- [ ] [**Binary search**](https://www.techiedelight.com/binary-search/) ([Source](algorithms/search/binary_search.cpp))
 
 - [ ] [**Hash search**](algorithms/search/hash-search/readme.md)
 
@@ -111,9 +113,9 @@ A data structure is a container that stores data in a specific layout or an orga
 
 #### [Graph Search](https://github.com/TheAlgorithms/C-Plus-Plus/tree/master/graph)
 
-- [ ] [**Breadth First Search**](algorithms/search/breadth-first-search/readme.md)
+- [ ] [Breadth First Search (BFS)](https://www.techiedelight.com/breadth-first-search/)
 
-- [ ] [**Depth First Search**](algorithms/search/depth-first-search/readme.md)
+- [ ] [Depth First Search (DFS)](https://www.techiedelight.com/depth-first-search/)
 
 - [ ] [**Shortest path algorithms**]
 
@@ -121,11 +123,25 @@ A data structure is a container that stores data in a specific layout or an orga
 
 ### Others
 
-- [ ] [**Dijkstra's Algorithm**] (shortest path)
+- [ ] [Single-Source Shortest Paths — Dijkstra’s Algorithm](https://www.techiedelight.com/single-source-shortest-paths-dijkstras-algorithm/)
+
+- [ ] [All-Pairs Shortest Paths — Floyd Warshall Algorithm](https://www.techiedelight.com/pairs-shortest-paths-floyd-warshall-algorithm/)
+
+- [ ] [Disjoint-Set Data Structure - Union-Find Algorithm](https://www.techiedelight.com/disjoint-set-data-structure-union-find-algorithm/)
+
+- [ ] [Finding Minimum Spanning Tree - Kruskal’s Algorithm](https://www.techiedelight.com/kruskals-algorithm-for-finding-minimum-spanning-tree/)
+
+- [ ] [Maximum Sum Subarray Problem - Kadane’s algorithm](https://www.techiedelight.com/maximum-subarray-problem-kadanes-algorithm/)
+
+- [ ] [Detect cycle in a linked list - Floyd’s Cycle Detection Algorithm](https://www.techiedelight.com/detect-cycle-linked-list-floyds-cycle-detection-algorithm/)
+
+- [ ] [Flood fill Algorithm](https://www.techiedelight.com/flood-fill-algorithm/)
+
+- [ ] [Shortest path in a maze - Lee algorithm](https://www.techiedelight.com/lee-algorithm-shortest-path-in-a-maze/)
 
 - [ ] [**Matrix multiplication**]
 
-- [ ] [**Tree Traversals**] Inorder, Preorder, Postorder
+- [ ] Tree Traversals [Inorder](https://www.techiedelight.com/inorder-tree-traversal-iterative-recursive/), [Preorder](https://www.techiedelight.com/preorder-tree-traversal-iterative-recursive/), [Postorder](https://www.techiedelight.com/postorder-tree-traversal-iterative-recursive/) 
 
 - [ ] [**Factorial**]
 
@@ -153,13 +169,17 @@ A data structure is a container that stores data in a specific layout or an orga
 
 - [ ] [**Max-flow min cut theorem: Ford-fulkerson OR Edmond-Karp**]
 
+- [ ] [Topological Sorting in a DAG](https://www.techiedelight.com/topological-sorting-dag/)
+
+- [ ] [Longest Increasing Subsequence](https://www.techiedelight.com/longest-increasing-subsequence/)
+
 ### Strategies Or Paradigms
 
-- [ ] [**Divide and Conquer algorithms**]
+- [ ] [[Divide & Conquer algorithms](https://www.techiedelight.com/Category/divide-conquer/)
 
 A **divide and conquer** algorithm works by recursively breaking down a problem into two or more sub-problems of the same (or related) type (divide), until these become simple enough to be solved directly (conquer). The solutions to the sub-problems are then combined to give a solution to the original problem.
 
-- [ ] [**Dynamic Programming algorithms**]
+- [ ] [Dynamic Programming](https://www.techiedelight.com/Category/dynamic-programming/)
 
 **Dynamic Programming** is a method for solving a complex problem by breaking it down into a collection of simpler subproblems, solving each of those subproblems just once, and storing their solutions - ideally, using a memory-based data structure. The next time the same subproblem occurs, instead of recomputing its solution, one simply looks up the previously computed solution, thereby saving computation time at the expense of a (hopefully) modest expenditure in storage space. (Each of the subproblem solutions is indexed in some way, typically based on the values of its input parameters, so as to facilitate its lookup.) The technique of storing solutions to subproblems instead of recomputing them is called "memoization".
 
@@ -169,11 +189,11 @@ Dynamic programming algorithms are used for optimization (for example, finding t
 
 **Graphs Algorithms** can be used to model many types of relations and processes in physical, biological, social and information systems. Graphs are used to represent networks of communication, data organization, computational devices, the flow of computation, etc.
 
-- [ ] [**Greedy Algorithm**]
+- [ ] [Greedy Algorithms](https://www.techiedelight.com/list-of-problems/#Greedy)
 
 **Greedy Algorithm** is an algorithm that follows the problem solving heuristic of making the locally optimal choice at each stage with the hope of finding a global optimum. In many problems, a greedy strategy does not in general produce an optimal solution, but nonetheless a greedy heuristic may yield locally optimal solutions that approximate a global optimal solution in a reasonable time.
 
-- [ ] [**Backtracking Algorithm**]
+- [ ] [Backtracking](https://www.techiedelight.com/Category/backtracking/)
 
 **Backtracking Algorithm** is a general algorithm for finding all (or some) solutions to some computational problems, notably constraint satisfaction problems, that incrementally builds candidates to the solutions, and abandons each partial candidate c ("backtracks") as soon as it determines that c cannot possibly be completed to a valid solution.
 
