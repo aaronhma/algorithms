@@ -9,13 +9,14 @@
  *  This file uses the C++ Standard Library's implementation of a Priority Queue.
  */
 #include "../include/header.h"
+#include <sstream>
 
-template<typename T>
-std::string to_string(const T& n)
+template <typename T>
+std::string to_string(const T &n)
 {
-    std::ostringstream ss;
-    ss << n;
-    return ss.str();
+  std::ostringstream ss;
+  ss << n;
+  return ss.str();
 }
 
 int main()
@@ -31,7 +32,7 @@ int main()
   {
     print("The size of the priority queue is: " + to_string(queue.size()) + " elements!");
     print("Top element: " + to_string(queue.top())); // 125 100 75 50 25
-    queue.pop();                                          // pops the max element
+    queue.pop();                                     // pops the max element
   }
 
   return 0;

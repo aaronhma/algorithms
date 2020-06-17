@@ -149,7 +149,7 @@ public:
         std::cout << "What index do you want to see?\n> ";
         std::cin >> index;
 
-        std::string index_message = "Value at index #" + std::to_string(index) + " => " + std::to_string(this->queue[index]);
+        std::string index_message = "Value at index #" + to_string(index) + " => " + to_string(this->queue[index]);
 
         print(index_message);
       }

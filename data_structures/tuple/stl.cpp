@@ -1,6 +1,15 @@
 #include <iostream>
 #include <tuple>
 #include <string>
+#include <sstream>
+
+template <typename T>
+std::string to_string(const T &n)
+{
+  std::ostringstream ss;
+  ss << n;
+  return ss.str();
+}
 
 int main()
 {
@@ -13,7 +22,7 @@ int main()
   int age = std::get<2>(people_at_school);          // 11
   char grade = std::get<1>(people_at_school);       // 'A'
 
-  std::cout << user << " is " << std::to_string(age) << " years old with a " << grade << " in his school grade!\n"; // New Aaron! is 11 years old with a A in his school grade!
+  std::cout << user << " is " << to_string(age) << " years old with a " << grade << " in his school grade!\n"; // New Aaron! is 11 years old with a A in his school grade!
 
   int size = std::tuple_size<decltype(people_at_school)>::value; // 3
 

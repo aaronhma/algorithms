@@ -92,7 +92,7 @@ public:
       }
       else if (input == 2)
       {
-        print("Element on top of the stack: " + std::to_string(this->top()));
+        print("Element on top of the stack: " + to_string(this->top()));
       }
       else if (input == 3)
       {
@@ -120,7 +120,7 @@ public:
 
   void printStack()
   {
-    print("Contents in stack of " + std::to_string(this->size()) + " elements:");
+    print("Contents in stack of " + to_string(this->size()) + " elements:");
 
     for (int i = 0; i < this->size(); i++)
     {

@@ -9,6 +9,16 @@
  *  This file tests the implementation of the Queue data structure.
  */
 #include "../include/header.h"
+#include <sstream>
+
+template <typename T>
+std::string to_string(const T &n)
+{
+  std::ostringstream ss;
+  ss << n;
+  return ss.str();
+}
+
 #include "include/queue.h"
 
 int main()
