@@ -71,7 +71,7 @@ void Array::ui()
       std::cout << "What index do you want to see?\n> ";
       std::cin >> index;
 
-      std::string index_message = "Value at index #" + std::to_string(index) + " => " + std::to_string(this->returnIndex(index));
+      std::string index_message = "Value at index #" + to_string(index) + " => " + to_string(this->returnIndex(index));
 
       print(index_message);
     }
@@ -93,8 +93,8 @@ void Array::ui()
 
       bool success = this->deleteSuccess(to_delete);
 
-      std::string success_message = "Deleted " + std::to_string(to_delete) + " in the array!";
-      std::string fail_message = std::to_string(to_delete) + " not in the array!";
+      std::string success_message = "Deleted " + to_string(to_delete) + " in the array!";
+      std::string fail_message = to_string(to_delete) + " not in the array!";
 
       if (success)
         print(success_message);
