@@ -1,1 +1,18 @@
+#
+# MIT License
+#
+# Copyright (c) 2020 - Present Aaron Ma.
+# All Rights Reserved.
+#
+# This file is part of the Algorithms repository,
+# by using this file you have agreed to abide
+# by the license at all times.
+#
+# @file CODEOWNERS
+#
+# Default codeowners for everything:
 * @aaronhma
+
+# Courses folder:
+* @aaronhma
+* @wadefagen
