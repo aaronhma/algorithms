@@ -6,4 +6,4 @@
 
 // iterating
 #define FOR(low, high) for (int i = low; i < high; i++)
-#define FOR(high) FOR(0, high)
+// #define FOR(high) FOR(0, high)
