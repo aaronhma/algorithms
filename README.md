@@ -29,15 +29,15 @@ A data structure is a container that stores data in a specific layout or an orga
 
 - [x] 4. [**Queue**](data_structures/queue/README.md)
 
-- [x] 5. [**Priority Queue**](data_structures/priority_queue.cpp)
+- [x] 5. [**Priority Queue**](data_structures/priority_queue/README.md)
 
 #### Non-Linear Data Structures
 
 - [x] 6. [**Tree**](data_structures/tree/README.md)
 
-- [x] 7. [**Binary Tree**](data_structures/binary_tree/README.md)
+- [x] 7. [**Binary Tree**](data_structures/tree/binary_tree/README.md)
 
-- [x] 8. [**Binary Search Tree**](data_structures/binary_search_tree/README.md)
+- [x] 8. [**Binary Search Tree**](data_structures/tree/binary_search_tree/README.md)
 
 - [x] 9. [**B-Tree**](data_structures/b_tree/README.md)
 
@@ -51,7 +51,7 @@ A data structure is a container that stores data in a specific layout or an orga
 
 - [x] 14. [**Tuple**](data_structures/tuple/README.md)
 
-- [ ] 15. [**Graph**](data_structures/graph/README.md)
+- [x] 15. [**Graph**](data_structures/graph/README.md)
 
 - [x] 16. [**Trie**](data_structures/trie/README.md)
 

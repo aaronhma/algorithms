@@ -1,7 +1,7 @@
 # Arrays
 
 <!-- premium button source: leetcode -->
-<button style="background: rgb(255, 183, 77); border-radius: 12px; font-weight: 500; color: white; margin-left: 4px; padding: 2px 10px; display: block; -webkit-box-align: center; font-family: Open Sans, Arial;" data-font=":font-smoothing" data-loaded="true" data-article="arrays" data-premium="true">Premium</button>
+<div style="background: rgb(255, 183, 77); border-radius: 12px; font-weight: 500; color: white; margin-left: 4px; padding: 2px 10px; display: block; -webkit-box-align: center; font-family: Open Sans, Arial;" data-font=":font-smoothing" data-loaded="true" data-article="arrays" data-premium="true">Premium</div>
 
 ## Background
 
@@ -14,15 +14,16 @@
 An array is a list of items stored in sequential order. The idea behind arrays is where a collection of items of the same type are stored with a index from 0 - n, where n is the size of the array.
 
 ## Pros & Cons of Arrays
-* Pros:
-  * Collections of items of same data type
-  * You can get elements by index
-  * Sorting, searching, etc. is included
-  * Many other data structures can be implemented with arrays
-* Cons:
-  * Only hold same data type
-  * May need to copy data to allow getting elements by index
-  * If the size of array grows huge, the speed gets slower
+
+- Pros:
+  - Collections of items of same data type
+  - You can get elements by index
+  - Sorting, searching, etc. is included
+  - Many other data structures can be implemented with arrays
+- Cons:
+  - Only hold same data type
+  - May need to copy data to allow getting elements by index
+  - If the size of array grows huge, the speed gets slower
 
 ## Speed of Arrays
 
