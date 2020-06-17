@@ -63,6 +63,7 @@ std::cout << q.empty() << "\n"; // Queue is not empty
 A great example of a queue is where **n** cars are on a one-way only highway (see picture below).
 
 ![Queue example image](https://www.tutorialspoint.com/data_structures_algorithms/images/queue_example.jpg)
+
 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1
 
 ([Source](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tutorialspoint.com%2Fdata_structures_algorithms%2Fdsa_queue.htm&psig=AOvVaw1Bzcw8eFVAMyq944xV0Vxo&ust=1592343766873000&source=images&cd=vfe&ved=0CA0QjhxqFwoTCOiKvvfkhOoCFQAAAAAdAAAAABAJ))
