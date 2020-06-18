@@ -57,13 +57,13 @@ A data structure is a container that stores data in a specific layout or an orga
 
 - [x] 16. [**Trie**](data_structures/trie/README.md)
 
-- [ ] 17. [**Segment Tree**](data_structures/tree/segment_tree/README.md)
+- [x] 17. [**Segment Tree**](data_structures/tree/segment_tree/README.md)
 
 - [x] 18. [**Suffix Tree**](data_structures/tree/suffix_tree/README.md)
 
 - [x] 19. [**LRU Cache**](data_structures/lru_cache/README.md)
 
-- [ ] 20. [**N-ary Tree**](data_structures/tree/n_ary_tree/README.md)
+- [x] 20. [**N-ary Tree**](data_structures/tree/n_ary_tree/README.md)
 
 ## Algorithms
 
