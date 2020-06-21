@@ -2,7 +2,7 @@
 
 ## About
 
-Dynamic programming (DP) helps to eliminate the unnecessarily repeating the same result over and over again. Instead, it saves the result of every subproblem and reuses it multiple times to avoid extra computation.
+Dynamic programming (DP) helps to eliminate the unnecessarily repeating the same result over and over again. Instead, it saves the result of every subproblem and reuses it multiple times to avoid extra computation. The idea behind it is to store the results of subproblems, so we don't have to re-compute them later.
 
 ## When to Use Dynamic Programming?
 
