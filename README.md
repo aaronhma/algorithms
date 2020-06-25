@@ -15,12 +15,6 @@ A data structure is a container that stores data in a specific layout or an orga
 - [Geeks for Geeks](https://www.geeksforgeeks.org/data_structuress/)
 - [CodeChef](https://www.codechef.com/certification/data-structures-and-algorithms/prepare#foundation)
 
-### Primitive Data Structures
-
-**Integer**, **float**, **character**, **pointers**.
-
-### Non-primitive Data Structures
-
 #### Linear Data Structures
 
 - [x] 1. [**Array**](data_structures/arrays/README.md)
@@ -71,7 +65,7 @@ A data structure is a container that stores data in a specific layout or an orga
 
 <!-- - [][hashing](https://www.techiedelight.com/Tags/hashing/) -->
 
-### [Sort](https://github.com/TheAlgorithms/C-Plus-Plus/tree/master/sorting)
+### Sorting
 
 - [x] [**Selection Sort**](https://www.techiedelight.com/selection-sort-iterative-recursive/)
 
@@ -95,7 +89,7 @@ A data structure is a container that stores data in a specific layout or an orga
 
 - [x] [**Bucket Sort**](algorithms/sort/bucket-sort/README.md)
 
-### [Search](https://github.com/TheAlgorithms/C-Plus-Plus/tree/master/search)
+### Searching
 
 - [x] [**Linear search**](algorithms/search/linear-search/readme.md)
 
@@ -105,11 +99,9 @@ A data structure is a container that stores data in a specific layout or an orga
 
 <!-- - [ ] [**A star search**](algorithms/search/a-star-search/readme.md) -->
 
-#### [Graph Search](https://github.com/TheAlgorithms/C-Plus-Plus/tree/master/graph)
+- [x] [[graph search] Breadth First Search (BFS)](https://www.techiedelight.com/breadth-first-search/)
 
-- [x] [Breadth First Search (BFS)](https://www.techiedelight.com/breadth-first-search/)
-
-- [x] [Depth First Search (DFS)](https://www.techiedelight.com/depth-first-search/)
+- [x] [[graph search] Depth First Search (DFS)](https://www.techiedelight.com/depth-first-search/)
 
 <!-- - [ ] [**Shortest path algorithms**]
 
