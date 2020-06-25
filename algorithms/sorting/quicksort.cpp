@@ -83,8 +83,11 @@ int main()
   vector<vi> input_2 = {vi{1, 2, 3}, vi{1, 2, 3}};
   assert(test_function(input_2));
 
-  vector<vi> input_3 = {vi{}, vi{}};
+  vector<vi> input_3 = {vi{5, 4, 2, 3, 1}, vi{1, 2, 3, 4, 5}};
   assert(test_function(input_3));
+
+  vector<vi> input_4 = {vi{}, vi{}};
+  assert(test_function(input_4));
 
   return 0;
 }
