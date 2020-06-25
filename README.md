@@ -57,7 +57,7 @@ A data structure is a container that stores data in a specific layout or an orga
 
 - [x] 16. [**Trie**](data_structures/trie/README.md)
 
-- [x] 17. [**Segment Tree**](data_structures/tree/segment_tree/README.md)
+- [ ] 17. [**Segment Tree**](data_structures/tree/segment_tree/README.md)
 
 - [x] 18. [**Suffix Tree**](data_structures/tree/suffix_tree/README.md)
 
@@ -73,33 +73,33 @@ A data structure is a container that stores data in a specific layout or an orga
 
 ### [Sort](https://github.com/TheAlgorithms/C-Plus-Plus/tree/master/sorting)
 
-- [ ] [**Selection Sort**](https://www.techiedelight.com/selection-sort-iterative-recursive/)
+- [x] [**Selection Sort**](https://www.techiedelight.com/selection-sort-iterative-recursive/)
 
-- [ ] [**Bubble Sort**](https://www.techiedelight.com/bubble-sort-iterative-recursive/)
+- [x] [**Bubble Sort**](https://www.techiedelight.com/bubble-sort-iterative-recursive/)
 
-- [ ] [**Insertion Sort**](https://www.techiedelight.com/insertion-sort-iterative-recursive/)
+- [x] [**Insertion Sort**](https://www.techiedelight.com/insertion-sort-iterative-recursive/)
 
-- [ ] [**Merge Sort**](https://www.techiedelight.com/merge-sort/)
+- [x] [**Merge Sort**](https://www.techiedelight.com/merge-sort/)
 
-- [ ] [**Quick Sort**](https://www.techiedelight.com/quicksort/)
+- [x] [**Quick Sort**](https://www.techiedelight.com/quicksort/)
 
-- [ ] [**Heap Sort**](https://www.techiedelight.com/heap-sort-place-place-implementation-c-c/)
+- [x] [**Heap Sort**](https://www.techiedelight.com/heap-sort-place-place-implementation-c-c/)
 
-- [ ] [**Tree Sort**](algorithms/sort/tree-sort/README.md)
+- [x] [**Tree Sort**](algorithms/sort/tree-sort/README.md)
 
-- [ ] [**Shell Sort**](algorithms/sort/shell-sort/README.md)
+- [x] [**Shell Sort**](algorithms/sort/shell-sort/README.md)
 
-- [ ] [**Counting Sort**](algorithms/sort/counting-sort/README.md)
+- [x] [**Counting Sort**](algorithms/sort/counting-sort/README.md)
 
-- [ ] [**Redux Sort**](algorithms/sort/redix-sort/README.md)
+- [x] [**Radix Sort**](algorithms/sort/redix-sort/README.md)
 
-- [ ] [**Bucket Sort**](algorithms/sort/bucket-sort/README.md)
+- [x] [**Bucket Sort**](algorithms/sort/bucket-sort/README.md)
 
 ### [Search](https://github.com/TheAlgorithms/C-Plus-Plus/tree/master/search)
 
-- [ ] [**Linear search**](algorithms/search/linear-search/readme.md)
+- [x] [**Linear search**](algorithms/search/linear-search/readme.md)
 
-- [ ] [**Binary search**](https://www.techiedelight.com/binary-search/) ([Source](algorithms/search/binary_search.cpp))
+- [x] [**Binary search**](https://www.techiedelight.com/binary-search/) ([Source](algorithms/search/binary_search.cpp))
 
 - [ ] [**Hash search**](algorithms/search/hash-search/readme.md)
 
@@ -127,7 +127,7 @@ A data structure is a container that stores data in a specific layout or an orga
 
 - [ ] [Maximum Sum Subarray Problem - Kadane’s algorithm](https://www.techiedelight.com/maximum-subarray-problem-kadanes-algorithm/)
 
-- [ ] [Detect cycle in a linked list - Floyd’s Cycle Detection Algorithm](https://www.techiedelight.com/detect-cycle-linked-list-floyds-cycle-detection-algorithm/)
+- [x] [Detect cycle in a linked list - Floyd’s Cycle Detection Algorithm](https://www.techiedelight.com/detect-cycle-linked-list-floyds-cycle-detection-algorithm/)
 
 - [ ] [Flood fill Algorithm](https://www.techiedelight.com/flood-fill-algorithm/)
 
@@ -137,7 +137,7 @@ A data structure is a container that stores data in a specific layout or an orga
 
 - [ ] Tree Traversals [Inorder](https://www.techiedelight.com/inorder-tree-traversal-iterative-recursive/), [Preorder](https://www.techiedelight.com/preorder-tree-traversal-iterative-recursive/), [Postorder](https://www.techiedelight.com/postorder-tree-traversal-iterative-recursive/)
 
-- [ ] [**Factorial**]
+- [x] [**Factorial**]
 
 - [ ] [**Number theory algorithms**] GCD, inverse of the number using extended euler's algorithm, fast power, prime number, Modular Exponentiation, Sieve of Eratosthenes, Fermat’s theorem, Miller Rabin
 
