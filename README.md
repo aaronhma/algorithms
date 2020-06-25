@@ -67,7 +67,7 @@ A data structure is a container that stores data in a specific layout or an orga
 
 ## Algorithms
 
-- [ ] 21. [**Recursion**](https://www.techiedelight.com/Tags/recursion/)
+- [x] 21. [**Recursion**](https://www.techiedelight.com/Tags/recursion/)
 
 <!-- - [][hashing](https://www.techiedelight.com/Tags/hashing/) -->
 
@@ -169,7 +169,7 @@ A data structure is a container that stores data in a specific layout or an orga
 
 ### Strategies Or Paradigms
 
-- [ ] [Divide & Conquer algorithms](https://www.techiedelight.com/Category/divide-conquer/)
+- [x] [Divide & Conquer algorithms](https://www.techiedelight.com/Category/divide-conquer/)
 
 A **divide and conquer** algorithm works by recursively breaking down a problem into two or more sub-problems of the same (or related) type (divide), until these become simple enough to be solved directly (conquer). The solutions to the sub-problems are then combined to give a solution to the original problem.
 
@@ -183,7 +183,7 @@ Dynamic programming algorithms are used for optimization (for example, finding t
 
 **Graphs Algorithms** can be used to model many types of relations and processes in physical, biological, social and information systems. Graphs are used to represent networks of communication, data organization, computational devices, the flow of computation, etc.
 
-- [ ] [Greedy Algorithms](https://www.techiedelight.com/list-of-problems/#Greedy)
+- [x] [Greedy Algorithms](https://www.techiedelight.com/list-of-problems/#Greedy)
 
 **Greedy Algorithm** is an algorithm that follows the problem solving heuristic of making the locally optimal choice at each stage with the hope of finding a global optimum. In many problems, a greedy strategy does not in general produce an optimal solution, but nonetheless a greedy heuristic may yield locally optimal solutions that approximate a global optimal solution in a reasonable time.
 
