@@ -43,7 +43,7 @@ A data structure is a container that stores data in a specific layout or an orga
 
 - [x] 9. [**B-Tree**](data_structures/b_tree/README.md)
 
-- [ ] 10. [**AVL-Tree**](data_structures/avl-tree/README.md)
+- [x] 10. [**AVL-Tree**](data_structures/avl_tree/README.md)
 
 - [x] 11. [**Heap**](data_structures/heap/README.md)
 
@@ -57,7 +57,7 @@ A data structure is a container that stores data in a specific layout or an orga
 
 - [x] 16. [**Trie**](data_structures/trie/README.md)
 
-- [ ] 17. [**Segment Tree**](data_structures/tree/segment_tree/README.md)
+- [x] 17. [**Segment Tree**](data_structures/tree/segment_tree/README.md)
 
 - [x] 18. [**Suffix Tree**](data_structures/tree/suffix_tree/README.md)
 
@@ -169,7 +169,7 @@ A data structure is a container that stores data in a specific layout or an orga
 
 ### Strategies Or Paradigms
 
-- [ ] [[Divide & Conquer algorithms](https://www.techiedelight.com/Category/divide-conquer/)
+- [ ] [Divide & Conquer algorithms](https://www.techiedelight.com/Category/divide-conquer/)
 
 A **divide and conquer** algorithm works by recursively breaking down a problem into two or more sub-problems of the same (or related) type (divide), until these become simple enough to be solved directly (conquer). The solutions to the sub-problems are then combined to give a solution to the original problem.
 
