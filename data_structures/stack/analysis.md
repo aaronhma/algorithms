@@ -1,21 +1,24 @@
 # Stack Analysis
 
 ## What is a Stack?
+
 A stack is a LIFO (Last In - First Out) data structure. A stack should be able to support the fundamental stack operations:
 
-* `push(x)` - Push x to the back of the stack
-* `pop()` - Delete the last element from the stack if it is not empty
+- `push(x)` - Push x to the back of the stack
+- `pop()` - Delete the last element from the stack if it is not empty
 
 If you want to add more functionality, you should also implement these functions:
 
-* `isEmpty()` - Returns if the stack is empty or not
-* `printStack()` - Print elements in stack
-* `getSize()` - Returns the number of elements in the stack with the number of bytes in a vector full of integers in the format `{stack_size, bytes}`
+- `isEmpty()` - Returns if the stack is empty or not
+- `printStack()` - Print elements in stack
+- `getSize()` - Returns the number of elements in the stack with the number of bytes in a vector full of integers in the format `{stack_size, bytes}`
 
 ## An Example of Stack
+
 An example of stack is dinner plates. You place all the dinner plates in a pile and the last plate that you put in the pile is what you take out (LIFO or Last In - First Out) to wash.
 
 ## How I Implemented The Stack
+
 Now that you know the basics of stack, let's check out how I implemented the stack:
 
 ```cpp
@@ -127,4 +130,5 @@ private:
 ```
 
 ## References
-* [0: The Algorithm Design Manual](#)
+
+- [0: The Algorithm Design Manual](#)
