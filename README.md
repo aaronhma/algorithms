@@ -101,19 +101,19 @@ A data structure is a container that stores data in a specific layout or an orga
 
 - [x] [**Binary search**](https://www.techiedelight.com/binary-search/) ([Source](algorithms/search/binary_search.cpp))
 
-- [ ] [**Hash search**](algorithms/search/hash-search/readme.md)
+<!-- - [ ] [**Hash search**](algorithms/search/hash-search/readme.md) -->
 
-- [ ] [**A star search**](algorithms/search/a-star-search/readme.md)
+<!-- - [ ] [**A star search**](algorithms/search/a-star-search/readme.md) -->
 
 #### [Graph Search](https://github.com/TheAlgorithms/C-Plus-Plus/tree/master/graph)
 
-- [ ] [Breadth First Search (BFS)](https://www.techiedelight.com/breadth-first-search/)
+- [x] [Breadth First Search (BFS)](https://www.techiedelight.com/breadth-first-search/)
 
-- [ ] [Depth First Search (DFS)](https://www.techiedelight.com/depth-first-search/)
+- [x] [Depth First Search (DFS)](https://www.techiedelight.com/depth-first-search/)
 
-- [ ] [**Shortest path algorithms**]
+<!-- - [ ] [**Shortest path algorithms**]
 
-- [ ] [**all pairs shortest path**]
+- [ ] [**all pairs shortest path**] -->
 
 ### Others
 
