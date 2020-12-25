@@ -38,7 +38,7 @@ def insertionSort(b):
 #include <vector>
 using namespace std;
 
-// Function to sort arr[] of size n using bucket sort
+// Function to sort floating point numbers in arr[] of size n using bucket sort
 void bucketSort(float arr[], int n)
 {
     // 1) Create n empty buckets
