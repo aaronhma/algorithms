@@ -51,4 +51,4 @@
 build
 
 # Code Playground
-playground/
+!playground/.gitkeep
