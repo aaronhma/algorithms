@@ -6,8 +6,8 @@ jobs:
   greeting:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/first-interaction@v1
-      with:
-        repo-token: ${{ secrets.GITHUB_TOKEN }}
-        issue-message: 'Thank you for filling an issue to the Algorithms repository!\nStay tuned for updates on answers for your questions! In the meantime, why not check out our Algorithms website: http://aaronma.me/algorithms/ \n\nHave a great day!\n\n**NOTE: This message was sent by a bot and does not receive responses.**'
-        pr-message: 'Thank you for contributing! I look forward to reviewing your PR!\n\n- Aaron Ma\n\n**NOTE: This message was sent by a bot and does not receive responses.**'
+      - uses: actions/first-interaction@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: 'Thank you for filling an issue to the Algorithms repository!\nStay tuned for updates on answers for your questions! In the meantime, why not check out our Algorithms website: http://aaronma.me/algorithms/ \n\nHave a great day!\n\n**NOTE: This message was sent by a bot and does not receive responses.**'
+          pr-message: 'Thank you for contributing! I look forward to reviewing your PR!\n\n- Aaron Ma\n\n**NOTE: This message was sent by a bot and does not receive responses.**'

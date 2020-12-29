@@ -22,9 +22,9 @@ cout << x << "\n";
 
 This works because of the follow equivalences:
 
-* $(a + b) \ \% \ m = (a \ \% \ m + b \ \% \ m) \ \% \ m$
-* $(a - b) \ \% \ m = (a \ \% \ m - b \ \% \ m) \ \% \ m$
-* $(a * b) \ \% \ m = (a \ \% \ m * b \ \% \ m) \ \% \ m$
+- $(a + b) \ \% \ m = (a \ \% \ m + b \ \% \ m) \ \% \ m$
+- $(a - b) \ \% \ m = (a \ \% \ m - b \ \% \ m) \ \% \ m$
+- $(a * b) \ \% \ m = (a \ \% \ m * b \ \% \ m) \ \% \ m$
 
 ## Checking for If Two Floating Point Numbers is Equivalent
 

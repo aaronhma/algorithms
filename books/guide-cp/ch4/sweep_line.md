@@ -3,6 +3,7 @@
 A sweep line algorithm models a problem as a set of events that are processed in a sorted order.
 
 ## The Restaurant Problem
+
 The restaurant problem is "Given a list of the arriving and leaving times of all customers on a certain day, find the maximum number of customers who visited the restaurant at the same time. An example of the problem where there are four customers $A$, $B$, $C$, and $D$:
 
 ![Sample](resources/sweep_line/sample.png)

@@ -2,7 +2,7 @@
 
 ## What is Dynamic Programming?
 
-Dynamic Programming (DP) is an programming paradigm that is like brute force,  but $efficient$.
+Dynamic Programming (DP) is an programming paradigm that is like brute force, but $efficient$.
 
 ## When do We Use Dynamic Programming?
 

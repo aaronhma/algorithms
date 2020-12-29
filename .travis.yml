@@ -3,32 +3,31 @@ os:
   - linux
   - osx
   - windows
-  
+
 compiler:
   - clang
   - gcc
-  
-  
- before_install:
+
+before_install:
   - g++ --version
   - clang --versio
-  
- install:
+
+install:
   - sudo apt-get -y install cmake
   - which cmake
   - cmake --version
   - sudo apt-get -y install build-essential
   - which make
   - make --version
-  
- script:
+
+script:
   - mkdir build
   - cd build
   - cmake ..
   - make
-  
- after_success:
+
+after_success:
   - tree
-  
- after_failure:
+
+after_failure:
   - tree

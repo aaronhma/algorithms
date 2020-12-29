@@ -1,29 +1,16 @@
-# NOTE: This .editorconfig file was
-# generated automatically in VSCode.
-#
-# Some of these may not apply to your
-# editor.
-#
-# VSCode Editor Configuration
-#
-#
-# MIT License
-#
-# Copyright (c) 2020 - Present Aaron Ma.
-# All Rights Reserved.
-#
-# This file is part of the Algorithms repository,
-# by using this file you have agreed to abide
-# by the license at all times.
-#
-# @file .editorconfig
-#
-# This is the toplevel editor configuration file.
+# Editor configuration, see https://editorconfig.org
 root = true
 
 [*]
-indent_style = space # Spacing
+charset = utf-8
+indent_style = space
 indent_size = 2
-charset = utf-8 # Use UTF-8
-trim_trailing_whitespace = true # Disable extra whitespace
-insert_final_newline = true # Add a new line at the end of every file
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.ts]
+quote_type = single
+
+[*.md]
+max_line_length = off
+trim_trailing_whitespace = false

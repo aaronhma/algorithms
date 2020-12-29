@@ -108,17 +108,18 @@ std::sort(arr.begin(), arr.end() [](const std::string &a, const std::string &b) 
 - [GeekForGeeks: Intro to Arrays](https://www.geeksforgeeks.org/introduction-to-arrays/)
 - [Quora: Pro & Cons of Arrays](https://www.quora.com/What-are-the-pros-and-cons-of-arrays-in-C-programming-language#:~:text=The%20pros%20are%3A%20you%20need,pass%20the%20right%20size%2Flength.)
 
-
 # Arrays
 
-* stores data in sequential memory
-* uses indexing to get data (index from 0 - size n - 1)
+- stores data in sequential memory
+- uses indexing to get data (index from 0 - size n - 1)
 
 ## Cons
-* only contain data of same type
-* fixed capacity
+
+- only contain data of same type
+- fixed capacity
 
 ## Defining a Array
+
 ```cpp
 int arr[SIZE] = {/* elements go here*/};
 

@@ -85,8 +85,6 @@ The first car that enters, in this case, Car #1, will exit out of the highway fi
 - [Geeks For Geeks: Queue in C++'s Standard Library](https://www.geeksforgeeks.org/queue-cpp-stl/)
 - [Interview Cake: Queue](https://www.interviewcake.com/concept/cpp/queue)
 
-
-
 # Queue
 
 - First-In, First-Out (FIFO) order

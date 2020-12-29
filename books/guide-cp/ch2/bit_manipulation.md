@@ -10,8 +10,8 @@ In programming, an $n$-bit integer is stored as a binary number that consists of
 
 Bit representations of a number is either signed or unsigned. A signed number is a number that can be positive and negative. On the other hand, an unsigned number cannot be negative. An example of this with `int`:
 
-* `int`: $-2^{31}$ - $2^{31} - 1$
-* `unsigned int`: $0$ - $2^{32} - 1$
+- `int`: $-2^{31}$ - $2^{31} - 1$
+- `unsigned int`: $0$ - $2^{32} - 1$
 
 ## Overflow
 
@@ -44,6 +44,7 @@ The ~ operation returns 1 if the position $i$ at $x$ is 0 or 0 if the position $
 ![AND Operation](resources/binary/not.png)
 
 ## Bit Shifts
+
 ### Left Shift <<
 
 The left shift operation $x << k$ can be used to add $k$ zero bits to $x$.
@@ -79,11 +80,11 @@ A bit mask is of the form $1 << k$. We impose a "mask" over bits. An example of 
 
 ## Additional Useful Functions
 
-* `__builtin_clz(x)`: the number of zeros at the beginning of the bit representation
-* `__builtin_ctz(x)`: the number of zeros at the end of the bit representation
-* `__builtin_popcount(x)`: the number of ones in the bit representation
-* `__builtin_parity(x)`: the parity (even or odd) of the number of ones in the
-bit representation.
+- `__builtin_clz(x)`: the number of zeros at the beginning of the bit representation
+- `__builtin_ctz(x)`: the number of zeros at the end of the bit representation
+- `__builtin_popcount(x)`: the number of ones in the bit representation
+- `__builtin_parity(x)`: the parity (even or odd) of the number of ones in the
+  bit representation.
 
 An example of these functions:
 
@@ -97,7 +98,6 @@ A example of the binary operations can be used to model the set $S = \{1, 3, 4, 
 
 ![Sets C++](resources/binary/sets.png)
 
-
 ## Set Operations
 
 Note that the standard set operations can be modeled with binary operators:
@@ -106,7 +106,7 @@ Note that the standard set operations can be modeled with binary operators:
 
 ## C++ `bitset` data structure
 
-C++'s built-in `bitset` data structure which is a more *efficient* array full of 0s and 1s. See the following example that creates a bitset of 10 elements:
+C++'s built-in `bitset` data structure which is a more _efficient_ array full of 0s and 1s. See the following example that creates a bitset of 10 elements:
 
 ```cpp
 std::bitset<10> s;
