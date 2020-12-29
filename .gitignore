@@ -44,7 +44,7 @@
 *.app
 
 # Editor config
-.vscode
+.vscodec
 .idea
 
 # CMake Cache
@@ -52,3 +52,4 @@ build
 
 # Code Playground
 !playground/.gitkeep
+playground/
