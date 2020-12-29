@@ -14,23 +14,15 @@ In the picture above, the string "Mari" is stored only once even though it appea
 
 If there is 2 words and both words are a prefix of each other, here's what a typical trie would look like:
 
-<image-viewport>
-
 ![Image](https://www.interviewcake.com/images/svgs/trie_with_two_strings.svg?bust=206)
 
 ([Source](https://www.interviewcake.com/concept/cpp/trie))
 
-</image-viewport>
-
 Based on the above trie, it looks like "Mariana" is the only word in the trie, even though there is 2 words ("Maria" and "Mariana"). To avoid this type of confusion, most tries adds a special character to the end of every word. If "." was the special character, here's what the tree might look like:
-
-<image-viewport>
 
 ![Image](https://www.interviewcake.com/images/svgs/trie_with_markers.svg?bust=206)
 
 ([Source](https://www.interviewcake.com/concept/cpp/trie))
-
-</image-viewport>
 
 ## Runtime of a Trie
 

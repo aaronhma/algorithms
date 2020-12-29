@@ -108,14 +108,6 @@
 
 ---
 
-### [**Number Algorithm**](number-algorithm/README.md)
-
-| ☆   | Name (Content) | C++                      | Python | Editorials |
-| --- | -------------- | ------------------------ | ------ | ---------- |
-|     |                | [C++](number-algorithm/) |        |            |
-
----
-
 ### [**Searching**](searching/README.md)
 
 | ☆   | Name (Content)                                            | C++                                              | Python | Editorials                                        |
@@ -177,6 +169,8 @@
 | --- | ------------------------------------------------------------------- | ----------------------------------------------------- | ------------------------------------- | ---------- |
 |     | [Divide and Conquer](misc/divide-and-conquer/divide-and-conquer.md) | [C++](misc/divide-and-conquer/divide-and-conquer.cpp) |                                       |            |
 |     | [Recursion](misc/recursion/recursion.md)                            | [C++](misc/recursion/recursion.cpp)                   | [Python](misc/recursion/recursion.py) |            |
+|     | [Efficiency](misc/efficiency.md)                                    | -                                                     | -                                     |            |
+|     | [Solving Problems](misc/solving-problems.md)                        | -                                                     | -                                     |            |
 
 ---
 
@@ -191,3 +185,4 @@
 #### Notes
 
 - Run `prettier --write .` before commit to the repo (Install **prettier** via `brew install prettier`)
+- Some pages requires the [MathJax for GitHub](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima) extension. You can get it [here](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima).

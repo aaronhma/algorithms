@@ -1,7 +1,5 @@
 # Math
 
-# @TODO: Aaron: Clean up Readme
-
 # CP Math Intro
 
 ### Primes

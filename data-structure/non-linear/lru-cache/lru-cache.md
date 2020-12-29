@@ -4,13 +4,9 @@
 
 A Least Recently Used (LRU) Cache organizes items based on order of use (see picture below).
 
-<image-viewport>
-
 ![Image](https://www.interviewcake.com/images/svgs/lru_cache__doubly_linked_list.svg?bust=206)
 
 ([Source](https://www.interviewcake.com/concept/cpp/lru-cache))
-
-</image-viewport>
 
 ## Pros & Cons of LRU Cache
 
