@@ -1,8 +1,3 @@
-
-### Others
-
-- [x] 21. [**Recursion**](https://www.techiedelight.com/Tags/recursion/)
-
 - [ ] [Disjoint-Set Data Structure - Union-Find Algorithm](https://www.techiedelight.com/disjoint-set-data-structure-union-find-algorithm/)
 
 - [ ] [Finding Minimum Spanning Tree - Kruskal’s Algorithm](https://www.techiedelight.com/kruskals-algorithm-for-finding-minimum-spanning-tree/)
@@ -41,18 +36,7 @@
 
 - [ ] [Longest Increasing Subsequence](https://www.techiedelight.com/longest-increasing-subsequence/)
 
-### Strategies Or Paradigms
-
-- [x] [Divide & Conquer algorithms](https://www.techiedelight.com/Category/divide-conquer/)
-
-A **divide and conquer** algorithm works by recursively breaking down a problem into two or more sub-problems of the same (or related) type (divide), until these become simple enough to be solved directly (conquer). The solutions to the sub-problems are then combined to give a solution to the original problem.
-
-
 - [ ] [**Statistical Method**]
-
-- Finding largest/smallest in an array/linked lists/tree
-
-
 
 **Useful resources**
 

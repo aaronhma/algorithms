@@ -18,7 +18,7 @@
 - [**Geometry**](#geometry)
 - [**Graph Algorithm**](#graph-algorithm)
 - [**Greedy Algorithm**](#greedy-algorithm)
-- [**Mathematic**](#mathematic)
+- [**Math**](#math)
 - [**Number Algorithm**](#number-algorithm)
 - [**Searching**](#searching)
 - [**Sorting**](#sorting)
@@ -99,7 +99,7 @@
 
 ---
 
-### [**Mathematic**](mathematic/README.md)
+### [**Math**](math/README.md)
 
 | ☆ | Name (Content) | C++ | Python | Editorials |
 | --- | --- | --- | --- | --- |
@@ -137,7 +137,7 @@
 | | [Insertion Sort](sorting/insertion-sort/insertion-sort.md) | [C++](sorting/insertion-sort/insertion-sort.cpp) | [Python](sorting/insertion-sort/insertion-sort.py)| [1](https://www.techiedelight.com/insertion-sort-iterative-recursive/) |
 | | [Merge Sort](sorting/merge-sort/merge-sort.md) | [C++](sorting/merge-sort/merge-sort.cpp) | [Python](sorting/merge-sort/merge-sort.py)| [1](https://www.techiedelight.com/merge-sort/) |
 | ★★★ | [Quick Sort](sorting/quick-sort/quick-sort.md) | [C++](sorting/quick-sort/quick-sort.cpp) | [Python](sorting/quick-sort/quick-sort.py)| [1](//www.techiedelight.com/quicksort/) |
-| ★☆☆ | [Radix Sort](sorting/redix-sort/redix-sort.md) | [C++](sorting/redix-sort/redix-sort.cpp) |  |  |
+| ★☆☆ | [Radix Sort](sorting/radix-sort/radix-sort.md) | [C++](sorting/radix-sort/radix-sort.cpp) |  |  |
 |  | [Selection Sort](sorting/selection-sort/selection-sort.md) | [C++](sorting/selection-sort/selection-sort.cpp) | [Python](sorting/selection-sort/selection-sort.py) | [1](https://www.techiedelight.com/selection-sort-iterative-recursive/), [2](https://www.techiedelight.com/selection-sort-iterative-recursive/) |
 | | [Shell Sort](sorting/shell-sort/shell-sort.md) | [C++](sorting/shell-sort/shell-sort.cpp) |  |  |
 | | [Tree Sort](sorting/tree-sort/tree-sort.md) | [C++](sorting/tree-sort/tree-sort.cpp) |  |  |
@@ -174,6 +174,8 @@
 
 | ☆ | Name (Content) | C++ | Python | Editorials |
 | --- | --- | --- | --- | --- |
+| | [Divide and Conquer](misc/divide-and-conquer/divide-and-conquer.md) | [C++](misc/divide-and-conquer/divide-and-conquer.cpp) |  |  |
+| | [Recursion](misc/recursion/recursion.md) | [C++](misc/recursion/recursion.cpp) | [Python](misc/recursion/recursion.py) |  |
 
 ---
 
