@@ -45,20 +45,21 @@
 | --- | --- | --- | --- | --- |
 | | [Array](data-structure/linear/array/array.md) | [C++](data-structure/linear/array/array.cpp) |  |  |
 | | [Linked List](data-structure/linear/linked-list/linked-list.md) | [C++](data-structure/linear/linked-list/linked-list.cpp) |  |  |
-| | [Stack](data-structure/linear/stack/stack.md) | [C++](data-structure/linear/stack/stack.cpp) |  |  |
-| | [Queue](data-structure/linear/queue/queue.md) | [C++](data-structure/linear/queue/queue.cpp) |  |  |
 | | [Priority Queue](data-structure/linear/priority-queue/priority-queue.md) | [C++](data-structure/linear/priority-queue/priority-queue.cpp) |  |  |
+| | [Queue](data-structure/linear/queue/queue.md) | [C++](data-structure/linear/queue/queue.cpp) | [Python](data-structure/linear/queue/queue.py) |  |
+| | [Stack](data-structure/linear/stack/stack.md) | [C++](data-structure/linear/stack/stack.cpp) |  |  |
 
 #### [**Non-Linear Data Structure**](data-structure/non-linear/README.md)
 
 | ☆ | Name (Content) | C++ | Python | Editorials |
 | --- | --- | --- | --- | --- |
+| | [Hash Map](data-structure/non-linear/hash-map/hash-map.md) | [C++](data-structure/non-linear/hash-map/hash-map.cpp) |  |  |
 | | [Heap](data-structure/non-linear/heap/heap.md) | [C++](data-structure/non-linear/heap/heap.cpp) |  |  |
-| | [Hash Map](data-structure/non-linear/heap/heap.md) | [C++](data-structure/non-linear/heap/heap.cpp) |  |  |
-| | [Set](data-structure/non-linear/heap/heap.md) | [C++](data-structure/non-linear/heap/heap.cpp) |  |  |
-| | [Tuple](data-structure/non-linear/heap/heap.md) | [C++](data-structure/non-linear/heap/heap.cpp) |  |  |
-| | [Trie](data-structure/non-linear/trie/trie.md) | [C++](data-structure/non-linear/trie/trie.cpp) |  |  |
 | | [LRU Cache](data-structure/non-linear/lru-cache/lru-cache.md) | [C++](data-structure/non-linear/lru-cache/lru-cache.cpp) |  |  |
+| | [Map](data-structure/non-linear/map/map.md) | [C++](data-structure/non-linear/map/map.cpp) |  |  |
+| | [Set](data-structure/non-linear/set/set.md) | [C++](data-structure/non-linear/set/set.cpp) |  |  |
+| | [Trie](data-structure/non-linear/trie/trie.md) | [C++](data-structure/non-linear/trie/trie.cpp) |  |  |
+| | [Tuple](data-structure/non-linear/tuple/tuple.md) | [C++](data-structure/non-linear/tuple/tuple.cpp) |  |  |
 
 ---
 
@@ -82,12 +83,12 @@
 
 | ☆ | Name (Content) | C++ | Python | Editorials |
 | --- | --- | --- | --- | --- |
-| | [Graph](graph-algorithm/graph/graph.md) | [C++](graph-algorithm/graph/graph.cpp) |  |  |
+| | [Bellman Ford Algorithm](graph-algorithm/bellman-ford-algorithm/bellman-ford-algorithm.md) | [C++](graph-algorithm/bellman-ford-algorithm/bellman-ford-algorithm.cpp) |  |  |
 | | [Breadth First Search (BFS)](graph-algorithm/breadth-first-search/breadth-first-search.md) | [C++](graph-algorithm/breadth-first-search/breadth-first-search.cpp) |  |  |
 | | [Depth First Search (DFS)](graph-algorithm/depth-first-search/depth-first-search.md) | [C++](graph-algorithm/depth-first-search/depth-first-search.cpp) |  |  |
-| | [Bellman Ford Algorithm](graph-algorithm/bellman-ford-algorithm/bellman-ford-algorithm.md) | [C++](graph-algorithm/bellman-ford-algorithm/bellman-ford-algorithm.cpp) |  |  |
 | | [Dijkstra Algorithm](graph-algorithm/dijkstra-algorithm/dijkstra-algorithm.md) | [C++](graph-algorithm/dijkstra-algorithm/dijkstra-algorithm.cpp) |  | [1](https://www.techiedelight.com/single-source-shortest-paths-dijkstras-algorithm/) |
 | | [Floyd Warshall Algorithm](graph-algorithm/floyd-warshall-algorithm/floyd-warshall-algorithm.md) | [C++](graph-algorithm/floyd-warshall-algorithm/floyd-warshall-algorithm.cpp) |  | [1](https://www.techiedelight.com/pairs-shortest-paths-floyd-warshall-algorithm/) |
+| | [Graph](graph-algorithm/graph/graph.md) | [C++](graph-algorithm/graph/graph.cpp) |  |  |
 
 ---
 
@@ -119,10 +120,10 @@
 
 | ☆ | Name (Content) | C++ | Python | Editorials |
 | --- | --- | --- | --- | --- |
+| | [A star Search](searching/a-star-search/a-star-search.md) | [C++](searchin/a-star-search/a-star-search.cpp) |  | [1](https://www.techiedelight.com/Tags/hashing/) |
 | | [Binary Search](searching/binary-search/binary-search.md) | [C++](searching/binary-search/binary-search.cpp) |  | [1](https://www.techiedelight.com/binary-search/) |
 | | [Hash Search](searching/hash-search/hash-search.md) | [C++](searching/hash-search/hash-search.cpp) |  | [1](https://www.techiedelight.com/Tags/hashing/) |
 | | [Linear Search](searching/linear-search/linear-search.md) | [C++](searchin/linear-search/linear-search.cpp) |  | [1](https://www.techiedelight.com/Tags/hashing/) |
-| | [A star Search](searching/a-star-search/a-star-search.md) | [C++](searchin/a-star-search/a-star-search.cpp) |  | [1](https://www.techiedelight.com/Tags/hashing/) |
 
 ---
 
@@ -156,17 +157,17 @@
 
 | ☆ | Name (Content) | C++ | Python | Editorials |
 | --- | --- | --- | --- | --- |
+| | [AVL Tree](tree-algorithm/avl-tree/avl-tree.md) | [C++](tree-algorithm/avl-tree/avl-tree.cpp) |  |  |
+| | [B Tree](tree-algorithm/b-tree/b-tree.md) | [C++](tree-algorithm/b-tree/b-tree.cpp) |  |  |
+| | [Binary Search Tree](tree-algorithm/binary-search-tree/binary-search-tree.md) | [C++](tree-algorithm/binary-search-tree/binary-search-tree.cpp) |  |  |
+| | [Binary Tree](tree-algorithm/binary-tree/binary-tree.md) | [C++](tree-algorithm/binary-tree/binary-tree.cpp) |  |  |
+| | [N-ary Tree](tree-algorithm/n-ary-tree/n-ary-tree.md) | [C++](tree-algorithm/n-ary-tree/n-ary-tree.cpp) |  |  |
+| | [Segment Tree](tree-algorithm/segment-tree/segment-tree.md) | [C++](tree-algorithm/segment-tree/segment-tree.cpp) |  |  |
+| | [Suffix Tree](tree-algorithm/suffix-tree/suffix-tree.md) | [C++](tree-algorithm/suffix-tree/suffix-tree.cpp) |  |  |
 | | [Tree](tree-algorithm/tree/tree.md) | [C++](tree-algorithm/tree/tree.cpp) |  |  |
 | | [Tree Traversals (Inorder)](tree-algorithm/tree-traversals/in-order.md) | [C++](tree-algorithm/tree-traversals/in-order.cpp) |  | [1](https://www.techiedelight.com/inorder-tree-traversal-iterative-recursive/) |
 | | [Tree Traversals (Preorder)](tree-algorithm/tree-traversals/pre-order.md) | [C++](tree-algorithm/tree-traversals/pre-order.cpp) |  | [1](https://www.techiedelight.com/preorder-tree-traversal-iterative-recursive/) |
 | | [Tree Traversals (Postorder)](tree-algorithm/tree-traversals/post-order.md) | [C++](tree-algorithm/tree-traversals/post-order.cpp) |  | [1](https://www.techiedelight.com/postorder-tree-traversal-iterative-recursive/) |
-| | [Binary Tree](tree-algorithm/binary-tree/binary-tree.md) | [C++](tree-algorithm/binary-tree/binary-tree.cpp) |  |  |
-| | [Binary Search Tree](tree-algorithm/binary-search-tree/binary-search-tree.md) | [C++](tree-algorithm/binary-tree/binary-tree.cpp) |  |  |
-| | [B Tree](tree-algorithm/b-tree/b-tree.md) | [C++](tree-algorithm/b-tree/b-tree.cpp) |  |  |
-| | [AVL Tree](tree-algorithm/avl-tree/avl-tree.md) | [C++](tree-algorithm/avl-tree/avl-tree.cpp) |  |  |
-| | [Segment Tree](tree-algorithm/segment-tree/segment-tree.md) | [C++](tree-algorithm/segment-tree/segment-tree.cpp) |  |  |
-| | [Suffix Tree](tree-algorithm/suffix-tree/suffix-tree.md) | [C++](tree-algorithm/suffix-tree/suffix-tree.cpp) |  |  |
-| | [N-ary Tree](tree-algorithm/n-ary-tree/n-ary-tree.md) | [C++](tree-algorithm/n-ary-tree/n-ary-tree.cpp) |  |  |
 
 ---
 

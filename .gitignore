@@ -49,3 +49,6 @@
 
 # CMake Cache
 build
+
+# Code Playground
+playground/
