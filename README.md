@@ -117,7 +117,7 @@
 
 | ☆   | Name (Content)                                            | C++                                              | Python | Editorials                                        |
 | --- | --------------------------------------------------------- | ------------------------------------------------ | ------ | ------------------------------------------------- |
-|     | [A* Search](searching/a-star-search/a-star-search.md) | [C++](searchin/a-star-search/a-star-search.cpp)  |        | [1](https://www.techiedelight.com/Tags/hashing/)  |
+|     | [A\* Search](searching/a-star-search/a-star-search.md)    | [C++](searchin/a-star-search/a-star-search.cpp)  |        | [1](https://www.techiedelight.com/Tags/hashing/)  |
 |     | [Binary Search](searching/binary-search/binary-search.md) | [C++](searching/binary-search/binary-search.cpp) |        | [1](https://www.techiedelight.com/binary-search/) |
 |     | [Hash Search](searching/hash-search/hash-search.md)       | [C++](searching/hash-search/hash-search.cpp)     |        | [1](https://www.techiedelight.com/Tags/hashing/)  |
 |     | [Linear Search](searching/linear-search/linear-search.md) | [C++](searchin/linear-search/linear-search.cpp)  |        | [1](https://www.techiedelight.com/Tags/hashing/)  |
