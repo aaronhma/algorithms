@@ -4,7 +4,7 @@
 
 Recursion is a method of solving problems where the solution depends on solutions smaller instances of the same problem.
 
-([Source](https://en.wikipedia.org/wiki/Recursion_(computer_science)))
+([Source](<https://en.wikipedia.org/wiki/Recursion_(computer_science)>))
 
 ![Image](https://storage.googleapis.com/algodailyrandomassets/curriculum/recursion/cover.jpg)
 

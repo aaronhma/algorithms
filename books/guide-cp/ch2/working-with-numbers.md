@@ -24,14 +24,13 @@ cout << b << "\n";
 
 The error behind this is because a is an integer. When computing $a*a$, $a*a$ is first multiplied (into an integer), then converted into the `long long` data type. Obviously, this will lead to overflow (in some cases).
 
-
 ## Floating Point Numbers
 
 ### Types of Floating Point Numbers
 
-* `float`: C++'s default 32-bit data type (7 decimal digits of precision)
-* `double`: C++'s 64-bit data type (15 decimal digits of precision)
-* `long double`: C++'s 80-bit data type (15 - 33 digits of precision)
+- `float`: C++'s default 32-bit data type (7 decimal digits of precision)
+- `double`: C++'s 64-bit data type (15 decimal digits of precision)
+- `long double`: C++'s 80-bit data type (15 - 33 digits of precision)
 
 ### Printing Floating Integers with Precision
 
@@ -41,7 +40,7 @@ double x;
 printf("%.9f\n", x); // Print x with 9 digits of precision
 ```
 
-**NOTE:** *"A difficulty when using floating point numbers is that some numbers cannot be represented accurately. See below for an example:" - Guide to Competitive Programming (by Antti Laaksonen)*
+**NOTE:** _"A difficulty when using floating point numbers is that some numbers cannot be represented accurately. See below for an example:" - Guide to Competitive Programming (by Antti Laaksonen)_
 
 ```cpp
 double x = 0.3*3+0.1;
