@@ -1,37 +1,4 @@
-# Code Optimization
-
-## Finding if $x$ is in array
-
-### Naive Approach
-
-```cpp
-bool ok = false;
-int x = 5; // Define target value here
-
-for (int i : arr) {
-  if (i == x) {
-    ok = true;
-    break; // Break once we've found x - more efficient
-  }
-}
-```
-
-### Sentinel Value
-
-A neat trick we can apply is using a $sentinel \ value$.
-
-```cpp
-arr[n] = x;
-int i;
-
-for (int i = 0; arr[i] != x; i++);
-
-if (i < n) {
-  cout << "We've found x!" << "\n";
-} else {
-  cout << "Couldn't find x" << "\n";
-}
-```
+# Optimization
 
 ## C++ Compiler Optimization
 

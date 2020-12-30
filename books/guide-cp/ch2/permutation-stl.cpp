@@ -9,7 +9,7 @@ int main()
 
   vector<int> arr = {1, 2, 3};
 
-  // for permutation ordering
+  // for permutation ordering - start at the beginning
   sort(arr.begin(), arr.end());
 
   do
