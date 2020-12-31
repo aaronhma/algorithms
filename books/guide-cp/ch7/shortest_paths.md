@@ -64,7 +64,7 @@ Like the Bellman–Ford algorithm, Dijkstra’s algorithm maintains distances to
 
 Figure $7.20$ shows how Dijkstra’s algorithm processes a graph. Like in the Bellman–Ford algorithm, the initial distance to all nodes, except for the starting node, is infinite. The algorithm processes the nodes in the order $1$, $5$, $4$, $2$, $3$, and at each node reduces distances using edges that start at the node. Note that the distance to a node never changes after processing the node.
 
-![Figure 7.20](resources/bellman_ford/dijkstras.png)
+![Figure 7.20](resources/dijkstras/dijkstras.png)
 
 ### Implementation
 
@@ -105,3 +105,17 @@ while (!q.empty()) {
   }
 }
 ```
+
+## Floyd-Warshall Algorithm
+
+### About
+
+The Floyd-Warshall algorithm starts off with an adjacency matrix $dist$ where $dist[a][b]$ represents the distance from node $a$ to node $b$. Unlike other algorithms, the Floyd-Warshall algorithm
+
+### Example
+
+Suppose we have an adjacency matrix $dist$:
+
+![Adjacency Matrix](resources/floyd-warshall/adj_matrix.png)
+
+In the first round of
