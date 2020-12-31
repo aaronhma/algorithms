@@ -29,7 +29,9 @@ do {
 **NOTE:** If you want to get **all** of the permutations of the array $arr$, you must sort the array. [This](https://stackoverflow.com/a/31258517) StackOverflow answer explains this quite elegantly:
 
 ```
-To return all permutations in a loop until next_permutation returns false, the vector must be sorted before the start of the loop. next_permutation returns the permutations in ascending order. So if you start off with an unsorted vector, it will begin part way through the series of permutations.
+To return all permutations in a loop until next_permutation returns false, the vector must be sorted before the start of the loop.
+
+next_permutation returns the permutations in ascending order. So if you start off with an unsorted vector, it will begin part way through the series of permutations.
 ```
 
 ```cpp

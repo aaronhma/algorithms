@@ -32,9 +32,9 @@
 
 ### [**Backtracking Algorithm**](backtracking-algorithm/README.md)
 
-| ☆   | Name (Content) | C++     | Python | Editorials |
-| --- | -------------- | ------- | ------ | ---------- |
-|     |                | [C++]() |        |            |
+| ☆   | Name (Content)        | C++ | Python | Editorials                           |
+| --- | --------------------- | --- | ------ | ------------------------------------ |
+|     | What is Backtracking? |     |        | [1](backtracking-algorithm/about.md) |
 
 ---
 
