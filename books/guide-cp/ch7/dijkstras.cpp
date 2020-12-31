@@ -19,13 +19,13 @@ int main()
   int n = 5;
 
   vector<vector<pair<int, int>>> graph(n + 1);
-  addEdge(graph, 1, 3, 1);
-  addEdge(graph, 1, 4, 7);
-  addEdge(graph, 1, 2, 2);
-  addEdge(graph, 3, 4, 3);
-  addEdge(graph, 2, 4, 3);
-  addEdge(graph, 2, 5, 5);
-  addEdge(graph, 4, 5, 2);
+  addEdge(graph, 1, 4, 9);
+  addEdge(graph, 1, 5, 1);
+  addEdge(graph, 1, 2, 5);
+  addEdge(graph, 2, 3, 2);
+  addEdge(graph, 3, 4, 6);
+  addEdge(graph, 4, 5, 5);
+  // addEdge(graph, 4, 5, 2);
 
   priority_queue<pair<int, int>> q;
 
@@ -68,7 +68,7 @@ int main()
     cout << "Distance from node " << x << " -> node " << i << ": " << distance[i] << "\n";
   }
 
-  int fin = 5;
+  int fin = 3;
 
   cout << "Weight from node 1 -> 5: " << distance[fin] << "\n";
 
