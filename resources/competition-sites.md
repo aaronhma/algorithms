@@ -14,6 +14,16 @@
 
 - [Sphere Online Judge](http://www.spoj.com/) SPOJ is a simple website with tons of coding challenges.
 
+- [Kattis]
+
+- [Facebook Hacker Cup]() **January**
+
+- [Google Coding Competitions](https://codingcompetitions.withgoogle.com/)
+
+Code Jam and Kick Start are both like classic competitive programming, Hash Code you have optimization task for which the optimal answer may be unknown. Doing at least something reasonable is relatively trivial, but getting a good solution within a short round is challenging. You are competing against other people, and this competition attracts strongest contestants in the world.
+
+Code Jam and Kick Start are both following a format that is different from Hash Code - it is more or less classic competitive programming, with some problems given such that it is known in advance that the solution exists, and usually your goal is to solve them precisely, or to get within some predefined precision/accuracy, while also being within specific restrictions on time and memory used.
+
 ## Challenge and competition
 
 - [KickStart — Google’s Coding Competitions](https://codingcompetitions.withgoogle.com/kickstart/about) offers programmer around the world a chance to develop their skills through online competition round. Each round lasts for 3 hours and they feature algorithmic challenges developed by Google engineers so that you can get a taste of what it takes to work at Google.
@@ -43,3 +53,40 @@
 - [CodinGame](https://www.codingame.com/start) is to let programmers keep on improving their coding skills by solving the world’s most challenging problems, learn new concepts, and get inspired by the best developers.
 
 - [CodeGym](https://codegym.cc/) is an online Java Programming that is 80% based on practice.
+
+- [TechGig](https://www.techgig.com/) Learn, Compete & Grow.
+
+- [Analytics Vidhya](https://www.analyticsvidhya.com/myfeed/)
+
+- [OJ.UZ](https://oj.uz/problems) From korea
+
+[Other competitions in USA](https://usaco-guide.vercel.app/general/resources-usa)
+
+
+
+Look at the following links! Maybe you'll find it interesting:
+
+ACM ICPC: icpc.baylor.edu
+
+IOI: ioi2016.ru
+Code jam: code.google.com/codejam
+TopCoder Open: tco16.topcoder.com
+
+Facebook HackerCup: facebook.com/hackercup/
+Yandex.Algorithm: contest.yandex.ru/algorithm2016
+
+VK CUP: vk.com/vkcup
+
+Challenge 24: ch24.org
+
+
+More Useful Links
+ Bookmark this page
+These are the links devoted to different online contests and trainings:
+
+codeforces.com: online contests
+neerc.ifmo.ru/trains: trainings
+acm.timus.ru: 1099 problems
+contest.yandex.ru: online contests, trainings
+topcoder.com: online contests
+code.google.com/codejam: online contests
