@@ -11,15 +11,15 @@ A spanning tree contains all nodes of a graph and some edges such that there is 
 
 Suppose we have the following graph:
 
-![Fig 7.35](resources/spanning-tree/fig_7.35.png)
+![Fig 7.35](images/spanning-tree/fig_7.35.png)
 
 The minimum spanning tree of the graph has a weight of 20:
 
-![Fig 7.36](resources/spanning-tree/fig_7.36.png)
+![Fig 7.36](images/spanning-tree/fig_7.36.png)
 
 The maximum spanning tree of the graph has a weight of 32:
 
-![Fig 7.37](resources/spanning-tree/fig_7.37.png)
+![Fig 7.37](images/spanning-tree/fig_7.37.png)
 
 **ℹ️ NOTE: A graph may have multiple minimum and maximum spanning trees.**
 
@@ -33,7 +33,7 @@ Kruskal's Algorithm builds a minimum spanning tree by greedily adding edges to a
 
 The algorithm maintains the components of the new graph. Initially, each node of the graph belongs to separate components. Then, when an edge is added to the graph, two components are joined. Finally, add nodes become as one component, and a minimum spanning tree has been found.
 
-![Image](resources/spanning-tree/steps.png)
+![Image](images/spanning-tree/steps.png)
 
 #### Implementation
 
@@ -75,7 +75,7 @@ In a union-find structure, one element in each set is the representative of a se
 
 Assume that we have the following set:
 
-![Image](resources/spanning-tree/set.png)
+![Image](images/spanning-tree/set.png)
 
 The representative of the sets are:
 
@@ -87,7 +87,7 @@ The representative of the sets are:
 
 To `join` two sets, we join the representative of the smaller set to the representative of the bigger set. For example, we can join the set $\{ 1, 4, 7 \}$ and $\{ 6, 3, 2, 8 \}$ as shown:
 
-![Join](resources/spanning-tree/join.png)
+![Join](images/spanning-tree/join.png)
 
 ### Prim's Algorithm
 
@@ -97,4 +97,4 @@ Prim’s algorithm resembles Dijkstra’s algorithm. The difference is that Dijk
 
 As an example, the steps below shows how Prim’s algorithm constructs a minimum spanning tree for our example graph, assuming that the starting node is node 1.
 
-![Steps](resources/spanning-tree/prims_steps.png)
+![Steps](images/spanning-tree/prims_steps.png)

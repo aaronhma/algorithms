@@ -72,16 +72,16 @@ A segment tree is basically a binary tree whose bottom level nodes correspond to
 
 Assume we have an array $arr$ where $arr = \{ 5, 8, 6, 3, 2, 7, 2, 6\}$. Then, the segment tree can be as shown:
 
-![Segment Tree](resources/seg-tree/ex.png)
+![Segment Tree](../images/seg-tree/ex.png)
 
 ### Sum Queries
 
 The segment tree shown above supports sum queries. When a segment tree supports sum queries, the value of each internal node is the sum of the corresponding array values, and it can be calculated as the sum of the values of its left and right child node. An example of this:
 
-![Image](resources/seg-tree/sum-query.png)
+![Image](../images/seg-tree/sum-query.png)
 
 ### Updating Values
 
 We can directly manipulate the array, then update all the nodes whose value depends on the updated value. This can be done by traversing the path from the updated array element to the top node and updating the nodes along the path. As an example, the image below sows the nodes that change when the value at position 5 changes. The path from bottom to top always consists of $\theta(log \ n)$ nodes, so each update changes $\theta(log \ n)$ nodes in the tree.
 
-![Image](resources/seg-tree/nodes-change.png)
+![Image](../images/seg-tree/nodes-change.png)
