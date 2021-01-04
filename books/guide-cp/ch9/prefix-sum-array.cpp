@@ -12,6 +12,7 @@ int main()
   int n = arr.size();
   vector<int> prefixSum(n, arr[0]);
 
+  // prefix sum: sum of all elements between [0, i]
   for (int i = 1; i < n; i++)
     prefixSum[i] = prefixSum[i - 1] + arr[i];
 

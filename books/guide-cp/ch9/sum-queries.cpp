@@ -12,13 +12,17 @@ int main()
 
   int n = arr.size(), a = 2, b = 3;
 
+  // calculate prefix sum
   vector<int> prefixSum(n, arr[0]);
 
   for (int i = 1; i < n; i++)
     prefixSum[i] = prefixSum[i - 1] + arr[i];
 
+  // case 1: sum all elements from index 0 - index b
   if (a == 0)
     cout << prefixSum[b] << "\n";
+
+  // case 2: sum elements from index a - index b
   else
     cout << prefixSum[b] - prefixSum[a - 1] << "\n";
 

@@ -24,8 +24,7 @@ int main()
   addEdge(graph, 1, 2, 5);
   addEdge(graph, 2, 3, 2);
   addEdge(graph, 3, 4, 6);
-  addEdge(graph, 4, 5, 5);
-  // addEdge(graph, 4, 5, 2);
+  addEdge(graph, 4, 5, 2);
 
   priority_queue<pair<int, int>> q;
 
@@ -39,25 +38,39 @@ int main()
   // Distance from node x to itself is 0
   distance[x] = 0;
 
+  // {distance, node}
   q.push({0, x});
 
   while (!q.empty())
   {
+    // take the top most node
     int node = q.top().second;
     q.pop();
 
+    // if we've already seen this node, skip it
     if (processed[node])
       continue;
 
+    // mark as seen
     processed[node] = true;
 
+    // explore this node's neighbors
     for (auto i : graph[node])
     {
+      // get node b and weight of the edge between node a and node b
       int b = i.first, weight = i.second;
 
-      if (distance[node] + weight < distance[b])
+      // if the current node's distance + the extra weight
+      // is less than the distance at node b, update it
+      int new_dist = distance[node] + weight;
+
+      if (new_dist < distance[b])
       {
-        distance[b] = distance[node] + weight;
+        // update distance
+        distance[b] = new_dist;
+
+        // add current ndoe for processing
+        // wee add the negative distance (we actually  don't care about it, we just use it for getting the minimum distance) instead of maximum node
         q.push({-distance[b], b});
       }
     }
@@ -70,7 +83,7 @@ int main()
 
   int fin = 3;
 
-  cout << "Weight from node 1 -> 5: " << distance[fin] << "\n";
+  cout << "Weight from node 1 -> 3: " << distance[fin] << "\n";
 
   return 0;
 }

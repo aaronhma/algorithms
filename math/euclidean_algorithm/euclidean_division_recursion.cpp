@@ -8,6 +8,7 @@ int gcf(long long a, long long b)
     return a;
   }
 
+  // use recursion
   return gcf(b, a % b);
 }
 
