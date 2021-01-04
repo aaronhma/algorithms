@@ -51,3 +51,35 @@ The most efficient algorithm is to optimize for time or space.
 Sometimes we want to optimize for using less memory instead of (or in addition to) using less time. Talking about memory cost (or "space complexity") is very similar to talking about time cost. We simply look at the total size (relative to the size of the input) of any new variables we're allocating.
 
 Usually when we talk about space complexity, we're talking about additional space, so we don't include space taken up by the inputs.
+
+
+## Definition
+
+theorems: in mathematical writing, the most important technical statements.
+
+Lemma: a technical statement that assists with the proof of a theorem.
+
+corollary: a statement that follows immediately from an already proved result, such as a special case of a theorem.
+
+proposition: for stand-alone technical statements that are not particularly important in their own right.
+
+## Algorithms Definition
+
+### Logarithms
+
+For a positive integer `n`, `log2 n` means, type `n` into a calculator, and count the number of times you need to divide it by 2 before the result is 1 or less.
+
+ex: takes **5 steps** divide-by-twos to bring 32 down to 1, so log2 32 = 5.
+    takes **10 steps** divide-by-twos bring 1024 down to 1, so log2 1024 = 10.
+
+### Algorithm
+
+algorithm: is a set of well-defined rules for solving some computational problem.
+
+fast algorithm: is an algorithm whose worst-case running time grows slowly with the input size.
+
+### Three guiding principles for the analysis of algorithms
+
+1. worst-case analysis, to promote general-purpose algorithms that work well with no assumptions about the input
+2. big-picture analysis, which balances predictive power with mathematical tractability by ignoring constant factors and lower-order terms
+3. asymptotic analysis, which is a bias toward large inputs, which are the inputs that require algorithmic ingenuity.
