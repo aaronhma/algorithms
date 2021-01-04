@@ -22,6 +22,64 @@ An array is a list of items stored in sequential order. The idea behind arrays i
   - May need to copy data to allow getting elements by index
   - If the size of array grows huge, the speed gets slower
 
+
+- Pros
+
+Array knows the address for every item in it.
+
+Arrays are great if you want to read random elements, because you can look up any element in your array instantly. The elements in an array are numbered starts with `0`.
+
+Compared with a linked list, the elements aren’t next to each other, so you can’t instantly calculate the position of the fifth element in memory—you have to go to the first element to get the address to the second element, then go to the second element to get the address of the third element, and so on until you get to the fifth element.
+
+# Array
+
+> Arrays are a simple data structure for storing lots of similar items. An Array is a collection of items.
+
+Array items are stored in neighboring (contiguous) memory locations. Because they're stored together, checking through the entire collection of items is straightforward.
+
+Array's are 0-indexed. The capacity/length is a number of items, not a highest index. The highest index is **.length - 1**.
+
+three key operations for Arrays:
+
+- Serach items
+- Insert items
+- Remove items
+
+**two-pointer** technique. It is one of the main techniques used for in-place Array algorithms.
+
+## When to Use In-Place Array Operations
+
+If we'll need the original array values later, then we shouldn't be overwriting them. In these cases, it's best to create a copy to work with, or to simply not use *in-place* techniques.
+
+In-place operations are valuable when appropriate because they reduce the space complexity of an algorithm. Instead of requiring `O(N)` space, we can reduce it down to `O(1)`.
+
+
+## Array VS Linked list analysis running time
+
+When you want to store multiple elements, use an array or a list.
+
+With an array, all your elements are stored right next to each other. Arrays allow fast reads. All elements in the array should be the same type (all ints, all doubles, and so on).
+With a list, elements are strewn all over, and one element stores the address of the next one. Linked lists allow fast inserts and deletes.
+
+|   | Arrays | Linked List |
+|---|---|---|
+| reading | O(1) | O(n) |
+| Insertion | O(n)| O(1) |
+| Deletion | O(n)| O(1) |
+
+
+## Data access: random access and sequential access
+
+- Sequential access
+
+It means reading the elements one by one, starting at the first element. Linked lists can only do sequential access. If you want to read the 10th element of a linked list, you have to read the first 9 elements and follow the links to the 10th element.
+
+- Random access
+
+It means you can jump directly to the 10th element. Array is faster at read because it provides random access.
+
+
+
 ## Speed of Arrays
 
 | Operation                                  | Big O Notation |
