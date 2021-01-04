@@ -192,3 +192,8 @@ def gcd(a, b):
 def lcm(a, b):
   return b * a / gcd(a, b)
 ```
+
+# Addition
+
+Example: [Arrange Coins](https://leetcode.com/problems/arranging-coins)
+1 + 2 + 3 ... + k = (k * (k + 1)) / 2
