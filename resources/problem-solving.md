@@ -8,7 +8,7 @@
 
 The principle is applicable to algorithms (games, transformations). Some task is repeatedly performed. **If there is repetition, look for what does not change!**
 
-In algorithms there is a starting state *S* and a sequence of legal steps (moves, transformations). One looks for answers to the following questions:
+In algorithms there is a starting state _S_ and a sequence of legal steps (moves, transformations). One looks for answers to the following questions:
 
 1. Can a given end state be reached?
 2. Find all reachable end states.

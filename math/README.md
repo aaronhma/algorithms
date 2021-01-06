@@ -196,4 +196,4 @@ def lcm(a, b):
 # Addition
 
 Example: [Arrange Coins](https://leetcode.com/problems/arranging-coins)
-1 + 2 + 3 ... + k = (k * (k + 1)) / 2
+1 + 2 + 3 ... + k = (k \* (k + 1)) / 2

@@ -1,18 +1,18 @@
 # Linked List
 
-Similar to the array, the linked list is also a *linear* data structure. Each element in the linked list is actually a separate object while all the objects are *linked together by the reference field* in each element.
+Similar to the array, the linked list is also a _linear_ data structure. Each element in the linked list is actually a separate object while all the objects are _linked together by the reference field_ in each element.
 
 There are two types of linked list: singly linked list and doubly linked list. Here are similar and different.
 
 - similar in many operations:
 
-1. Not able to *access the data at a random position* in constant time.
-2. Able to *add a new node after given node or at the beginning of the list in O(1) time*.
-3. Able to *delete the first node in O(1) time*.
+1. Not able to _access the data at a random position_ in constant time.
+2. Able to _add a new node after given node or at the beginning of the list in O(1) time_.
+3. Able to _delete the first node in O(1) time_.
 
-- different to *delete a given node* (including the last node).
+- different to _delete a given node_ (including the last node).
 
-In a singly linked list, it is not able to get the previous node of a given node so we have to spend *O(n)* time to find out the previous node before deleting the given node.
+In a singly linked list, it is not able to get the previous node of a given node so we have to spend _O(n)_ time to find out the previous node before deleting the given node.
 In a doubly linked list, it will be much easier because we can get the previous node with the "prev" reference field. So we can delete a given node in `O(1)` time.
 
 In conclusion, If you need to add or delete a node frequently, a linked list could be a good choice. If you need to access an element by index often, an array might be a better choice than a linked list.
@@ -27,13 +27,11 @@ if you’re going to keep jumping around, linked lists are terrible.
 
 Suppose you want to read the last item in a linked list. You can’t just read it, because you don’t know what address it’s at. Instead, you have to go to item #1 to get the address for item #2. Then you have to go to item #2 to get the address for item #3. And so on, until you get to the last item.
 
-
-
 ## [Singly linked list](https://leetcode.com/explore/learn/card/linked-list/209/singly-linked-list/1290/)
 
 Singly-linked list organizes all the nodes in a sequence. Each node contains the value and a reference field to link to the next node.
 
-In most cases, we will use the *head* node (the first node) to represent the whole list.
+In most cases, we will use the _head_ node (the first node) to represent the whole list.
 
 ```python
 # `val` is the value of the current node
@@ -48,7 +46,7 @@ class SinglyListNode():
 
 Unlike the array, we are not able to access a random element in a singly-linked list in constant time.
 
-If we want to get the *i*th element, we have to traverse from the head node one by one (use the "next" field). It takes us *O(n)* time on average to *visit an element by index*, where *n* is the length of the linked list.
+If we want to get the *i*th element, we have to traverse from the head node one by one (use the "next" field). It takes us _O(n)_ time on average to _visit an element by index_, where _n_ is the length of the linked list.
 
 - Insertion
 
@@ -56,20 +54,18 @@ Unlike an array, we don’t need to move all elements past the inserted element.
 
 Add a new node to head, end, or in the middle, is a similar process. In "current" node add "next" reference to "next" node if existed, and find "prev" node if existed add "next" value to "current" node for link reference.
 
-1. Initialize a new node *current* with the given value
-2. Link the "next" field of *current* to "prev"'s next node next
-3. Link the "next" field in "prev" to *current*
+1. Initialize a new node _current_ with the given value
+2. Link the "next" field of _current_ to "prev"'s next node next
+3. Link the "next" field in "prev" to _current_
 
 - Deletion
 
-Find "next" value using the reference field of *current*. However, we have to traverse the linked list from the head node to find out "prev" which will take `O(n)` time on average. The space complexity is `O(1)` because we only need constant space to store our pointers.
+Find "next" value using the reference field of _current_. However, we have to traverse the linked list from the head node to find out "prev" which will take `O(n)` time on average. The space complexity is `O(1)` because we only need constant space to store our pointers.
 
-1. Find *current*'s previous node "prev" and its "next" node next
+1. Find _current_'s previous node "prev" and its "next" node next
 2. Link "prev" to cur's "next" node next
 
-
 ## Doubly linked list
-
 
 ## Two-Pointer technique in Linked List
 
@@ -84,19 +80,18 @@ That's exactly what we will come across using two pointers with different speed 
 
 If you only use pointers without any other extra space, the space complexity will be `O(1)`
 
-Need to analyze how many times we will run our loop to determine Running time. 1. If there is no cycle, the fast pointer takes *N/2* times to reach the end of the linked list, where *N* is the length of the linked list. If there is a cycle, the fast pointer needs *M* times to catch up the slower pointer, where *M* is the length of the cycle in the list.
+Need to analyze how many times we will run our loop to determine Running time. 1. If there is no cycle, the fast pointer takes _N/2_ times to reach the end of the linked list, where _N_ is the length of the linked list. If there is a cycle, the fast pointer needs _M_ times to catch up the slower pointer, where _M_ is the length of the cycle in the list.
 
-Obviously, *M <= N*. So we will run the loop up to *N* times. And for each loop, we only need constant time. So, the time complexity of this algorithm is *O(n)* in total.
+Obviously, _M <= N_. So we will run the loop up to _N_ times. And for each loop, we only need constant time. So, the time complexity of this algorithm is _O(n)_ in total.
 
 - What should be the proper speed for the two pointers?
 
-It is a safe choice to move the slow pointer one step at a time while moving the fast pointer two steps at a time. For each iteration, the fast pointer will move one extra step. If the length of the cycle is *M*, after *M* iterations, the fast pointer will definitely move one more cycle and catch up with the slow pointer.
+It is a safe choice to move the slow pointer one step at a time while moving the fast pointer two steps at a time. For each iteration, the fast pointer will move one extra step. If the length of the cycle is _M_, after _M_ iterations, the fast pointer will definitely move one more cycle and catch up with the slow pointer.
 
 - Important to note
 
-1. Always examine if the node is *null* before you call the next field.
+1. Always examine if the node is _null_ before you call the next field.
 2. Carefully define the end conditions of your loop. make sure your end conditions will not result in an endless loop
-
 
 ```java
 // Initialize slow & fast pointers
@@ -115,7 +110,6 @@ while (slow != null && fast != null && fast.next != null) {
 }
 return false;   // change return value to fit specific problem
 ```
-
 
 ## What is a Linked List? [Reference: 0](references-0)
 

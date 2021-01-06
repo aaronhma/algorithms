@@ -6,7 +6,6 @@ Anything, and everything related to recursion goes here.
 
 ([Source](https://algodaily.com/categories/recursion))
 
-
 # Recursion
 
 Recursion is when a function calls itself and every recursive function has two cases: the base case and the recursive case.
@@ -22,7 +21,6 @@ Because a recursive function calls itself, it’s easy to write a function incor
 A stack has two operations: push and pop.
 
 A stack is a simple data structure. Remember back when we talked about arrays and lists, and you had a todo list? You could add todo items anywhere to the list or delete random items. The stack of sticky notes is much simpler. When you insert an item, it gets added to the top of the list. When you read an item, you only read the topmost item, and it’s taken off the list. So your todo list has only two actions: push (insert) and pop (remove and read).
-
 
 ## Call Stack
 
@@ -41,7 +39,7 @@ Using the stack is convenient, but there’s a cost: saving all that info can ta
 
 - The call stack with recursion
 
-*factorial(5)* is written as *5!*, and it’s defined like this: *5! = 5 * 4 * 3 * 2 * 1*. Similarly, *factorial(3)* is *3 * 2 * 1*. Here’s a recursive function to calculate the factorial of a number:
+_factorial(5)_ is written as _5!_, and it’s defined like this: _5! = 5 _ 4 _ 3 _ 2 _ 1_. Similarly, _factorial(3)_ is _3 _ 2 _ 1_. Here’s a recursive function to calculate the factorial of a number:
 
 ```python
 def fact(x):

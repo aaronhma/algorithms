@@ -1,7 +1,7 @@
 - [USACO Guide](https://usaco-guide.vercel.app/)
 
 - [Programming content book](https://sendtoaryansh.gitbook.io/informatics-notes/)
-[Making a contest template](https://sendtoaryansh.gitbook.io/informatics-notes/making-a-contest-template) [Benq's template](https://github.com/bqi343/USACO/blob/master/Implementations/content/contest/TemplateLong.cpp)
+  [Making a contest template](https://sendtoaryansh.gitbook.io/informatics-notes/making-a-contest-template) [Benq's template](https://github.com/bqi343/USACO/blob/master/Implementations/content/contest/TemplateLong.cpp)
 
 - [USACO faq](https://darren-yao.gitbook.io/darren-s-blog/usaco-faq)
 

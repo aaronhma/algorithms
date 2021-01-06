@@ -20,8 +20,8 @@
 
 [Rextester](https://rextester.com/l/cpp_online_compiler_gcc) - Shows the execution time of the programs.
 
-Online Debugger  https://www.onlinegdb.com/
+Online Debugger https://www.onlinegdb.com/
 OnlineGDB is an online compiler and debugger for various languages. It can be useful for debugging your code and unearthing hard-to-find errors.
 
 Difference Checker
-In competitive programming, a common way to find a bug in an algorithm is to use stress testing, which involves generating a large set of random test cases and checking if a brute force algorithm and an efficient algorithm always agree with each other. Two tools that can be used for checking if two texts are exactly the same or not are - Diffchecker  https://www.diffchecker.com/ and CSAcademy Difftool. https://csacademy.com/app/diffing_tool/
+In competitive programming, a common way to find a bug in an algorithm is to use stress testing, which involves generating a large set of random test cases and checking if a brute force algorithm and an efficient algorithm always agree with each other. Two tools that can be used for checking if two texts are exactly the same or not are - Diffchecker https://www.diffchecker.com/ and CSAcademy Difftool. https://csacademy.com/app/diffing_tool/

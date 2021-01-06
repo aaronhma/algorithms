@@ -62,8 +62,6 @@ Code Jam and Kick Start are both following a format that is different from Hash 
 
 [Other competitions in USA](https://usaco-guide.vercel.app/general/resources-usa)
 
-
-
 Look at the following links! Maybe you'll find it interesting:
 
 ACM ICPC: icpc.baylor.edu
@@ -79,9 +77,8 @@ VK CUP: vk.com/vkcup
 
 Challenge 24: ch24.org
 
-
 More Useful Links
- Bookmark this page
+Bookmark this page
 These are the links devoted to different online contests and trainings:
 
 codeforces.com: online contests

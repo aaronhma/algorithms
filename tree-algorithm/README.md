@@ -2,27 +2,27 @@
 
 A tree is a frequently-used data structure to simulate a hierarchical tree structure.
 
-Each node of the tree will have a root value and a list of references to other nodes which are called child nodes. From graph view, a tree can also be defined as a directed acyclic graph which has *N* nodes and *N-1 edges*.
+Each node of the tree will have a root value and a list of references to other nodes which are called child nodes. From graph view, a tree can also be defined as a directed acyclic graph which has _N_ nodes and _N-1 edges_.
 
-A *Binary Tree* is a tree data structure in which each node has *at most two children*, which are referred to as the *left child* and the *right child*.
-
+A _Binary Tree_ is a tree data structure in which each node has _at most two children_, which are referred to as the _left child_ and the _right child_.
 
 ## Complexity analysis
 
-Traverse a tree recursively to retrieve all the data in *pre-order*, *in-order* or *post-order*. The time complexity is *O(N)* because we visit each node exactly once. And the depth of the tree might be *N* in the worst case.
+Traverse a tree recursively to retrieve all the data in _pre-order_, _in-order_ or _post-order_. The time complexity is _O(N)_ because we visit each node exactly once. And the depth of the tree might be _N_ in the worst case.
 
-The level of recursion might be at most *N* in the worst case. Therefore, taking system stack into consideration, the space complexity is *O(N)* as well.
+The level of recursion might be at most _N_ in the worst case. Therefore, taking system stack into consideration, the space complexity is _O(N)_ as well.
 
-For the iterative solution, the time complexity is apparently the same with recursion solution which is *O(N)*. The space complexity is also *O(N)* since in the worst case, we will have all the nodes in the stack. There are some other solutions for iterative traversal which can reduce the space complexity to *O(1)*.
+For the iterative solution, the time complexity is apparently the same with recursion solution which is _O(N)_. The space complexity is also _O(N)_ since in the worst case, we will have all the nodes in the stack. There are some other solutions for iterative traversal which can reduce the space complexity to _O(1)_.
 
 ## Traverse a Tree
 
                F
       B                 G
-  A       D                 I
-        C   E             H
 
-### Pre-order traversal:  F->B->A->D->C->E->G->I->H
+A D I
+C E H
+
+### Pre-order traversal: F->B->A->D->C->E->G->I->H
 
 1. visit the root first
 2. traverse the left subtree
@@ -44,10 +44,9 @@ def preorderTraversal(root):
   return answer
 ```
 
-
 ## In-order Traversal: A->B->C->D->E->F->G->H->I
 
-Typically, for *binary search tree*, we can retrieve all the data in sorted order using in-order traversal.
+Typically, for _binary search tree_, we can retrieve all the data in sorted order using in-order traversal.
 
 1. Traverse the left subtree
 2. visit the root
@@ -69,14 +68,13 @@ def inorderTraversal(root):
   return answer
 ```
 
-
 ## Post-order traversal: A->C->E->D->B->H->I->G->F
 
 1. traverse the left subtree
 2. traverse the right subtree
 3. visit the root
 
-**Note:** When you delete nodes in a tree, deletion process will be in *post-order*. It will delete its left child and its right child before you delete the node itself. *Post-order* is widely use in mathematical expression. It is easier to write a program to parse a post-order expression.
+**Note:** When you delete nodes in a tree, deletion process will be in _post-order_. It will delete its left child and its right child before you delete the node itself. _Post-order_ is widely use in mathematical expression. It is easier to write a program to parse a post-order expression.
 
 ```python
 def traversal(root, answer):
@@ -94,10 +92,9 @@ def inorderTraversal(root):
   return answer
 ```
 
-
 ## Iterative Solution for tree traversal
 
-It is comparatively easy to do traversal recursively but when the depth of the tree is too large, we might suffer from *stack overflow* problem. That's one of the main reasons why we want to solve this problem iteratively sometimes.
+It is comparatively easy to do traversal recursively but when the depth of the tree is too large, we might suffer from _stack overflow_ problem. That's one of the main reasons why we want to solve this problem iteratively sometimes.
 
 One solution: use a stack to simulate the recursion process.
 Taking pre-order traversal as an example, in each iteration, we pop one node from the stack and visit this node. Then if this node has a right child, push its right child into the stack. If this node has a left child, push its left child into the stack. It is noteworthy that we push the right child first so that we can visit the left child first since the nature of the stack is LIFO(last in first out). After that, we can continue to the next iteration until the stack is empty.
@@ -122,14 +119,13 @@ def preorderTraversal(root):
   return answer
 ```
 
-
 ## Level-order Traversal
 
 Level-order traversal is to traverse the tree level by level.
 
-Since each node in the tree will be pushed into the queue exactly once, the time complexity for level-order traversal is *O(N)*, where *N* is the total number of nodes in the tree. Space complexity of level-order traversal is also *O(N)* because the size of the queue will be at most *N* because each node will be pushed into the queue exactly once.
+Since each node in the tree will be pushed into the queue exactly once, the time complexity for level-order traversal is _O(N)_, where _N_ is the total number of nodes in the tree. Space complexity of level-order traversal is also _O(N)_ because the size of the queue will be at most _N_ because each node will be pushed into the queue exactly once.
 
-*Breadth-First Search* is an algorithm to traverse or search in data structures like a tree or a graph. Typically, we use a queue to help us to do BFS.
+_Breadth-First Search_ is an algorithm to traverse or search in data structures like a tree or a graph. Typically, we use a queue to help us to do BFS.
 
 1. the algorithm starts with a root node
 2. visit the node itself
@@ -140,13 +136,13 @@ Since each node in the tree will be pushed into the queue exactly once, the time
 
 Queue:
 
-1. Push root into queue  (F)   Answer: [[F]]
-2. Level Traversal - Level 0  (B) & (G)   Answer: [[F]]
-3. Level Traversal - Level 1  (B)         Answer: [[F], [B]]
-4. Level Traversal - Level 1  (A) & (D)   Answer: [[F], [B, G]]
-5. Level Traversal - Level 1  (I)         Answer: [[F], [B, G]]
-6. Level Traversal - Level 2  (C) & (E)   Answer: [[F], [B, G], [A, D, I]]
-7. Level Traversal - Level 3  (H)         Answer: [[F], [B, G], [A, D, I], [C, E, H]]
+1. Push root into queue (F) Answer: [[F]]
+2. Level Traversal - Level 0 (B) & (G) Answer: [[F]]
+3. Level Traversal - Level 1 (B) Answer: [[F], [B]]
+4. Level Traversal - Level 1 (A) & (D) Answer: [[F], [B, G]]
+5. Level Traversal - Level 1 (I) Answer: [[F], [B, G]]
+6. Level Traversal - Level 2 (C) & (E) Answer: [[F], [B, G], [A, D, I]]
+7. Level Traversal - Level 3 (H) Answer: [[F], [B, G], [A, D, I], [C, E, H]]
 8. End of Level Traversal
 
 ```Java
@@ -178,7 +174,6 @@ class Solution {
 }
 ```
 
-
 ## Solve Tree Problems Recursively
 
 Recursion is one of the most powerful and frequently used techniques for solving tree problems.
@@ -203,20 +198,20 @@ If the answer is yes, solving the problem recursively using a bottom up approach
 "Top-down" means that in each recursive call, we will visit the node first to come up with some values, and pass these values to its children when calling the function recursively. So the "top-down" solution can be considered as a kind of preorder traversal. To be specific, the recursive function top_down(root, params) works like this:
 
 1. return specific value for null node
-2. update the answer if needed                      // answer <-- params
-3. left_ans = top_down(root.left, left_params)      // left_params <-- root.val, params
-4. right_ans = top_down(root.right, right_params)   // right_params <-- root.val, params
-5. return the answer if needed                      // answer <-- left_ans, right_ans
+2. update the answer if needed // answer <-- params
+3. left_ans = top_down(root.left, left_params) // left_params <-- root.val, params
+4. right_ans = top_down(root.right, right_params) // right_params <-- root.val, params
+5. return the answer if needed // answer <-- left_ans, right_ans
 
 For instance, consider this problem: given a binary tree, find its maximum depth.
 
-We know that the depth of the root node is *1*. For each node, if we know its depth, we will know the depth of its children. Therefore, if we pass the depth of the node as a parameter when calling the function recursively, all the nodes will know their depth. And for leaf nodes, we can use the depth to update the final answer. Here is the pseudocode for the recursive function *maximum_depth(root, depth)*:
+We know that the depth of the root node is _1_. For each node, if we know its depth, we will know the depth of its children. Therefore, if we pass the depth of the node as a parameter when calling the function recursively, all the nodes will know their depth. And for leaf nodes, we can use the depth to update the final answer. Here is the pseudocode for the recursive function _maximum_depth(root, depth)_:
 
-1. return if root is null
-2. if root is a leaf node:
-3.      answer = max(answer, depth)         // update the answer if needed
-4. maximum_depth(root.left, depth + 1)      // call the function recursively for left child
-5. maximum_depth(root.right, depth + 1)     // call the function recursively for right child
+1.  return if root is null
+2.  if root is a leaf node:
+3.       answer = max(answer, depth)         // update the answer if needed
+4.  maximum_depth(root.left, depth + 1) // call the function recursively for left child
+5.  maximum_depth(root.right, depth + 1) // call the function recursively for right child
 
 ```python
 private int answer;		// don't forget to initialize answer before call maximum_depth
@@ -237,14 +232,13 @@ private void maximum_depth(TreeNode root, int depth) {
 "Bottom-up" is another recursive solution. In each recursive call, we will firstly call the function recursively for all the children nodes and then come up with the answer according to the returned values and the value of the current node itself. This process can be regarded as a kind of postorder traversal. Typically, a "bottom-up" recursive function bottom_up(root) will be something like this:
 
 1. return specific value for null node
-2. left_ans = bottom_up(root.left)          // call function recursively for left child
-3. right_ans = bottom_up(root.right)        // call function recursively for right child
-4. return answers                           // answer <-- left_ans, right_ans, root.val
+2. left_ans = bottom_up(root.left) // call function recursively for left child
+3. right_ans = bottom_up(root.right) // call function recursively for right child
+4. return answers // answer <-- left_ans, right_ans, root.val
 
 Let's go on discussing the question about maximum depth but using a different way of thinking: for a single node of the tree, what will be the maximum depth x of the subtree rooted at itself?
 
-If we know the maximum depth *l* of the subtree rooted at its **left** child and the maximum depth *r* of the subtree rooted at its **right** child, can we answer the previous question? Of course yes, we can choose the maximum between them and add 1 to get the maximum depth of the subtree rooted at the current node. That is *x = max(l, r) + 1*.
-
+If we know the maximum depth _l_ of the subtree rooted at its **left** child and the maximum depth _r_ of the subtree rooted at its **right** child, can we answer the previous question? Of course yes, we can choose the maximum between them and add 1 to get the maximum depth of the subtree rooted at the current node. That is _x = max(l, r) + 1_.
 
 ## Background
 

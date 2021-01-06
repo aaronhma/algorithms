@@ -19,11 +19,10 @@
 
 - [Geeks for geeks puzzles](https://www.geeksforgeeks.org/puzzles/)
 
-
 ## CodeForces
 
-800  - 4 pages
-900  - 2 pages
+800 - 4 pages
+900 - 2 pages
 1000, 1100, 1200, 1300, 1400 - 3 pages
 1500, 1600, 1700, 1800, 1900, 2000 - 4 pages
 2100, 2200, 2300, 2400, 2500 - 3 pages

@@ -13,7 +13,7 @@
 - [List of resource to prepare CP](https://www.geeksforgeeks.org/how-to-prepare-for-acm-icpc/)
 
 - [getting-started-with-the-sport-of-programming](https://www.hackerearth.com/practice/notes/getting-started-with-the-sport-of-programming/)
-https://web.evanchen.cc/FAQs/raqs.html
-https://usamo.wordpress.com/2019/01/31/math-contest-platitudes-v3/
+  https://web.evanchen.cc/FAQs/raqs.html
+  https://usamo.wordpress.com/2019/01/31/math-contest-platitudes-v3/
 
 https://www.hackerrank.com/domains/algorithms

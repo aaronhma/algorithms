@@ -23,7 +23,6 @@ https://uhunt.onlinejudge.org/
 UVa OJ
 A problem archive with over 3500 programming problems. It is popularly used in accompaniment with the Competitive Programming 3 textbook by Steven and Felix Halim
 
-
 Hackerrank – Practice problems topic wise and participate in preparatory series
 Hackerearth – Participate in preparatory series
 Practice – Good for beginners. Has problems ranging from difficulty level School to Hard.
@@ -46,7 +45,6 @@ Archives of the problems from the previous years Google CodeJams.
 ACM ICPC Problem Archives https://icpcarchive.ecs.baylor.edu/index.php?option=com_onlinejudge&Itemid=8
 Archives of the problems from the previous years ACM-ICPC regionals and world finals.
 
-
 C++ Formatter https://codebeautify.org/cpp-formatter-beautifier#
 
 checkout course
@@ -55,8 +53,8 @@ https://online.codingblocks.com/courses/competitive-programming-course-online
 Learn C++
 https://www.tutorialspoint.com/cplusplus/index.htm
 
-
 ### Visual Tools
+
 CSAcadmey's Graph Editor and Geometry Widget are examples of tools that can help you solve problems that are hard to visualize properly.
 
 Graph editor (undirected, directed)
@@ -75,13 +73,11 @@ Algorithm Visualizer is another website to visualize algorithms, data strucutres
 
 https://algorithm-visualizer.org/
 
-
-
 ## Debug
 
-4 MB ~ array of size 10^6 . Or 2-d array of size 10^3*10^3
+4 MB ~ array of size 10^6 . Or 2-d array of size 10^3\*10^3
 
-Standard Memory limits are of Order of 256MB. You cannot allocate  more than 4 MB space inside a function (it gives segmentation fault). Thus if you have to make an array of size >= 10^6 , make it global or use dynamic memory allocation.
+Standard Memory limits are of Order of 256MB. You cannot allocate more than 4 MB space inside a function (it gives segmentation fault). Thus if you have to make an array of size >= 10^6 , make it global or use dynamic memory allocation.
 
 ## Errors
 
@@ -92,7 +88,7 @@ Run Time Error (Most Encountered)
 Segmentation fault ( accessing an illegal memory address)
 
 You declared array of smaller size than required or you are trying to access negative indices .
-Declaration of an array of HUGE HUGE(more than 10^8 ints) size -_- .
+Declaration of an array of HUGE HUGE(more than 10^8 ints) size -\_- .
 
 Dividing by Zero / Taking modulo with zero :O .
 USE gdb ( will learn in coming lectures )

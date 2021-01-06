@@ -3,6 +3,7 @@
 - [About Competitive Programming](http://darrenyao.com/) including a book [An Introduction to the USA Computing Olympiad](http://darrenyao.com/usacobook/cpp.pdf)
 
 - [Unofficial Syllabus](https://www.overleaf.com/read/fktckfprxyxn) (based on past problems)
+
   - The general trend is that contests are getting harder.
 
 - [Resource List](https://github.com/lnishan/awesome-competitive-programming)

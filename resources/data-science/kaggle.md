@@ -6,7 +6,6 @@
 
 When you start a competition or when you hit a plateau, reviewing popular kernels can spar
 
-
 ## How to win kaggle competitions
 
 There are only two Machine Learning approaches that win competitions: Handcrafted & Neural Networks.
@@ -17,9 +16,9 @@ For most competitions it’s pretty obvious. If you have lots of structured data
 
 This approach works best if you already have an intuition as to what’s in the data. Cookbook for winning competitions on Structured Data:
 
-  - Take the data, plot histograms, explore the data/analysis, data cleaning
-  - create and select features: generating features and testing which ones really do correlate with the target variable
-  - parameter tuning and ensembling
+- Take the data, plot histograms, explore the data/analysis, data cleaning
+- create and select features: generating features and testing which ones really do correlate with the target variable
+- parameter tuning and ensembling
 
 The most important data-related factor is how you prepare the data, and what features you engineer. You really just have to use intuition and common sense, figure out what works, and throw out what doesn’t. What really helps in this is creating a good cross validation framework so you can get a reliable error estimate.
 
@@ -27,13 +26,12 @@ For example, a chain of used car dealers wanted to predict which cars sold at a 
 
 **Popular algorithms of winning Kaggle**
 
-  - ensembles of decision trees
-  - [random forest](https://en.wikipedia.org/wiki/Random_forest)
+- ensembles of decision trees
+- [random forest](https://en.wikipedia.org/wiki/Random_forest)
 
 2. Neural Networks and Deep Learning (model architect design)
 
 For any dataset that contains computer vision or speech problems, deep learning is the way to go (training algorithms).
-
 
 ### Steps to solve a problem?
 
@@ -53,13 +51,11 @@ For any dataset that contains computer vision or speech problems, deep learning 
 
   - **Combining models:** At last, ensemble the models, possibly on multiple levels. Make sure the models are correlated for best results.
 
-
 ### Tips
 
 - Kaggle Kernels are the best resource for learning, as people share tons of analysis and solutions to all the competitions.
 
 - The most important thing is just to experiment for yourself and try to improve the score
-
 
 ### Other factors
 
@@ -76,9 +72,6 @@ For any dataset that contains computer vision or speech problems, deep learning 
 6. The right tools
 
 7. Ensembling
-
-
-
 
 ## [Beginner's guide to Kaggle](https://elitedatascience.com/beginner-kaggle)
 
@@ -104,11 +97,9 @@ In contrast, day-to-day data science doesn't need to meet those same criteria.
 
 **Performance can be absolute.** A solution can be very valuable even if it simply beats a previous benchmark.
 
-
 ## Kaggle Slack Community
 
 [Kaggle Noobs](https://kagglenoobs.slack.com/join/shared_invite/enQtMzQyMjk1MzE4NTYwLTI3NGJmMDFmM2MxNjRhYWUzZmQxMTE2YTM1MWZiMTg0Njc1N2QzM2UwYWZmNjhhMGE5M2RhYjZmMWY4MzA1N2Y)
-
 
 ## List of Kaggle Winning Solutions and Ideas
 
@@ -117,23 +108,17 @@ In contrast, day-to-day data science doesn't need to meet those same criteria.
 [Winning solutions of kaggle competitions](https://www.kaggle.com/sudalairajkumar/winning-solutions-of-kaggle-competitions/notebook)
 [Data Science Competitions](https://github.com/interviewBubble/Data-Science-Competitions)
 
-
 ## Kaggle Blogs
 
 [Official blogs](https://medium.com/kaggle-blog)
-
 
 ## Kaggle Tutorial
 
 [Kaggle House Prices Competition](https://www.dataquest.io/blog/kaggle-getting-started/)
 
-
-
 ## Kaggle Awesome Kernel (To learn)
 
 [Data Science for Good: City of Los Angeles](https://www.kaggle.com/c/data-science-for-good-city-of-los-angeles/discussion/98155)
-
-
 
 ## How to solve Kaggle problem
 
@@ -151,6 +136,6 @@ Time series based machine learning problem.
 
 1. Rule based model
 2. Regression modeling
-3. trend model  ex: https://research.fb.com/blog/2017/02/prophet-forecasting-at-scale/
+3. trend model ex: https://research.fb.com/blog/2017/02/prophet-forecasting-at-scale/
 4. Machine Learning model
 5. Deep learning model

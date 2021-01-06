@@ -20,7 +20,6 @@ More graph theory (shortest-path algorithms, minimum spanning tree), tree algori
 
 The topics that show up on platinum contests aren't particularly well defined, and there is essentially no upper limit on problem difficulty. Anything is fair game (including topics explicitly banned from IOI, like heavy-light decomposition)
 
-
 ## Others
 
 USACO - Silver
