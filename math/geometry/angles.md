@@ -22,10 +22,10 @@ Similarly, two angles that add to $90^\circ$ are called complementary angles.
 
 ## Other Types of Angles
 
-* **Right Angle**: An angle $a$ where $a = 90^\circ$
-* **Acute Angle**: An angle $a$ where $a < 90^\circ$
-* **Obtuse Angle**: An angle $a$ where $a > 90^\circ$ and $a < 180^\circ$
-* **Reflex Angle**: An angle $a$ where $a > 180^\circ$
+- **Right Angle**: An angle $a$ where $a = 90^\circ$
+- **Acute Angle**: An angle $a$ where $a < 90^\circ$
+- **Obtuse Angle**: An angle $a$ where $a > 90^\circ$ and $a < 180^\circ$
+- **Reflex Angle**: An angle $a$ where $a > 180^\circ$
 
 ---
 
@@ -51,11 +51,11 @@ The Exterior Triangle Theorem states that $d = a + c$.
 
 ![Image](images/angles/parallel.png)
 
-The Parallel Lines Theorem states that the blue shaded angles are the same and the yellow shaded angles are the same. This is correct because of [transversal](https://en.wikipedia.org/wiki/Transversal_(geometry)#:~:text=First%2C%20if%20a%20transversal%20intersects,then%20the%20lines%20are%20parallel.) - alternate angles have the same degree.
+The Parallel Lines Theorem states that the blue shaded angles are the same and the yellow shaded angles are the same. This is correct because of [transversal](<https://en.wikipedia.org/wiki/Transversal_(geometry)#:~:text=First%2C%20if%20a%20transversal%20intersects,then%20the%20lines%20are%20parallel.>) - alternate angles have the same degree.
 
 ---
 
 ## Practice
 
-* https://brilliant.org/practice/angle-hunting-6/?chapter=2d-geometry
-* https://brilliant.org/practice/geometry-warmup-angles-and-lines/?subtopic=geometric-measurement&chapter=angles-and-lines
+- https://brilliant.org/practice/angle-hunting-6/?chapter=2d-geometry
+- https://brilliant.org/practice/geometry-warmup-angles-and-lines/?subtopic=geometric-measurement&chapter=angles-and-lines
