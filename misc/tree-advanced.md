@@ -4,7 +4,7 @@
 
 A centroid of a tree of $n$ nodes is a node whose removal divides the tree into subtrees each of which contains at most $\lfloor n / 2 \rfloor$ nodes. For example, node $5$ is the centroid of the following tree:
 
-![Image](resources/advanced/centroid.png)
+![Image](images/tree-advanced/centroid.png)
 
 ## Heavy-Light Decomposition
 

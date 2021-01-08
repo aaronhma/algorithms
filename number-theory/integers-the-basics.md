@@ -23,7 +23,7 @@ If a number $m$ is a divisor of another numer $n$, we can write that as $m | n$.
 
 ## ℹ️ Important Things to Know 🧠
 
-1. For any integers $m$ and $n$, their product $mn$ is both a multiple of m$ and a multiple of $n$.
+1. For any integers $m$ and $n$, their product $mn$ is both a multiple of $m$ and a multiple of $n$.
 
 2. When $d \neq 0$, the following statements all mean the same thing:
 
