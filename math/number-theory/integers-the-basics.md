@@ -17,7 +17,7 @@
 
 ## Notation
 
-If a number $m$ is a divisor of another numer $n$, we can write that as $m | n$. For example, $6 | 18$, as $6$ is a divisor of $18$.
+If a number $m$ is a divisor of another number $n$, we can write that as $m | n$. For example, $6 | 18$, as $6$ is a divisor of $18$.
 
 ---
 
