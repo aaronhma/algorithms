@@ -64,7 +64,7 @@ if (abs(a - b) < 1e-9) {
 }
 ```
 
-## Modular Arithemtic
+## Modular Arithmetic
 
 Sometimes an answer to a problem is too big for the OJ to check. Thus, we use modular arithemtic (which gives us a rough estimate of the answer). An example of this can be found of the $n! \ \% \ m$ problem:
 
