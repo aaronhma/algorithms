@@ -207,14 +207,17 @@ For instance, consider this problem: given a binary tree, find its maximum depth
 
 We know that the depth of the root node is _1_. For each node, if we know its depth, we will know the depth of its children. Therefore, if we pass the depth of the node as a parameter when calling the function recursively, all the nodes will know their depth. And for leaf nodes, we can use the depth to update the final answer. Here is the pseudocode for the recursive function _maximum_depth(root, depth)_:
 
-1.  return if root is null
-2.  if root is a leaf node:
-3.                      answer = max(answer, depth)         // update the answer if needed
-4.  maximum_depth(root.left, depth + 1) // call the function recursively for left child
-5.  maximum_depth(root.right, depth + 1) // call the function recursively for right child
-
 ```python
-private int answer;		// don't forget to initialize answer before call maximum_depth
+# return if root is null
+if root is a leaf node:
+  answer = max(answer, depth) # update the answer if needed
+
+maximum_depth(root.left, depth + 1) # call the function recursively for left child
+maximum_depth(root.right, depth + 1) # call the function recursively for right child
+```
+
+```java
+private int answer; // don't forget to initialize answer before call maximum_depth
 private void maximum_depth(TreeNode root, int depth) {
   if (root == null) {
     return;

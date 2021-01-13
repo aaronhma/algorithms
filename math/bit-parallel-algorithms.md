@@ -4,7 +4,7 @@ Bit-Parallel Algorithms are based on the fact that individual bits of numbers ca
 
 ## Hamming Distance
 
-The Hamming Distance $hamming(a, b)$ between two strings $a$ and $b$ of equal length, returns the number of positions where the strings differ. For example:
+        The Hamming Distance $hamming(a, b)$ between two strings $a$ and $b$ of equal length, returns the number of positions where the strings differ. For example:
 
 $$hamming(01101, 11001) = 2$$
 

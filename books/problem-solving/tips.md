@@ -53,7 +53,7 @@ The goal is to maximize the number of problems in category $3$ and minimize the 
 
 In programming contests, you will be dealing with a set of problems, rather than a single problem. The ability to quickly identify problems into the above mentioned context classifications (haven’t seen, have seen, have solved) will be one of key factor to do well in programming contests. The majority of problems can be classified into the given categories:
 
-1. Mathematics: Prime Number, Big Integer, Permutation, Number Theory, Factorial,  Fibonacci, Sequences, Modulus
+1. Mathematics: Prime Number, Big Integer, Permutation, Number Theory, Factorial, Fibonacci, Sequences, Modulus
 2. Dynamic Programming: Longest Common Subsequence,Longest Increasing Subsequence, Edit Distance, 0/1 Knapsack, Coin Change, Matrix Chain Multiplication, Max Interval Sum
 3. Graph Traversal: Flood Fill,Floyd Warshal, MST, Max Bipartite Matching, Network Flow, Articulation Point
 4. Sorting: Bubble Sort, Quick Sort, Merge Sort, Selection Sort, Radix Sort, Bucket Sort
