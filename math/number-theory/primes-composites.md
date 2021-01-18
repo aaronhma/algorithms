@@ -44,3 +44,4 @@ As an example, to see if $209$ is prime, we know that $\sqrt{209} \approx 14$. T
 ## ℹ️ Important Things to Know 🧠
 
 - $1$ is the only natural number that is neither prime nor composite. It only has one positive divisor$-$itself.
+- For a prime number $p$, the smallest composite number that has no prime divisors less than $p$ is $p^2$.
