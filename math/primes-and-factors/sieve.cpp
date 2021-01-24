@@ -3,16 +3,15 @@
 
 using namespace std;
 
-int main()
+// O(n log n)
+// 0 - prime
+// 1 - composite
+vector<int> getSieve(int n)
 {
-  ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-
-  const int x = 3019, n = 4000;
-
   vector<int> sieve(n + 1, 0);
 
-  for (int i = 2; i <= n; i++)
+  // Don't check the numbers after n / 2 because we have already marked them.
+  for (int i = 2; i <= n / 2; i++)
   {
     if (sieve[i])
       continue;
@@ -21,10 +20,21 @@ int main()
       sieve[j] = 1;
   }
 
-  if (sieve[x] == 0)
-    cout << "PRIME\n";
-  else
-    cout << "COMPOSITE\n";
+  return sieve;
+}
+
+int main()
+{
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
+
+  vector<int> sieve = getSieve(17);
+
+  for (int i = 2; i <= 17; i++)
+  {
+    if (sieve[i] == 0)
+      cout << i << "\n";
+  }
 
   return 0;
 }

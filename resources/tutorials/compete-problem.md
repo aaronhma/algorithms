@@ -3,6 +3,8 @@
 - [CList](https://clist.by/) [Various competition resources](https://clist.by/resources/)
   [CList repo](https://github.com/aropan/clist)
 
+All contest list website   list of coming online onsite competitions
+
 ## Problem checklist
 
 - [OI Checklist](https://oichecklist.pythonanywhere.com/) [An example](http://oichecklist.pythonanywhere.com/view/ad044b7982f1574203d5cb907a7823811cb0605f)
@@ -19,7 +21,8 @@
 
 - [Geeks for geeks puzzles](https://www.geeksforgeeks.org/puzzles/)
 
-## CodeForces
+
+## CodeForces Tiers
 
 800 - 4 pages
 900 - 2 pages
