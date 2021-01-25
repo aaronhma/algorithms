@@ -3,7 +3,7 @@
 - [CList](https://clist.by/) [Various competition resources](https://clist.by/resources/)
   [CList repo](https://github.com/aropan/clist)
 
-All contest list website   list of coming online onsite competitions
+All contest list website list of coming online onsite competitions
 
 ## Problem checklist
 
@@ -20,7 +20,6 @@ All contest list website   list of coming online onsite competitions
 - [Project Euler Archive](https://projecteuler.net/archives)
 
 - [Geeks for geeks puzzles](https://www.geeksforgeeks.org/puzzles/)
-
 
 ## CodeForces Tiers
 

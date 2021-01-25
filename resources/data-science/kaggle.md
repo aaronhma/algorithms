@@ -149,11 +149,7 @@ Data Science Cheat Sheet
 https://www.kaggle.com/timoboz/data-science-cheat-sheets#Algorithms
 https://github.com/abhat222/Data-Science--Cheat-Sheet
 
-
-
-
 Kaggle Notebooks is a cloud computational environment that enables reproducible and collaborative analysis.
-
 
 What’s the difference between a private and public leaderboard?
 The Kaggle leaderboard has a public and private component to prevent participants from “overfitting” to the leaderboard. If your model is “overfit” to a dataset then it is not generalizable outside of the dataset you trained it on. This means that your model would have low accuracy on another sample of data taken from a similar dataset.
@@ -162,15 +158,11 @@ For all participants, the same 50% of predictions from the test set are assigned
 Private Leaderboard
 The other 50% of predictions from the test set are assigned to the private leaderboard. The private leaderboard is not visible to participants until the competition has concluded. At the end of a competition, we will reveal the private leaderboard so you can see your score on the other 50% of the test data. The scores on the private leaderboard are used to determine the competition winners. Getting Started competitions are run on a rolling timeline so the private leaderboard is never revealed.
 
-
 machine_learning_examples
 A collection of machine learning examples and tutorials. https://lazyprogrammer.me
 https://github.com/lazyprogrammer/machine_learning_examples
 
-
 https://notebooks.quantumstat.com/
-
-
 
 https://distill.pub/2020/circuits/early-vision/
 https://colab.research.google.com/drive/1qKPITTI879YHTxbTgYW_MAWMHFkbOBIk#forceEdit=true&sandboxMode=true&scrollTo=0uCecIDojdVh

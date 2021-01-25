@@ -2,17 +2,17 @@
 
 ## Addition
 
-- Addition from *1* to *n*. `S = 1 + 2 + ... + n`
+- Addition from _1_ to _n_. `S = 1 + 2 + ... + n`
 
 Theroem: `S = n(n + 1) / 2`
 
-- Addition from *1* to *2n*. `S = 1 + 2 + ... + 2n`
+- Addition from _1_ to _2n_. `S = 1 + 2 + ... + 2n`
 
 Theroem: `S = n(2n + 1)`
 
 ## Power
 
-- *2* power of *K*
+- _2_ power of _K_
 
 ```c++
 1 << 0  // 1  2^0
@@ -45,8 +45,6 @@ The most used integer type in competitive programming is int, which is a 32-bit 
 The suffix LL means that the type of the number is _long long_.
 `long long x = 123456789123456789LL;`
 
-
-
 # Learning Math
 
 https://mathblog.com/
@@ -60,51 +58,44 @@ https://www.mathhelp.com/
 
 https://member.mathhelp.com/courses/middle_and_high_school/174/chapter/9/lesson/1107
 
-
 Good Website with info
 https://mathworld.wolfram.com/topics/NumberTheory.html
 https://www.mathemerize.com/index.html
 
 https://www.wyzant.com/resources/lessons
 
-
 Just visual Math Help
 http://www.mathimation.co.uk/
 
-
 https://artofproblemsolving.com/company
 https://artofproblemsolving.com/videos
-
 
 Only for math
 https://math.stackexchange.com
 
 https://www.wolframalpha.com/
-* We can solve any types of math by entering questions.
-* They give us step by step solution for every math.
-* We can learn many things from one question.
-* We can ask a math by uploading file!
-Alternatively we can find question and answer by topic.
 
+- We can solve any types of math by entering questions.
+- They give us step by step solution for every math.
+- We can learn many things from one question.
+- We can ask a math by uploading file!
+  Alternatively we can find question and answer by topic.
 
 Math suggested by William Lin
 https://tutorial.math.lamar.edu/Classes/Alg/Alg.aspx
 
-
 Under-graduate level:
-* Mathematics for Computer Science
-* Street-Fighting Mathematics
-* Introduction to Mathematical Programming
-Graduate level:
-* Discrete Stochastic Processes
-* Discrete-Time Signal Processing
 
+- Mathematics for Computer Science
+- Street-Fighting Mathematics
+- Introduction to Mathematical Programming
+  Graduate level:
+- Discrete Stochastic Processes
+- Discrete-Time Signal Processing
 
 I'll also mention resources such as MIT OpenCourseWare (http://ocw.mit.edu
 
 ) and UC Berkeley Video and Podcasts for Courses & Events
-
-
 
 YOUTUBE
 

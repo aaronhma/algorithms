@@ -3,6 +3,7 @@
 - [About Competitive Programming](http://darrenyao.com/) including a book [An Introduction to the USA Computing Olympiad](http://darrenyao.com/usacobook/cpp.pdf)
 
 - [Unofficial Syllabus](https://www.overleaf.com/read/fktckfprxyxn) (based on past problems)
+
   - The general trend is that contests are getting harder.
 
 - [Resource List](https://github.com/lnishan/awesome-competitive-programming)
@@ -21,7 +22,7 @@
 - [USACO Guide](https://usaco.guide/) A free collection of curated, high-quality resources to take you from Bronze to Platinum and beyond.
 
 - [Programming content book](https://sendtoaryansh.gitbook.io/informatics-notes/)
-[Making a contest template](https://sendtoaryansh.gitbook.io/informatics-notes/making-a-contest-template) [Benq's template](https://github.com/bqi343/USACO/blob/master/Implementations/content/contest/TemplateLong.cpp)
+  [Making a contest template](https://sendtoaryansh.gitbook.io/informatics-notes/making-a-contest-template) [Benq's template](https://github.com/bqi343/USACO/blob/master/Implementations/content/contest/TemplateLong.cpp)
 
 - [USACO faq](https://darren-yao.gitbook.io/darren-s-blog/usaco-faq)
 
@@ -36,7 +37,6 @@ Best website for practicing DSA questions, good user interface, the discussion s
 Treasure for the Computer Science students, one can get all the questions with their possible solutions and can also practice here.
 
 - [Techie Delight]() A simplistic website made only for learning DSA.
-
 
 Interview Specific
 

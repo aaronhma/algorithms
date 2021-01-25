@@ -2,26 +2,24 @@
 
 ## C++ Learning
 
-| ☆   | Name |  Video | Article | Description    |
-| --- | -------------- | ------- | ------- | ------- |
-|     | [programmr](http://www.programmr.com/exercises?lang=cpp)        | ✘ | ✔ |  |
-|     | [CPP Secrets](https://cppsecrets.com/home-page/index.php?articlecategory=1)        | ✘ | ✔ |  |
+| ☆   | Name                                                                        | Video | Article | Description |
+| --- | --------------------------------------------------------------------------- | ----- | ------- | ----------- |
+|     | [programmr](http://www.programmr.com/exercises?lang=cpp)                    | ✘     | ✔       |             |
+|     | [CPP Secrets](https://cppsecrets.com/home-page/index.php?articlecategory=1) | ✘     | ✔       |             |
 
 ## Git Repos
 
-| ☆   | Name | Description    | Star |
-| --- | -------------- | ------- |------- |
-|     | [Awesome-CPP](https://github.com/fffaraz/awesome-cpp)         | A curated list of awesome C++ frameworks, libraries, resources| 30K |
-|     | [TheAlgorithms/C-Plus-Plus](https://github.com/TheAlgorithms/C-Plus-Plus)         | Collection of various algorithms in mathematics, machine learning, computer science and physics implemented in C++ for educational purposes.| 10K |
-|     | [Bhupesh-V/30-seconds-of-cpp](https://github.com/Bhupesh-V/30-seconds-of-cpp)         |30 Seconds of C++ (STL in C++). Read More about 30C++ here| 771 |
-
-
+| ☆   | Name                                                                          | Description                                                                                                                                  | Star |
+| --- | ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
+|     | [Awesome-CPP](https://github.com/fffaraz/awesome-cpp)                         | A curated list of awesome C++ frameworks, libraries, resources                                                                               | 30K  |
+|     | [TheAlgorithms/C-Plus-Plus](https://github.com/TheAlgorithms/C-Plus-Plus)     | Collection of various algorithms in mathematics, machine learning, computer science and physics implemented in C++ for educational purposes. | 10K  |
+|     | [Bhupesh-V/30-seconds-of-cpp](https://github.com/Bhupesh-V/30-seconds-of-cpp) | 30 Seconds of C++ (STL in C++). Read More about 30C++ here                                                                                   | 771  |
 
 # C++ Tips and Tricks (Bits to learn)
 
 ## Number
 
-- Checking if the number is **even** or **odd** without using the `%` operator. Using `&` operator is sometimes efficient with *large numbers*.
+- Checking if the number is **even** or **odd** without using the `%` operator. Using `&` operator is sometimes efficient with _large numbers_.
 
 ```c++
 if (num & 1) cout << "Odd"; // if num = 5, binary format 101 & 1 is 001, so true
@@ -52,7 +50,7 @@ digit = floor(log10(num)) + 1; // ex: int num = 12345678;   digit should be 8
 
 - Calculating the most significant digit (the leftmost non-zero digit) of any number log
 
-Leading zeros are never considered as significant digits, ex: *0.00234* have *3* significant digits (2, 3, and 4). The most significant one is *2* (first non-zero from left), because it has the greatest effect on the number
+Leading zeros are never considered as significant digits, ex: _0.00234_ have _3_ significant digits (2, 3, and 4). The most significant one is _2_ (first non-zero from left), because it has the greatest effect on the number
 
 ```c++
 int num = 3.14159
@@ -61,7 +59,7 @@ K = K - floor(K);
 int X = pow(10, K); // X will be the most significant digit. X: 3
 ```
 
-- Check if a number is a power of *2* in `O(n)`
+- Check if a number is a power of _2_ in `O(n)`
 
 ```c++
 bool isPowerOfTwo (int x) {
@@ -69,7 +67,6 @@ bool isPowerOfTwo (int x) {
   return x && !(x & (x - 1)); // return boolean.
 }
 ```
-
 
 ## String
 
@@ -92,8 +89,6 @@ bool isPowerOfTwo (int x) {
 ## Condition
 
 - `and` is equal to `&&` in condition. `if (a < 20 and a > 12) {}`
-
-
 
 ## C++ Built-in
 
