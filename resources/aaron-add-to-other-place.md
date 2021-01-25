@@ -42,7 +42,6 @@ O(1) S Inserting a new element in an array of size n DYNAMIC
 O(1) T Inserting a new element in an array of size n DYNAMIC (Avg Time)
 O(n) T Inserting a new element in an array of size n DYNAMIC (Worst Time Case)
 
-
 ## Linked List(LL)
 
 similar to an array but it is stored/implemented in a different way than an array in memory.
@@ -72,13 +71,11 @@ O(1) T Inserting/Deleting a new element in an LL of size n at the beginning
 O(x) S Inserting/Deleting a new element in an LL of size n at any position (x)
 O(x) T Inserting/Deleting a new element in an LL of size n at any position (x)
 
-
 ## Hash Tables
 
 Hash Table is a DS with key-value pair. We can access a value given a key but the vice versa is not possible. The keys can be strings, int, or even other data structures.
 
 Under the hood, the hash table is built on top of the array. The key is transformed into an index by using a hash function. And this index helps us in storing the value in the array. And hence it allows us to have O(1) time complexity in insertion/deletion/searching
-
 
 ## Stacks & Queues
 
@@ -102,7 +99,6 @@ A string is stored in memory as an array of char where each char is matched to a
 
 In C++, a string is mutable, and then adding a new value at the end of the string is O(1) but in Java, C, Python, etc strings are immutable, and adding a new value at the end creates a brand new string and hence, it is an O(n+m) ST complexity. Hence, it is recommended to split out this string in an actual array of characters in actual code. So that it can act like a mutable string and can perform operations faster.
 
-
 ## Graphs
 
 A graph is a collection of nodes that may or may not be connected together. Every node is called a vertex and the connections are called an edge.
@@ -112,29 +108,31 @@ A graph is represented by an adjacency list in code and the edges of the graph a
 ## Trees
 
 A tree is a type of graph that is
-1) rooted
-2) every node has child nodes
-3) the structure is directed
-4) the structure will be acyclic
-5) each node in the tree will only have one parent
-6) the tree is not allowed to be disconnected.
+
+1. rooted
+2. every node has child nodes
+3. the structure is directed
+4. the structure will be acyclic
+5. each node in the tree will only have one parent
+6. the tree is not allowed to be disconnected.
 
 eg; management chain, human beings family tree
 There are a lot of different types of Trees;
-1) Binary Tree
-2) Ternary Tree
-3) K-nary Tree
-4) Binary Search Trees
-5) Min/Max Heap
-6) Tries
 
+1. Binary Tree
+2. Ternary Tree
+3. K-nary Tree
+4. Binary Search Trees
+5. Min/Max Heap
+6. Tries
 
 Red Black Trees and AVL Trees are examples of a balanced tree that maintains O(logN) always.
 Key Terminologies in a tree;
-1) Branch
-2) Leaf
-3) Level
-4) Complete Tree
-5) Full Tree
-6) Perfect Tree
-7) Depth/Height
+
+1. Branch
+2. Leaf
+3. Level
+4. Complete Tree
+5. Full Tree
+6. Perfect Tree
+7. Depth/Height

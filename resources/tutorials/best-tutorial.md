@@ -20,7 +20,6 @@ https://www.hackerrank.com/domains/algorithms
 
 - [CS Academy](https://csacademy.com/lessons/)
 
-
 ## Online Tutorials
 
 [Stanford "Algorithms: Design and Analysis, Part 1" ](https://online.stanford.edu/courses/soe-ycsalgorithms1-algorithms-design-and-analysis-part-1)

@@ -15,7 +15,6 @@ In algorithms there is a starting state _S_ and a sequence of legal steps (moves
 3. Is there convergence to an end state?
 4. Find all periods with or without tails, if any.
 
-
 ## How to solve Competitive Programming problems
 
 It consists two parts: 1. coming up with the algorithm. 2. implementing the algorithm.

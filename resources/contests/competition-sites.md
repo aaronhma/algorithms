@@ -2,16 +2,14 @@
 
 ## Competitive Programming Contest Site
 
-| ☆   | Name | Description | Frequency | Notes |
-| --- | -------------- | ------- | ------- | ------- |
-|     | [CodeForces](https://codeforces.com/)        | a collaborative platform where coders can participate in “rounds” where a time limit is set and points are distributed to the participants. | Twice a week | |
-|     | [TopCoder](https://www.topcoder.com/challenges)        | a competitive programming platform. It provides a collection of algorithmic challenges. |  | |
-|     | [AtCoder](https://atcoder.jp/)        | a programming contest site for anyone from beginners to experts. We hold weekly programming contests online. |   | Definitely the best when it comes to tasks, but they don’t always hold Grand Contests frequently – mostly it’s just beginner contests at the moment. |
-|     | [CodeChef](https://www.codechef.com/)       | a competitive programming platform created as a platform to help programmers elevate their skills in the world of algorithms, programming, and contests. |  | |
-
+| ☆   | Name                                            | Description                                                                                                                                              | Frequency    | Notes                                                                                                                                                |
+| --- | ----------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+|     | [CodeForces](https://codeforces.com/)           | a collaborative platform where coders can participate in “rounds” where a time limit is set and points are distributed to the participants.              | Twice a week |                                                                                                                                                      |
+|     | [TopCoder](https://www.topcoder.com/challenges) | a competitive programming platform. It provides a collection of algorithmic challenges.                                                                  |              |                                                                                                                                                      |
+|     | [AtCoder](https://atcoder.jp/)                  | a programming contest site for anyone from beginners to experts. We hold weekly programming contests online.                                             |              | Definitely the best when it comes to tasks, but they don’t always hold Grand Contests frequently – mostly it’s just beginner contests at the moment. |
+|     | [CodeChef](https://www.codechef.com/)           | a competitive programming platform created as a platform to help programmers elevate their skills in the world of algorithms, programming, and contests. |              |                                                                                                                                                      |
 
 [How to Compete in SRMS (Single Round Match)](https://www.topcoder.com/thrive/articles/How%20To%20Compete%20in%20SRMs)
-
 
 - [Code Jam](https://codingcompetitions.withgoogle.com/codejam) is Google's longest running global coding competition, where programmers of all levels put their skills to the test.
 
@@ -65,7 +63,7 @@ Code Jam and Kick Start are both following a format that is different from Hash 
 
 - [OJ.UZ](https://oj.uz/problems) From korea
 
-For Olympiads specifically, check out https://oj.uz – it has a lot of Olympiad problems from various sources. You can order the problems by the number of solves; start with the easiest ones and go down the list.  https://oj.uz/contests
+For Olympiads specifically, check out https://oj.uz – it has a lot of Olympiad problems from various sources. You can order the problems by the number of solves; start with the easiest ones and go down the list. https://oj.uz/contests
 
 Probably the most important thing is that you should get used to solving unusual (such as output-only and interactive) problems that appear at IOI a lot, but not very frequently in most online contests. Again, I would recommend https://oj.uz because it has such problems that you can practice on.
 
@@ -106,6 +104,5 @@ acm.timus.ru: 1099 problems
 contest.yandex.ru: online contests, trainings
 topcoder.com: online contests
 code.google.com/codejam: online contests
-
 
 I’d also urge people to take a look at https://clist.by/ to see what other competitive programming websites I use (see my profile https://clist.by/coder/bqi343/).
