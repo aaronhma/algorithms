@@ -2,18 +2,15 @@
 
 using namespace std;
 
+// o(log n)
 bool isPrime(int n)
 {
-  // 2 ... n - 1
+  // 2 ... a <= sqrt(n)
   for (int i = 2; i <= sqrt(n); i++)
-  {
-    // not prime
     if (n % i == 0)
-      return false;
-  }
+      return false; // not prime
 
-  // prime
-  return true;
+  return true; // prime
 }
 
 int main()

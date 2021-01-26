@@ -13,7 +13,7 @@ int ans = 1;
 
 // x * x * ... * x * x | n times
 for (int i = 1; i <= n; i++) {
-  // ans * x might overflow so if it does, ans automatically becomes long long with 1LL
+  // ans * x might overflow, `1LL` makes the integer literal of type `long long`.
   ans = (1LL * ans * x) % k;
 }
 ```

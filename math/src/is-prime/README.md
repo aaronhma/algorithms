@@ -1,5 +1,12 @@
 # Is $n$ prime?
 
+A prime number is
+
+- a natural number
+- greater than 1
+- a prime ($n$) itself
+- not a product of two smaller natural numbers
+
 ## The Problem
 
 Given a number $n$, return `true` if the number is prime and `false` if the number is not.
