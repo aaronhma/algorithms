@@ -7,32 +7,6 @@
 
 ---
 
-## Sieve of Eratosthenes
-
-The Sieve of Eratosthenes was named after the Greek mathematician Eratosthenes who divised the algorithm in about $230$ BC. With the Sieve of Eratosthenes, we can easily find the prime numbers between $2$ and $n$. Assume that $n = 100$:
-
-1. Create all the numbers from $2$ to $n$.
-
-![Image](./images/init.png)
-
-2. Circle the first prime number.
-
-![Image](./images/first-prime.png)
-
-3. Cross out all multiples of this number.
-
-![Image](./images/first-cross.png)
-
-4. Go to the next unmarked number, circle it and cross out all the multiples of that number.
-
-![Image](./images/next-cross.png)
-
-5. Repeat until all numbers is either circled or crossed out.
-
-![Image](./images/final.png)
-
----
-
 ## Testing a Number for Divisibility
 
 **ℹ️ Important: If a natural number $n$ where $n > 1$ has no prime divisors less than or equal to $\sqrt{n}$, then $n$ is prime.**
