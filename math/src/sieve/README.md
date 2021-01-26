@@ -34,7 +34,7 @@ The Sieve of Eratosthenes can be simulated for a time complexity of $\theta(n \ 
 
 ```cpp
 // 0: prime
-// 1: prime
+// 1: composite
 vector<int> sieve(n + 1, 0);
 
 // Don't check the numbers after n / 2 because we have already marked them.

@@ -2,7 +2,7 @@
 
 using namespace std;
 
-// O(log n)
+// O(sqrt(n))
 bool isPrime(int n)
 {
   // 2 ... a <= sqrt(n)
