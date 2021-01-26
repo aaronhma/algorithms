@@ -10,23 +10,23 @@ The Sieve of Eratosthenes was named after the Greek mathematician Eratosthenes w
 
 1. Create all the numbers from $2$ to $n$.
 
-![Image](../../number-theory/images/init.png)
+![Image](./images/init.png)
 
 2. Circle the first prime number.
 
-![Image](../../number-theory/images/first-prime.png)
+![Image](./images/first-prime.png)
 
 3. Cross out all multiples of this number.
 
-![Image](../../number-theory/images/first-cross.png)
+![Image](./images/first-cross.png)
 
 4. Go to the next unmarked number, circle it and cross out all the multiples of that number.
 
-![Image](../../number-theory/images/next-cross.png)
+![Image](./images/next-cross.png)
 
 5. Repeat until all numbers is either circled or crossed out.
 
-![Image](../../number-theory/images/final.png)
+![Image](./images/final.png)
 
 ## Approach 1: Simulation
 

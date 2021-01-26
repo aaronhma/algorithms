@@ -4,6 +4,7 @@ using namespace std;
 
 #define MAX_N 101
 
+// O(log n)
 void primeFact(int n, vector<int> &base, vector<int> &exponent, int &distinctPrimeCount)
 {
   // first number that will be checked if n is divisible by d
