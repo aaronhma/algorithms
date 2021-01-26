@@ -1,6 +1,6 @@
-# Mathematics
+# Mathematics Fundementals
 
-| ☆   | Name (Content)        | C++ | Problems                           |
+| ☆   | Math Technique    | C++ | Problems                           |
 | --- | --------------------- | ------ | ------------------------------------ |
 |     | [Fast Modular Exponentiation](./fast-mod/README.md) |  [C++](./fast-mod/fast-mod.cpp)   |   |
 |     | [Prime Number Test](./is-prime/README.md) | [C++](./is-prime/is-prime.cpp)    |   |
