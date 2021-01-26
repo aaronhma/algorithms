@@ -4,6 +4,8 @@
 
 Given $n$, print all the prime numbers from $2$ to $n$.
 
+![Image](https://upload.wikimedia.org/wikipedia/commons/b/b9/Sieve_of_Eratosthenes_animation.gif)
+
 ## Concept: Sieve of Eratosthenes
 
 The Sieve of Eratosthenes was named after the Greek mathematician Eratosthenes who divised the algorithm in about $230$ BC. With the Sieve of Eratosthenes, we can easily find the prime numbers between $2$ and $n$. Assume that $n = 100$:

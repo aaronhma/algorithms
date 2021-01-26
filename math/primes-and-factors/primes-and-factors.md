@@ -15,18 +15,6 @@ The Fundamental Theorem of Arithmetic states "A number $n$ is either prime, or a
 
 $$n = p_1^{a_1}*p_2^{a_2}*p_{n - 1}^{a_{n - 1}}*p_n^{a_n}$$
 
-## Sieve of Eratosthenes
-
-The Sieve of Eratosthenes is a simple way to check if a number $x$ is a prime number. The steps are as shown:
-
-1. Create a array of size $n + 1$ (1-based indexing) called $sieve$ and fill it with zeroes. When checking if a number is prime or not, if $sieve[x] = 0$, then $x$ is prime.
-2. Iterate through $2...n$:
-
-- If $sieve[x] = 1$, skip this number.
-- Iterate through $2x ... n$, and increase $u$ with $x$ every time. Mark every number as $1$.
-
-3. Check if $sieve[x] = 0$. If yes, then $x$ is prime.
-
 ## Euclid's Algorithm
 
 The greatest common divisor of integers $a$ and $b$ denoted $gcd(a, b)$ is the largest integer that divides $a$ and $b$. For example, $gcd(25, 5) = 5$. A related concept is the lowest common multiple, the smallest integer $k$ that is a multiple of both $a$ and $b$. The formula $lcm(a, b) = a * b / gcd(a, b)$ can be used to calculate the LCM.
@@ -42,26 +30,6 @@ $$gcd(a, b) = a$$
 - Case 2: $b \neq 0$
 
 $$gcd(a, b) = gcd(b, a \ \% \ b)$$
-
-## Modular Exponentiation
-
-Calculating $x^n \ \% \ m$ is a inefficient task. A $\theta(log \ n)$ approach exists.
-
-1. Figure out the modified $x^n$.
-
-- Case 1: $n = 0$
-
-If $n = 0$, then $x^n = 1$.
-
-- Case 2: $n$ is even
-
-${x^{(n/2)}} * {x^{(n/2)}}$
-
-- Case 3: $n$ is odd
-
-${x^{n - 1}} * x$
-
-2. Use the modified $x^n$ to have: $x^n \ \% \ m$ in $\theta(log \ n)$.
 
 ## Euler's Theorem
 

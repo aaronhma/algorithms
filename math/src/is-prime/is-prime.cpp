@@ -5,7 +5,7 @@ using namespace std;
 // O(sqrt(n))
 bool isPrime(int n)
 {
-  // 2 ... a <= sqrt(n)
+  // 2 ... sqrt(n)
   for (int i = 2; i <= sqrt(n); i++)
     if (n % i == 0)
       return false; // not prime
