@@ -1,4 +1,6 @@
-# Is $n$ prime?
+# Prime Number Test  [(C++)](./is-prime.cpp)
+
+> Is $n$ prime?
 
 A prime number is
 
