@@ -13,7 +13,8 @@ int main()
   int n = arr.size(), a = 2, b = 3;
 
   // calculate prefix sum
-  vector<int> prefixSum(n, arr[0]);
+  vector<int> prefixSum(n);
+  prefixSum[0] = arr[0];
 
   for (int i = 1; i < n; i++)
     prefixSum[i] = prefixSum[i - 1] + arr[i];
