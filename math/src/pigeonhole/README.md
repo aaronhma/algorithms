@@ -25,7 +25,7 @@ We can solve this problem in $\theta(n)$ time complexity if we can handle the tw
 void findNumber(int n)
 {
   int curr_remainder = 0;     // the current number that we are generating % n
-  vector<int> freq(n + 1, 0); // stores the
+  vector<int> freq(n + 1, 0); // stores the first number with the current remainder
 
   for (int i = 1; i <= n; i++)
   {
