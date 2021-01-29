@@ -6,7 +6,7 @@ Given a number $n$, find a number that consists of only digits $0$ and $1$ which
 
 ## Concept: The Pigeonhole Principle
 
-The pigeonhole principle states that if we have $n$ pigeons and $r$ pigeon holes, where $n < r$, there are at least $1$ pigeon hole where there are more than $1$ pigeon.
+The pigeonhole principle states that if we have $n$ pigeons and $r$ pigeon holes, where $n > r$, there are at least $1$ pigeon hole where there are more than $1$ pigeon.
 
 This idea sounds simple, but, it is hard to determine what are the pigeons and pigeon holes.
 
