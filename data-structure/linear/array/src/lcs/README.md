@@ -2,7 +2,7 @@
 
 ## The Problem
 
-Given an array $arr = \{ 3, 7, 1, 4, 2, 5, 3, 8, 10, 9 \}$, return the longest consecutive subarray of the array.
+Given an array $arr = \{ 3, 7, 1, 4, 2, 5, 3, 8, 10, 9 \}$, return the size of the longest consecutive subarray of the array.
 
 ## Approach 1: Simulation
 
