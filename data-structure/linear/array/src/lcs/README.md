@@ -1,4 +1,4 @@
-# Longest Consecutive Subsequence
+# Longest Consecutive Subarray
 
 ## The Problem
 
