@@ -27,6 +27,8 @@ for (int left = 1; left <= n; left++) {
 
 ## Approach 2: Sliding Window
 
+We can solve this problem in $\theta(n)$ time if we use the sliding window technique:
+
 ```cpp
 int slidingWindow(vector<int> &arr, int n, int k)
 {
