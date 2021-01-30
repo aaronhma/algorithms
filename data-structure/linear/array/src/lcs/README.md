@@ -10,7 +10,7 @@ We can simulate the starting and ending indexes of the subarray of an array in $
 
 * Create a `freq` array that is $true$ is we have used the value $x$ and $false$ if we have not used the value $x$.
 * Simulate the starting index ($s$) and ending index $e$ of the subarray.
-  * $min = INT\_MIN, max = INT\_MAX$
+  * $min = INT\_MAX, max = INT\_MIN$
   * Validation stage:
     * Check that we have not used the item $x$ before.
     * Update the minimum and maximum value of the subarray
