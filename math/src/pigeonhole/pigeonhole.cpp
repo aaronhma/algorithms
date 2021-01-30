@@ -2,12 +2,15 @@
 
 using namespace std;
 
+#define MAX_N 10000 // Maximum remainder possible
+
 // O(n)
 void findNumber(int n)
 {
   int curr_remainder = 0;     // the current number that we are generating % n
-  vector<int> freq(n + 1, 0); // stores the first number with the current remainder
+  vector<int> freq(MAX_N, 0); // stores the first number with the current remainder
 
+  // In the worst case, the answer to the problem is of size n
   for (int i = 1; i <= n; i++)
   {
     // add a 1 to the end of our current number we are generating
