@@ -1,4 +1,4 @@
-# The Pigeonhole Principle
+# The Pigeonhole Principle [(C++)](./pigeonhole.cpp)
 
 ## The Problem
 
@@ -12,7 +12,7 @@ This idea sounds simple, but, it is hard to determine what are the pigeons and p
 
 ## Example: Chessboard Puzzle
 
-https://youtu.be/B2A2pGrDG8I?t=99
+[Youtube Video](https://youtu.be/B2A2pGrDG8I?t=99)
 
 ## Approach 1: The Pigeonhole Principle
 
