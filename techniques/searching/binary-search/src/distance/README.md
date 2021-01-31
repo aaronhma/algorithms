@@ -8,7 +8,6 @@
 
 Brute force is too hard for this problem. See **_Binary Search_**.
 
-
 ## Approach 2: Binary Search
 
 We can solve this problem in $\theta(n \ log \ n)$ using Binary Search:

@@ -17,9 +17,7 @@ int main()
     prefixSum[i] = prefixSum[i - 1] + arr[i];
 
   for (int i = 0; i < n; i++)
-  {
     cout << prefixSum[i] << " ";
-  }
 
   cout << "\n";
 
