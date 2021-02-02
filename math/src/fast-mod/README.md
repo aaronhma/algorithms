@@ -1,4 +1,4 @@
-# Fast Modular Exponentiation  [(C++)](./fast-mod.cpp)
+# Fast Modular Exponentiation [(C++)](./fast-mod.cpp)
 
 ## The Problem
 

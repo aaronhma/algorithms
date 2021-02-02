@@ -1,4 +1,4 @@
-# Prime Number Test  [(C++)](./is-prime.cpp)
+# Prime Number Test [(C++)](./is-prime.cpp)
 
 > Is $n$ prime?
 

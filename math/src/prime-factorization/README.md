@@ -1,4 +1,4 @@
-# Prime Factorization of a number $n$  [(C++)](./prime-factorization.cpp)
+# Prime Factorization of a number $n$ [(C++)](./prime-factorization.cpp)
 
 ## The Problem
 

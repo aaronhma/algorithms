@@ -1,4 +1,4 @@
-# Sieve of Eratosthenes  [(C++)](./sieve.cpp)
+# Sieve of Eratosthenes [(C++)](./sieve.cpp)
 
 ## The Problem
 

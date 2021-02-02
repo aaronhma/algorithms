@@ -18,8 +18,8 @@ https://youtu.be/B2A2pGrDG8I?t=99
 
 We can solve this problem in $\theta(n)$ time complexity if we can handle the two cases:
 
-* Case 1: The answer is $111111...111111$.
-* Case 2: The answer is $1...0$.
+- Case 1: The answer is $111111...111111$.
+- Case 2: The answer is $1...0$.
 
 One thing to look out for is _overflow_, as our answer may exceed the size of an integer. What we can do is store the remainder of the current number (eg. $(remainder * 10 + 1) \ \% \ n$) as shown in the code below:
 
