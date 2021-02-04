@@ -23,7 +23,7 @@ The problem is pretty simple and usually follows these steps:
 
 ### The Problem
 
-You are given a $n * m$ matrix of $.$s (land) and $\#$s (water). An island is formed by connecting adjacent land cells horizontally or vertically and is surrounded by water. Find the number of islands and the maximum cells of one island.
+You are given a $n * m$ matrix of $.$s (land) and #s (water). An island is formed by connecting adjacent land cells horizontally or vertically and is surrounded by water. Find the number of islands and the maximum cells of one island.
 
 ### The Solution
 
