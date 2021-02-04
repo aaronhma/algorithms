@@ -4,7 +4,7 @@
 
 Queries on Static Arrays refers to a situation where our array is static (the array values are never updated between the queries). Because of this, we can first preprocess our array before answering queries so we can **efficiently** answer queries.
 
-## Sum Queries
+## Sum Queries [(C++)](./sum-queries.cpp)
 
 The first example of a sum queries is writing the `rangeSumQuery` function which returns the sum of an array $arr$ between the range $a$ and $b$. There are two options for the output of the answer:
 

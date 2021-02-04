@@ -15,9 +15,7 @@ int main()
   for (int i : arr)
   {
     if (freq[i] == 0)
-    {
       ans++;
-    }
 
     freq[i]++;
   }

@@ -1,12 +1,10 @@
-# Maximum Sum Subarray
+# Maximum Sum Subarray [(C++)](./max-subarray.cpp)
 
 ## The Problem
 
 Given an array $arr$, find the subarray that gives the maximum sum.
 
-## Concept: Kadane's Algorithm/Maximum Sum Subarray
-
-https://aaronhma.medium.com/algorithm-spotlight-kadanes-algorithm-8ea7ceae9a1a
+## Concept: [Kadane's Algorithm/Maximum Sum Subarray](https://aaronhma.medium.com/algorithm-spotlight-kadanes-algorithm-8ea7ceae9a1a)
 
 ## Approach 1: Kadane’s Algorithm (using Greedy method)
 

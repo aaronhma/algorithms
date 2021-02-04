@@ -1,4 +1,4 @@
-# Range Update Trick
+# Range Update Trick [(C++)](./range-update-trick.cpp)
 
 ## About
 
