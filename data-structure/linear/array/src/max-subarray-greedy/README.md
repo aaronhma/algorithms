@@ -1,4 +1,4 @@
-# Maximum Sum Subarray [(C++)](./max-subarray.cpp)
+# Maximum Sum Subarray (Kadane's Algorithm - Greedy) [(C++)](./max-subarray.cpp)
 
 ## The Problem
 

@@ -7,25 +7,35 @@
 
 A stack is a collection of items following a Last-In, First-Out (LIFO) order that supports the following core operations:
 
-- `push(x)` - Push x to the top of the stack
-- `pop()` - Delete the top element from the stack if it is not empty
-- `top()` - Returns the top element (last element) if stack is not empty
+## Stack Operations
+
+- `create` - creates an empty stack
+- `push` - push data to the top of the stack
+- `pop` - removes data from the top of the stack
+- `empty` - checks if the stack is empty
 
 ## Pros & Cons of Stack
 
 - Pros:
   - All operations takes O(1) time
 - Cons:
+
   - Uses O(n) space
   - Getting something from the middle is impossible without `top()` and `pop()`
 
-## Stack Complexity Analysis
+## Implementations
 
-| Operation | Big O Notation |
-| --------- | -------------- |
-| Push      | O(1)           |
-| Pop       | O(1)           |
-| Peek      | O(1)           |
+- Array-based queue
+- Linked List-based queue
+
+## Stack Time Complexity
+
+| Operation | Array Implementation | Singly Linked List Implementation |
+| --------- | -------------------- | --------------------------------- |
+| Create    | O(1)                 | O(1)                              |
+| Push      | O(1)                 | O(1)                              |
+| Pop       | O(1)                 | O(1)                              |
+| Empty     | O(1)                 | O(1)                              |
 
 - Space complexity: O(n)
 

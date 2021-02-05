@@ -1,104 +1,92 @@
-#include <iostream>
-#include <vector>
-#include <cassert>
+#include <bits/stdc++.h>
 
 using namespace std;
 
-typedef vector<int> vi;
-
-vi merge(vi left, vi right)
+/**
+ * Merge two arrays
+ * See the following for an explanation for what this function does:
+ * https://www.geeksforgeeks.org/merge-two-sorted-arrays/
+*/
+// O(n)
+void merge(vector<int> &arr, int left, int mid, int right)
 {
-  vi sorted;
-  long unsigned int left_index = 0;
-  long unsigned int right_index = 0;
+  // n1: Size of array #1
+  // n2: Size of array #2
+  int n1 = mid - left + 1, n2 = right - mid;
 
-  while (left_index < left.size() and right_index < right.size())
+  // Create the arrays
+  vector<int> arr1(n1), arr2(n2);
+
+  // Fill in the arrays
+  for (int i = 0; i < n1; i++)
+    arr1[i] = arr[left + i];
+  for (int i = 0; i < n2; i++)
+    arr2[i] = arr[mid + i + 1];
+
+  // i: current index in array 1
+  // j: current index in array 2
+  // k: Index where we start putting data into the array
+  int i = 0, j = 0, k = left;
+
+  // Put data into the array
+  while (i < n1 && j < n2)
   {
-    if (left[left_index] < right[right_index])
-    {
-      sorted.push_back(left[left_index]);
-      left_index++;
-    }
-
+    // "sort" the array
+    if (arr1[i] <= arr2[j])
+      arr[k] = arr1[i++];
     else
-    {
-      sorted.push_back(right[right_index]);
-      right_index++;
-    }
+      arr[k] = arr2[j++];
+
+    k++;
   }
 
-  for (long unsigned int i = left_index; i < left.size(); i++)
-  {
-    sorted.push_back(left[i]);
-  }
+  // Copy remaining elements from arr1 to array
+  while (i < n1)
+    arr[k++] = arr1[i++];
 
-  for (long unsigned int i = right_index; i < right.size(); i++)
-  {
-    sorted.push_back(right[i]);
-  }
-
-  return sorted;
+  // Copy remaining elements from arr2 to array
+  while (j < n2)
+    arr[k++] = arr2[j++];
 }
 
-vi merge_sort(vi arr)
+/**
+ * Merge sort
+*/
+// O(n log n)
+void sort(vector<int> &arr, int left, int right)
 {
-  if (arr.size() < 2)
-    return arr;
+  // Base case: If left >= right, we cannot sort the array
+  if (left >= right)
+    return;
 
-  int mid = arr.size() / 2;
+  // Calculate middle index
+  int mid = left + (right - left) / 2;
 
-  vi mid_less, mid_high;
+  // Array 1:
+  sort(arr, left, mid);
 
-  for (int i = 0; i < mid; i++)
-  {
-    mid_less.push_back(arr[i]);
-  }
+  // Array 2:
+  sort(arr, mid + 1, right);
 
-  for (long unsigned int i = mid; i < arr.size(); i++)
-  {
-    mid_high.push_back(arr[i]);
-  }
-
-  return merge(merge_sort(mid_less), merge_sort(mid_high));
+  // "Merge" the two arrays together
+  merge(arr, left, mid, right);
 }
 
-bool test_function(vector<vi> input)
+int main()
 {
-  vi test_case = input[0];
-  vi expected = input[1];
-  test_case = merge_sort(test_case);
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
 
-  for (int i : test_case)
+  vector<int> arr = {12, 11, 13, 5, 6, 7};
+  sort(arr, 0, arr.size() - 1);
+
+  // 5 6 7 11 12 13
+  for (int i : arr)
   {
     cout << i << " ";
   }
 
   cout << "\n";
-
-  if (test_case == expected)
-  {
-    cout << "Pass"
-         << "\n";
-
-    return true;
-  }
-  else
-    cout << "Fail"
-         << "\n";
-
-  return false;
-}
-
-int main()
-{
-  vector<vi> input_1 = {vi{3, 2, 1}, vi{1, 2, 3}};
-  assert(test_function(input_1));
-
-  vector<vi> input_2 = {vi{1, 2, 3}, vi{1, 2, 3}};
-  assert(test_function(input_2));
-
-  vector<vi> input_3 = {vi{}, vi{}};
-  assert(test_function(input_3));
 
   return 0;
 }
