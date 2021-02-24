@@ -19,7 +19,7 @@ This problem requires us to create two pointers $start$ (start of palindrome) an
 
 String is a palindrome!
 
-* $str[start] \neq str[end$
+* $str[start] \neq str[end]$
 
 String isn't a palindrome!
 
