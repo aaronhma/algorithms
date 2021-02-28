@@ -75,5 +75,5 @@ Though tabulation is hard to code (we need to come up with a specific order when
 A majority of the Dynamic Programming problems can be categorized into two types:
 1. Optimization problems
 2. Combinatorial problems
-3. 
+
 An optimization problem is a problem of finding the best solution from all feasible solutions. And combinatorial problems expect you to figure out the number of ways to do something or the probability of some event happening.
