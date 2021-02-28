@@ -5,37 +5,44 @@ using namespace std;
 bool queens(vector<int> &board, int i) {
   int n = board.size();
 
+  // Base case: all queens have been placed on the n*n chess board
   if (i == n) {
     for (int c : board) {
       for (int r = 0; r < n; r++) {
-        if (r == c) cout << " Q ";
-        else cout << " X ";
+        if (r == c) cout << "| Q ";
+        else cout << "| X ";
       }
 
-      cout << "\n";
+      cout << "|\n";
     }
 
     return true;
   }
 
   for (int c = 0; c < n; c++) {
-    bool flag = false;
+    // Validate that the queen placement at cell i won't
+    // attack any other queens.
+    bool attack = false;
 
     for (int rc = 0; rc < i; rc++) {
       if (board[rc] == c || abs(board[rc] - c) == (i - rc)) {
-        flag = true;
+        attack = true;
         break;
       }
     }
 
-    if (flag) continue;
+    // Placing a queen on this row would lead to an attack, exit.
+    if (attack) continue;
 
+    // Place queen at position i
     board[i] = c;
 
+    // If we could place n queens for the rest of chessboard, we found a solution.
     if (queens(board, i + 1)) return true;
-
-    return false;
   }
+
+  // We couldn't solve this problem - NO SOLUTION
+  return false;
 }
 
 int main()
