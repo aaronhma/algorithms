@@ -4,6 +4,8 @@
 
 **Dynamic programming** (known as DP)  is a programming paradigm that stores the result of a problem after solving it.
 
+![Image](https://miro.medium.com/max/970/1*7pbs4HCE_K6cH6jkcgxw_A.png)
+
 ## The Idea Behind Dynamic Programming
 
 Imagine you are given two bags of coins and you are asked to count the # of coins in the first bag. (There are $51$ coins in the first bag.) Then, you are asked to compute the total # of coins in **both** bags ASAP. Would you count the # of coins in the first bag again? **No!** Since we already know the # of coins in the first bag, all we have to do is add the # of coins in the second bag to the # coins in the first bag (which is $51$). This is the idea behind DP.
@@ -65,3 +67,13 @@ Though tabulation is hard to code (we need to come up with a specific order when
 5. Decide if you want to implement it iteratively or recursively
 6. Add memoization
 7. Determine the time complexity
+
+---
+
+## **Tip: Majority of DP Problems Falls into 2 Categories!**
+
+A majority of the Dynamic Programming problems can be categorized into two types:
+1. Optimization problems
+2. Combinatorial problems
+3. 
+An optimization problem is a problem of finding the best solution from all feasible solutions. And combinatorial problems expect you to figure out the number of ways to do something or the probability of some event happening.
