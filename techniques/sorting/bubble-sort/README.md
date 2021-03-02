@@ -1,7 +1,16 @@
-#include <bits/stdc++.h>
+# Bubble Sort
 
-using namespace std;
+## About
 
+Bubble sort is the easiest sorting algorithm that works in $\theta(n^2)$ time by repeatedly swapping the adjacent elements if they are in wrong order.
+
+## Example
+
+![Image](ex.png)
+
+## Code
+
+```cpp
 void sort(vector<int> &arr)
 {
   int n = arr.size();
@@ -18,20 +27,4 @@ void sort(vector<int> &arr)
     }
   }
 }
-
-int main()
-{
-  ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-
-  vector<int> arr = {7, 4, 3, 2, 1};
-
-  sort(arr);
-
-  for (int i : arr)
-    cout << i << " ";
-
-  cout << "\n";
-
-  return 0;
-}
+```

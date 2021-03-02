@@ -1,62 +1,43 @@
-#include <iostream>
-#include <vector>
-#include <cassert>
+#include <bits/stdc++.h>
 
 using namespace std;
 
-typedef vector<int> vi;
+void sort(vector<int> &arr) {
+  int n = arr.size();
 
-void insertion_sort(vi &arr)
-{
-  for (int i = 0; i < arr.size(); i++)
-  {
-    while (i > 0 && arr[i - 1] >= arr[i])
-    {
-      int temp = arr[i];
-      arr[i] = arr[i - 1];
-      arr[i - 1] = temp;
-      i--;
+  for (int i = 1; i < n; i++) {
+    // key: value to be inserted
+    // j: starting value of where we will begin locating position of key in the sorted array
+    int key = arr[i], j = i - 1;
+
+    // Move elements that are greater than the key one position ahead of their current position.
+    // Locate the position to insert key.
+    while (j >= 0 && arr[j] > key) {
+      // swap elements
+      swap(arr[j + 1], arr[j]);
+
+      // continue checking if we can place it further left
+      j--;
     }
+
+    // Insert key at the position j + 1.
+    // Note: j + 1 because j-- decreases j by 1, so we need to increase it in order to get the correct index.
+    arr[j + 1] = key;
   }
-}
-
-bool test_function(vector<vi> input)
-{
-  vi test_case = input[0];
-  vi expected = input[1];
-  insertion_sort(test_case);
-
-  for (int i : test_case)
-  {
-    cout << i << " ";
-  }
-
-  cout << "\n";
-
-  if (test_case == expected)
-  {
-    cout << "Pass"
-         << "\n";
-
-    return true;
-  }
-  else
-    cout << "Fail"
-         << "\n";
-
-  return false;
 }
 
 int main()
 {
-  vector<vi> input_1 = {vi{3, 2, 1}, vi{1, 2, 3}};
-  assert(test_function(input_1));
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
 
-  vector<vi> input_2 = {vi{1, 2, 3}, vi{1, 2, 3}};
-  assert(test_function(input_2));
+  vector<int> arr = {12, 11, 13, 5, 6};
 
-  vector<vi> input_3 = {vi{}, vi{}};
-  assert(test_function(input_3));
+  sort(arr);
+
+  for (int i : arr) cout << i << " ";
+
+  cout << "\n";
 
   return 0;
 }

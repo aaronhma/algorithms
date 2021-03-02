@@ -1,70 +1,38 @@
-#include <iostream>
-#include <vector>
-#include <cassert>
+#include <bits/stdc++.h>
 
 using namespace std;
 
-typedef vector<int> vi;
+void sort(vector<int> &arr) {
+  int n = arr.size();
 
-vi selection_sort(vi arr)
-{
-  for (long unsigned int i = 0; i < arr.size(); i++)
-  {
-    int smallest_index = i;
+  // Go through the index where we will place the next min element into the sorted array
+  // n - 1, as the last element is guaranteed to be the last element
+  for (int i = 0; i < n - 1; i++) {
+    // Find the minimum element in the unsorted array
+    int min_index = i;
 
-    for (long unsigned int j = i + 1; j < arr.size(); j++)
-    {
-      if (arr[j] < arr[smallest_index])
-      {
-        smallest_index = j;
-      }
-
-      int temp = arr[i];
-      arr[i] = arr[smallest_index];
-      arr[smallest_index] = temp;
+    for (int j = i + 1; j < n; j++) {
+      if (arr[j] < arr[min_index])
+        min_index = j;
     }
+
+    // Swap the found minimum element with the element at position (the place where we'll put the minimum element)
+    swap(arr[min_index], arr[i]);
   }
-
-  return arr;
-}
-
-bool test_function(vector<vi> input)
-{
-  vi test_case = input[0];
-  vi expected = input[1];
-  test_case = selection_sort(test_case);
-
-  for (int i : test_case)
-  {
-    cout << i << " ";
-  }
-
-  cout << "\n";
-
-  if (test_case == expected)
-  {
-    cout << "Pass"
-         << "\n";
-
-    return true;
-  }
-  else
-    cout << "Fail"
-         << "\n";
-
-  return false;
 }
 
 int main()
 {
-  vector<vi> input_1 = {vi{3, 2, 1}, vi{1, 2, 3}};
-  assert(test_function(input_1));
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
 
-  vector<vi> input_2 = {vi{1, 2, 3}, vi{1, 2, 3}};
-  assert(test_function(input_2));
+  vector<int> arr = {64, 25, 12, 22, 11};
 
-  vector<vi> input_3 = {vi{}, vi{}};
-  assert(test_function(input_3));
+  sort(arr);
+
+  for (int i : arr) cout << i << " ";
+
+  cout << "\n";
 
   return 0;
 }
