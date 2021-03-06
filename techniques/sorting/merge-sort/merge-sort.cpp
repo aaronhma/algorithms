@@ -19,9 +19,10 @@ void merge(vector<int> &arr, int left, int mid, int right)
 
   // Fill in the arrays
   for (int i = 0; i < n1; i++)
-    arr1[i] = arr[left + i];
+    arr1[i] = arr[left + i]; // left + i to get correct index (because arr1 contains elements less than the mid index)
   for (int i = 0; i < n2; i++)
-    arr2[i] = arr[mid + i + 1];
+    // NOTE: We use + 1 as if i = 0, then arr2[0] would be arr[mid], which is incorrect, as arr[mid] is already in arr1.
+    arr2[i] = arr[mid + i + 1]; // mid + i + 1 to get correct index (because arr2 contains elements more than the mid index)
 
   // i: current index in array 1
   // j: current index in array 2
@@ -31,14 +32,17 @@ void merge(vector<int> &arr, int left, int mid, int right)
   // Put data into the array
   while (i < n1 && j < n2)
   {
-    // "sort" the array
+    // Stable sorting algorithm as elements on the left side are in arr1 and elements on the right are in arr2 and we always take elements on the left in case of both elements are the same.
     if (arr1[i] <= arr2[j])
       arr[k] = arr1[i++];
     else
       arr[k] = arr2[j++];
 
+    // Go to next index
     k++;
   }
+
+  // NOTE: Only one array contains elements we need to copy into the array.
 
   // Copy remaining elements from arr1 to array
   while (i < n1)
@@ -55,20 +59,20 @@ void merge(vector<int> &arr, int left, int mid, int right)
 // O(n log n)
 void sort(vector<int> &arr, int left, int right)
 {
-  // Base case: If left >= right, we cannot sort the array
+  // Base case: If left >= right, we cannot sort the array, as the middle index would be incorrect.
   if (left >= right)
     return;
 
   // Calculate middle index
   int mid = left + (right - left) / 2;
 
-  // Array 1:
+  // Array 1: Merge elements from arr[left:mid]
   sort(arr, left, mid);
 
-  // Array 2:
+  // Array 2: Merge elements from arr[mid + 1:right]
   sort(arr, mid + 1, right);
 
-  // "Merge" the two arrays together
+  // Merge the two arrays together
   merge(arr, left, mid, right);
 }
 

@@ -1,6 +1,6 @@
 # Merge Sort
 
-Merge sort is a divide and conquer algorithm that runs in $\theta(n \ log \ n)$. It divides the input array into two halves ($arr[left:mid]$, $arr[mid + 1: right]$), then repeatedly calls itself with the two halves, and merges (and sorts!) the two halves.
+Merge sort is a divide and conquer algorithm that runs in $\theta(n \ log \ n)$. It divides the input array into two halves ($arr[left:mid]$, $arr[mid + 1: right]$), then repeatedly calls itself with the two halves, and merges the two sorted halves.
 
 As an example, let's say we want to sort the array $\{ 38, 27, 43, 3, 9, 82, 10 \}$. The steps taken by merge sort is shown below:
 
@@ -38,9 +38,11 @@ void mergeSort(vector<int> &arr, int left, int right)
 
 The time complexity of merge sort is $\theta(n \ log \ n)$ for all three cases (average, best, worst):
 
--   `mergeSort`: $\theta(log \ n)$ - We're essentially dividing the array $arr[left:right]$ in half
--   `merge`: $\theta(n)$ - Need to iterate through the entire array in the worst case
+-   `mergeSort`: $\theta(log \ n)$ - Without including the `merge` operations, the "divide" recursion tree is approximately the size of $log \ n$.
+-   `merge`: $\theta(n)$ - In the worst case, we have to go through the array (approximately) once.
+
+Multiplying these together, we have $\theta(n \ log \ n)$.
 
 #### **Space complexity:**
 
-The space compleity is $\theta(n)$, as we need to store the entire array.
+The space compleity is $\theta(n)$, as we need to create two arrays during the `merge()` function and also store data in the call stack during the `mergeSort()` function (because it's implemented using recursion).

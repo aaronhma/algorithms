@@ -4,8 +4,6 @@
 
 Insertion sort works by adding elements from a unsorted array to a unsorted array.
 
-### How it works:
-
 1. Have an array:
 
 ![Image](https://www.interviewcake.com/images/svgs/insertion_sort_algorithm__unsorted_starting_list.svg?bust=206)
@@ -25,3 +23,9 @@ now swap:
 ![Image](https://www.interviewcake.com/images/svgs/insertion_sort_algorithm__moving_element_4_by_swapping.svg?bust=206)
 
 ([Source](https://www.interviewcake.com/concept/cpp/insertion-sort))
+
+## ℹ️ Tips
+
+- Insertion sort is best used on a partially sorted array, as the best case complexity is $\Omega(n)$.
+- Insertion sort is a stable sorting algorithm.
+- Insertion sort is an in-place algorithm.
