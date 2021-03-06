@@ -14,7 +14,7 @@ void sort(vector<int> &arr) {
     // Locate the position to insert key.
     while (j >= 0 && arr[j] > key) {
       // swap elements
-      swap(arr[j + 1], arr[j]);
+      arr[j + 1] = arr[j];
 
       // continue checking if we can place it further left
       j--;
