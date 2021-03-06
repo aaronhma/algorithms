@@ -2,8 +2,8 @@
 
 ## Background
 
-- [C++ std::array](http://www.cplusplus.com/reference/array/array/)
-- [C++ std::vector](http://www.cplusplus.com/reference/vector/vector/)
+-   [C++ std::array](http://www.cplusplus.com/reference/array/array/)
+-   [C++ std::vector](http://www.cplusplus.com/reference/vector/vector/)
 
 ![Array Image](https://media.geeksforgeeks.org/wp-content/uploads/C-Arrays.jpg)
 ([Source](https://www.geeksforgeeks.org/c-sharp-arrays/))
@@ -12,18 +12,18 @@ An array is a list of items stored in sequential order. The idea behind arrays i
 
 ## Pros & Cons of Arrays
 
-- Pros:
-  - Collections of items of same data type
-  - You can get elements by index
-  - Sorting, searching, etc. is included
-  - Many other data structures can be implemented with arrays
-- Cons:
+-   Pros:
+    -   Collections of items of same data type
+    -   You can get elements by index
+    -   Sorting, searching, etc. is included
+    -   Many other data structures can be implemented with arrays
+-   Cons:
 
-  - Only hold same data type
-  - May need to copy data to allow getting elements by index
-  - If the size of array grows huge, the speed gets slower
+    -   Only hold same data type
+    -   May need to copy data to allow getting elements by index
+    -   If the size of array grows huge, the speed gets slower
 
-- Pros
+-   Pros
 
 Array knows the address for every item in it.
 
@@ -41,9 +41,9 @@ Array's are 0-indexed. The capacity/length is a number of items, not a highest i
 
 three key operations for Arrays:
 
-- Serach items
-- Insert items
-- Remove items
+-   Serach items
+-   Insert items
+-   Remove items
 
 **two-pointer** technique. It is one of the main techniques used for in-place Array algorithms.
 
@@ -68,11 +68,11 @@ With a list, elements are strewn all over, and one element stores the address of
 
 ## Data access: random access and sequential access
 
-- Sequential access
+-   Sequential access
 
 It means reading the elements one by one, starting at the first element. Linked lists can only do sequential access. If you want to read the 10th element of a linked list, you have to read the first 9 elements and follow the links to the 10th element.
 
-- Random access
+-   Random access
 
 It means you can jump directly to the 10th element. Array is faster at read because it provides random access.
 
@@ -89,7 +89,7 @@ It means you can jump directly to the 10th element. Array is faster at read beca
 
 C++ provides 2 implementations of arrays, the fixed-sized array and a dynamic array which grows in size depending on the size needed.
 
-- Fixed-sized array:
+-   Fixed-sized array:
 
 ```cpp
 #include <iostream>
@@ -98,7 +98,7 @@ int ARRAY_SIZE = 3;
 int arr[ARRAY_SIZE];
 ```
 
-- Dynamic array:
+-   Dynamic array:
 
 ```cpp
 #include <vector>
@@ -110,8 +110,8 @@ std::vector<int> arr;
 
 An real-world use case of an array is where you need to arrange books in a pile into alphabetical order. This is where arrays come into handy.
 
-- Brute force solution:
-  For every book in the pile, push the value onto a new array, then sort the values in the array by first character, then second, etc.
+-   Brute force solution:
+    For every book in the pile, push the value onto a new array, then sort the values in the array by first character, then second, etc.
 
 ```cpp
 // This is VERY SLOW on huge amounts of data!
@@ -131,7 +131,7 @@ for (std::string book : books) {
 }
 ```
 
-- C++ Standard Library:
+-   C++ Standard Library:
 
 ```cpp
 // Faster
@@ -156,18 +156,18 @@ std::sort(arr.begin(), arr.end() [](const std::string &a, const std::string &b) 
 
 ## References
 
-- [GeekForGeeks: Intro to Arrays](https://www.geeksforgeeks.org/introduction-to-arrays/)
-- [Quora: Pro & Cons of Arrays](https://www.quora.com/What-are-the-pros-and-cons-of-arrays-in-C-programming-language#:~:text=The%20pros%20are%3A%20you%20need,pass%20the%20right%20size%2Flength.)
+-   [GeekForGeeks: Intro to Arrays](https://www.geeksforgeeks.org/introduction-to-arrays/)
+-   [Quora: Pro & Cons of Arrays](https://www.quora.com/What-are-the-pros-and-cons-of-arrays-in-C-programming-language#:~:text=The%20pros%20are%3A%20you%20need,pass%20the%20right%20size%2Flength.)
 
 # Arrays
 
-- stores data in sequential memory
-- uses indexing to get data (index from 0 - size n - 1)
+-   stores data in sequential memory
+-   uses indexing to get data (index from 0 - size n - 1)
 
 ## Cons
 
-- only contain data of same type
-- fixed capacity
+-   only contain data of same type
+-   fixed capacity
 
 ## Defining a Array
 

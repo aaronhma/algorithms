@@ -2,13 +2,13 @@
 
 ## Background
 
-- Tabulation: Bottom Up
-- Memoization: Top Down
+-   Tabulation: Bottom Up
+-   Memoization: Top Down
 
 Both tabulation and memoization are the same thing, except for the difference in the ways of doing the thing.
 
-- Tabulation - starting from the bottom to the top
-- Memoization - starting from the top to the bottom
+-   Tabulation - starting from the bottom to the top
+-   Memoization - starting from the top to the bottom
 
 Tabulation example:
 

@@ -4,8 +4,8 @@
 
 C++'s Standard Template Library contains 2 implementations of a `set`:
 
-- `set`: Based on a bBST and operations work in $\theta(log n)$
-- `unordered_set`: Based on a hash table and operations work in $\theta(1)$ time on average
+-   `set`: Based on a bBST and operations work in $\theta(log n)$
+-   `unordered_set`: Based on a hash table and operations work in $\theta(1)$ time on average
 
 Both structures are efficient, though `unordered_set` is faster than `set` as there is no ordering of the elements unlike a `set`. Another important thing to note is that a `set` cannot store duplicate items.
 

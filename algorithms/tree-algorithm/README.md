@@ -276,12 +276,12 @@ On the other hand, in Depth-First Search (DFS), we go as deep as possible, prefe
 
 ## Real-World Applications
 
-- Operating system filesystems - showing all your folders with files
+-   Operating system filesystems - showing all your folders with files
 
-- Comments - Comments, replies, etc.
+-   Comments - Comments, replies, etc.
 
-- Family tree - grandparents, parents, children
+-   Family tree - grandparents, parents, children
 
 ## References
 
-- [Interview Cake: Tree](https://www.interviewcake.com/concept/cpp/tree?)
+-   [Interview Cake: Tree](https://www.interviewcake.com/concept/cpp/tree?)

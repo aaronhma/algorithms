@@ -38,8 +38,8 @@ void mergeSort(vector<int> &arr, int left, int right)
 
 The time complexity of merge sort is $\theta(n \ log \ n)$ for all three cases (average, best, worst):
 
-- `mergeSort`: $\theta(log \ n)$ - We're essentially dividing the array $arr[left:right]$ in half
-- `merge`: $\theta(n)$ - Need to iterate through the entire array in the worst case
+-   `mergeSort`: $\theta(log \ n)$ - We're essentially dividing the array $arr[left:right]$ in half
+-   `merge`: $\theta(n)$ - Need to iterate through the entire array in the worst case
 
 #### **Space complexity:**
 

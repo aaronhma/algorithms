@@ -14,10 +14,10 @@ We can solve this problem in $\theta(nm)$ time using $\theta(nm)$ space.
 
 We brute force the $i$ (row index) and $j$ (column index) indexes. Then, at each step, we have two cases:
 
-- $arr[i][j] = 0$
-  - $maxLen[i][j] = 0$
-- $arr[i][j] = 1$
-  - Get the minimum of the top element, left element, and top left element and increase $1$ to it (this is a DP formula)
+-   $arr[i][j] = 0$
+    -   $maxLen[i][j] = 0$
+-   $arr[i][j] = 1$
+    -   Get the minimum of the top element, left element, and top left element and increase $1$ to it (this is a DP formula)
 
 ### **TIP: Click [here](https://leetcode.com/problems/maximal-square/solution/) for a better explanation.**
 

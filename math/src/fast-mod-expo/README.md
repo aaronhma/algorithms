@@ -26,15 +26,15 @@ It turns out that we can solve this problem in $\theta(log \ n)$ time.
 
 We can divide $x^n$ into two cases:
 
-- Case 1: $n$ is odd
+-   Case 1: $n$ is odd
 
 $$x^n = x * x^{n - 1}$$
 
-- Case 2: $n$ is even
+-   Case 2: $n$ is even
 
 $$x^n = (x^{\frac{n}{2}})^2$$
 
-- Case 3: $n = 0$
+-   Case 3: $n = 0$
 
 $$x^n = 1$$
 

@@ -28,9 +28,9 @@ The error behind this is because a is an integer. When computing $a*a$, $a*a$ is
 
 ### Types of Floating Point Numbers
 
-- `float`: C++'s default 32-bit data type (7 decimal digits of precision)
-- `double`: C++'s 64-bit data type (15 decimal digits of precision)
-- `long double`: C++'s 80-bit data type (15 - 33 digits of precision)
+-   `float`: C++'s default 32-bit data type (7 decimal digits of precision)
+-   `double`: C++'s 64-bit data type (15 decimal digits of precision)
+-   `long double`: C++'s 80-bit data type (15 - 33 digits of precision)
 
 ### Printing Floating Integers with Precision
 
@@ -80,6 +80,6 @@ cout << x << "\n";
 
 This works because of the follow equivalences in Number Theory:
 
-- $(a + b) \ \% \ m = (a \ \% \ m + b \ \% \ m) \ \% \ m$
-- $(a - b) \ \% \ m = (a \ \% \ m - b \ \% \ m) \ \% \ m$
-- $(a * b) \ \% \ m = (a \ \% \ m * b \ \% \ m) \ \% \ m$
+-   $(a + b) \ \% \ m = (a \ \% \ m + b \ \% \ m) \ \% \ m$
+-   $(a - b) \ \% \ m = (a \ \% \ m - b \ \% \ m) \ \% \ m$
+-   $(a * b) \ \% \ m = (a \ \% \ m * b \ \% \ m) \ \% \ m$

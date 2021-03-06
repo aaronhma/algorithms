@@ -1,42 +1,46 @@
-- [Informatics Notes](https://sendtoaryansh.gitbook.io/informatics-notes/)
+-   [730+ Free Online Programming & Computer Science Courses](https://www.freecodecamp.org/news/free-online-programming-cs-courses/)
 
-- [About Competitive Programming](http://darrenyao.com/) including a book [An Introduction to the USA Computing Olympiad](http://darrenyao.com/usacobook/cpp.pdf)
+-   [Informatics Notes](https://sendtoaryansh.gitbook.io/informatics-notes/)
 
-- [Unofficial Syllabus](https://www.overleaf.com/read/fktckfprxyxn) (based on past problems)
+-   [About Competitive Programming](http://darrenyao.com/) including a book [An Introduction to the USA Computing Olympiad](http://darrenyao.com/usacobook/cpp.pdf)
 
-  - The general trend is that contests are getting harder.
+-   [Unofficial Syllabus](https://www.overleaf.com/read/fktckfprxyxn) (based on past problems)
 
-- [Resource List](https://github.com/lnishan/awesome-competitive-programming)
+    -   The general trend is that contests are getting harder.
 
-- [Extend C++11](https://github.com/Aryansh-S/Mini-Projects/tree/master/CPP-Modernizer)
+-   [Resource List](https://github.com/lnishan/awesome-competitive-programming)
 
-- [DP Handout (WIP)](https://www.overleaf.com/read/vgdvpkrhjdbb)
+-   [Extend C++11](https://github.com/Aryansh-S/Mini-Projects/tree/master/CPP-Modernizer)
 
-- [DP Toolbox (WIP)](https://www.overleaf.com/read/zbhgfnppqthk)
+-   [DP Handout (WIP)](https://www.overleaf.com/read/vgdvpkrhjdbb)
 
-- [全国青少年信息学奥林匹克竞赛](http://noi.ccf.org.cn/)
+-   [DP Toolbox (WIP)](https://www.overleaf.com/read/zbhgfnppqthk)
+
+-   [全国青少年信息学奥林匹克竞赛](http://noi.ccf.org.cn/)
 
 [Medium - basecs](https://medium.com/basecs/a-gentle-introduction-to-graph-theory-77969829ead8)
 [Medium - Back to Basics](https://medium.com/blue-harvest-tech-blog/back-to-basics-divine-algorithms-vol-i-dijkstras-algorithm-bf46705f5578)
 
-- [USACO Guide](https://usaco.guide/) A free collection of curated, high-quality resources to take you from Bronze to Platinum and beyond.
+-   [USACO Guide](https://usaco.guide/) A free collection of curated, high-quality resources to take you from Bronze to Platinum and beyond.
 
-- [Programming content book](https://sendtoaryansh.gitbook.io/informatics-notes/)
-  [Making a contest template](https://sendtoaryansh.gitbook.io/informatics-notes/making-a-contest-template) [Benq's template](https://github.com/bqi343/USACO/blob/master/Implementations/content/contest/TemplateLong.cpp)
+-   [Programming content book](https://sendtoaryansh.gitbook.io/informatics-notes/)
+    [Making a contest template](https://sendtoaryansh.gitbook.io/informatics-notes/making-a-contest-template) [Benq's template](https://github.com/bqi343/USACO/blob/master/Implementations/content/contest/TemplateLong.cpp)
 
-- [USACO faq](https://darren-yao.gitbook.io/darren-s-blog/usaco-faq)
+-   [USACO faq](https://darren-yao.gitbook.io/darren-s-blog/usaco-faq)
 
-- [Evan chen math blog](https://usamo.wordpress.com/)
+-   [Evan chen math blog](https://usamo.wordpress.com/)
 
-- [LeetCode]()
+-   [LeetCode]()
 
 Best website for practicing DSA questions, good user interface, the discussion section is awesome
 
-- [GeekForGeeks](https://www.geeksforgeeks.org/)
+-   [GeekForGeeks](https://www.geeksforgeeks.org/)
 
 Treasure for the Computer Science students, one can get all the questions with their possible solutions and can also practice here.
 
-- [Techie Delight]() A simplistic website made only for learning DSA.
+-   [Techie Delight]() A simplistic website made only for learning DSA.
+
+-   [AlgoNotes](http://www.algonotes.com/en/) Polish olympic teacher. Algorithmic Notes on Competitive Programming
 
 Interview Specific
 

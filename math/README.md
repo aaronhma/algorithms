@@ -41,27 +41,27 @@ for (int i = min(a,b); i >= 1; i–-)
 
 ([Source](https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/the-euclidean-algorithm))
 
-- If A = 0 then GCD(A,B)=B, since the GCD(0,B)=B, and we can stop.
-- If B = 0 then GCD(A,B)=A, since the GCD(A,0)=A, and we can stop.
-- Write A in quotient remainder form (A = B⋅Q + R)
-- Find GCD(B,R) using the Euclidean Algorithm since GCD(A,B) = GCD(B,R)
+-   If A = 0 then GCD(A,B)=B, since the GCD(0,B)=B, and we can stop.
+-   If B = 0 then GCD(A,B)=A, since the GCD(A,0)=A, and we can stop.
+-   Write A in quotient remainder form (A = B⋅Q + R)
+-   Find GCD(B,R) using the Euclidean Algorithm since GCD(A,B) = GCD(B,R)
 
 ##### Worked Example
 
 ([Source](https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/the-euclidean-algorithm))
 
-- GCD(A=270, B=192)
+-   GCD(A=270, B=192)
 
-* ✅A != 0
-* ✅B != 0
-* ✅Use long division to find that 270/192 = 1 with a remainder of 78. We can write this as: 270 = 192 \* 1 +78
-* ✅Find GCD(192,78), since GCD(270,192)=GCD(192,78)
+*   ✅A != 0
+*   ✅B != 0
+*   ✅Use long division to find that 270/192 = 1 with a remainder of 78. We can write this as: 270 = 192 \* 1 +78
+*   ✅Find GCD(192,78), since GCD(270,192)=GCD(192,78)
 
 ##### Implementation
 
 ([Source](https://en.wikipedia.org/wiki/Euclidean_algorithm))
 
-- Division-based:
+-   Division-based:
 
 ```python
 def gcd(a, b):
@@ -78,7 +78,7 @@ def gcd(a, b):
     return a
 ```
 
-- Subtraction based:
+-   Subtraction based:
 
 ```python
 def gcd(a, b):
@@ -90,7 +90,7 @@ def gcd(a, b):
     return a
 ```
 
-- Recursion:
+-   Recursion:
 
 ```python
 # This is the best soluton:

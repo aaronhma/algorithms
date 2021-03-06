@@ -2,17 +2,17 @@
 
 ## Addition
 
-- Addition from _1_ to _n_. `S = 1 + 2 + ... + n`
+-   Addition from _1_ to _n_. `S = 1 + 2 + ... + n`
 
 Theroem: `S = n(n + 1) / 2`
 
-- Addition from _1_ to _2n_. `S = 1 + 2 + ... + 2n`
+-   Addition from _1_ to _2n_. `S = 1 + 2 + ... + 2n`
 
 Theroem: `S = n(2n + 1)`
 
 ## Power
 
-- _2_ power of _K_
+-   _2_ power of _K_
 
 ```c++
 1 << 0  // 1  2^0
@@ -23,7 +23,7 @@ Theroem: `S = n(2n + 1)`
 
 ## Number tricks
 
-- Number get each digit
+-   Number get each digit
 
 ```c++
 int main()
@@ -75,23 +75,23 @@ https://math.stackexchange.com
 
 https://www.wolframalpha.com/
 
-- We can solve any types of math by entering questions.
-- They give us step by step solution for every math.
-- We can learn many things from one question.
-- We can ask a math by uploading file!
-  Alternatively we can find question and answer by topic.
+-   We can solve any types of math by entering questions.
+-   They give us step by step solution for every math.
+-   We can learn many things from one question.
+-   We can ask a math by uploading file!
+    Alternatively we can find question and answer by topic.
 
 Math suggested by William Lin
 https://tutorial.math.lamar.edu/Classes/Alg/Alg.aspx
 
 Under-graduate level:
 
-- Mathematics for Computer Science
-- Street-Fighting Mathematics
-- Introduction to Mathematical Programming
-  Graduate level:
-- Discrete Stochastic Processes
-- Discrete-Time Signal Processing
+-   Mathematics for Computer Science
+-   Street-Fighting Mathematics
+-   Introduction to Mathematical Programming
+    Graduate level:
+-   Discrete Stochastic Processes
+-   Discrete-Time Signal Processing
 
 I'll also mention resources such as MIT OpenCourseWare (http://ocw.mit.edu
 

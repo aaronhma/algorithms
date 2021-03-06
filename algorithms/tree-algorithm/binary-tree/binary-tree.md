@@ -50,6 +50,6 @@ A degenerate/pathological binary tree is a binary tree where every parent node h
 
 ## References
 
-- [Interview Cake: Tree](https://www.interviewcake.com/concept/cpp/tree?)
-- [Pdx.Edu: Tree](https://web.cecs.pdx.edu/~sheard/course/Cs163/Doc/FullvsComplete.html)
-- [Towards Data Science: 5 Types of Binary Tree](https://towardsdatascience.com/5-types-of-binary-tree-with-cool-illustrations-9b335c430254)
+-   [Interview Cake: Tree](https://www.interviewcake.com/concept/cpp/tree?)
+-   [Pdx.Edu: Tree](https://web.cecs.pdx.edu/~sheard/course/Cs163/Doc/FullvsComplete.html)
+-   [Towards Data Science: 5 Types of Binary Tree](https://towardsdatascience.com/5-types-of-binary-tree-with-cool-illustrations-9b335c430254)

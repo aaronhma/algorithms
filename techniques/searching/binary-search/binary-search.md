@@ -56,19 +56,19 @@ Binary Search is generally composed of 3 main sections:
 2. **Binary Search**: Using a loop or recursion to divide search space in half after each comparison.
 3. **Post-processing**: Determine viable candidates in the remaining space.
 
-- If the target value is equal to the middle element - we're done.
-- If the target value is smaller - continue to search on the left.
-- If the target value is larger - continue to search on the right.
+-   If the target value is equal to the middle element - we're done.
+-   If the target value is smaller - continue to search on the left.
+-   If the target value is larger - continue to search on the right.
 
 ## Terminology
 
-- **Target**: the value that you are searching for
+-   **Target**: the value that you are searching for
 
-- **Index**: the current location that you are searching
+-   **Index**: the current location that you are searching
 
-- **Left, Right**: the indicies from which we use to maintain our search Space
+-   **Left, Right**: the indicies from which we use to maintain our search Space
 
-- **Mid**: the index that we use to apply a condition to determine if we should search left or right
+-   **Mid**: the index that we use to apply a condition to determine if we should search left or right
 
 ## Big O Notation (Time and Space Complexity) (Runtime)
 
@@ -82,10 +82,10 @@ Because Binary Search operates by applying a condition to the value in the middl
 
 **Why log n?**
 
-- Binary search is performed by dividing the existing array in half.
-- So every time you a call the subroutine ( or complete one iteration ) the size reduced to half of the existing part.
-- First _N_ become _N/2_, then it become _N/4_ and go on till it find the element or size become _1_.
-- The maximum numbers of iterations is _log N_ (base 2).
+-   Binary search is performed by dividing the existing array in half.
+-   So every time you a call the subroutine ( or complete one iteration ) the size reduced to half of the existing part.
+-   First _N_ become _N/2_, then it become _N/4_ and go on till it find the element or size become _1_.
+-   The maximum numbers of iterations is _log N_ (base 2).
 
 2. Space: _O(1)_ -- Constant Spac
 
@@ -95,6 +95,6 @@ Although, Binary Search does require keeping track of 3 indicies, the iterative 
 
 These 3 templates differ by their:
 
-- left, mid, right index assignments
-- loop or recursive termination condition
-- necessity of post-processing
+-   left, mid, right index assignments
+-   loop or recursive termination condition
+-   necessity of post-processing

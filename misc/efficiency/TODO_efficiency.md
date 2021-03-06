@@ -8,14 +8,14 @@ Efficiency refers to the time and space used by a algorithm. Depending on the pr
 
 ([Source](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Comparison_computational_complexity.svg/1024px-Comparison_computational_complexity.svg.png))
 
-- **n!** - Tries every combination (the slowest)
-- **2<sup>n</sup>** - Commonly used in prime factorization
-- **n<sup>2</sup>** - Quadratic time
-- **n log n**
-- **n** - Linear time (needs to see every element at once)
-- **&Sqrt;n** - Great resource - click [here](https://www.infoarena.ro/blog/square-root-trick)
-- **log n** - Binary search - Halves the array half every iteration
-- **1** - Constant, disregards input size, same amount of time/space
+-   **n!** - Tries every combination (the slowest)
+-   **2<sup>n</sup>** - Commonly used in prime factorization
+-   **n<sup>2</sup>** - Quadratic time
+-   **n log n**
+-   **n** - Linear time (needs to see every element at once)
+-   **&Sqrt;n** - Great resource - click [here](https://www.infoarena.ro/blog/square-root-trick)
+-   **log n** - Binary search - Halves the array half every iteration
+-   **1** - Constant, disregards input size, same amount of time/space
 
 <div>
           <table id="legend" style="display:inline-block">

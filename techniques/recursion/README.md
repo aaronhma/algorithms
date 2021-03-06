@@ -12,7 +12,7 @@ Recursion is when a function calls itself and every recursive function has two c
 
 A recursive function have to tell it when to stop recursing. Every recursive function has two parts: the base case, and the recursive case. The recursive case is when the function calls itself. The base case is when the function doesn’t call itself again ... so it doesn’t go into an infinite loop.
 
-- Cons
+-   Cons
 
 Because a recursive function calls itself, it’s easy to write a function incorrectly that ends up in an infinite loop.
 
@@ -37,7 +37,7 @@ Using the stack is convenient, but there’s a cost: saving all that info can ta
 1. You can rewrite your code to use a loop instead.
 2. You can use something called tail recursion (an advanced recursion) Only supported by some languages, not all.
 
-- The call stack with recursion
+-   The call stack with recursion
 
 _factorial(5)_ is written as _5!_, and it’s defined like this: _5! = 5 _ 4 _ 3 _ 2 _ 1_. Similarly, _factorial(3)_ is _3 _ 2 _ 1_. Here’s a recursive function to calculate the factorial of a number:
 

@@ -10,17 +10,17 @@ A Least Recently Used (LRU) Cache organizes items based on order of use (see pic
 
 ## Pros & Cons of LRU Cache
 
-- Pros:
-  - Fast accesses - O(1)
-  - Fast updates - O(1)
+-   Pros:
+    -   Fast accesses - O(1)
+    -   Fast updates - O(1)
 
-* Cons:
-  - Space intensive - O(n)
+*   Cons:
+    -   Space intensive - O(n)
 
 ## LRU Cache Operations
 
-- `get` - gets an elements from the cache
-- `put` - puts an element if the cache is not full, if the cache is full, deletes the least recently used element
+-   `get` - gets an elements from the cache
+-   `put` - puts an element if the cache is not full, if the cache is full, deletes the least recently used element
 
 ## Why Use a LRU Cache?
 
@@ -35,8 +35,8 @@ If you store your website data into the user's cache, reading from the user's ca
 | LRU Item    | O(1)       |
 | Access Item | O(1)       |
 
-- Space complexity: O(n)
+-   Space complexity: O(n)
 
 ## References
 
-- [Interview Cake: LRU Cache](https://www.interviewcake.com/concept/cpp/lru-cache?)
+-   [Interview Cake: LRU Cache](https://www.interviewcake.com/concept/cpp/lru-cache?)

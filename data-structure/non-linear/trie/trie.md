@@ -33,17 +33,17 @@ Based on the above trie, it looks like "Mariana" is the only word in the trie, e
 
 ## Pros & Cons of Trie
 
-- Pros:
+-   Pros:
 
-  - Efficient prefix queries
+    -   Efficient prefix queries
 
-- Cons:
+-   Cons:
 
-  - Not standard, as **most** languages (including C++) don't have a built-in trie implementation.
+    -   Not standard, as **most** languages (including C++) don't have a built-in trie implementation.
 
 **NOTE:**
 
-- _k_ is the length of the string that you either search or insert
+-   _k_ is the length of the string that you either search or insert
 
 ## When Should You Use a Trie?
 
@@ -74,5 +74,5 @@ A radix tree is basically a tree, except for it saves memory by combining nodes 
 
 ## References
 
-- [Interview Cake: Trie](https://www.interviewcake.com/concept/cpp/trie)
-- [HackerNoon: When to Use Tries](https://hackernoon.com/practical-data-structures-for-frontend-applications-when-to-use-tries-5428a565eba4)
+-   [Interview Cake: Trie](https://www.interviewcake.com/concept/cpp/trie)
+-   [HackerNoon: When to Use Tries](https://hackernoon.com/practical-data-structures-for-frontend-applications-when-to-use-tries-5428a565eba4)

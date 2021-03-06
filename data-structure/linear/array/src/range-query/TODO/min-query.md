@@ -2,8 +2,8 @@
 
 Assume that the function $min(a, b)$ returns the minimum value of the array $arr$ between the range $a$ and $b$. The easiest approach to this problem is to iterate from index $a$ to index $b$ and update the minimum as we go for a time complexity of around $\theta(k*n)$ time, where the constants are as follows:
 
-- $k$: # of queries
-- $n$: $b - a + 1$ (# of elements in the range $[a, b]$)
+-   $k$: # of queries
+-   $n$: $b - a + 1$ (# of elements in the range $[a, b]$)
 
 This approach works, but for higher values of $k$ and $n$, this approach is not feasible. A neat optimization trick we can do is preprocess the values first in $\theta(n^2)$ time, then answer the queries in $\theta(1)$
 time.

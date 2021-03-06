@@ -1,25 +1,25 @@
 ## Compete Time
 
-- [CList](https://clist.by/) [Various competition resources](https://clist.by/resources/)
-  [CList repo](https://github.com/aropan/clist)
+-   [CList](https://clist.by/) [Various competition resources](https://clist.by/resources/)
+    [CList repo](https://github.com/aropan/clist)
 
 All contest list website list of coming online onsite competitions
 
 ## Problem checklist
 
-- [OI Checklist](https://oichecklist.pythonanywhere.com/) [An example](http://oichecklist.pythonanywhere.com/view/ad044b7982f1574203d5cb907a7823811cb0605f)
+-   [OI Checklist](https://oichecklist.pythonanywhere.com/) [An example](http://oichecklist.pythonanywhere.com/view/ad044b7982f1574203d5cb907a7823811cb0605f)
 
 ## Competitions
 
-- [Google CodeJam Archive](https://codingcompetitions.withgoogle.com/codejam/archive)
+-   [Google CodeJam Archive](https://codingcompetitions.withgoogle.com/codejam/archive)
 
-- [Hackerrank Algorithms Problems](https://www.hackerrank.com/domains/algorithms)
+-   [Hackerrank Algorithms Problems](https://www.hackerrank.com/domains/algorithms)
 
-- [Hackerrank Data Structures Problems](https://www.hackerrank.com/domains/data-structures)
+-   [Hackerrank Data Structures Problems](https://www.hackerrank.com/domains/data-structures)
 
-- [Project Euler Archive](https://projecteuler.net/archives)
+-   [Project Euler Archive](https://projecteuler.net/archives)
 
-- [Geeks for geeks puzzles](https://www.geeksforgeeks.org/puzzles/)
+-   [Geeks for geeks puzzles](https://www.geeksforgeeks.org/puzzles/)
 
 ## CodeForces Tiers
 

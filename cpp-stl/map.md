@@ -8,8 +8,8 @@ A map is a set in the form of key-value pairs (eg. $\{("Test 1", 1), ("Test 2", 
 
 C++'s STL provides two map structures:
 
-- `map`: Based on a bBST (for sorted order) and accessing elements take $\theta(log \ n)$
-- `unordered_map`: Uses hashing for accessing elements in $\theta(1)$ time on average
+-   `map`: Based on a bBST (for sorted order) and accessing elements take $\theta(log \ n)$
+-   `unordered_map`: Uses hashing for accessing elements in $\theta(1)$ time on average
 
 The following code creates a map where the keys are strings and the values are integers:
 

@@ -8,15 +8,15 @@ A hash table (aka dictionary, unordered map, map, etc.) is a data structure that
 
 ## Pros & Cons of Hash Table
 
-- Pros:
+-   Pros:
 
-  - Fast lookups at O(1) average
-  - As long as a data type can be hashed, it can be used as a key
+    -   Fast lookups at O(1) average
+    -   As long as a data type can be hashed, it can be used as a key
 
-- Cons:
-  - Slow worst case - O(n) time
-  - No order
-  - No caching
+-   Cons:
+    -   Slow worst case - O(n) time
+    -   No order
+    -   No caching
 
 ## Complexity Analysis
 
@@ -73,4 +73,4 @@ std::cout << people_with_age.max_load_factor() << "\n"; // 1 - the smaller the b
 
 ## References
 
-- [Interview Cake: Hash Map](https://www.interviewcake.com/concept/cpp/hash-map?)
+-   [Interview Cake: Hash Map](https://www.interviewcake.com/concept/cpp/hash-map?)

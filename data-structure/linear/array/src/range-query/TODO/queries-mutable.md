@@ -4,8 +4,8 @@
 
 A binary indexed tree (or a Fenwick tree) is a dynamic variant of the prefix sum array. It provides two $\theta(log \ n)$ operations:
 
-- processing a range sum query
-- updating a value in the array
+-   processing a range sum query
+-   updating a value in the array
 
 ### Storing Data
 
@@ -63,8 +63,8 @@ The full code can be found [here](sum-queries-mutable.cpp).
 
 A segment tree is a data structure which provides two $\theta(log \ n)$ time operations:
 
-- processing a range query
-- updating an array value
+-   processing a range query
+-   updating an array value
 
 Also, segment trees support sum queries, minimum query, and many other queries.
 

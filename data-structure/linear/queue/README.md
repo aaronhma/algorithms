@@ -2,7 +2,7 @@
 
 ## Background
 
-- [C++ std::queue](http://www.cplusplus.com/reference/queue/queue/)
+-   [C++ std::queue](http://www.cplusplus.com/reference/queue/queue/)
 
 ![Stack Image](https://cdn.programiz.com/sites/tutorial2program/files/queue.png)
 ([Source](https://www.programiz.com/dsa/queue))
@@ -11,8 +11,8 @@ A queue is a collection of items following a First-In, First-Out (FIFO) order. E
 
 ## Pros of Queue
 
-- Pros:
-  - Fast operations, as all operations takes O(1) time
+-   Pros:
+    -   Fast operations, as all operations takes O(1) time
 
 ## Speed of Queue
 
@@ -24,7 +24,7 @@ A queue is a collection of items following a First-In, First-Out (FIFO) order. E
 
 ## C++ Usage
 
-- The C++ Standard Library (STL) provides a handy implementation which can be used as follows.
+-   The C++ Standard Library (STL) provides a handy implementation which can be used as follows.
 
 ```cpp
 // Assume all necessary libraries are included
@@ -51,12 +51,12 @@ std::cout << q.empty() << "\n"; // Queue is not empty
 
 **NOTE: The following operations are included in C++'s Standard Library.**
 
-- `push` - Push an element to the back of the queue
-- `empty` - Returns if the queue is empty or not
-- `front` - First element in queue
-- `back` - Last element in queue
-- `size` - The size of the queue
-- `pop` - Deletes the first element in queue
+-   `push` - Push an element to the back of the queue
+-   `empty` - Returns if the queue is empty or not
+-   `front` - First element in queue
+-   `back` - Last element in queue
+-   `size` - The size of the queue
+-   `pop` - Deletes the first element in queue
 
 ## Example of an Queue
 
@@ -76,30 +76,30 @@ The first car that enters, in this case, Car #1, will exit out of the highway fi
 
 ## Real-World Use Cases
 
-- Printers uses queues to manage printing jobs.
-- Web servers uses queues to manage requests.
-- CPUs uses queues to manage processes.
+-   Printers uses queues to manage printing jobs.
+-   Web servers uses queues to manage requests.
+-   CPUs uses queues to manage processes.
 
 ## References
 
-- [Geeks For Geeks: Queue in C++'s Standard Library](https://www.geeksforgeeks.org/queue-cpp-stl/)
-- [Interview Cake: Queue](https://www.interviewcake.com/concept/cpp/queue)
+-   [Geeks For Geeks: Queue in C++'s Standard Library](https://www.geeksforgeeks.org/queue-cpp-stl/)
+-   [Interview Cake: Queue](https://www.interviewcake.com/concept/cpp/queue)
 
 # Queue
 
-- First-In, First-Out (FIFO) order
+-   First-In, First-Out (FIFO) order
 
 ## Queue Operations
 
-- `create` - creates an empty queue
-- `push` - push data to the back of the queue
-- `pop` - removes data from the front of the queue
-- `empty` - checks if the queue is empty
+-   `create` - creates an empty queue
+-   `push` - push data to the back of the queue
+-   `pop` - removes data from the front of the queue
+-   `empty` - checks if the queue is empty
 
 ## Implementations
 
-- Array-based queue
-- Linked List-based queue
+-   Array-based queue
+-   Linked List-based queue
 
 ## Queue Time Complexity
 

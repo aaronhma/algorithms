@@ -30,8 +30,8 @@ Counting sort works by iterating through the input and counting the number of oc
 
 ## Pros & Cons of Counting Sort
 
-- Pros:
-  - Linear time
-- Cons:
-  - Range of input is known before hand
-  - More than O(n) space
+-   Pros:
+    -   Linear time
+-   Cons:
+    -   Range of input is known before hand
+    -   More than O(n) space

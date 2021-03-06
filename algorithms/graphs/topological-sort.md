@@ -4,9 +4,9 @@
 
 A topological sort is an ordering of the nodes of a graph with the following criteria:
 
-- There must be node $a$ and node $b$.
-- There is a path between $a$ and $b$.
-- $a$ comes before $b$ in the topological sort.
+-   There must be node $a$ and node $b$.
+-   There is a path between $a$ and $b$.
+-   $a$ comes before $b$ in the topological sort.
 
 ## Example
 

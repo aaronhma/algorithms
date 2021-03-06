@@ -10,10 +10,10 @@ It is most often the case that Dynamic programming is considered when we are try
 
 We can determine if a problem is suitable for Dynamic programming by answering the follow questions:
 
-- Can we divide the problem into sub-problems of the same structure?
-- Do the sub-problems overlap?
-- Is this an optimization problem?
-  Typically we only need to answer “yes” to the first two questions to have a high chance that Dynamic programming will get the job done.
+-   Can we divide the problem into sub-problems of the same structure?
+-   Do the sub-problems overlap?
+-   Is this an optimization problem?
+    Typically we only need to answer “yes” to the first two questions to have a high chance that Dynamic programming will get the job done.
 
 You have to break the problem into simpler subproblems, solving each of them just once, and building the solution combining these solved subproblems. The opposite of DP is a greedy algorithm because the latter picks the locally optimal choice at each step. And locally optimal choices may result in a bad global solution.
 

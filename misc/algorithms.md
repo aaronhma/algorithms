@@ -12,7 +12,7 @@ Algorithm speed isn’t measured in seconds, but in growth of the number of oper
 
 Big O notation is the language we use for talking about how long an algorithm takes to run. It's how we compare the efficiency of different approaches to a problem.
 
-- For example, suppose you have a list of size _n_.
+-   For example, suppose you have a list of size _n_.
 
 Simple search needs to check each element, so it will take _n_ operations. The run time in Big O notation is **O(n)**. Where are the seconds? There are none—Big O doesn’t tell you the speed in seconds. Big O notation lets you compare the number of operations. It tells you how fast the algorithm grows.
 

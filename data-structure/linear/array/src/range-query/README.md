@@ -8,11 +8,11 @@ Queries on Static Arrays refers to a situation where our array is static (the ar
 
 The first example of a sum queries is writing the `rangeSumQuery` function which returns the sum of an array $arr$ between the range $a$ and $b$. There are two options for the output of the answer:
 
-- Case 1: $a == 0$
+-   Case 1: $a == 0$
 
 $$sum(a, b) = prefixSum[b]$$
 
-- Case 2: $a \neq 0$
+-   Case 2: $a \neq 0$
 
 $$sum(a, b) = prefixSum[b] - prefixSum[a - 1]$$
 

@@ -4,24 +4,24 @@ Similar to the array, the linked list is also a _linear_ data structure. Each el
 
 There are two types of linked list: singly linked list and doubly linked list. Here are similar and different.
 
-- similar in many operations:
+-   similar in many operations:
 
 1. Not able to _access the data at a random position_ in constant time.
 2. Able to _add a new node after given node or at the beginning of the list in O(1) time_.
 3. Able to _delete the first node in O(1) time_.
 
-- different to _delete a given node_ (including the last node).
+-   different to _delete a given node_ (including the last node).
 
 In a singly linked list, it is not able to get the previous node of a given node so we have to spend _O(n)_ time to find out the previous node before deleting the given node.
 In a doubly linked list, it will be much easier because we can get the previous node with the "prev" reference field. So we can delete a given node in `O(1)` time.
 
 In conclusion, If you need to add or delete a node frequently, a linked list could be a good choice. If you need to access an element by index often, an array might be a better choice than a linked list.
 
-- Pros
+-   Pros
 
 Linked lists are great if you’re going to read all the items one at a time: you can read one item, follow the address to the next item, and so on.
 
-- Cons
+-   Cons
 
 if you’re going to keep jumping around, linked lists are terrible.
 
@@ -48,7 +48,7 @@ Unlike the array, we are not able to access a random element in a singly-linked 
 
 If we want to get the *i*th element, we have to traverse from the head node one by one (use the "next" field). It takes us _O(n)_ time on average to _visit an element by index_, where _n_ is the length of the linked list.
 
-- Insertion
+-   Insertion
 
 Unlike an array, we don’t need to move all elements past the inserted element. Therefore, you can insert a new node into a linked list in `O(1)` time complexity, which is very efficient.
 
@@ -58,7 +58,7 @@ Add a new node to head, end, or in the middle, is a similar process. In "current
 2. Link the "next" field of _current_ to "prev"'s next node next
 3. Link the "next" field in "prev" to _current_
 
-- Deletion
+-   Deletion
 
 Find "next" value using the reference field of _current_. However, we have to traverse the linked list from the head node to find out "prev" which will take `O(n)` time on average. The space complexity is `O(1)` because we only need constant space to store our pointers.
 
@@ -76,7 +76,7 @@ That's exactly what we will come across using two pointers with different speed 
 1. If there is no cycle, the fast pointer will stop at the end of the linked list.
 2. If there is a cycle, the fast pointer will eventually meet with the slow pointer.
 
-- Complexity Analysis
+-   Complexity Analysis
 
 If you only use pointers without any other extra space, the space complexity will be `O(1)`
 
@@ -84,11 +84,11 @@ Need to analyze how many times we will run our loop to determine Running time. 1
 
 Obviously, _M <= N_. So we will run the loop up to _N_ times. And for each loop, we only need constant time. So, the time complexity of this algorithm is _O(n)_ in total.
 
-- What should be the proper speed for the two pointers?
+-   What should be the proper speed for the two pointers?
 
 It is a safe choice to move the slow pointer one step at a time while moving the fast pointer two steps at a time. For each iteration, the fast pointer will move one extra step. If the length of the cycle is _M_, after _M_ iterations, the fast pointer will definitely move one more cycle and catch up with the slow pointer.
 
-- Important to note
+-   Important to note
 
 1. Always examine if the node is _null_ before you call the next field.
 2. Carefully define the end conditions of your loop. make sure your end conditions will not result in an endless loop
@@ -133,13 +133,13 @@ A singly linked list contains a value and the memory address to the next node in
 
 **Pros:**
 
-- Insertion and Deletion (on average) is constant time O(n)
-- Takes advantage of using free memory space each time
+-   Insertion and Deletion (on average) is constant time O(n)
+-   Takes advantage of using free memory space each time
 
 **Cons:**
 
-- Searching and accessing elements is O(n) in the worst case - because we don't have an particular order, so we might end up searching the entire linked list
-- Not suitable for all problems
+-   Searching and accessing elements is O(n) in the worst case - because we don't have an particular order, so we might end up searching the entire linked list
+-   Not suitable for all problems
 
 ## How to represent a Linked List?
 
@@ -194,12 +194,12 @@ struct DoublyLinkedList
 
 <a name="references-0" />
 
-- [0: InterviewBit](https://www.interviewbit.com/courses/programming/topics/linked-lists/#:~:text=A%20linked%20list%20is%20a,has%20a%20reference%20to%20null.)
+-   [0: InterviewBit](https://www.interviewbit.com/courses/programming/topics/linked-lists/#:~:text=A%20linked%20list%20is%20a,has%20a%20reference%20to%20null.)
 
 <a name="references-1" />
 
-- [1: Big O Cheatsheet](https://www.bigocheatsheet.com/)
+-   [1: Big O Cheatsheet](https://www.bigocheatsheet.com/)
 
 <a name="references-two" />
 
-- [2: Grokking Algorithms from Safari Books](https://www.oreilly.com/)
+-   [2: Grokking Algorithms from Safari Books](https://www.oreilly.com/)
