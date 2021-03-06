@@ -4,8 +4,8 @@
 
 where:
 
-- $B$: points in the boundary of polygon
-- $I$: points inside of polygon
+-   $B$: points in the boundary of polygon
+-   $I$: points inside of polygon
 
 ## Euler's Formula
 

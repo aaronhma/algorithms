@@ -12,5 +12,5 @@
 
 ## Summary
 
-- Both arrays and linked lists are ordered collections with sacrifices on speed and usability.
-- More complex data structures are built on top of these simple data structures.
+-   Both arrays and linked lists are ordered collections with sacrifices on speed and usability.
+-   More complex data structures are built on top of these simple data structures.

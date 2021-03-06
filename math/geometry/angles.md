@@ -22,10 +22,10 @@ Similarly, two angles that add to $90^\circ$ are called complementary angles.
 
 ## Other Types of Angles
 
-- **Right Angle**: An angle $a$ where $a = 90^\circ$
-- **Acute Angle**: An angle $a$ where $a < 90^\circ$
-- **Obtuse Angle**: An angle $a$ where $a > 90^\circ$ and $a < 180^\circ$
-- **Reflex Angle**: An angle $a$ where $a > 180^\circ$
+-   **Right Angle**: An angle $a$ where $a = 90^\circ$
+-   **Acute Angle**: An angle $a$ where $a < 90^\circ$
+-   **Obtuse Angle**: An angle $a$ where $a > 90^\circ$ and $a < 180^\circ$
+-   **Reflex Angle**: An angle $a$ where $a > 180^\circ$
 
 ---
 
@@ -57,5 +57,5 @@ The Parallel Lines Theorem states that the blue shaded angles are the same and t
 
 ## Practice
 
-- https://brilliant.org/practice/angle-hunting-6/?chapter=2d-geometry
-- https://brilliant.org/practice/geometry-warmup-angles-and-lines/?subtopic=geometric-measurement&chapter=angles-and-lines
+-   https://brilliant.org/practice/angle-hunting-6/?chapter=2d-geometry
+-   https://brilliant.org/practice/geometry-warmup-angles-and-lines/?subtopic=geometric-measurement&chapter=angles-and-lines

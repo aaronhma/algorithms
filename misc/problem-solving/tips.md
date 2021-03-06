@@ -14,11 +14,11 @@
 
 Read the question a **few** times and answer the questions:
 
-- What is the unknown?
-- What are the data?
-- What is the condition?
-- Is it possible to satisfy the condition?
-- Is the condition sufficient to determine the unknown?
+-   What is the unknown?
+-   What are the data?
+-   What is the condition?
+-   Is it possible to satisfy the condition?
+-   Is the condition sufficient to determine the unknown?
 
 Draw a figure. Introduce suitable notation.
 
@@ -30,14 +30,14 @@ While reading the problem, **DO NOT** get be confused by the narrative. **Compet
 
 #### **Goal: Formulate a plan to solve the problem**
 
-- Do you know a related problem? Do you know a theorem that might be useful?
-- Look at the unknown and think of a familiar problem having the same or a similar unknown.
+-   Do you know a related problem? Do you know a theorem that might be useful?
+-   Look at the unknown and think of a familiar problem having the same or a similar unknown.
 
 Can you restate the problem? Could you restate it differently? Can you restate the problem into a problem you've solved before? Can you solve a part of the problem? Can you derive something useful from the data?
 
-- Did you use all the data?
-- Did you use the whole condition?
-- Have you taken into account all essential notions involved in the problem?
+-   Did you use all the data?
+-   Did you use the whole condition?
+-   Have you taken into account all essential notions involved in the problem?
 
 ### ⚠️ Important ⚠️
 
@@ -67,17 +67,17 @@ In programming contests, you will be dealing with a set of problems, rather than
 
 Carrying out your plan of the solution, check each step.
 
-- Can you see clearly that the step is correct?
-- Can you prove that it is correct?
+-   Can you see clearly that the step is correct?
+-   Can you prove that it is correct?
 
 ## 4. _**Examine the solution obtained.**_
 
 #### **Goal: Check if you've solved the problem**
 
-- Can you check the result?
-- Can you check the argument?
-- Can you derive the result differently?
-- Can you see it at a glance?
-- Can you use the result, or the method, for some other problem.
+-   Can you check the result?
+-   Can you check the argument?
+-   Can you derive the result differently?
+-   Can you see it at a glance?
+-   Can you use the result, or the method, for some other problem.
 
 Re-read the problem and check if you've accomplished the task the problem has asked for.

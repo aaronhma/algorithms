@@ -10,4 +10,4 @@ A B-tree is a non-linear data structure that is a variant of a [tree](../tree/RE
 
 ## References
 
-- [Interview Cake: Tree](https://www.interviewcake.com/concept/cpp/tree?)
+-   [Interview Cake: Tree](https://www.interviewcake.com/concept/cpp/tree?)

@@ -4,8 +4,8 @@
 
 A spanning tree contains all nodes of a graph and some edges such that there is a path between any two nodes $a$ and $b$. Note that there are two types of spanning trees:
 
-- minimum spanning tree: a graph whose weight is the smallest
-- maximum spanning tree: a graph whose weight is the largest
+-   minimum spanning tree: a graph whose weight is the smallest
+-   maximum spanning tree: a graph whose weight is the largest
 
 ## Example
 
@@ -66,8 +66,8 @@ The problem is: how do we **efficiently** implement these two functions? To solv
 
 A union-find structure maintains a collection of sets. The sets are disjoint (no two elements belong to more than one set). In a Union-Find structure, two $\theta(log \ n)$ operations are supported:
 
-- `unite`: join two sets
-- `find`: find the representative of a set that contains the given element
+-   `unite`: join two sets
+-   `find`: find the representative of a set that contains the given element
 
 In a union-find structure, one element in each set is the representative of a set, and there is a path between any element of the set to the representative.
 
@@ -79,9 +79,9 @@ Assume that we have the following set:
 
 The representative of the sets are:
 
-- $\{ 1, 4, 7 \}$: $4$
-- $\{ 5 \}$: $5$
-- $\{ 6, 3, 2, 8 \}$: $2$
+-   $\{ 1, 4, 7 \}$: $4$
+-   $\{ 5 \}$: $5$
+-   $\{ 6, 3, 2, 8 \}$: $2$
 
 ---
 

@@ -13,8 +13,8 @@ This writeup was compiled from [Geeks for Geeks: Solving DP Problems](https://ww
 
 The most common Dynamic Programming problems require you to:
 
-- maximize/minimize a certain quantity
-- counting problems (eg. counting arrangements under a certain condition or certain probability problems)
+-   maximize/minimize a certain quantity
+-   counting problems (eg. counting arrangements under a certain condition or certain probability problems)
 
 All DP problems satisfy the overlapping subproblems property and most classic problems also satisfy the optimal substructure property.
 
@@ -24,8 +24,8 @@ All DP problems are about their state and transition.
 
 **Terminology:**
 
-- State: Set of parameters that can identify a certain position or standing in the given problem
-  **NOTE: These base parameters should be as small as possible to reduce the state space.**
+-   State: Set of parameters that can identify a certain position or standing in the given problem
+    **NOTE: These base parameters should be as small as possible to reduce the state space.**
 
 For example, in the famous [Knapsack problem](../classic_problems/knapsack_problem.md), the state is defined by 2 parameters: the index and the weight at the specified index.
 
@@ -90,4 +90,4 @@ state(n) = state(n-1) + state(n-3) + state(n-5)
 
 ## Sources Used
 
-- [Geeks for Geeks: Solving DP Problems](https://www.geeksforgeeks.org/solve-dynamic-programming-problem/)
+-   [Geeks for Geeks: Solving DP Problems](https://www.geeksforgeeks.org/solve-dynamic-programming-problem/)

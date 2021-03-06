@@ -30,8 +30,8 @@ void dfs(int node, int prev) {
 
 The function is given two parameters:
 
-- `node`: The current node being explored.
-- `prev`: The previous node explored. This prevents the node from going to nodes already visited.
+-   `node`: The current node being explored.
+-   `prev`: The previous node explored. This prevents the node from going to nodes already visited.
 
 At the beginning, we can call the function as shown:
 
@@ -56,19 +56,19 @@ In a binary-tree (also known as a $2$-ary tree), the tree is a rooted tree where
 
 The most popular Binary Tree traversals are:
 
-- pre-order traversal: (Root, Left, Right)
+-   pre-order traversal: (Root, Left, Right)
 
 Using the binary tree from above, the pre-order traversal is:
 
 A → B → D → E → C → F → G
 
-- in-order traversal: (Left, Root, Right)
+-   in-order traversal: (Left, Root, Right)
 
 Using the binary tree from above, the in-order traversal is:
 
 D → B → E → A → F → C → G
 
-- post-order traversal: (Left, Right, Root)
+-   post-order traversal: (Left, Right, Root)
 
 Using the binary tree from above, the post-order traversal is:
 

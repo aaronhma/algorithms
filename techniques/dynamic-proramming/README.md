@@ -2,7 +2,7 @@
 
 ## What is Dynamic Programming?
 
-**Dynamic programming** (known as DP)  is a programming paradigm that stores the result of a problem after solving it.
+**Dynamic programming** (known as DP) is a programming paradigm that stores the result of a problem after solving it.
 
 ![Image](https://miro.medium.com/max/970/1*7pbs4HCE_K6cH6jkcgxw_A.png)
 
@@ -25,6 +25,7 @@ In other words, we're basically adding a caching layer to recursion.
 $DP = recursion + caching$
 
 ---
+
 ### **Tip: Memoization**
 
 The Top-Down approach is also known as Memoization. Memoization is easy to code, but when a lot of recursive calls are required, memoization may call memory issues.
@@ -73,6 +74,7 @@ Though tabulation is hard to code (we need to come up with a specific order when
 ## **Tip: Majority of DP Problems Falls into 2 Categories!**
 
 A majority of the Dynamic Programming problems can be categorized into two types:
+
 1. Optimization problems
 2. Combinatorial problems
 

@@ -6,7 +6,7 @@ Typically, a solution to a problem is a combination of well-known techniques and
 
 The implementation of algorithms requires good programming skills.
 
-- A typical C++ code template for competitive programming looks like this:
+-   A typical C++ code template for competitive programming looks like this:
 
 ```c++
 // include the entire standard library. ex: iostream, vector and algorithm
@@ -20,7 +20,7 @@ int main() {
 }
 ```
 
-- Compile c++ code
+-   Compile c++ code
 
 ```bash
 g++ -std=c++11 -O2 -Wall test.cpp -o test
@@ -413,7 +413,7 @@ https://csacademy.com/app/graph_editor/
 Geometry Widget
 https://csacademy.com/app/geometry_widget/
 
-- Algorithms visualization
+-   Algorithms visualization
 
 VisuAlgo is a website perfect for people trying to get an intuitive feel for algorithms. It features animations for most common data structures and algorithms.
 

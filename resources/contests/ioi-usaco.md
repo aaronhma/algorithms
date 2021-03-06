@@ -54,17 +54,17 @@ The topics that show up on platinum contests aren't particularly well defined, a
 
 ## Need to review
 
-- [USACO (Unofficial discord channel)](https://discord.com/channels/516125324711297024) [Invite link](https://discord.com/invite/bessMBe)
+-   [USACO (Unofficial discord channel)](https://discord.com/channels/516125324711297024) [Invite link](https://discord.com/invite/bessMBe)
 
-- [Unofficial list of IOI participants](https://kostka.dev/ioi/20/)
+-   [Unofficial list of IOI participants](https://kostka.dev/ioi/20/)
 
-- [Competitive Programming Discord](https://discord.com/channels/326795829664808960/470335875562340382)
+-   [Competitive Programming Discord](https://discord.com/channels/326795829664808960/470335875562340382)
 
-- [IOI Official site](https://ioinformatics.org/)
+-   [IOI Official site](https://ioinformatics.org/)
 
-- [IOI Contest environment](https://ioi2019.az/en-content-26.html)
+-   [IOI Contest environment](https://ioi2019.az/en-content-26.html)
 
-- [Data Structures and Algorithms](https://discuss.codechef.com/t/data-structures-and-algorithms/6599)
+-   [Data Structures and Algorithms](https://discuss.codechef.com/t/data-structures-and-algorithms/6599)
 
 `/usr/bin/g++ -DEVAL -std=gnu++14 -O2 -pipe -static -s -o task task.cpp` c++ grading command
 
@@ -76,19 +76,19 @@ Solving competitive programming problems consists of two parts: coming up with t
 
 ### What topics do I need to know for each of the USACO divisions?
 
-- Bronze (probably <1400 rated on CF, and Bronze problems correspond to 900-1500 rated CF problems.)
+-   Bronze (probably <1400 rated on CF, and Bronze problems correspond to 900-1500 rated CF problems.)
 
 Simulation, brute force/complete search, implementation, intersections of 2 and 3 squares, ad-hoc problems. The general focus of the Bronze division is not on any specific techniques, but rather basic algorithmic thinking, mastery of your chosen programming language, and intuition and ability to think through problems.
 
-- Silver (probably 1300-1600 rated on CF, and Silver problems correspond to 1200-1900 rated CF problems.)
+-   Silver (probably 1300-1600 rated on CF, and Silver problems correspond to 1200-1900 rated CF problems.)
 
 Sorting, prefix sums, binary search, graph theory, standard library data structures, implementation, ad-hoc problems. The main theme of the Silver division is applications of relatively simple algorithms. However, just because the algorithms themselves are relatively simple does not make the problems easy; in fact, silver problems require a lot of ingenuity, which makes passing silver a major bottleneck for many. Again, this is where practice comes in -- once you've done enough problems, you get much better at recognizing how you should attack any given problem.
 
-- Gold (probably 1600-1900 rated on CF, and Gold problems correspond to 1500-2200 rated CF problems.)
+-   Gold (probably 1600-1900 rated on CF, and Gold problems correspond to 1500-2200 rated CF problems.)
 
 More graph theory (shortest-path algorithms, minimum spanning tree), tree algorithms, dynamic programming, data structures (Fenwick tree, possibly segment tree), topological sort, combinatorics (PIE) and number theory. Gold features a much wider breadth of material than silver, but in my opinion requires less ingenuity and intuition, and a large number of gold problems are relatively straightforward and simple. The main thing you'll need to pass gold is knowledge of all the algorithms, and extensive practice.
 
-- Platinum (probably 1750+ rated on CF, and Platinum problems correspond to 1900+ rated CF problems.)
+-   Platinum (probably 1750+ rated on CF, and Platinum problems correspond to 1900+ rated CF problems.)
 
 The topics that show up on platinum contests aren't particularly well defined, and there is essentially no upper limit on problem difficulty. Anything is fair game (including topics explicitly banned from IOI, like heavy-light decomposition)
 

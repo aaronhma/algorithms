@@ -6,19 +6,19 @@ Quicksort works by setting the first element in the list as the pivot. Then, we 
 
 ## Pros & Cons of Quick Sort
 
-- Pros:
+-   Pros:
 
-  - Fast: O(n log n) average
-  - Parallel sorting
+    -   Fast: O(n log n) average
+    -   Parallel sorting
 
-- Cons:
+-   Cons:
 
-  - Slow worst case: O(n<sup>2</sup>)
+    -   Slow worst case: O(n<sup>2</sup>)
 
 # Complexity Analysis
 
-- Time complexity: average: O(n log n) worst: O(n<sup>2</sup>)
-- Space complexity: O(log n)
+-   Time complexity: average: O(n log n) worst: O(n<sup>2</sup>)
+-   Space complexity: O(log n)
 
 # Quicksort
 
@@ -31,7 +31,7 @@ What’s the simplest array that a sorting algorithm can handle? some arrays don
 1. Empty arrays
 2. arrays with just one element will be the base case.
 
-- Here’s how quicksort works.
+-   Here’s how quicksort works.
 
 1. Pick a pivot.
 
@@ -54,7 +54,7 @@ AKA _O(n) _ O(log n) = O(n log(n))*, the technical way to say that is, the heigh
 
 But sometimes the constant can make a difference. Quicksort versus merge sort is one example. Quicksort has a smaller constant than merge sort. So if they’re both _O(n log n)_ time, quicksort is faster. And quicksort is faster in practice because it hits the average case way more often than the worst case.
 
-- Average case vs. worst case
+-   Average case vs. worst case
 
 The performance of quicksort heavily depends on the pivot you choose. The best case is also the average case. If you always choose a random element in the array as the pivot, quicksort will complete in O(n log n) time on average. Quicksort is one of the fastest sorting algorithms out there, and it’s a very good example of D&C.
 

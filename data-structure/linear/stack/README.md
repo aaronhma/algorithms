@@ -9,24 +9,24 @@ A stack is a collection of items following a Last-In, First-Out (LIFO) order tha
 
 ## Stack Operations
 
-- `create` - creates an empty stack
-- `push` - push data to the top of the stack
-- `pop` - removes data from the top of the stack
-- `empty` - checks if the stack is empty
+-   `create` - creates an empty stack
+-   `push` - push data to the top of the stack
+-   `pop` - removes data from the top of the stack
+-   `empty` - checks if the stack is empty
 
 ## Pros & Cons of Stack
 
-- Pros:
-  - All operations takes O(1) time
-- Cons:
+-   Pros:
+    -   All operations takes O(1) time
+-   Cons:
 
-  - Uses O(n) space
-  - Getting something from the middle is impossible without `top()` and `pop()`
+    -   Uses O(n) space
+    -   Getting something from the middle is impossible without `top()` and `pop()`
 
 ## Implementations
 
-- Array-based queue
-- Linked List-based queue
+-   Array-based queue
+-   Linked List-based queue
 
 ## Stack Time Complexity
 
@@ -37,7 +37,7 @@ A stack is a collection of items following a Last-In, First-Out (LIFO) order tha
 | Pop       | O(1)                 | O(1)                              |
 | Empty     | O(1)                 | O(1)                              |
 
-- Space complexity: O(n)
+-   Space complexity: O(n)
 
 ## C++ Usage
 
@@ -63,4 +63,4 @@ An example of stack is dinner plates. You place all the dinner plates in a pile 
 
 ## References
 
-- [C++ std::stack](http://www.cplusplus.com/reference/stack/stack/)
+-   [C++ std::stack](http://www.cplusplus.com/reference/stack/stack/)

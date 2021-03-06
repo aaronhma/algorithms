@@ -25,9 +25,9 @@ If applicable, add screenshots to help explain your problem.
 
 **Information:**
 
-- Operating System:
-- Code language:
-- Compiler used:
+-   Operating System:
+-   Code language:
+-   Compiler used:
 
 **Additional context**
 Add any other context about the problem here.

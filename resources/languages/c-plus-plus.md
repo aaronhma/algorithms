@@ -19,21 +19,21 @@
 
 ## Number
 
-- Checking if the number is **even** or **odd** without using the `%` operator. Using `&` operator is sometimes efficient with _large numbers_.
+-   Checking if the number is **even** or **odd** without using the `%` operator. Using `&` operator is sometimes efficient with _large numbers_.
 
 ```c++
 if (num & 1) cout << "Odd"; // if num = 5, binary format 101 & 1 is 001, so true
 else cout << "Even";  // if num = 4, binary format 100 & 1 is 000, so false
 ```
 
-- Fast **Multiplication** (shift all bits to the left) or **Division** (shift all bits to the right) by `2`.
+-   Fast **Multiplication** (shift all bits to the left) or **Division** (shift all bits to the right) by `2`.
 
 ```c++
 n = n << 1  // multiply n with 2
 n = n >> 1  // divide n by 2
 ```
 
-- Swapping of 2 numbers using **XOR**. Super fast without additional variable.
+-   Swapping of 2 numbers using **XOR**. Super fast without additional variable.
 
 ```c++
 // A quick way to swap variable a and b. ex: int a = 4, b = 8;
@@ -42,13 +42,13 @@ b ^= a;  // a: 12 (a+b)    b: 4  (a+b-b)
 a ^= b;  // a: 8  (a+b-a)  b: 4  (a)
 ```
 
-- Calculating number of digits in a number, instead of looping you can efficiently use `log`
+-   Calculating number of digits in a number, instead of looping you can efficiently use `log`
 
 ```c++
 digit = floor(log10(num)) + 1; // ex: int num = 12345678;   digit should be 8
 ```
 
-- Calculating the most significant digit (the leftmost non-zero digit) of any number log
+-   Calculating the most significant digit (the leftmost non-zero digit) of any number log
 
 Leading zeros are never considered as significant digits, ex: _0.00234_ have _3_ significant digits (2, 3, and 4). The most significant one is _2_ (first non-zero from left), because it has the greatest effect on the number
 
@@ -59,7 +59,7 @@ K = K - floor(K);
 int X = pow(10, K); // X will be the most significant digit. X: 3
 ```
 
-- Check if a number is a power of _2_ in `O(n)`
+-   Check if a number is a power of _2_ in `O(n)`
 
 ```c++
 bool isPowerOfTwo (int x) {
@@ -70,7 +70,7 @@ bool isPowerOfTwo (int x) {
 
 ## String
 
-- Avoiding use of `strlen()`. Loop a string when the character array ends.
+-   Avoiding use of `strlen()`. Loop a string when the character array ends.
 
 ```c++
   // defines an array of characters with a size of 256 chars
@@ -82,19 +82,19 @@ bool isPowerOfTwo (int x) {
 
 ## Array
 
-- Use of `emplace_back()` instead of `push_back()`. STL `emplace_back` is much faster and instead of allocating memory somewhere else and then appending it directly allocates memory in the container.
+-   Use of `emplace_back()` instead of `push_back()`. STL `emplace_back` is much faster and instead of allocating memory somewhere else and then appending it directly allocates memory in the container.
 
-- Maximum size of the array in **C++**: declared inside the main function is of the order of **10^6** but if you declare array globally then you can declare its size upto **10^7**.
+-   Maximum size of the array in **C++**: declared inside the main function is of the order of **10^6** but if you declare array globally then you can declare its size upto **10^7**.
 
 ## Condition
 
-- `and` is equal to `&&` in condition. `if (a < 20 and a > 12) {}`
+-   `and` is equal to `&&` in condition. `if (a < 20 and a > 12) {}`
 
 ## C++ Built-in
 
-- Built-in **GCD** function in **C++** (no need to explicitly code it). Syntax `__gcd(x, y);`.
+-   Built-in **GCD** function in **C++** (no need to explicitly code it). Syntax `__gcd(x, y);`.
 
-- Built-in algorithms
+-   Built-in algorithms
 
 `any_of` operates on whole range of array elements and can save time to run a loop to check each elements one by one. It checks for a given property on every element and returns true when each element in range satisfies specified property, else returns false.
 
@@ -111,7 +111,7 @@ any_of(arr, arr + n, ispositive());
 none_of(arr, arr + n, ispositive());
 ```
 
-- Copy Algorithm: used to copy elements from one container to another.
+-   Copy Algorithm: used to copy elements from one container to another.
 
 ```c++
 int source[5] = {0, 12, 34, 50, 80};
@@ -120,7 +120,7 @@ int target[5];
 copy_n(source, 5, target); // target: {0, 12, 34, 50, 80}
 ```
 
-- `iota()` Algorithm: creates a range of sequentially increasing values, as if by assigning an initial value to `*first`, then incrementing that value using prefix `++`.
+-   `iota()` Algorithm: creates a range of sequentially increasing values, as if by assigning an initial value to `*first`, then incrementing that value using prefix `++`.
 
 ```c++
 int a[5] = {0};

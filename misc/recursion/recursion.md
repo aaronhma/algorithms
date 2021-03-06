@@ -25,4 +25,4 @@ int fib(int n)
 
 There's a problem: `fib(2)` is re-calculated **three times**!. To solve this subproblem once, we can use [Dynamic Programming](../dp/README.md).
 
-- [x] 21. [**Recursion**](https://www.techiedelight.com/Tags/recursion/)
+-   [x] 21. [**Recursion**](https://www.techiedelight.com/Tags/recursion/)

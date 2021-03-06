@@ -10,8 +10,8 @@ In programming, an $n$-bit integer is stored as a binary number that consists of
 
 Bit representations of a number is either signed or unsigned. A signed number is a number that can be positive and negative. On the other hand, an unsigned number cannot be negative. An example of this with `int`:
 
-- `int`: $-2^{31}$ - $2^{31} - 1$
-- `unsigned int`: $0$ - $2^{32} - 1$
+-   `int`: $-2^{31}$ - $2^{31} - 1$
+-   `unsigned int`: $0$ - $2^{32} - 1$
 
 ## Overflow
 
@@ -80,11 +80,11 @@ A bit mask is of the form $1 << k$. We impose a "mask" over bits. An example of 
 
 ## Additional Useful Functions
 
-- `__builtin_clz(x)`: the number of zeros at the beginning of the bit representation
-- `__builtin_ctz(x)`: the number of zeros at the end of the bit representation
-- `__builtin_popcount(x)`: the number of ones in the bit representation
-- `__builtin_parity(x)`: the parity (even or odd) of the number of ones in the
-  bit representation.
+-   `__builtin_clz(x)`: the number of zeros at the beginning of the bit representation
+-   `__builtin_ctz(x)`: the number of zeros at the end of the bit representation
+-   `__builtin_popcount(x)`: the number of ones in the bit representation
+-   `__builtin_parity(x)`: the parity (even or odd) of the number of ones in the
+    bit representation.
 
 An example of these functions:
 

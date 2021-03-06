@@ -20,4 +20,4 @@ But to avoid getting a implicit suffix tree, a special character that is not in 
 
 ## References
 
-- [HackerEarth: Suffix Trees](https://www.hackerearth.com/practice/data-structures/advanced-data-structures/suffix-trees/tutorial/)
+-   [HackerEarth: Suffix Trees](https://www.hackerearth.com/practice/data-structures/advanced-data-structures/suffix-trees/tutorial/)

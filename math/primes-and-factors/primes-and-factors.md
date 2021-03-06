@@ -2,16 +2,16 @@
 
 ## Terminologies
 
-- Factor/Divisor: An integer $a$ is a factor/divisor of $b$ if $a$ divides $b$ with no remainder. (Also written as $a \ | \ b$);
-- Prime: A number $n$ is prime if $n \geq 1$ and the only divisors of the number is $1$ and itself.
-- Composite: Any number $n$ where $n \geq 1$ and $n$ is not prime.
+-   Factor/Divisor: An integer $a$ is a factor/divisor of $b$ if $a$ divides $b$ with no remainder. (Also written as $a \ | \ b$);
+-   Prime: A number $n$ is prime if $n \geq 1$ and the only divisors of the number is $1$ and itself.
+-   Composite: Any number $n$ where $n \geq 1$ and $n$ is not prime.
 
 ## Fundamental Theorem of Arithmetic
 
 The Fundamental Theorem of Arithmetic states "A number $n$ is either prime, or a composite number created by the multiplication of primes".
 
-- Case 1: $n$ is prime
-- Case 2: $n$ is composite
+-   Case 1: $n$ is prime
+-   Case 2: $n$ is composite
 
 $$n = p_1^{a_1}*p_2^{a_2}*p_{n - 1}^{a_{n - 1}}*p_n^{a_n}$$
 
@@ -23,11 +23,11 @@ One way to find $gcd(a, b)$ is to find the prime factors of both numbers, then f
 
 $$gcd(a, b) = $$
 
-- Case 1: $b = 0$
+-   Case 1: $b = 0$
 
 $$gcd(a, b) = a$$
 
-- Case 2: $b \neq 0$
+-   Case 2: $b \neq 0$
 
 $$gcd(a, b) = gcd(b, a \ \% \ b)$$
 

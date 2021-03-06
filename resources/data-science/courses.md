@@ -4,20 +4,20 @@
 Course site: http://cs231n.stanford.edu/
 https://www.youtube.com/user/stanfordeng/videos?view=0&sort=dd&flow=grid
 
-- CS221 Artificial Intelligence
-  Course site: https://stanford-cs221.github.io/autumn2019/
-  Lecture: https://www.youtube.com/playlist?list=PLoROMvodv4rO1NB9TD4iUZ3qghGEGtqNX
-  CheatSheet: https://stanford.edu/~shervine/teaching/cs-221/
+-   CS221 Artificial Intelligence
+    Course site: https://stanford-cs221.github.io/autumn2019/
+    Lecture: https://www.youtube.com/playlist?list=PLoROMvodv4rO1NB9TD4iUZ3qghGEGtqNX
+    CheatSheet: https://stanford.edu/~shervine/teaching/cs-221/
 
-- CS229 Machine Learning
-  Course site: http://cs229.stanford.edu/
-  Lecture: https://see.stanford.edu/Course/CS229
-  CheatSheet: https://stanford.edu/~shervine/teaching/cs-229/
+-   CS229 Machine Learning
+    Course site: http://cs229.stanford.edu/
+    Lecture: https://see.stanford.edu/Course/CS229
+    CheatSheet: https://stanford.edu/~shervine/teaching/cs-229/
 
-- CS230 Deep Learning
-  Course site: https://cs230.stanford.edu/
-  Lecture: https://www.youtube.com/playlist?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb
-  CheatSheet: https://stanford.edu/~shervine/teaching/cs-230/
+-   CS230 Deep Learning
+    Course site: https://cs230.stanford.edu/
+    Lecture: https://www.youtube.com/playlist?list=PLoROMvodv4rOABXSygHTsbvUz4G_YQhOb
+    CheatSheet: https://stanford.edu/~shervine/teaching/cs-230/
 
 CS224N Natural Language Processing with Deep Learning
 Course site: http://web.stanford.edu/class/cs224n/

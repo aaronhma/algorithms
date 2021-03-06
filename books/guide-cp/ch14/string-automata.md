@@ -20,6 +20,6 @@ In this automaton, state $1$ is the start state, and states $3$ and $5$ are acce
 
 A language is called regular if there is an automaton that recognizes it. It turns out that a language is regular exactly when there is a regular expression that describes the required format of the strings in the language. Regular expressions have the following basic building blocks:
 
-- A vertical bar $|$ means that we can choose one of the options. For example $AB|BA|C$ accepts the strings $AB$, $BA$, and $C$.
-- Parentheses $($ and $)$ can be used in grouping. For example, the regular expression $A(A | B)C$ accepts the strings $AAC$ and $ABC$.
-- An asterik $*$ means that the preceding part can be repeated any number of times (including zero times). For example, the $A(BC)*$ accepts the strings $A$, $ABC$, $ABCBC$, etc.
+-   A vertical bar $|$ means that we can choose one of the options. For example $AB|BA|C$ accepts the strings $AB$, $BA$, and $C$.
+-   Parentheses $($ and $)$ can be used in grouping. For example, the regular expression $A(A | B)C$ accepts the strings $AAC$ and $ABC$.
+-   An asterik $*$ means that the preceding part can be repeated any number of times (including zero times). For example, the $A(BC)*$ accepts the strings $A$, $ABC$, $ABCBC$, etc.

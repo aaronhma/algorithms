@@ -10,23 +10,23 @@
 
 ## Contents
 
-- [**Backtracking Algorithm**](#backtracking-algorithm)
-- [**C++ STL**](#c++-stl)
-- [**Data Structure**](#data-structure)
-  - [Linear Data Structure](#linear-data-structure)
-  - [Non-Linear Data Structure](#non-linear-data-structure)
-- [**Dynamic Proramming**](#dynamic-proramming)
-- [**Geometry**](#geometry)
-- [**Graph Algorithm**](#graph-algorithm)
-- [**Greedy Algorithm**](#greedy-algorithm)
-- [**Math**](#math)
-- [**Number Algorithm**](#number-algorithm)
-- [**Searching**](#searching)
-- [**Sorting**](#sorting)
-- [**String Algorithm**](#string-algorithm)
-- [**Tree Algorithm**](#tree-algorithm)
-- [**Misc**](#misc)
-- [**Resources**](#resources)
+-   [**Backtracking Algorithm**](#backtracking-algorithm)
+-   [**C++ STL**](#c++-stl)
+-   [**Data Structure**](#data-structure)
+    -   [Linear Data Structure](#linear-data-structure)
+    -   [Non-Linear Data Structure](#non-linear-data-structure)
+-   [**Dynamic Proramming**](#dynamic-proramming)
+-   [**Geometry**](#geometry)
+-   [**Graph Algorithm**](#graph-algorithm)
+-   [**Greedy Algorithm**](#greedy-algorithm)
+-   [**Math**](#math)
+-   [**Number Algorithm**](#number-algorithm)
+-   [**Searching**](#searching)
+-   [**Sorting**](#sorting)
+-   [**String Algorithm**](#string-algorithm)
+-   [**Tree Algorithm**](#tree-algorithm)
+-   [**Misc**](#misc)
+-   [**Resources**](#resources)
 
 ---
 
@@ -209,5 +209,5 @@
 
 #### Notes
 
-- Run `prettier --write .` before commit to the repo (Install **prettier** via `brew install prettier`)
-- Some pages requires the [MathJax for GitHub](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima) extension. You can get it [here](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima).
+-   Run `prettier --write .` before commit to the repo (Install **prettier** via `brew install prettier`)
+-   Some pages requires the [MathJax for GitHub](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima) extension. You can get it [here](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima).

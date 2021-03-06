@@ -15,15 +15,15 @@ You are given a string $str$. Return $true$ if the string is a palindrome, and $
 
 This problem requires us to create two pointers $start$ (start of palindrome) and $end$ (end of palindrome). Then, at each step, $start++$ and $end--$ and check for the following cases:
 
-* $start \geq end$
+-   $start \geq end$
 
 String is a palindrome!
 
-* $str[start] \neq str[end]$
+-   $str[start] \neq str[end]$
 
 String isn't a palindrome!
 
-* $return \ isPalindrome(str, start + 1, end - 1)$
+-   $return \ isPalindrome(str, start + 1, end - 1)$
 
 Then, all we have to do is to implement this.
 

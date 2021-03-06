@@ -48,9 +48,9 @@ cout << s.X << s.Y << "\n"; // 5 3
 
 The cross product $a * b$ of vectors $a = (x_1, y_1)$ and $b = (x_2, y_2)$ is defined to be $x_1y_2 - x_2y_1$. There are $3$ cases:
 
-- $a * b > 0$: $b$ turns left
-- $a * b = 0$: $b$ does not turn (or turns $180$ degrees)
-- $a * b < 0$: $b$ turns right
+-   $a * b > 0$: $b$ turns left
+-   $a * b = 0$: $b$ does not turn (or turns $180$ degrees)
+-   $a * b < 0$: $b$ turns right
 
 ![Image](resources/techniques/cross-product.png)
 

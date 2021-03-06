@@ -55,8 +55,8 @@ void primeFact(int n, vector<int> &base, vector<int> &exponent, int &distinctPri
 
 A slick way of solving this problem in $\theta(\sqrt{n})$ time is by making sure that $d \leq \sqrt{n}$. One caveat is that at the end of the `while` loop, we have two possible cases to look out for:
 
-- $n = 1$: we've already calculated the prime factorization for $n$
-- $n > 1$: $n$ is prime, add that to our prime factorization
+-   $n = 1$: we've already calculated the prime factorization for $n$
+-   $n > 1$: $n$ is prime, add that to our prime factorization
 
 ```cpp
 void primeFact(int n, vector<int> &base, vector<int> &exponent, int &distinctPrimeCount)

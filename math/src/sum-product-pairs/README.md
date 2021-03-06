@@ -55,7 +55,7 @@ int main()
 
 **ℹ️ Formulas to Know:**
 
-- $$(a + b + c)^2 = a^2 + b^2 + c^2 + 2(ab + bc + ca)$$
+-   $$(a + b + c)^2 = a^2 + b^2 + c^2 + 2(ab + bc + ca)$$
 
 We can start by assuming that $P$ is the sum of the product of all pairs in the array.
 
@@ -64,7 +64,6 @@ Let $E = (arr_1 + arr_2 + arr_3 + ... + arr_n)^2$.
 Then, we can find $P$.
 
 $$E = {arr_1}^2 + {arr_2}^2 + {arr_3}^2 + ... + {arr_n}^2 + 2(arr_1arr_2 + arr_1arr_3 + ...)$$
-
 
 Pay special attention to $2(arr_1arr_2 + arr_1arr_3 + ...)$. $arr_1arr_2 + arr_1arr_3 + ...$ is the sum of the product of all pairs in the array! Thus, $2(arr_1arr_2 + arr_1arr_3 + ...) = 2P$
 

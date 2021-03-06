@@ -14,13 +14,13 @@ A graph is a non-linear data structure that consists of nodes and edges. Each it
 
 ## Pros & Cons of Graphs
 
-- Pros:
+-   Pros:
 
-  - Represents links
+    -   Represents links
 
-- Cons:
+-   Cons:
 
-  - Scaling challenges
+    -   Scaling challenges
 
 ## Graph Use Cases
 
@@ -28,4 +28,4 @@ In the real world, graphs can be applied to many industry problems, such as the 
 
 ## References
 
-- [Geeks For Geeks: Graphs](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)
+-   [Geeks For Geeks: Graphs](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/)

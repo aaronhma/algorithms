@@ -35,10 +35,10 @@ An optimal solution for this problem is shown below:
 
 Using this schedule, our total score is $6$ as:
 
-- Task $A$: $-7$ points
-- Task $B$: $5$ points
-- Task $C$: $6$ points
-- Task $D$: $2$ points
+-   Task $A$: $-7$ points
+-   Task $B$: $5$ points
+-   Task $C$: $6$ points
+-   Task $D$: $2$ points
 
 As it turns out, the optimal solution to this problem doesn't depend on the deadlines. Instead, we can simply sort the tasks by their duration in ascending order. Then, we can use a greedy strategy. One important thing to note that is if there are two tasks $A$ and $B$ with durations $D_a$ and $D_b$, if $a > b$, Task $Y$ shall be completed before Task $X$. An example of this is shown below:
 

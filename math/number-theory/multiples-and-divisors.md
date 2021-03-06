@@ -2,8 +2,8 @@
 
 ## Definitions
 
-- **Relatively prime**: Integers $m$ and $n$ are relatively prime if $gcd(m, n) = 1$.
-- **Common multiples**: A multiple of every integer in a group is a common multiple of those integers - The number (s) that exists in the multiples of numbers $a$ and $b$.
+-   **Relatively prime**: Integers $m$ and $n$ are relatively prime if $gcd(m, n) = 1$.
+-   **Common multiples**: A multiple of every integer in a group is a common multiple of those integers - The number (s) that exists in the multiples of numbers $a$ and $b$.
 
 ---
 
@@ -23,16 +23,16 @@ The Least Common Multiple (LCM) between two numbers $a$ and $b$ returns the smal
 
 ## ℹ️ Important Things to Know 🧠
 
-- The **Division Theorem** states that for any integer $a$ and positive integer $b$, there exists exactly **one** pair of integers $q$ and $r$ such that:
+-   The **Division Theorem** states that for any integer $a$ and positive integer $b$, there exists exactly **one** pair of integers $q$ and $r$ such that:
 
 $$a = b * q + r$$
 
 where $0 \leq r < b$. We call $a$ the dividend, $b$ the divisor, $q$ the quotient, and $r$ the remainder.
 
-- The **Euclidean algorithm** states:
+-   The **Euclidean algorithm** states:
 
 $$gcd(m, n) = gcd(m - n, n) = gcd(m - 2 * n, n) = ... = gcd(r, n)$$
 
-- The **extended Euclidean algorithm** speeds up the process by using the variable $r$ where $r = m \ \% \ n$.
+-   The **extended Euclidean algorithm** speeds up the process by using the variable $r$ where $r = m \ \% \ n$.
 
 $$gcd(m, n) = gcd(r, n)$$

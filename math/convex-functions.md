@@ -12,5 +12,5 @@ If we know that the minimum value of a convex function is between $[x_L, x_R]$, 
 
 Convex functions have some useful properties. Assume that $f(x)$ and $g(x)$ are convex functions. Then, the following functions are also convex:
 
-- $f(x) + g(x)$
-- $max(f(x), g(x))$
+-   $f(x) + g(x)$
+-   $max(f(x), g(x))$

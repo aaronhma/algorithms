@@ -2,7 +2,7 @@
 
 ## Kaggle concepts
 
-- kernels: short scripts that explore a concept, showcase a technique, or even share a solution.
+-   kernels: short scripts that explore a concept, showcase a technique, or even share a solution.
 
 When you start a competition or when you hit a plateau, reviewing popular kernels can spar
 
@@ -16,9 +16,9 @@ For most competitions it’s pretty obvious. If you have lots of structured data
 
 This approach works best if you already have an intuition as to what’s in the data. Cookbook for winning competitions on Structured Data:
 
-- Take the data, plot histograms, explore the data/analysis, data cleaning
-- create and select features: generating features and testing which ones really do correlate with the target variable
-- parameter tuning and ensembling
+-   Take the data, plot histograms, explore the data/analysis, data cleaning
+-   create and select features: generating features and testing which ones really do correlate with the target variable
+-   parameter tuning and ensembling
 
 The most important data-related factor is how you prepare the data, and what features you engineer. You really just have to use intuition and common sense, figure out what works, and throw out what doesn’t. What really helps in this is creating a good cross validation framework so you can get a reliable error estimate.
 
@@ -26,8 +26,8 @@ For example, a chain of used car dealers wanted to predict which cars sold at a 
 
 **Popular algorithms of winning Kaggle**
 
-- ensembles of decision trees
-- [random forest](https://en.wikipedia.org/wiki/Random_forest)
+-   ensembles of decision trees
+-   [random forest](https://en.wikipedia.org/wiki/Random_forest)
 
 2. Neural Networks and Deep Learning (model architect design)
 
@@ -35,27 +35,27 @@ For any dataset that contains computer vision or speech problems, deep learning 
 
 ### Steps to solve a problem?
 
-- **Understand the data** - After you download the data, start exploring features. Look at data types. Check variable classes. Create some univariate - bivariate plots to understand the nature of variables.
+-   **Understand the data** - After you download the data, start exploring features. Look at data types. Check variable classes. Create some univariate - bivariate plots to understand the nature of variables.
 
-- **Understand the metric to optimise** - Every problem comes with a unique evaluation metric. It's imperative for you to understand it, specially how does it change with target variable.
+-   **Understand the metric to optimise** - Every problem comes with a unique evaluation metric. It's imperative for you to understand it, specially how does it change with target variable.
 
-- **Decide cross validation strategy** - To avoid overfitting, make sure you've set up a cross validation strategy in early stages. A nice CV strategy will help you get reliable score on leaderboard.
+-   **Decide cross validation strategy** - To avoid overfitting, make sure you've set up a cross validation strategy in early stages. A nice CV strategy will help you get reliable score on leaderboard.
 
-- **Start hyper parameter tuning** - Once CV is at place, try improving model's accuracy using hyper parameter tuning. It further includes the following steps:
+-   **Start hyper parameter tuning** - Once CV is at place, try improving model's accuracy using hyper parameter tuning. It further includes the following steps:
 
-  - **Data transformations:** It involve steps like scaling, removing outliers, treating null values, transform categorical variables, do feature selections, create interactions etc.
+    -   **Data transformations:** It involve steps like scaling, removing outliers, treating null values, transform categorical variables, do feature selections, create interactions etc.
 
-  - **Choosing algorithms and tuning their hyper parameters:** Try multiple algorithms to understand how model performance changes.
+    -   **Choosing algorithms and tuning their hyper parameters:** Try multiple algorithms to understand how model performance changes.
 
-  - **Saving results:** From all the models trained above, make sure you save their predictions. They will be useful for ensembling.
+    -   **Saving results:** From all the models trained above, make sure you save their predictions. They will be useful for ensembling.
 
-  - **Combining models:** At last, ensemble the models, possibly on multiple levels. Make sure the models are correlated for best results.
+    -   **Combining models:** At last, ensemble the models, possibly on multiple levels. Make sure the models are correlated for best results.
 
 ### Tips
 
-- Kaggle Kernels are the best resource for learning, as people share tons of analysis and solutions to all the competitions.
+-   Kaggle Kernels are the best resource for learning, as people share tons of analysis and solutions to all the competitions.
 
-- The most important thing is just to experiment for yourself and try to improve the score
+-   The most important thing is just to experiment for yourself and try to improve the score
 
 ### Other factors
 
@@ -77,7 +77,7 @@ For any dataset that contains computer vision or speech problems, deep learning 
 
 ### difference between Kaggle competitions and "typical" data science
 
-- Kaggle competitions
+-   Kaggle competitions
 
 By nature, competitions (with prize pools) must meet several criteria.
 
@@ -87,7 +87,7 @@ By nature, competitions (with prize pools) must meet several criteria.
 
 **Performance must be relative.** Competitions must crown a winner, so your solution will be scored against others'. Kaggle competitions encourage you to squeeze out every last drop of performance, while typical data science encourages efficiency and maximizing business impact.
 
-- "Typical" data science
+-   "Typical" data science
 
 In contrast, day-to-day data science doesn't need to meet those same criteria.
 

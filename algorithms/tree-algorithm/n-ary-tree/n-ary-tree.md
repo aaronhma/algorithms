@@ -8,4 +8,4 @@ A N-ary tree is a non-linear data structure based on the [binary tree](../binary
 
 ## References
 
-- [LeetCode: N-ary Trees](https://leetcode.com/articles/introduction-to-n-ary-trees/)
+-   [LeetCode: N-ary Trees](https://leetcode.com/articles/introduction-to-n-ary-trees/)

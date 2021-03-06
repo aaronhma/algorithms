@@ -6,11 +6,11 @@ Heapsort is similar to [selection sort](selection_sort.md), except for we're alw
 
 ## Pros & Cons of Heapsort
 
-- Pros:
+-   Pros:
 
-  - Fast - O(n log n)
-  - Space efficient - O(1)
+    -   Fast - O(n log n)
+    -   Space efficient - O(1)
 
-- Cons:
+-   Cons:
 
-  - Slow
+    -   Slow

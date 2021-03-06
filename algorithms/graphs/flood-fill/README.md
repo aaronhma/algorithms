@@ -29,19 +29,19 @@ You are given a $n * m$ matrix of .s (land) and #s (water). An island is formed 
 
 We start by assuming that we have the following data:
 
-- $arr$: $n * m$ character matrix containing the data
-- $visited$ - $n * m$ boolean matrix
-- $dx$ - Direction vector for $x$ index
-- $dy$ - Another direction vector for $y$ index
+-   $arr$: $n * m$ character matrix containing the data
+-   $visited$ - $n * m$ boolean matrix
+-   $dx$ - Direction vector for $x$ index
+-   $dy$ - Another direction vector for $y$ index
 
 The logic for the rest of the solution is presented below:
 
-- Create island count and max island size variables
-- Iterate through $arr$:
-  - Check that $i$ and $j$ index is valid
-    - Update island count
-    - Start flood fill
-    - Update max island size
-- Print island count and max island size
+-   Create island count and max island size variables
+-   Iterate through $arr$:
+    -   Check that $i$ and $j$ index is valid
+        -   Update island count
+        -   Start flood fill
+        -   Update max island size
+-   Print island count and max island size
 
 Click [here](flood-fill.cpp) for the implementation.

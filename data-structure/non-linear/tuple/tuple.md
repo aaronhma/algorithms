@@ -4,8 +4,8 @@
 
 A tuple is a data structure that can hold a number of different data types into a single collection of items. When you put elements into the tuple, order matters, as you get elements from the tuple by index. The core operations in a tuple is shown:
 
-- `get()` - Accessing the tuple values and modiying them
-- `make_tuple()` - Assigning a tuple with values in the order with the values declaring while initializing the tuple
+-   `get()` - Accessing the tuple values and modiying them
+-   `make_tuple()` - Assigning a tuple with values in the order with the values declaring while initializing the tuple
 
 ## C++ Usage
 
@@ -60,5 +60,5 @@ See [stl.cpp](./stl.cpp) for the C++ Usage guide of tuples.
 
 ## References
 
-- [Geeks For Geeks: Tuples in C++](https://www.geeksforgeeks.org/tuples-in-c/)
-- [C++ Reference: Tuple](https://en.cppreference.com/w/cpp/utility/tuple)
+-   [Geeks For Geeks: Tuples in C++](https://www.geeksforgeeks.org/tuples-in-c/)
+-   [C++ Reference: Tuple](https://en.cppreference.com/w/cpp/utility/tuple)

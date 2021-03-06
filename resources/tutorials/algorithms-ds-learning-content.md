@@ -98,26 +98,26 @@ Big-O is the space/time complexity in the worst-case scenario. The unit of big-O
 
 ## Need to review Repos
 
-- [zscoder/CompetitiveProgramming](https://github.com/zscoder/CompetitiveProgramming)
+-   [zscoder/CompetitiveProgramming](https://github.com/zscoder/CompetitiveProgramming)
 
 Competitive Programming Data Structure template
 
-- [ekzhang/library](https://ekzlib.herokuapp.com/home) [Source Code](https://github.com/ekzhang/library)
+-   [ekzhang/library](https://ekzlib.herokuapp.com/home) [Source Code](https://github.com/ekzhang/library)
 
 By [Eric Zhang](https://www.ekzhang.com/) [email](ekzhang1@gmail.com)
 
-- [walnutwaldo/Programming_Contests](https://github.com/walnutwaldo/Programming_Contests)
+-   [walnutwaldo/Programming_Contests](https://github.com/walnutwaldo/Programming_Contests)
 
 By [Walden Yan](https://walnutwaldo.github.io/) [Email](waldenyan20@gmail.com)
 
-- [ldcWV/CP](https://github.com/ldcWV/CP)
+-   [ldcWV/CP](https://github.com/ldcWV/CP)
 
 By [Lawrence Chen]()
 
-- [Chillee/Algorithms](https://github.com/Chillee/Algorithms)
-- [gibsjose/cpp-cheat-sheet](https://github.com/gibsjose/cpp-cheat-sheet)
-- [vmaddur/Competitive_Programming](https://github.com/vmaddur/Competitive_Programming)
-- [konwook/Competitive-Programming](https://github.com/konwook/Competitive-Programming)
-- [aiy12/alg-library](https://github.com/aiy12/alg-library)
+-   [Chillee/Algorithms](https://github.com/Chillee/Algorithms)
+-   [gibsjose/cpp-cheat-sheet](https://github.com/gibsjose/cpp-cheat-sheet)
+-   [vmaddur/Competitive_Programming](https://github.com/vmaddur/Competitive_Programming)
+-   [konwook/Competitive-Programming](https://github.com/konwook/Competitive-Programming)
+-   [aiy12/alg-library](https://github.com/aiy12/alg-library)
 
-- [vEnhance/von](https://github.com/vEnhance/von) Not sure if it is helpful or not
+-   [vEnhance/von](https://github.com/vEnhance/von) Not sure if it is helpful or not

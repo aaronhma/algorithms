@@ -16,34 +16,34 @@ On the other hand, a max-heap makes the root the biggest value and the bottom el
 
 ## Complexity Analysis
 
-- Min-heap:
-  | Operation | Worst Case |
-  | ---------------- | ---------- |
-  | Retrieve Minimum | O(1) |
-  | Remove Minimum | O(log n) |
-  | Insertion | O(log n) |
-  | Heapify | O(n) |
+-   Min-heap:
+    | Operation | Worst Case |
+    | ---------------- | ---------- |
+    | Retrieve Minimum | O(1) |
+    | Remove Minimum | O(log n) |
+    | Insertion | O(log n) |
+    | Heapify | O(n) |
 
-- Max-heap:
-  | Operation | Worst Case |
-  | ---------------- | ---------- |
-  | Retrieve Maximum | O(1) |
-  | Remove Maximum | O(log n) |
-  | Insertion | O(log n) |
-  | Heapify | O(n) |
+-   Max-heap:
+    | Operation | Worst Case |
+    | ---------------- | ---------- |
+    | Retrieve Maximum | O(1) |
+    | Remove Maximum | O(log n) |
+    | Insertion | O(log n) |
+    | Heapify | O(n) |
 
-* Space complexity: O(n)
+*   Space complexity: O(n)
 
 ## Pros & Cons of a Heap
 
-- Pros:
+-   Pros:
 
-  - Smallest element quick access - O(1) while other operations are O(log n)
-  - Space efficient - most heaps are implemented with vectors
+    -   Smallest element quick access - O(1) while other operations are O(log n)
+    -   Space efficient - most heaps are implemented with vectors
 
-- Cons:
-  - Easy access to smallest item, but finding other items are O(n) time
+-   Cons:
+    -   Easy access to smallest item, but finding other items are O(n) time
 
 ## References
 
-- [Interview Cake: Heap](https://www.interviewcake.com/concept/cpp/heap)
+-   [Interview Cake: Heap](https://www.interviewcake.com/concept/cpp/heap)

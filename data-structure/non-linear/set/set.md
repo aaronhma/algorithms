@@ -8,10 +8,10 @@ A set (see picture below) is an abstract data type that can store unique values.
 
 The main operations of a set are:
 
-- `union` - Adds the elements from 2 sets into 1, without any duplicates
-- `intersection` - an element that belongs in set A and set B
-- `difference` - elements in either set but not in the intersection
-- `subset` - tests if set A is a subset of set B
+-   `union` - Adds the elements from 2 sets into 1, without any duplicates
+-   `intersection` - an element that belongs in set A and set B
+-   `difference` - elements in either set but not in the intersection
+-   `subset` - tests if set A is a subset of set B
 
 ## C++ Usage
 
@@ -56,4 +56,4 @@ std::cout << set.size() << "\n"; // 2
 
 ## References
 
-- [C++ Reference: Set](http://www.cplusplus.com/reference/set/set/)
+-   [C++ Reference: Set](http://www.cplusplus.com/reference/set/set/)

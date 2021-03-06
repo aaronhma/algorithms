@@ -2,10 +2,10 @@
 
 ## Basic Properties
 
-* $(A + B) \ \% \ C = (A \ \% \ C + B \ \% \ C) \ \% \ C$
-* $(A - B) \ \% \ C = (A \ \% \ C - B \ \% \ C) \ \% \ C$
-* $(A * B) \ \% \ C = (A \ \% \ C * B \ \% \ C) \ \% \ C$
-* Division is **NOT** distributive in Modular Arithemtic! In other words, $(\frac{A}{B}) \ \% \ C \neq (\frac{A \ \% \ C}{B \ \% \ C}) \ \% \ C$.
+-   $(A + B) \ \% \ C = (A \ \% \ C + B \ \% \ C) \ \% \ C$
+-   $(A - B) \ \% \ C = (A \ \% \ C - B \ \% \ C) \ \% \ C$
+-   $(A * B) \ \% \ C = (A \ \% \ C * B \ \% \ C) \ \% \ C$
+-   Division is **NOT** distributive in Modular Arithemtic! In other words, $(\frac{A}{B}) \ \% \ C \neq (\frac{A \ \% \ C}{B \ \% \ C}) \ \% \ C$.
 
 ## ℹ️ Tips
 
