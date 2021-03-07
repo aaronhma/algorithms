@@ -1,4 +1,4 @@
-# Merge Sort
+# Merge Sort [(C++)](./merge-sort.cpp)
 
 Merge sort is a divide and conquer algorithm that runs in $\theta(n \ log \ n)$. It divides the input array into two halves ($arr[left:mid]$, $arr[mid + 1: right]$), then repeatedly calls itself with the two halves, and merges the two sorted halves.
 
