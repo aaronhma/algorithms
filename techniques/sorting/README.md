@@ -8,8 +8,9 @@ Sorting is when we are arranging things in order, based on the properties of the
 
 | ☆   | Sorting Algorithm                            | C++                                        | Time Complexity (Best) | (Average)     | (Worst)          | Space Complexity |
 | --- | -------------------------------------------- | ------------------------------------------ | ---------------------- | ------------- | ---------------- | ---------------- |
-|     | [Bubble Sort](./bubble-sort/README.md)       | [C++](./bubble-sort/bubble-sort.cpp)       | $\theta(n)$            | $\theta(n^2)$ | O(n<sup>2</sup>) | $\theta(1)$      |
+|     | [Bubble Sort](./bubble-sort/README.md)       | [C++](./bubble-sort/bubble-sort.cpp)       | $\theta(n)$            | $\theta(n^2)$ | $\theta(n^2)$ | $\theta(1)$      |
 |     | [Insertion Sort](./insertion-sort/README.md) | [C++](./insertion-sort/insertion-sort.cpp) | $\theta(n)$            | $\theta(n^2)$ | $\theta(n^2)$    | $\theta(1)$      |
+|     | [Merge Sort](./merge-sort/README.md) | [C++](./merge-sort/merge-sort.cpp) | $\theta(n \ log \ n)$ | $\theta(n \ log \ n)$  | $\theta(n \ log \ n)$   | $\theta(n)$      |
 |     | [Selection Sort](./selection-sort/README.md) | [C++](./selection-sort/selection-sort.cpp) | $\theta(n^2)$          | $\theta(n^2)$ | $\theta(n^2)$    | $\theta(1)$      |
 
 ## Sorting Algorithms Time/Space Complexity
@@ -17,7 +18,6 @@ Sorting is when we are arranging things in order, based on the properties of the
 | Algorithm     | Time Complexity (Best) | (Average)      | (Worst)          | Space Complexity |
 | ------------- | ---------------------- | -------------- | ---------------- | ---------------- |
 | Quicksort     | O(n log(n))            | O(n log(n))    | O(n<sup>2</sup>) | O(log n)         |
-| Mergesort     | O(n log(n))            | O(n log(n))    | O(n log(n))      | O(n)             |
 | Timsort       | O(n)                   | O(n log(n))    | O(n log(n))      | O(n)             |
 | Heapsort      | O(n log(n))            | O(n log(n))    | O(n log(n))      | O(1)             |
 | Tree Sort     | O(n log(n))            | O(n log(n))    | O(n<sup>2</sup>) | O(n)             |

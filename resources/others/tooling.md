@@ -11,6 +11,7 @@
 | ☆   | Name                                | Description                                                  |
 | --- | ----------------------------------- | ------------------------------------------------------------ |
 |     | [VisuAlgo](https://visualgo.net/en) | visualising data structures and algorithms through animation |
+|     | [Visualizing Algorithms](https://visualizing-algorithms.tech/) | Welcome in the world of visualization. |
 
 ## Binary Tools
 
