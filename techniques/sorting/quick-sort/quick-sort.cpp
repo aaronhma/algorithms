@@ -1,93 +1,60 @@
-#include <iostream>
-#include <vector>
-#include <cassert>
+#include <bits/stdc++.h>
 
 using namespace std;
 
-typedef vector<int> vi;
+// O(n)
+// Returns the index of the last element (arr[high]) after moving all the elements smaller than arr[high] to the front and all the elements bigger than arr[high] to the back
+int partitionIndex(vector<int> &arr, int low, int high) {
+  // pivotIndex: pivot value index
+  int pivotIndex = low;
 
-vi quicksort(vi arr)
-{
-  if (arr.size() < 2)
-    return arr;
-  else
-  {
-    int pivot = arr[0];
-    vi low, high;
+  // arr[high] is the pivot
 
-    for (int i = 1; i < arr.size(); i++)
-    {
-      int data = arr[i];
-
-      if (data <= pivot)
-      {
-        low.push_back(data);
-      }
-      else if (data > pivot)
-      {
-        high.push_back(data);
-      }
+  for (int i = low; i < high; i++) {
+    // Put elements smaller than or equal to the pivot on the left and greater elements on the right of the pivot.
+    if (arr[i] < arr[high]) {
+      // swap elements
+      swap(arr[i], arr[pivotIndex]);
+      pivotIndex++;
     }
-
-    vector<vi> sorted_2d;
-    sorted_2d.push_back(quicksort(low));
-    sorted_2d.push_back(vector<int>{pivot});
-    sorted_2d.push_back(quicksort(high));
-
-    vi sorted_flat;
-
-    for (vi vector : sorted_2d)
-    {
-      for (int i : vector)
-      {
-        sorted_flat.push_back(i);
-      }
-    }
-
-    return sorted_flat;
   }
+
+  // final swap
+  swap(arr[pivotIndex], arr[high]);
+
+  // Return the pivot value index
+  return pivotIndex;
 }
 
-bool test_function(vector<vi> input)
-{
-  vi test_case = input[0];
-  vi expected = input[1];
-  test_case = quicksort(test_case);
+// O(n log n)
+void sort(vector<int> &arr, int low, int high) {
+  // Base case: If left >= right, we cannot sort the array, as the pivot index would be incorrect.
+  if (low >= high) return;
 
-  for (int i : test_case)
-  {
-    cout << i << " ";
-  }
+  // Get the pivot index and put all elements <= pivot on the left side of the pivot and all the element > pivot on the right side of the pivot.
+  int pivotIndex = partitionIndex(arr, low, high);
 
-  cout << "\n";
+  // Sort all the elements on the left of the pivot in the range[low:pivotIndex - 1]
+  sort(arr, low, pivotIndex - 1);
 
-  if (test_case == expected)
-  {
-    cout << "Pass"
-         << "\n";
+  // NOTE: Don't sort the element at arr[pivot] (because it's the pivot and it's already sorted)
 
-    return true;
-  }
-  else
-    cout << "Fail"
-         << "\n";
-
-  return false;
+  // Sort all the elements on the right of the pivot in the range[pivotIndex + 1:high]
+  sort(arr, pivotIndex + 1, high);
 }
 
 int main()
 {
-  vector<vi> input_1 = {vi{3, 2, 1}, vi{1, 2, 3}};
-  assert(test_function(input_1));
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
 
-  vector<vi> input_2 = {vi{1, 2, 3}, vi{1, 2, 3}};
-  assert(test_function(input_2));
+  vector<int> arr = {10, 7, 8, 9, 1, 5};
 
-  vector<vi> input_3 = {vi{5, 4, 2, 3, 1}, vi{1, 2, 3, 4, 5}};
-  assert(test_function(input_3));
+  sort(arr, 0, arr.size() - 1);
 
-  vector<vi> input_4 = {vi{}, vi{}};
-  assert(test_function(input_4));
+  for (int i : arr) cout << i << " ";
+
+  cout << "\n";
 
   return 0;
 }

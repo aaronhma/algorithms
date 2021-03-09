@@ -2,6 +2,8 @@
 
 ## About
 
+**[CS Dojo Video Explanation](https://www.youtube.com/watch?v=XiuSW_mEn7g&ab_channel=CSDojo)**
+
 Radix sort sorts the input array one _digit_ at a time. Given this array, let's see how we will sort this:
 
 ![Image](https://www.interviewcake.com/images/svgs/radix_sort__input_list.svg?bust=206)
@@ -38,4 +40,4 @@ after sorting the ones place, here's what our array would look like:
 
 ([Source](https://www.interviewcake.com/concept/python3/radix-sort))
 
-**NOTE: The number of steps taken depends on the max value in the array.**
+**NOTE: The number of steps taken depends on the size of the max value in the array.**

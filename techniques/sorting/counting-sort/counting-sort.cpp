@@ -1,74 +1,54 @@
-// #include <iostream>
-// #include <vector>
-// #include <cassert>
+#include <bits/stdc++.h>
 
-// using namespace std;
+using namespace std;
 
-// typedef vector<int> vi;
+void countingSort(vector<int> &arr)
+{
+  // Find the maximum element
+  int max = 0;
 
-// vi counting_sort(vi &arr, int max_value)
-// {
-//   vi counts(max_value + 1);
-//   for (int i : arr)
-//     counts[i] += 1;
+  for (int i : arr)
+    max = ::max(max, i);
 
-//   int num_items_before = 0;
-//   for (int i = 0; i < max_value + 1; i++)
-//   {
-//     counts[i] = num_items_before;
-//     num_items_before += arr[i];
-//   }
+  vector<int> freq(max + 1), sorted_array(arr.size());
 
-//   vi sorted_list(arr.size());
+  // Populate frequency array
+  for (int i : arr)
+    freq[i]++;
 
-//   for (int i : arr)
-//   {
-//     sorted_list[counts[i]] = i;
-//     counts[i] += 1;
-//   }
+  // Make the array a prefix sum array
+  for (int i = 1; i <= max; i++)
+    freq[i] += freq[i - 1];
 
-//   return sorted_list;
-// }
+  // Shift all elements to the right
+  // Delete rightmost element
+  for (int i = max; i >= 1; i--)
+    freq[i] = freq[i - 1];
 
-// bool test_function(vector<vi> input)
-// {
-//   vi test_case = input[0];
-//   vi expected = input[1];
-//   int max_value = input[2][0];
-//   test_case = counting_sort(test_case, max_value);
+  // First element in frequency array is element 0, that will always be at the front of the sorted array
+  freq[0] = 0;
 
-//   for (int i : test_case)
-//   {
-//     cout << i << " ";
-//   }
+  // NOTE: freq[i] represents where we'll place element i in the sorted array
 
-//   cout << "\n";
+  // Start copying elements to the sorted array
+  for (int i : arr)
+    sorted_array[freq[i]++] = i;
 
-//   if (test_case == expected)
-//   {
-//     cout << "Pass"
-//          << "\n";
+  // Copy sorted array to our array
+  arr = sorted_array;
+}
 
-//     return true;
-//   }
-//   else
-//     cout << "Fail"
-//          << "\n";
+int main()
+{
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
 
-//   return false;
-// }
+  vector<int> arr = {1, 0, 3, 1, 3, 1};
+  countingSort(arr);
 
-// int main()
-// {
-//   vector<vi> input_1 = {vi{3, 2, 1}, vi{1, 2, 3}, vi{3}};
-//   // assert(test_function(input_1));
-//   test_function(input_1);
+  for (int i : arr)
+    cout << i << " ";
+  cout << "\n";
 
-//   vector<vi> input_2 = {vi{1, 2, 3}, vi{1, 2, 3}, vi{3}};
-//   assert(test_function(input_2));
-
-//   vector<vi> input_3 = {vi{}, vi{}, vi{0}};
-//   assert(test_function(input_3));
-
-//   return 0;
-// }
+  return 0;
+}
