@@ -1,4 +1,4 @@
-# Find the Number of Inversions in an Array
+# Find the Number of Inversions in an Array [(C++)](./inversions.cpp)
 
 ## The Problem
 
@@ -20,7 +20,7 @@ for (int i = 0; i < n; i++) {
 
 ## Approach 2: Modified Merge Sort
 
-Unfortunately, submitting the previous solution gives us partial credit, as the time  complexity is $\theta(n^2)$. We need a **faster** solution. Fortunately, this is a classical problem that can be solved using Merge Sort.
+Unfortunately, submitting the previous solution gives us partial credit, as the time complexity is $\theta(n^2)$. We need a **faster** solution. Fortunately, this is a classical problem that can be solved using Merge Sort.
 
 We directly implement Merge Sort, but the key difference is the `merge` function. Instead of just merging two arrays, we'll also count the # of inversions and return that.
 
@@ -28,5 +28,5 @@ Counting the # inversions can be done in the `if arr[i] > arr[j]` statement. If 
 
 **Important:**
 
-* Use `long long` to prevent integer overflow.
-* Instead of creating a temporary array every time, we'll globally create an array that is of the size $2 * 10^5 + 9$ (bigger than any $n$ in the input).
+-   Use `long long` to prevent integer overflow.
+-   Instead of creating a temporary array every time, we'll globally create an array that is of the size $2 * 10^5 + 9$ (bigger than any $n$ in the input).

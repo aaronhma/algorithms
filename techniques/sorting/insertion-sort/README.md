@@ -26,6 +26,6 @@ now swap:
 
 ## ℹ️ Tips
 
-- Insertion sort is best used on a partially sorted array, as the best case complexity is $\Omega(n)$.
-- Insertion sort is a stable sorting algorithm.
-- Insertion sort is an in-place algorithm.
+-   Insertion sort is best used on a partially sorted array, as the best case complexity is $\Omega(n)$.
+-   Insertion sort is a stable sorting algorithm.
+-   Insertion sort is an in-place algorithm.

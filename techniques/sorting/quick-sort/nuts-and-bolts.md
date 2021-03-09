@@ -1,4 +1,4 @@
-# Nuts & Bolts
+# Nuts & Bolts [(C++)](./nuts-and-bolts.cpp)
 
 ## The Problem
 
@@ -8,8 +8,8 @@ You are given $n$ nuts and $n$ bolts of different characters. Match the nuts and
 
 **Constraints:**
 
-- The characters in $bolts$ are the same as the characters in $nuts$.
-- $nuts.size() == bolts.size() == n$
+-   The characters in $bolts$ are the same as the characters in $nuts$.
+-   $nuts.size() == bolts.size() == n$
 
 ## Example
 
@@ -54,9 +54,9 @@ void match(vector<char> &nuts, vector<char> &bolts) {
 
 Some observations:
 
-- **If there are multiple answers, you may print any of them.**
-- The nuts and bolts printed are the same.
-- The characters in $bolts$ are the same as the characters in $nuts$.
+-   **If there are multiple answers, you may print any of them.**
+-   The nuts and bolts printed are the same.
+-   The characters in $bolts$ are the same as the characters in $nuts$.
 
 Since we can print **any valid** answer and that the nuts and bolts printed are the same, we can conclude that an $\theta(1)$ solution exists:
 

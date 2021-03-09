@@ -6,26 +6,26 @@ Sorting is when we are arranging things in order, based on the properties of the
 
 ## Time Complexities
 
-| ☆   | Sorting Algorithm                            | C++                                        | Time Complexity (Best) | (Average)     | (Worst)          | Space Complexity |
-| --- | -------------------------------------------- | ------------------------------------------ | ---------------------- | ------------- | ---------------- | ---------------- |
-|     | [Bubble Sort](./bubble-sort/README.md)       | [C++](./bubble-sort/bubble-sort.cpp)       | $\theta(n)$            | $\theta(n^2)$ | $\theta(n^2)$ | $\theta(1)$      |
-|     | [Insertion Sort](./insertion-sort/README.md) | [C++](./insertion-sort/insertion-sort.cpp) | $\theta(n)$            | $\theta(n^2)$ | $\theta(n^2)$    | $\theta(1)$      |
-|     | [Merge Sort](./merge-sort/README.md) | [C++](./merge-sort/merge-sort.cpp) | $\theta(n \ log \ n)$ | $\theta(n \ log \ n)$  | $\theta(n \ log \ n)$   | $\theta(n)$      |
-|     | [Selection Sort](./selection-sort/README.md) | [C++](./selection-sort/selection-sort.cpp) | $\theta(n^2)$          | $\theta(n^2)$ | $\theta(n^2)$    | $\theta(1)$      |
+| ☆   | Sorting Algorithm                            | C++                                        | Time Complexity (Best) | (Average)             | (Worst)               | Space Complexity  | Additional Contents                            |
+| --- | -------------------------------------------- | ------------------------------------------ | ---------------------- | --------------------- | --------------------- | ----------------- | ---------------------------------------------- |
+|     | [Bubble Sort](./bubble-sort/README.md)       | [C++](./bubble-sort/bubble-sort.cpp)       | $\theta(n)$            | $\theta(n^2)$         | $\theta(n^2)$         | $\theta(1)$       |                                                |
+|     | [Counting Sort](./counting-sort/README.md)   | [C++](./counting-sort/counting-sort.cpp)   | $\theta(n+k)$          | $\theta(n+k)$         | $\theta(n+k)$         | $\theta(k)$       |                                                |
+|     | [Insertion Sort](./insertion-sort/README.md) | [C++](./insertion-sort/insertion-sort.cpp) | $\theta(n)$            | $\theta(n^2)$         | $\theta(n^2)$         | $\theta(1)$       |                                                |
+|     | [Merge Sort](./merge-sort/README.md)         | [C++](./merge-sort/merge-sort.cpp)         | $\theta(n \ log \ n)$  | $\theta(n \ log \ n)$ | $\theta(n \ log \ n)$ | $\theta(n)$       | [Inversions](./merge-sort/inversions.md)       |
+|     | [Quick Sort](./quick-sort/README.md)         | [C++](./quick-sort/quick-sort.cpp)         | $\theta(n \ log \ n)$  | $\theta(n \ log \ n)$ | $\theta(n^2)$         | $\theta(log \ n)$ | [Nuts & Bolts](./quick-sort/nuts-and-bolts.md) |
+|     | [Radix Sort](./radix-sort/README.md)         | [C++](./radix-sort/radix-sort.cpp)         | $\theta(nk)$           | $\theta(nk)$          | $\theta(nk)$          | $\theta(n + k)$   |                                                |
+|     | [Selection Sort](./selection-sort/README.md) | [C++](./selection-sort/selection-sort.cpp) | $\theta(n^2)$          | $\theta(n^2)$         | $\theta(n^2)$         | $\theta(1)$       |                                                |
 
 ## Sorting Algorithms Time/Space Complexity
 
-| Algorithm     | Time Complexity (Best) | (Average)      | (Worst)          | Space Complexity |
-| ------------- | ---------------------- | -------------- | ---------------- | ---------------- |
-| Quicksort     | O(n log(n))            | O(n log(n))    | O(n<sup>2</sup>) | O(log n)         |
-| Timsort       | O(n)                   | O(n log(n))    | O(n log(n))      | O(n)             |
-| Heapsort      | O(n log(n))            | O(n log(n))    | O(n log(n))      | O(1)             |
-| Tree Sort     | O(n log(n))            | O(n log(n))    | O(n<sup>2</sup>) | O(n)             |
-| Shell Sort    | O(n log(n))            | O(n(log(n))^2) | O(n(log(n))^2)   | O(1)             |
-| Bucket Sort   | O(n+k)                 | O(n+k)         | O(n<sup>2</sup>) | O(n)             |
-| Radix Sort    | O(nk)                  | O(nk)          | O(nk)            | O(n+k)           |
-| Counting Sort | O(n+k)                 | O(n+k)         | O(n+k)           | O(k)             |
-| Cubesort      | O(n)                   | O(n log(n))    | O(n log(n))      | O(n)             |
+| Algorithm   | Time Complexity (Best) | (Average)      | (Worst)          | Space Complexity |
+| ----------- | ---------------------- | -------------- | ---------------- | ---------------- |
+| Timsort     | O(n)                   | O(n log(n))    | O(n log(n))      | O(n)             |
+| Heapsort    | O(n log(n))            | O(n log(n))    | O(n log(n))      | O(1)             |
+| Tree Sort   | O(n log(n))            | O(n log(n))    | O(n<sup>2</sup>) | O(n)             |
+| Shell Sort  | O(n log(n))            | O(n(log(n))^2) | O(n(log(n))^2)   | O(1)             |
+| Bucket Sort | O(n+k)                 | O(n+k)         | O(n<sup>2</sup>) | O(n)             |
+| Cubesort    | O(n)                   | O(n log(n))    | O(n log(n))      | O(n)             |
 
 ## Stable Sorting Algorithms
 

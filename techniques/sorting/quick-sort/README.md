@@ -1,4 +1,4 @@
-# Quick Sort
+# Quick Sort [(C++)](./quick-sort.cpp)
 
 ## About
 
@@ -10,10 +10,10 @@ At each step, we pick an element as the pivot and partitions the given array aro
 
 There are many different ways to pick the pivot. Shown below are just a few of them:
 
-* Always pick the first element as the pivot.
-* Always pick the last element as the pivot.
-* Pick a random element as the pivot.
-* Pick the middle element as the pivot.
+-   Always pick the first element as the pivot.
+-   Always pick the last element as the pivot.
+-   Pick a random element as the pivot.
+-   Pick the middle element as the pivot.
 
 **ℹ️ Tip: The pivot used in Quick Sort determines the time complexity of sorting using Quick Sort.**
 
@@ -53,9 +53,9 @@ sort(arr, pivotIndex + 1, high);
 
 Because Quick Sort is Divide & Conquer, the `sort` function takes $\theta(log \ n)$ (dividing) and the `partitionIndex` function takes $\theta(n)$ time.
 
-- Best complexity: $\theta(n \ log \ n)$
-- Average complexity: $\theta(n \ log \ n)$
-- Worst complexity: $\theta(n^2)$
+-   Best complexity: $\theta(n \ log \ n)$
+-   Average complexity: $\theta(n \ log \ n)$
+-   Worst complexity: $\theta(n^2)$
 
 ### Space Complexity
 
@@ -63,6 +63,6 @@ Because we're always creating the same variables regardless of input size, the s
 
 ## ℹ️ Tips
 
-- Only use Quick sort when time & space matters.
-- Quick sort's worst case is when the array contains few distinct elements, resulting in $\theta(n^2)$ time.
-- Quick sort is better than merge sort as it is in-place and has a small hidden constant.
+-   Only use Quick sort when time & space matters.
+-   Quick sort's worst case is when the array contains few distinct elements, resulting in $\theta(n^2)$ time.
+-   Quick sort is better than merge sort as it is in-place and has a small hidden constant.
