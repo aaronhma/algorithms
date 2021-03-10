@@ -27,3 +27,5 @@ Counting sort works by iterating through the input and counting the number of oc
 - Counting sort can **only sort integer values**.
 
 - Counting sort isn't a good idea for large datasets.
+
+- Counting sort **is stable**.
