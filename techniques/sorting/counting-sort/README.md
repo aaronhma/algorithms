@@ -25,3 +25,5 @@ Counting sort works by iterating through the input and counting the number of oc
 -   If $k > n$ ($k$: max value in array, $n$: size of array), Counting Sort isn't a good option.
 
 - Counting sort can **only sort integer values**.
+
+- Counting sort isn't a good idea for large datasets.
