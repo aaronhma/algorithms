@@ -2,6 +2,8 @@
 
 ## About
 
+**[Video Explanation](https://youtu.be/0SkOjNaO1XY?t=17)**
+
 Quick Sort is a Divide & Conquer algorithm that runs in $\theta(n \ log \ n)$ in the best case and $\theta(n^2)$ in the worst case.
 
 At each step, we pick an element as the pivot and partitions the given array around the given pivot. All the elements to the left of the pivot are less than or equal to the pivot, and all the elements to the right of the pivot are greater than the pivot.
@@ -30,6 +32,11 @@ The main `sort()` function runs in $\theta(log \ n)$ time, as we're essentially 
 As an example, here's what the recursion tree would look like for an array $\{ 10, 80, 30, 90, 40, 50, 70 \}$:
 
 ![Image](https://www.geeksforgeeks.org/wp-content/uploads/gq/2014/01/QuickSort2.png)
+
+One case to handle: if the $left$ pointer is $>= right$, we can immediately exit, because of the following constraints:
+
+* $left == right$: There is only $1$ element to sort, but the subarray is already sorted, so we can exit.
+* $left > right$: The indexes is invalid, we can't sort.
 
 ```cpp
 // Base case: If left >= right, we cannot sort the array, as the pivot index would be incorrect.
