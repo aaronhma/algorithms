@@ -23,3 +23,5 @@ Counting sort works by iterating through the input and counting the number of oc
 -   If the list is known to be partially sorted, don't use Counting Sort, use Insertion sort, as it takes advantage of partially sorted arrays
 
 -   If $k > n$ ($k$: max value in array, $n$: size of array), Counting Sort isn't a good option.
+
+- Counting sort can **only sort integer values**.
