@@ -1,5 +1,131 @@
 # Vectors
 
+## About
+
+A `vector` is a dynamic array.
+
+## Syntax
+
+---
+
+**NOTE: Assume that $n$ is the size of the array.**
+
+---
+
+### Creating a Static Vector
+
+```cpp
+vector<int> arr(50);
+```
+
+In the example above, we're creating a vector of size $50$ (we can store $50$ elements from indexes $0$ to $49$).
+
+If we were to access the $6$-th element, we can access it with $arr[6]$.
+
+**WARNING: The $i$-th index in $arr[i]$ must be an integer from $0$ to $n - 1$ where $n$ is the size of the vector.**
+
+To add/update the data at $arr[i]$, we can use the following format:
+
+```cpp
+arr[6] = 3;
+arr[4] = 9;
+
+arr[6] = 2; // update the data at arr[6]
+```
+
+---
+
+### Creating a Dynamic Vector
+
+Also, we can create an vector through the following format:
+
+```cpp
+vector<int> arr;
+```
+
+And add elements with the `push_back` command:
+
+```cpp
+arr.push_back(50);
+arr.push_back(32);
+```
+
+**WARNING: Using the example above, we can't access/update the element at $arr[6]$. We can only access elements in the array boundaries ($0$ to $n -  1$).**
+
+---
+
+### Vectors with Different Data Types
+
+For general cases, defining a vector follows the following format:
+
+```cpp
+vector<data_type_here> your_name_here;
+```
+
+where $data\_type\_here$ is the data type you want the vector to store and $your\_name\_here$ is the name of the array.
+
+We can also define the following vectors (and more) without any issues:
+
+```cpp
+vector<int> ints;
+vector<string> str;
+vector<float> floats;
+vector<double> doubles;
+vector<long long> ll;
+vector<char> c;
+```
+
+We can even define a vector with a vector inside!
+
+```cpp
+// 2D vectors:
+vector<vector<int>> ints_2d;
+vector<vector<string>> str_2d;
+vector<vector<float>> floats_2d;
+vector<vector<double>> doubles_2d;
+vector<vector<long long>> ll_2d;
+vector<vector<char>> c_2d;
+
+// Adding values
+// Add a vector that contains 2 to the 2D vector 'ints_2d'
+ints_2d.push_back({2});
+
+// Accessing data in arr[row][column] format
+cout << ints_2d[0][0] << "\n"; // 2
+
+// Updating data in arr[row][column] format
+ints_2d[0][0] = 3;
+ints_2d[0][0]++;
+
+// Accessing data in arr[row][column] format
+cout << ints_2d[0][0] << "\n"; // 4
+```
+
+**WARNING: When defining vectors, make sure your array names are different!**
+
+---
+
+### Defining Vectors with Data (Part 1)
+
+We can define a vector with some starting data using the format shown below:
+
+```cpp
+vector<int> arr1 = {4, 5, 6};
+// Our vector now contains {4, 5, 6}.
+
+// -- OR --
+vector<int> arr2 {4, 5, 6};
+// Our vector now contains {4, 5, 6}.
+```
+
+---
+
+### Defining Vectors with Data (Part 2)
+
+We
+
+---
+
 ## Iterators
 
 ![Iterators](images/vectors/iterators.png)

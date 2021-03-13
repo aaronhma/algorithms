@@ -1,3 +1,4 @@
+// https://www.geeksforgeeks.org/quick-sort/
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -8,12 +9,13 @@ int partitionIndex(vector<int> &arr, int low, int high) {
   // pivotIndex: pivot value index
   int pivotIndex = low;
 
-  // arr[high] is the pivot
+  // arr[high] is the pivot (last element)
 
   for (int i = low; i < high; i++) {
     // Put elements smaller than or equal to the pivot on the left and greater elements on the right of the pivot.
     if (arr[i] < arr[high]) {
       // swap elements
+      cout << "SWAP " << arr[i] << " | " << arr[pivotIndex] << "\n";
       swap(arr[i], arr[pivotIndex]);
       pivotIndex++;
     }
@@ -21,6 +23,8 @@ int partitionIndex(vector<int> &arr, int low, int high) {
 
   // final swap
   swap(arr[pivotIndex], arr[high]);
+
+  cout << "PIVOT | " << pivotIndex << "\n";
 
   // Return the pivot value index
   return pivotIndex;
@@ -50,9 +54,15 @@ int main()
 
   vector<int> arr = {10, 7, 8, 9, 1, 5};
 
-  sort(arr, 0, arr.size() - 1);
+  // sort(arr, 0, arr.size() - 1);
 
-  for (int i : arr) cout << i << " ";
+  // for (int i : arr) cout << i << " ";
+
+  // cout << "\n";
+  vector<int> a1 {2, 4, 3};
+  partitionIndex(a1, 0, 2);
+
+  for (int i : a1) cout << i << " ";
 
   cout << "\n";
 
