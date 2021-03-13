@@ -43,7 +43,7 @@ Also, we can create an vector through the following format:
 vector<int> arr;
 ```
 
-And add elements with the `push_back` command:
+And add elements with the `push_back` function:
 
 ```cpp
 arr.push_back(50);
@@ -114,6 +114,7 @@ vector<int> arr1 = {4, 5, 6};
 // Our vector now contains {4, 5, 6}.
 
 // -- OR --
+// in C++ 11 and above:
 vector<int> arr2 {4, 5, 6};
 // Our vector now contains {4, 5, 6}.
 ```
@@ -122,7 +123,97 @@ vector<int> arr2 {4, 5, 6};
 
 ### Defining Vectors with Data (Part 2)
 
-We
+We can use the `push_back` function to add data to our vector:
+
+```cpp
+vector<int> arr;
+arr.push_back(1);
+// array contains {1}
+
+for (int i = 2; i <= 4; i++)
+  arr.push_back(i);
+
+// array contains {1, 2, 3, 4}
+```
+
+---
+
+### Removing The Last Element from a Vector
+
+Assume that we have an array $arr$ with elements $\{ 1, 2, 3, 4, 5, 6 \}$. We can delete the last element from the array through the `pop_back` function.
+
+```cpp
+arr.pop_back();
+```
+
+Now, our array contains $\{ 1, 2, 3, 4, 5 \}$ after deleting the last element.
+
+---
+
+## Size of a Vector
+
+If we were to have an array $arr = \{ 1, 2, 3, 4, 5, 6\}$, and we want to get the `size` of the array, we can use the `size` function:
+
+```cpp
+vector<int> arr { 1, 2, 3, 4, 5, 6};
+
+cout << arr.size() << "\n"; // 6
+```
+
+---
+
+## Clearing a Vector
+
+If we had a really messy vector, we can clear our vector using the `clear` function:
+
+```cpp
+vector<int> arr {1, 2, 3};
+cout << arr.size() << "\n"; // 3
+
+arr.clear(); // clear the array
+
+cout << arr.size() << "\n"; // 0
+```
+
+---
+
+## Checking if an Vector is Empty
+
+We can check if our vector is empty using the `empty` function (that returns a boolean value):
+
+```cpp
+vector<int> arr {1, 2, 3};
+
+// Array is not empty
+if (arr.empty())
+  cout << "Array is empty\n";
+else
+  cout << "Array is not empty\n";
+
+arr.clear(); // clear the array
+
+// Array is empty
+if (arr.empty())
+  cout << "Array is empty\n";
+else
+  cout << "Array is not empty\n";
+```
+
+---
+
+## Time Complexities of Vector Operations
+
+Here are the most important functions used in CP and their time complexities:
+
+**Table ordered from most important to least important.*
+
+| Operation | Time Complexity   |
+| --------- | --- |
+| `push_back`         | $\theta(1)$   |
+| `pop_back`         | $\theta(1)$   |
+| `size` | $\theta(1)$ |
+| `clear` | depending on your machine, it may be $\theta(1)$ or $\theta(n)$ |
+| `empty` | $\theta(1)$ |
 
 ---
 
@@ -135,6 +226,8 @@ Note that `begin()` points to an element in the data structure (first element), 
 ```cpp
 cout << *arr.begin() << "\n";
 ```
+
+---
 
 ## Special Operations
 
