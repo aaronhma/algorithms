@@ -3,37 +3,55 @@
 
 using namespace std;
 
-// O(n)
-// Returns the index of the last element (arr[high]) after moving all the elements smaller than arr[high] to the front and all the elements bigger than arr[high] to the back
-int partitionIndex(vector<int> &arr, int low, int high) {
-  // pivotIndex: pivot value index
+// O(n) Linear Time
+// @description: Move pivot value at its correct position(index) in sorted array and put all smaller
+//      elements (< pivot) before pivot, and put all greater elements (> pivot) after pivot
+// - 1. Picking last element as pivot
+// - 2. Moving any element SMALLER than (< pivot) to its LEFT
+// - 3. Moving any element GREATER than (> pivot) to its RIGHT
+// - 4. places the pivot element at its correct position in sorted array
+// - @return the Pivot Index
+int partitionIndex(vector<int> &arr, int low, int high)
+{
+  // Index of smaller element and indicates the right position of pivot found so far
   int pivotIndex = low;
+  // Picking last element as pivot
+  int pivot = arr[high];
 
-  // arr[high] is the pivot (last element)
+  // cout << "low | " << low << " ::: high | " << high << " ::: pivot | " << pivot << "\n";
+  // {10, 7, 1, 5}
 
-  for (int i = low; i < high; i++) {
-    // Put elements smaller than or equal to the pivot on the left and greater elements on the right of the pivot.
-    if (arr[i] < arr[high]) {
-      // swap elements
-      cout << "SWAP " << arr[i] << " | " << arr[pivotIndex] << "\n";
-      swap(arr[i], arr[pivotIndex]);
+  for (int i = low; i < high; i++)
+  {
+    // If current element is smaller than the pivot
+    if (arr[i] < pivot)
+    {
+      if (i != low) swap(arr[pivotIndex], arr[i]);
+      // cout << "arr[i] | " << arr[i] << " ::: arr[pivotIndex] | " << arr[pivotIndex] << "\n";
       pivotIndex++;
+      // 1st: {10, 7, 1, 5} => {1, 7, 10, 5}  pivotIndex: 1
+
+      // 2nd never called: {1, 5, 10, 7} => {1, 5, 10, 7}  pivotIndex: 2
     }
   }
 
-  // final swap
+  // cout << "PIVOT | " << pivotIndex << "\n";
+  // Moving the pivot element to the correct pivotIndex position
+  // pivot element's left & right part has been sorted
   swap(arr[pivotIndex], arr[high]);
-
-  cout << "PIVOT | " << pivotIndex << "\n";
+  // 1st: {1, 5, 10, 7}  pivotIndex: 1
+  // 2nd: {1, 5, 10, 7} => {1, 5, 7, 10}  pivotIndex: 2
 
   // Return the pivot value index
   return pivotIndex;
 }
 
 // O(n log n)
-void sort(vector<int> &arr, int low, int high) {
+void sort(vector<int> &arr, int low, int high)
+{
   // Base case: If left >= right, we cannot sort the array, as the pivot index would be incorrect.
-  if (low >= high) return;
+  if (low >= high)
+    return;
 
   // Get the pivot index and put all elements <= pivot on the left side of the pivot and all the element > pivot on the right side of the pivot.
   int pivotIndex = partitionIndex(arr, low, high);
@@ -52,19 +70,22 @@ int main()
   ios_base::sync_with_stdio(false);
   cin.tie(NULL);
 
-  vector<int> arr = {10, 7, 8, 9, 1, 5};
+  // vector<int> arr = {10, 7, 8, 9, 1, 5};
+  // vector<int> arr = {10, 7, 1, 5};
 
-  // sort(arr, 0, arr.size() - 1);
+  // need to use `pivotIndex - 1` trick to avoid the extra call
+  int n;
+  cin >> n;
 
-  // for (int i : arr) cout << i << " ";
+  vector<int> arr(n);
+  // vector<int> arr = {2, 4, 3};
+  for (int i = 0; i < n; i++) cin >> arr[i];
+  // vector<int> arr = {2, 1, 3};
 
-  // cout << "\n";
-  vector<int> a1 {2, 4, 3};
-  partitionIndex(a1, 0, 2);
+  sort(arr, 0, arr.size() - 1);
 
-  for (int i : a1) cout << i << " ";
-
-  cout << "\n";
+  for (int i : arr)
+    cout << i << "\n";
 
   return 0;
 }
