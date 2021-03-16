@@ -40,13 +40,13 @@ You can find the iterative & recursive binary search implementation [here](https
 
 **Iterative binary search implementation complexities:**
 
-- Time: $\theta(log \ n)$
-- Space $\theta(1)$
+-   Time: $\theta(log \ n)$
+-   Space $\theta(1)$
 
 **Recursive binary search implementation complexities:**
 
-- Time: $\theta(log \ n)$
-- Space: $\theta(log \ n)$
+-   Time: $\theta(log \ n)$
+-   Space: $\theta(log \ n)$
 
 The main difference between the iterative & recursive implementation is space complexity. So, always use the iterative version of binary search. **Remember: always prefer the implementation that uses the least resources.**
 
@@ -68,8 +68,8 @@ Proof that these are the same:
 
 ## When to use Binary Search?
 
-- When we have to solve a problem in $\theta(log \ n)$, most likely it's solvable using Binary Search.
-- If we need to find an element $x$ in a dataset that is monotonic (if not, make if monotonic (if possible)).
+-   When we have to solve a problem in $\theta(log \ n)$, most likely it's solvable using Binary Search.
+-   If we need to find an element $x$ in a dataset that is monotonic (if not, make if monotonic (if possible)).
 
 ## Upper & Lower Boundss
 
