@@ -10,9 +10,9 @@ A string contains characters.
 
 `s1.compare(s2)` returns:
 
-- $0$: Both strings are equal
-- $<0$: $s1$ is shorter or first character that doesn't match is smaller than $s2$
-- $>0$: $s1$ is longer or first character that doesn't match is greater than $s2$
+-   $0$: Both strings are equal
+-   $<0$: $s1$ is shorter or first character that doesn't match is smaller than $s2$
+-   $>0$: $s1$ is longer or first character that doesn't match is greater than $s2$
 
 where $s1$ is the first string and $s2$ is the second string.
 
@@ -22,8 +22,8 @@ where $s1$ is the first string and $s2$ is the second string.
 
 `s1.compare(start, len, s2)` returns:
 
-- $0$: $s1.substr(start, len) = s2$
-- anything else: $s1.substr(start, len) \neq s2$
+-   $0$: $s1.substr(start, len) = s2$
+-   anything else: $s1.substr(start, len) \neq s2$
 
 where $s1$ is the first string, $s2$ is the second string, $start$ is the first index where we compare $s1$ with $s2$ and $len$ is the # of characters to compare.
 

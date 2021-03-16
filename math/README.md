@@ -1,5 +1,12 @@
 # Math
 
+| ☆   | Math Algorithms                                        | C++     | Problems |
+| --- | ------------------------------------------------------ | ------- | -------- |
+|     | [Combinatorics](./combinatorics/README.md)             | [C++]() |          |
+|     | [Euclidean Algorithm](./euclidean-algorithm/README.md) | [C++]() |          |
+|     | [Geometry](./geometry/README.md)                       | [C++]() |          |
+|     | [Number Theory](./number-theory/README.md)             | [C++]() |          |
+
 # CP Math Intro
 
 ### Primes

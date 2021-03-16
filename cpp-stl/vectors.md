@@ -205,15 +205,15 @@ else
 
 Here are the most important functions used in CP and their time complexities:
 
-**Table ordered from most important to least important.*
+\*_Table ordered from most important to least important._
 
-| Operation | Time Complexity   |
-| --------- | --- |
-| `push_back`         | $\theta(1)$   |
-| `pop_back`         | $\theta(1)$   |
-| `size` | $\theta(1)$ |
-| `clear` | depending on your machine, it may be $\theta(1)$ or $\theta(n)$ |
-| `empty` | $\theta(1)$ |
+| Operation   | Time Complexity                                                 |
+| ----------- | --------------------------------------------------------------- |
+| `push_back` | $\theta(1)$                                                     |
+| `pop_back`  | $\theta(1)$                                                     |
+| `size`      | $\theta(1)$                                                     |
+| `clear`     | depending on your machine, it may be $\theta(1)$ or $\theta(n)$ |
+| `empty`     | $\theta(1)$                                                     |
 
 ---
 

@@ -35,8 +35,8 @@ As an example, here's what the recursion tree would look like for an array $\{ 1
 
 One case to handle: if the $left$ pointer is $>= right$, we can immediately exit, because of the following constraints:
 
-* $left == right$: There is only $1$ element to sort, but the subarray is already sorted, so we can exit.
-* $left > right$: The indexes is invalid, we can't sort.
+-   $left == right$: There is only $1$ element to sort, but the subarray is already sorted, so we can exit.
+-   $left > right$: The indexes is invalid, we can't sort.
 
 ```cpp
 // Base case: If left >= right, we cannot sort the array, as the pivot index would be incorrect.
