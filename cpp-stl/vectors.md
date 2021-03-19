@@ -205,15 +205,35 @@ else
 
 Here are the most important functions used in CP and their time complexities:
 
-**Table ordered from most important to least important.*
+\*_Table ordered from most important to least important._
 
-| Operation | Time Complexity   |
-| --------- | --- |
-| `push_back`         | $\theta(1)$   |
-| `pop_back`         | $\theta(1)$   |
-| `size` | $\theta(1)$ |
-| `clear` | depending on your machine, it may be $\theta(1)$ or $\theta(n)$ |
-| `empty` | $\theta(1)$ |
+| Operation   | Time Complexity                                                 |
+| ----------- | --------------------------------------------------------------- |
+| `push_back` | $\theta(1)$                                                     |
+| `pop_back`  | $\theta(1)$                                                     |
+| `size`      | $\theta(1)$                                                     |
+| `clear`     | depending on your machine, it may be $\theta(1)$ or $\theta(n)$ |
+| `empty`     | $\theta(1)$                                                     |
+| `insert`    | $\theta(n)$                                                     |
+
+---
+
+## `push_back` vs. `emplace_back`
+
+#### **[Source](https://qr.ae/pN0zCj)**
+
+Here are the steps to execute `push_back`:
+
+1. construct a new (empty) element
+2. add it to the end of the container
+3. copy the argument into the new element in #1
+
+While the steps to execute `emplace_back`:
+
+1. construct a new element using the argument values
+2. add it to the end of the container
+
+Using `emplace_back` spares you a copy operation.
 
 ---
 
