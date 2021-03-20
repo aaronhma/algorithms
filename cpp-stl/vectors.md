@@ -2,7 +2,9 @@
 
 ## About
 
-A `vector` is a dynamic array.
+A `vector` is a dynamic [array](array.md) that satisfies the **Random Access Property**:
+
+- We can access any element in $\theta(1)$ time. We have this property with a vector/[array](array.md) because our data is in a contiguous section of memory.
 
 ## Syntax
 
@@ -105,7 +107,7 @@ cout << ints_2d[0][0] << "\n"; // 4
 
 ---
 
-### Defining Vectors with Data (Part 1)
+### Adding Data to a Vector
 
 We can define a vector with some starting data using the format shown below:
 
@@ -119,11 +121,7 @@ vector<int> arr2 {4, 5, 6};
 // Our vector now contains {4, 5, 6}.
 ```
 
----
-
-### Defining Vectors with Data (Part 2)
-
-We can use the `push_back` function to add data to our vector:
+We can also use the `push_back` function to add data to our vector:
 
 ```cpp
 vector<int> arr;
@@ -201,6 +199,30 @@ else
 
 ---
 
+## Adding Data to a Vector Given an Index
+
+We can add data $v$ to a vector given an index $i$ using the format `arr.insert(arr.begin() + i, v)`. An example:
+
+```cpp
+arr.insert(arr.begin() + 6, 4); // add an element 4 to index 6 - O(n)
+```
+
+---
+
+## Erasing Data from a Vector at a Specified Point
+
+```cpp
+// delete 6th element
+arr.erase(arr.begin() + 5);
+
+// delete the first 3 elements
+arr.erase(arr.begin(), arr.begin() + 3);
+```
+
+The time complexity of `arr.erase(it)` is pretty high: $\theta(n + m)$ where $n$ is the # of elements erased and $m$ is the # of elements after the last deleted that will be moved.
+
+---
+
 ## Time Complexities of Vector Operations
 
 Here are the most important functions used in CP and their time complexities:
@@ -215,6 +237,7 @@ Here are the most important functions used in CP and their time complexities:
 | `clear`     | depending on your machine, it may be $\theta(1)$ or $\theta(n)$ |
 | `empty`     | $\theta(1)$                                                     |
 | `insert`    | $\theta(n)$                                                     |
+| `erase` | $\theta(n + m)$ |
 
 ---
 
@@ -235,28 +258,59 @@ While the steps to execute `emplace_back`:
 
 Using `emplace_back` spares you a copy operation.
 
+An example of using `push_back` and `emplace_back`:
+
+```cpp
+// create a array of pairs that contains chars and integers
+vector<pair<char, int>> arr;
+
+// use push_back to create a new pair object
+arr.push_back({'a', 1});
+
+// NOTE: Using push_back, we can't do this:
+// arr.push_back('b', 2);
+
+// insert a pair in-place
+arr.emplace_back('b', 2);
+```
+
+**ℹ️ Tip: For [primitive data types](https://www.geeksforgeeks.org/c-data-types/), it doesn't really matter if we use `push_back` or `emplace_back`. But for [objects](https://en.wikipedia.org/wiki/C%2B%2B_classes), `emplace_back` is preferred for efficiency reasons.**
+
 ---
 
 ## Iterators
 
-![Iterators](images/vectors/iterators.png)
+```
+ +---+---+---+---+---+---+---+
+ |   | 1 | 2 | 3 | 4 | 5 |   |
+ +---+---+---+---+---+---+---+
+   ↑   ↑               ↑   ↑
+   |   |               |   |
+rend() |         rbegin()  end()
+       |                   rbegin().base()
+     begin()
+     rend().base()
+```
 
-Note that `begin()` points to an element in the data structure (first element), while `end()` points outside the data structure (last element outside the data structure + 1). The element where an iterator points to can be accessed using the $*$ symbol.
+Note that `begin()` points to an element in the data structure (first element), while `end()` points outside the data structure (**imaginary** last element outside the data structure + 1). Also, we can access the last element in the vector using reverse iterators in the form `arr.back()/arr.rbegin()`. Similarly, we can access the **imaginary** element before the first element using `arr.rend()`. The element where an iterator points to can be accessed using the $*$ symbol.
 
 ```cpp
 cout << *arr.begin() << "\n";
 ```
 
+Using this method, we can also get the element at index $5$ using pointer arithmetic:
+
+```cpp
+cout << *(arr.begin() + 5) << "\n"; // WARNING: The index is 0-based!!!
+```
+
 ---
 
-## Special Operations
+## STL Algorithms on Vectors
 
-Some of the operations possible such that we have an `vector` called $arr$:
+If we had a vector $arr$, we could apply some possible operations:
 
--   `arr.back()`: returns last element of a vector
--   `arr.pop_back()`: Deletes the last element of a vector
--   `arr.begin()`: Iterator to first element in array
--   `arr.end()`: Iterator to end of the array + 1
 -   `std::shuffle(arr.begin(), arr.end())`: Randomly shuffles the array
 -   `arr.erase(std::unique(arr.begin(), arr.end()))`: Makes the array unique
 -   `std::sort(arr.begin(), arr.end())`: Sorts the array
+-   `std::sort(arr.rbegin(), arr.rend())`: Reverse sort the array

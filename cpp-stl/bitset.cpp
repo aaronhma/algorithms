@@ -21,7 +21,7 @@ int main()
   bitset<n> b2(12); // Create bitset based on int -> binary
   bitset<n> b3("1011"); // Create bitset based on string -> binary
 
-  // indexes start from right to left (LMS digit -> greatest signifacance digit)
+  // indexes start from right to left (Least Most Signifacance (LMS) bit -> greatest signifacance bit)
   // set the bit at position 26 and 17 and 0 to 1
   b1[15] = b1[8] = b1[0] = 1;
 
@@ -43,23 +43,24 @@ int main()
 
   printBitset(b1, 1);
 
-  bitset<n> XOR = b1 ^ b2;
+  bitset<n> XOR = b1 ^ b2; // Bitwise XOR
 
   cout << "Bitwise XOR:\n    b1: " << b1 << "\n" << "XOR b2: " << b2 << "\n======================================\n        " << XOR << "\n\n";
   printBitset(XOR, 4);
 
-  bitset<n> AND = b1 & b2;
+  bitset<n> AND = b1 & b2; // Bitwise AND
 
   cout << "Bitwise AND:\n    b1: " << b1 << "\n" << "AND b2: " << b2 << "\n======================================\n        " << AND << "\n\n";
   printBitset(AND, 5);
 
-  bitset<n> OR = b1 | b2;
+  bitset<n> OR = b1 | b2; // Bitwise OR
 
   cout << "Bitwise OR:\n   b1: " << b1 << "\n" << "OR b2: " << b2 << "\n======================================\n       " << OR << "\n\n";
   printBitset(OR, 6);
 
   cout << "\n\n";
 
+  // Shift elements in the bitset
   cout << "Moved bitset #3 (shift elements by 1 to the right): " << b3 << " | " << (b3 >> 1) << "\n";
   cout << "Moved bitset #3 (shift elements by 2 to the left): " << b3 << " | " << (b3 << 2) << "\n";
 
