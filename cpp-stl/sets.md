@@ -1,13 +1,25 @@
 # Sets
 
-## Sets
+## About
+
+A `set` is a map with no values (we're only interested in the keys). Another way of saying this (in C++ code):
+
+```cpp
+// we don't care what the second value is - just make it a boolean value that's always true for simplicity
+map<int, bool> map;
+//   ^ change this to the data type of something you want!
+map[key] = true;
+map.insert({key, true});
+```
+
+## C++ Implementation
 
 C++'s Standard Template Library contains 2 implementations of a `set`:
 
--   `set`: Based on a bBST and operations work in $\theta(log n)$
+-   `set`: Based on a bBST and operations work in $\theta(log \ n)$
 -   `unordered_set`: Based on a hash table and operations work in $\theta(1)$ time on average
 
-Both structures are efficient, though `unordered_set` is faster than `set` as there is no ordering of the elements unlike a `set`. Another important thing to note is that a `set` cannot store duplicate items.
+Both structures are efficient, though `unordered_set` is faster than `set` as there is no ordering of the elements unlike a `set`. Another important thing to note is that both `set` and `unordered_set` cannot store duplicate items.
 
 An example of `set` being used is shown below:
 
