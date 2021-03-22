@@ -310,7 +310,13 @@ cout << *(arr.begin() + 5) << "\n"; // WARNING: The index is 0-based!!!
 
 If we had a vector $arr$, we could apply some possible operations:
 
--   `std::shuffle(arr.begin(), arr.end())`: Randomly shuffles the array
+-   `std::shuffle(arr.begin(), arr.end())`: Randomly shuffles the array using generators from [`<random>`](http://www.cplusplus.com/reference/random/) library
+-   `std::random_shuffle(arr.begin(), arr.end())`: Randomly shuffles the array using `rand()`
 -   `arr.erase(std::unique(arr.begin(), arr.end()))`: Makes the array unique
 -   `std::sort(arr.begin(), arr.end())`: Sorts the array
 -   `std::sort(arr.rbegin(), arr.rend())`: Reverse sort the array
+
+## `shuffle` vs. `random_shuffle`
+
+- `random_shuffle` uses `rand()` to randomize the items, while `shuffle` uses generators from the [`<random>`](http://www.cplusplus.com/reference/random/) library
+- `shuffle` is an improvement over `random_shuffle` (where [`RAND_MAX`](http://www.cplusplus.com/reference/cstdlib/RAND_MAX/) is implementation dependent)

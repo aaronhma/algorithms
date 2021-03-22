@@ -9,7 +9,7 @@
 
 ## ℹ️ Tips
 
-1. There is 1 in a billionth chance that $a \ \% \ b$ are the same for two different numbers $a$ and $b$.
+1. There is 1 in a billionth chance that $a \ \% \ b$ are the same for two different numbers $a$ and $b$ where $b$ is a large prime number.
 
 ## Why $ans \ \% \ (10^9 + 7)$ in some CP problems?
 
