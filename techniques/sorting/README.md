@@ -2,7 +2,7 @@
 
 ## About
 
-Sorting is when we are arranging things in order, based on the properties of the elements.
+Sorting is when we are arranging things in order, based on the properties of the elements. Also, [searching](../searching/README.md) is made easier after soring.
 
 ## Time Complexities
 

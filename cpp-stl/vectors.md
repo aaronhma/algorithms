@@ -217,9 +217,32 @@ arr.erase(arr.begin() + 5);
 
 // delete the first 3 elements
 arr.erase(arr.begin(), arr.begin() + 3);
+
+// We can also pass in an iterator to the element:
+// More information on find() in "STL Algorithms on Vectors"
+auto it = find(arr.begin(), arr.end(), 4);
+
+if (it != arr.end()) {
+  arr.erase(it);
+}
 ```
 
 The time complexity of `arr.erase(it)` is pretty high: $\theta(n + m)$ where $n$ is the # of elements erased and $m$ is the # of elements after the last deleted that will be moved.
+
+---
+
+
+## Sorting a Vector
+
+We can sort a vector in $\theta(n \ log \ n)$ using the `sort` function.
+
+```cpp
+// Sort the entire array in ascending order
+sort(arr.begin(), arr.end());
+
+// Sort the entire array in descending order
+sort(arr.rbegin(), arr.rend());
+```
 
 ---
 
@@ -238,6 +261,7 @@ Here are the most important functions used in CP and their time complexities:
 | `empty`     | $\theta(1)$                                                     |
 | `insert`    | $\theta(n)$                                                     |
 | `erase` | $\theta(n + m)$ |
+| `sort` | $\theta(n \ log \ n)$ |
 
 ---
 
@@ -306,17 +330,8 @@ cout << *(arr.begin() + 5) << "\n"; // WARNING: The index is 0-based!!!
 
 ---
 
-## STL Algorithms on Vectors
-
-If we had a vector $arr$, we could apply some possible operations:
-
--   `std::shuffle(arr.begin(), arr.end())`: Randomly shuffles the array using generators from [`<random>`](http://www.cplusplus.com/reference/random/) library
--   `std::random_shuffle(arr.begin(), arr.end())`: Randomly shuffles the array using `rand()`
--   `arr.erase(std::unique(arr.begin(), arr.end()))`: Makes the array unique
--   `std::sort(arr.begin(), arr.end())`: Sorts the array
--   `std::sort(arr.rbegin(), arr.rend())`: Reverse sort the array
-
 ## `shuffle` vs. `random_shuffle`
 
 - `random_shuffle` uses `rand()` to randomize the items, while `shuffle` uses generators from the [`<random>`](http://www.cplusplus.com/reference/random/) library
-- `shuffle` is an improvement over `random_shuffle` (where [`RAND_MAX`](http://www.cplusplus.com/reference/cstdlib/RAND_MAX/) is implementation dependent)
+- `shuffle` is an improvement over `random_shuffle` (where [`RAND_MAX`](http://www.cplusplus.com/reference/cstdlib/RAND_MAX/) is implementation dependent **If our array is of size $n$ and $n > RAND\_MAX$, consider using `shuffle` (or face undefined behaviors)**)
+- If you're using `shuffle`, set the seed as the current time in microseconds: `mt19937 rng((uint32_t)chrono::steady_clock::now().time_since_epoch().count()); `
