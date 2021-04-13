@@ -31,10 +31,10 @@ A binary search tree is a [binary tree](../binary_tree/README.md) where nodes ar
 
 A balanced binary search tree follows the BST properties along with additional properties:
 
-- Each node has at most $2$ children
-- The difference between the heights of the left subtree and right subtree cannot be more than $1$
-- Accessing any random element should not take more than $\theta(log \ n)$ time
-- If we have $n$ nodes in the tree, the height should be no more than $ceil(log \ n)$ where $ceil$ rounds $log \ n$ up (if necessary).
+-   Each node has at most $2$ children
+-   The difference between the heights of the left subtree and right subtree cannot be more than $1$
+-   Accessing any random element should not take more than $\theta(log \ n)$ time
+-   If we have $n$ nodes in the tree, the height should be no more than $ceil(log \ n)$ where $ceil$ rounds $log \ n$ up (if necessary).
 
 ![Image](https://www.interviewcake.com/images/svgs/bst__balanced_non_balanced.svg?bust=206)
 
@@ -46,9 +46,9 @@ Also, we can determine the # of nodes for each subtree given the number of nodes
 
 ## Bonus: What BST means
 
-- B: Binary - The tree is a [binary tree](../binary-tree/README.md).
-- S: Search - The tree is organized in a fashion suitable for sorting (see BST properties).
-- T: Tree - It's a tree.
+-   B: Binary - The tree is a [binary tree](../binary-tree/README.md).
+-   S: Search - The tree is organized in a fashion suitable for sorting (see BST properties).
+-   T: Tree - It's a tree.
 
 ## References
 

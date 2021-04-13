@@ -87,12 +87,12 @@ advance(it, 2); // move ahead 2 spaces forward
 
 ## Time Complexity of Operations
 
-| Operation   | Time Complexity |
-| ----------- | --------------- |
-| `map[x]` |  $\theta(log \ n)$              |
-| `map.count()` |  $\theta(log \ n)$              |
-| `map.find()` |  $\theta(log \ n)$              |
-| `map.erase()` |  $\theta(log \ n)$              |
-| `map.insert()` |  $\theta(log \ n)$              |
-| `map.size()` |  $\theta(1)$              |
-| `map.empty()` |  $\theta(1)$              |
+| Operation      | Time Complexity   |
+| -------------- | ----------------- |
+| `map[x]`       | $\theta(log \ n)$ |
+| `map.count()`  | $\theta(log \ n)$ |
+| `map.find()`   | $\theta(log \ n)$ |
+| `map.erase()`  | $\theta(log \ n)$ |
+| `map.insert()` | $\theta(log \ n)$ |
+| `map.size()`   | $\theta(1)$       |
+| `map.empty()`  | $\theta(1)$       |

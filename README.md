@@ -182,7 +182,6 @@
 | --- | ------------------------- | --- | ------ | ---------- |
 |     | What is Divide & Conquer? |     |        |            |
 
-
 #### [**Dynamic Proramming**](techniques/dynamic-proramming/README.md)
 
 | ☆   | Name (Content)                                      | C++                                             | Python | Editorials |

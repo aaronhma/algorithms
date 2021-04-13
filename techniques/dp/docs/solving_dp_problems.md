@@ -23,7 +23,7 @@ All DP problems are about their state and transition.
 
 -   State: Set of parameters that can identify a certain position or standing in the given problem
     **NOTE: These base parameters should be as small as possible to reduce the state space.**
--  Transition: Recurrence relation
+-   Transition: Recurrence relation
 
 For example, in the famous [Knapsack problem](../classic_problems/knapsack_problem.md), the state is defined by 2 parameters: the index and the weight at the specified index.
 

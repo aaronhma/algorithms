@@ -26,7 +26,7 @@ unordered_map<pair<int, int>, int> mp;
 
 You will get Compilation Error! Why? See [this page](http://www.cplusplus.com/reference/functional/hash) for `unordered_map` supported types. For unsupported types, you have to create your own hash function for use. For example, let's see how we can create a hash function for `pair<int, int>`.
 
-As you know, any `int` value is between $-2^{31}+1$ to $2^{31}-1$. So, if we create a hash function that for every `pair<int, int>` returns distinct values in type  `size_t` (alias of `unsigned int`), it will be done. It is pretty easy: `x.first^(x.second<<32)` is good. But be careful about overflow. For having a good hash function, we use `hash<long long>`. The code looks like this:
+As you know, any `int` value is between $-2^{31}+1$ to $2^{31}-1$. So, if we create a hash function that for every `pair<int, int>` returns distinct values in type `size_t` (alias of `unsigned int`), it will be done. It is pretty easy: `x.first^(x.second<<32)` is good. But be careful about overflow. For having a good hash function, we use `hash<long long>`. The code looks like this:
 
 ```cpp
 struct HASH {
@@ -43,8 +43,8 @@ Now you have a unordered_map of `pair<int, int>` (it doesn't matter what the val
 
 ## `map` vs. `unordered_map`
 
-- `unordered_map` is 4 times faster than `map`.
-- `map` is sorted, while `unordered_map` is not. Also, there isn't a `lower_bound`/`upper_bound` function in `unordered_map`, while `map` does.
+-   `unordered_map` is 4 times faster than `map`.
+-   `map` is sorted, while `unordered_map` is not. Also, there isn't a `lower_bound`/`upper_bound` function in `unordered_map`, while `map` does.
 
 ---
 
@@ -116,12 +116,12 @@ advance(it, 2); // move ahead 2 spaces forward
 
 ## Time Complexity of Operations
 
-| Operation | Average Case | Worst Case  |
-| --------- | ------------ | ----------- |
-| `map[x]`  | $\theta(1)$  | $\theta(n)$ |
+| Operation      | Average Case | Worst Case  |
+| -------------- | ------------ | ----------- |
+| `map[x]`       | $\theta(1)$  | $\theta(n)$ |
 | `map.count()`  | $\theta(1)$  | $\theta(n)$ |
-| `map.find()`  | $\theta(1)$  | $\theta(n)$ |
+| `map.find()`   | $\theta(1)$  | $\theta(n)$ |
 | `map.erase()`  | $\theta(1)$  | $\theta(n)$ |
-| `map.insert()`  | $\theta(1)$  | $\theta(n)$ |
-| `map.size()`  | $\theta(1)$  | $\theta(1)$ |
+| `map.insert()` | $\theta(1)$  | $\theta(n)$ |
+| `map.size()`   | $\theta(1)$  | $\theta(1)$ |
 | `map.empty()`  | $\theta(1)$  | $\theta(1)$ |

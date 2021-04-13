@@ -10,7 +10,7 @@ Let's say we have an array $arr$ that can store $6$ elements and $3$ elements ar
 
 ![Image](https://miro.medium.com/max/1400/1*xzHn_L51zW7isiYY72cEHw.png)
 
-But when we have a full vector and need to  add a new element, this takes $\theta(n)$, as we need to copy the old array into a new contigous block of memory that is twice the size of the original array then add the new element:
+But when we have a full vector and need to add a new element, this takes $\theta(n)$, as we need to copy the old array into a new contigous block of memory that is twice the size of the original array then add the new element:
 
 ![Image](https://miro.medium.com/max/1400/1*v8uMYv8IWGeeApFzquTvdg.png)
 

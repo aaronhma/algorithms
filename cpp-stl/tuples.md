@@ -6,7 +6,7 @@ A tuple is an object capable to hold a collection of elements. Each element can 
 
 ## Accessing Elements in a Tuple
 
-- Method #1 (**C++ 11+**):
+-   Method #1 (**C++ 11+**):
 
 ```cpp
 // create tuple with initial values {1, "hello", 3}
@@ -19,7 +19,7 @@ cout << get<1>(tp) << "\n"; // print what's in index #1 in the tuple
 cout << get<2>(tp) << "\n"; // print what's in index #2 in the tuple
 ```
 
-- Method #2 (**C++ 14+**):
+-   Method #2 (**C++ 14+**):
 
 ```cpp
 // WARNING: get<DATA_TYPE_HERE>(tuple_name) works only if DATA_TYPE_HERE data type appears ONLY ONCE in the tuple.
@@ -33,5 +33,5 @@ get<string>(tp) = "C++ is awesome";
 
 ## Resources
 
-- [**cplusplus.com Tuple Example**](http://www.cplusplus.com/reference/tuple/tuple/)
-- [**cppreference.com Tuple Example**](https://en.cppreference.com/w/cpp/utility/tuple/get)
+-   [**cplusplus.com Tuple Example**](http://www.cplusplus.com/reference/tuple/tuple/)
+-   [**cppreference.com Tuple Example**](https://en.cppreference.com/w/cpp/utility/tuple/get)

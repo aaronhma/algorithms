@@ -6,4 +6,4 @@ A pair is a data structure that contains two elements of different/same data typ
 
 ## Resources
 
-- [**cplusplus.com Pair Example**](http://www.cplusplus.com/reference/utility/pair/pair/)
+-   [**cplusplus.com Pair Example**](http://www.cplusplus.com/reference/utility/pair/pair/)
