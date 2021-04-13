@@ -1,20 +1,26 @@
-// Calculating Bonomial Coefficients
 #include <bits/stdc++.h>
 
 using namespace std;
 
-int coefficient(int n, int k)
-{
-  if (k > n)
-  {
-    cout << "Impossible to calculate the binomial coefficient with n = " << n << " and k = " << k << "! Exiting...\n";
-    exit(EXIT_SUCCESS);
+typedef long long ll;
+
+// 1000001 == 1e6 + 1
+ll cache[1000001][1000001];
+
+// Formula:
+// C(n, k) = C(n-1, k-1) + C(n-1, k)
+// C(n, 0) = C(n, n) = 1
+ll C(ll n, ll k) {
+  if (k > n) {
+    cerr << "ERROR: " << k << " > " << n << ", expected " << k << " <= " << n << "\n";
+    exit(EXIT_FAILURE);
   }
+  if (k == 0 || n == k) return 1;
+  if (cache[n][k] != 0) return cache[n][k];
 
-  if (k == 0 || k == n)
-    return 1;
+  cache[n][k] = C(n - 1, k - 1) + C(n - 1, k);
 
-  return coefficient(n - 1, k - 1) + coefficient(n - 1, k);
+  return cache[n][k];
 }
 
 int main()
@@ -22,8 +28,7 @@ int main()
   ios_base::sync_with_stdio(false);
   cin.tie(NULL);
 
-  cout << coefficient(5, 2) << "\n"; // 10
-  cout << coefficient(2, 5) << "\n"; // error
+  cout << C(5, 2) << "\n"; // 10
 
   return 0;
 }
