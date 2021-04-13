@@ -3,7 +3,7 @@
 using namespace std;
 
 /**
- * Merge two arrays
+ * Merge two sorted arrays
  * See the following for an explanation for what this function does:
  * https://www.geeksforgeeks.org/merge-two-sorted-arrays/
 */

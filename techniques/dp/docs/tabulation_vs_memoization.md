@@ -16,7 +16,7 @@ Tabulation example:
 #include <iostream>
 
 int dp[n + 1];
-dp[0] = 1;
+dp[0] = 1; // possibly 0, depends on problem
 dp[1] = 1;
 
 // start from the bottom (2) to the top (n)

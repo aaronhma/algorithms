@@ -1,6 +1,6 @@
 # How to solve Dynamic Programming problems?
 
-This writeup was compiled from [Geeks for Geeks: Solving DP Problems](https://www.geeksforgeeks.org/solve-dynamic-programming-problem/) and all credit go there.
+**[Try using the FAST DP strategy](https://learntocodewith.me/posts/dynamic-programming/)** <-- not sure if this is good
 
 ## Contents
 
@@ -11,10 +11,7 @@ This writeup was compiled from [Geeks for Geeks: Solving DP Problems](https://ww
 
 ## 1. Identify if the problem can be solved with DP
 
-The most common Dynamic Programming problems require you to:
-
--   maximize/minimize a certain quantity
--   counting problems (eg. counting arrangements under a certain condition or certain probability problems)
+**[When to Use DP?](when_to_use_dp.md)** <-- Read
 
 All DP problems satisfy the overlapping subproblems property and most classic problems also satisfy the optimal substructure property.
 
@@ -26,6 +23,7 @@ All DP problems are about their state and transition.
 
 -   State: Set of parameters that can identify a certain position or standing in the given problem
     **NOTE: These base parameters should be as small as possible to reduce the state space.**
+-  Transition: Recurrence relation
 
 For example, in the famous [Knapsack problem](../classic_problems/knapsack_problem.md), the state is defined by 2 parameters: the index and the weight at the specified index.
 
@@ -49,8 +47,6 @@ Total number of ways to form 6 is: 8
 1+5
 5+1
 ```
-
-**[Geeks for Geeks: Explanation](https://www.geeksforgeeks.org/solve-dynamic-programming-problem/)**
 
 So, first of all, we decide a state for the given problem. We will take a parameter n to decide state as it can uniquely identify any subproblem. So, our state dp will look like state(n). Here, state(n) means the total number of arrangements to form n by using {1, 3, 5} as elements.
 
@@ -85,8 +81,6 @@ state(7) = state (7-1) + state (7-3) + state (7-5)
 
 In general,
 state(n) = state(n-1) + state(n-3) + state(n-5)
-
-## Code:
 
 ## Sources Used
 

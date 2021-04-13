@@ -2,7 +2,7 @@
 
 ## What is Dynamic Programming?
 
-**Dynamic programming** (known as DP) is a programming paradigm that stores the result of a problem after solving it.
+**Dynamic programming** (known as DP) is a programming paradigm that stores the result of a problem after solving it. Essentially, DP is brute force, but with a trick: it stores the subproblems that are already computed to avoid recomputation.
 
 ![Image](https://miro.medium.com/max/970/1*7pbs4HCE_K6cH6jkcgxw_A.png)
 
@@ -14,7 +14,7 @@ Imagine you are given two bags of coins and you are asked to count the # of coin
 
 ## The Approaches of Dynamic Programming
 
-### 1. Top-Down Approach
+### 1. Top-Down Approach (Memoization)
 
 Remember when we solved the Fibonnaci problem using recursion? That is the top-down approach. We start by solving the problem using recursion, and store the results of each subproblem.
 
@@ -26,7 +26,7 @@ $DP = recursion + caching$
 
 ---
 
-### **Tip: Memoization**
+### **Tip**
 
 The Top-Down approach is also known as Memoization. Memoization is easy to code, but when a lot of recursive calls are required, memoization may call memory issues.
 
@@ -34,7 +34,7 @@ Generally, memoization is slower than [tabulation] (see **_Tabulation_**).
 
 ---
 
-### 2. Bottom-Up Approach
+### 2. Bottom-Up Approach (Tabulation)
 
 Another way we can use to solve the Fibonacci problem was by starting from the bottom (calculating the $2$nd term, then the $3$rd term, etc.). Similarly, we can do the same in DP.
 
@@ -51,7 +51,7 @@ $$dp[i] = dp[i - 1] + dp[i - 2]$$
 
 ---
 
-### **Tip: Tabulation**
+### **Tip**
 
 Though tabulation is hard to code (we need to come up with a specific order when dealing with a lot of conditions), tabulation is _(generally)_ **faster** than memoization.
 
@@ -62,6 +62,9 @@ Though tabulation is hard to code (we need to come up with a specific order when
 # NEED TO UPDATE
 
 1. Recognize if the problem can be solved with DP
+
+The problem can be solved using DP if there is an overlapping subproblem or an optimal substructure.
+
 2. Identify the problem variables
 3. Express the recurrence relation
 4. Identify the base cases
