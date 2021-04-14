@@ -13,8 +13,6 @@ Both tabulation and memoization are the same thing, except for the difference in
 Tabulation example:
 
 ```cpp
-#include <iostream>
-
 int dp[n + 1];
 dp[0] = 1; // possibly 0, depends on problem
 dp[1] = 1;
@@ -25,7 +23,7 @@ for (int i = 2; i <= n; i++)
   dp[i] = i * dp[i - 1];
 }
 
-std::cout << "Factorial of " << n << ": " dp[n] << "\n";
+cout << "Factorial of " << n << ": " dp[n] << "\n";
 ```
 
 ![Image](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Tabulation-vs-Memoization-1.png)
@@ -35,23 +33,18 @@ std::cout << "Factorial of " << n << ": " dp[n] << "\n";
 Memoization example:
 
 ```cpp
-#include <iostream>
-
 int dp[n + 1];
 
 int solver(int n) {
   if (n == 0) {
-    cout << "factorial: 1\n";
     return 1;
   }
 
-  if (dp[n] != -1) {
-    cout << "factorial: " << dp[n] << "\n";
+  if (dp[n] != 0) {
     return dp[n];
   }
 
   dp[n] = n * solver(n - 1);
-  cout << "factorial: " << dp[n] << "\n";
 
   return dp[n];
 }
