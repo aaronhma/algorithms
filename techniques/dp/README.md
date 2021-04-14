@@ -30,7 +30,7 @@ $DP = recursion + caching$
 
 The Top-Down approach is also known as Memoization. Memoization is easy to code, but when a lot of recursive calls are required, memoization may call memory issues.
 
-Generally, memoization is slower than [tabulation] (see **_Tabulation_**).
+Generally, memoization is slower than [tabulation](https://github.com/aaronhma/algorithms/tree/master/techniques/dp#2-bottom-up-approach-tabulation).
 
 ---
 
