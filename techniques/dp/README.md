@@ -2,7 +2,7 @@
 
 ## What is Dynamic Programming?
 
-**Dynamic programming** (known as DP) is a programming paradigm that stores the result of a problem after solving it. Essentially, DP is brute force, but with a trick: it stores the subproblems that are already computed to avoid recomputation.
+**Dynamic programming** (known as DP) is a programming paradigm that stores the result of a problem after solving it. Essentially, DP is brute force, but with a trick: it stores the subproblems that are already computed to avoid recomputation. A DP solution will examine the previously solved subproblems and will combine their solutions to give the best solution for the given problem.
 
 ![Image](https://miro.medium.com/max/970/1*7pbs4HCE_K6cH6jkcgxw_A.png)
 
@@ -59,26 +59,11 @@ Though tabulation is hard to code (we need to come up with a specific order when
 
 ## The Formula to Solve Any DP Problem
 
-# NEED TO UPDATE
-
-1. Recognize if the problem can be solved with DP
-
-The problem can be solved using DP if there is an overlapping subproblem or an optimal substructure.
+1. [Recognize if the problem can be solved with DP](docs/when_to_use_dp.md)
 
 2. Identify the problem variables
 3. Express the recurrence relation
 4. Identify the base cases
-5. Decide if you want to implement it iteratively or recursively
+5. [Decide if you want to implement it iteratively or recursively](docs/tabulation_vs_memoization.md)
 6. Add memoization
-7. Determine the time complexity
-
----
-
-## **Tip: Majority of DP Problems Falls into 2 Categories!**
-
-A majority of the Dynamic Programming problems can be categorized into two types:
-
-1. Optimization problems
-2. Combinatorial problems
-
-An optimization problem is a problem of finding the best solution from all feasible solutions. And combinatorial problems expect you to figure out the number of ways to do something or the probability of some event happening.
+7. Determine the time complexity. Optimize the solution if the time complexity gives us a TLE when submitting.
