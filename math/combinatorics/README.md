@@ -1,5 +1,9 @@
 # Combinatorics
 
+## # of Subsets
+
+The # of subsets that a array with $n$ elements is $2^n$ (with $\emptyset$) or $2^n - 1$(without $\emptyset$).
+
 ## Binomial Coefficients
 
 The binomial coefficient ${n\choose k}$ gives the number of ways we can choose a subset of $k$ elements from a set of $n$ elements. For example, if the set is $\{1, 2, 3, 4, 5\}$, then $n = 5$. If $k = 3$, then ${n\choose k} = {5\choose 3} = 10$. The subsets are:

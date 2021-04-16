@@ -29,7 +29,11 @@ For example, in the famous [Knapsack problem](../classic_problems/knapsack_probl
 
 ## 3. Formulating a State Relationship
 
-This part is quite hard, and requires intuition, observation, and practice. For example,
+This part is quite hard, and requires intuition, observation, and practice.
+
+**NOTE: In this step, we define what our $dp$ array is. For example, in the Fibonacci problem, we define $dp[i]$ to be the $i$-th number in the Fibonacci sequence. If we realize a $1D$ array is not enough, we go to higher dimensions ($2D$, $3D$, etc.). Also, we can use the constraints to know the dimension of the DP array (eg. if $1 \leq N \leq 2 * 10^4$, a $\theta(n^2)$ will get an AC, so the dimension of the DP array will be $1D$/$2D$).**
+
+For example,
 
 ```
 Given 3 numbers {1, 3, 5}, we need to tell
@@ -48,9 +52,9 @@ Total number of ways to form 6 is: 8
 5+1
 ```
 
-So, first of all, we decide a state for the given problem. We will take a parameter n to decide state as it can uniquely identify any subproblem. So, our state dp will look like state(n). Here, state(n) means the total number of arrangements to form n by using {1, 3, 5} as elements.
+So, first of all, we decide a state for the given problem. We will take a parameter $n$ to decide state as it can uniquely identify any subproblem. So, our state dp will look like $state(n)$. Here, $state(n)$ means the total number of arrangements to form $n$ by using $\{1, 3, 5\}$ as elements.
 
-Now, we need to compute state(n).
+Now, we need to compute $state(n)$.
 
 How to do it?
 So here the intuition comes into action. As we can only use 1, 3 or 5 to form a given number. Let us assume that we know the result for n = 1,2,3,4,5,6 ; being termilogistic let us say we know the result for the
