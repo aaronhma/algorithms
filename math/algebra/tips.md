@@ -25,6 +25,14 @@ $$\frac{6}{6} = 1$$
 
 We can easily multiply any number by 11 using the following multiplication trick:
 
+$$11 * 99$$
+$$= 9 \text{ [some thing goes here] } 9$$
+$$= 9 \text{ [9 + 9] } 9$$
+$$= 9 \text { [18] } 9$$
+$$= 1089$$
+
+**[Does the multiplication of 11 trick work for all numbers? - YES](https://forum.poshenloh.com/topic/809/does-the-multiplication-by-11-trick-work-for-numbers-that-aren-t-two-digits?_=1619107946181)**
+
 3. **Tip #3:**
 
 > #### Any time we apply the square root operation on a number $x$, we have two results: $\sqrt{x}$ and $-\sqrt{x}$.
@@ -50,3 +58,13 @@ In the AMC competitions, where word problems is a common type of problem, as it 
 > #### Checking your work.
 
 **When solving math problems, STAY ORGANIZED.** It helps with checking your work. When checking your work, remember to **USE A DIFFERENT STATEGY THAN THE ONE YOU USED TO SOLVE THE PROBLEM** (so you don't make the same mistake that you possibly might have made again when solving the problem).
+
+7. **Tip #7:**
+
+> #### Convert the words into numbers.
+
+When given a word problem, **ALWAYS** convert the words into numbers.
+
+8. **Tip #8:**
+
+> #### When there's multiplication and division involved, always perform the operation that makes the most sense.
