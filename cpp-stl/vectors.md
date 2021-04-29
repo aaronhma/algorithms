@@ -14,7 +14,9 @@ A `vector` is a dynamic [array](array.md) that satisfies the **Random Access Pro
 
 ---
 
-### Creating a Static Vector
+<details>
+
+<summary>Creating a Static Vector</summary>
 
 ```cpp
 vector<int> arr(50);
@@ -35,9 +37,11 @@ arr[4] = 9;
 arr[6] = 2; // update the data at arr[6]
 ```
 
----
+</details>
 
-### Creating a Dynamic Vector
+<details>
+
+<summary>Creating a Dynamic Vector</summary>
 
 Also, we can create an vector through the following format:
 
@@ -54,9 +58,11 @@ arr.push_back(32);
 
 **WARNING: Using the example above, we can't access/update the element at $arr[6]$. We can only access elements in the array boundaries ($0$ to $n -  1$).**
 
----
+</details>
 
-### Vectors with Different Data Types
+<details>
+
+<summary>Vectors with Different Data Types</summary>
 
 For general cases, defining a vector follows the following format:
 
@@ -64,7 +70,7 @@ For general cases, defining a vector follows the following format:
 vector<data_type_here> your_name_here;
 ```
 
-where $data\_type\_here$ is the data type you want the vector to store and $your\_name\_here$ is the name of the array.
+where `data_type_here` is the data type you want the vector to store and `your_name_here` is the name of the array.
 
 We can also define the following vectors (and more) without any issues:
 
@@ -105,9 +111,11 @@ cout << ints_2d[0][0] << "\n"; // 4
 
 **WARNING: When defining vectors, make sure your array names are different!**
 
----
+</details>
 
-### Adding Data to a Vector
+<details>
+
+<summary>Adding Data to a Vecotr</summary>
 
 We can define a vector with some starting data using the format shown below:
 
@@ -134,9 +142,11 @@ for (int i = 2; i <= 4; i++)
 // array contains {1, 2, 3, 4}
 ```
 
----
+</details>
 
-### Removing The Last Element from a Vector
+<details>
+
+<summary>Removing The Last Element from a Vecotr</summary>
 
 Assume that we have an array $arr$ with elements $\{ 1, 2, 3, 4, 5, 6 \}$. We can delete the last element from the array through the `pop_back` function.
 
@@ -146,9 +156,11 @@ arr.pop_back();
 
 Now, our array contains $\{ 1, 2, 3, 4, 5 \}$ after deleting the last element.
 
----
+</details>
 
-## Size of a Vector
+<details>
+
+<summary>Size of a Vector</summary>
 
 If we were to have an array $arr = \{ 1, 2, 3, 4, 5, 6\}$, and we want to get the `size` of the array, we can use the `size` function:
 
@@ -158,9 +170,11 @@ vector<int> arr { 1, 2, 3, 4, 5, 6};
 cout << arr.size() << "\n"; // 6
 ```
 
----
+</details>
 
-## Clearing a Vector
+<details>
+
+<summary>Clearing a Vector</summary>
 
 If we had a really messy vector, we can clear our vector using the `clear` function:
 
@@ -173,9 +187,11 @@ arr.clear(); // clear the array
 cout << arr.size() << "\n"; // 0
 ```
 
----
+</details>
 
-## Checking if an Vector is Empty
+<details>
+
+<summary>Checking if a Vector is Empty</summary>
 
 We can check if our vector is empty using the `empty` function (that returns a boolean value):
 
@@ -197,9 +213,11 @@ else
   cout << "Array is not empty\n";
 ```
 
----
+</details>
 
-## Adding Data to a Vector Given an Index
+<details>
+
+<summary>Adding Data to a Vector Given an Index</summary>
 
 We can add data $v$ to a vector given an index $i$ using the format `arr.insert(arr.begin() + i, v)`. An example:
 
@@ -207,9 +225,11 @@ We can add data $v$ to a vector given an index $i$ using the format `arr.insert(
 arr.insert(arr.begin() + 6, 4); // add an element 4 to index 6 - O(n)
 ```
 
----
+</details>
 
-## Erasing Data from a Vector at a Specified Point
+<details>
+
+<summary>Erasing Data from a Vector at a Specified Point</summary>
 
 ```cpp
 // delete 6th element
@@ -229,9 +249,11 @@ if (it != arr.end()) {
 
 The time complexity of `arr.erase(it)` is pretty high: $\theta(n + m)$ where $n$ is the # of elements erased and $m$ is the # of elements after the last deleted that will be moved.
 
----
+</details>
 
-## Sorting a Vector
+<details>
+
+<summary>Sorting a Vector</summary>
 
 We can sort a vector in $\theta(n \ log \ n)$ using the `sort` function.
 
@@ -243,9 +265,11 @@ sort(arr.begin(), arr.end());
 sort(arr.rbegin(), arr.rend());
 ```
 
----
+</details>
 
-## Time Complexities of Vector Operations
+<details>
+
+<summary>Time Complexities of Important Vector Operations</summary>
 
 Here are the most important functions used in CP and their time complexities:
 
@@ -262,9 +286,11 @@ Here are the most important functions used in CP and their time complexities:
 | `erase`     | $\theta(n + m)$                                                 |
 | `sort`      | $\theta(n \ log \ n)$                                           |
 
----
+</details>
 
-## `push_back` vs. `emplace_back`
+<details>
+
+<summary><code>push_back</code> vs. <code>emplace_back</code></summary>
 
 #### **[Source](https://qr.ae/pN0zCj)**
 
@@ -299,9 +325,11 @@ arr.emplace_back('b', 2);
 
 **ℹ️ Tip: For [primitive data types](https://www.geeksforgeeks.org/c-data-types/), it doesn't really matter if we use `push_back` or `emplace_back`. But for [objects](https://en.wikipedia.org/wiki/C%2B%2B_classes), `emplace_back` is preferred for efficiency reasons.**
 
----
+</details>
 
-## Iterators
+<details>
+
+<summary>Iterators</summary>
 
 ```
  +---+---+---+---+---+---+---+
@@ -327,10 +355,14 @@ Using this method, we can also get the element at index $5$ using pointer arithm
 cout << *(arr.begin() + 5) << "\n"; // WARNING: The index is 0-based!!!
 ```
 
----
+</details>
 
-## `shuffle` vs. `random_shuffle`
+<details>
+
+<summary><code>shuffle</code> vs. <code>random_shuffle</code></summary>
 
 -   `random_shuffle` uses `rand()` to randomize the items, while `shuffle` uses generators from the [`<random>`](http://www.cplusplus.com/reference/random/) library
--   `shuffle` is an improvement over `random_shuffle` (where [`RAND_MAX`](http://www.cplusplus.com/reference/cstdlib/RAND_MAX/) is implementation dependent **If our array is of size $n$ and $n > RAND\_MAX$, consider using `shuffle` (or face undefined behaviors)**)
+-   `shuffle` is an improvement over `random_shuffle` (where [`RAND_MAX`](http://www.cplusplus.com/reference/cstdlib/RAND_MAX/) is implementation dependent **If our array is of size $n$ and $n >$ `RAND_MAX`, consider using `shuffle` (or face undefined behaviors)**)
 -   If you're using `shuffle`, set the seed as the current time in microseconds: `mt19937 rng((uint32_t)chrono::steady_clock::now().time_since_epoch().count()); `
+
+</details>

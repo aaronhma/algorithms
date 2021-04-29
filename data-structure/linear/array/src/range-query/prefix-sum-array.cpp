@@ -1,4 +1,5 @@
 // Prefix Sum Array
+// OJ for testing: https://www.codechef.com/problems/GOLDTRIP
 #include <bits/stdc++.h>
 
 using namespace std;

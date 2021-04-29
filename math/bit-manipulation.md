@@ -103,30 +103,3 @@ A example of the binary operations can be used to model the set $S = \{1, 3, 4, 
 Note that the standard set operations can be modeled with binary operators:
 
 ![Set Operations](images/binary/set_operations.png)
-
-## C++ `bitset` data structure
-
-C++'s built-in `bitset` data structure which is a more _efficient_ array full of 0s and 1s. See the following example that creates a bitset of 10 elements:
-
-```cpp
-std::bitset<10> s;
-s[1] = 1;
-s[3] = 1;
-s[4] = 1;
-s[7] = 1;
-std::cout << s[4] << "\n"; // 1
-std::cout << s[5] << "\n"; // 0
-
-// The count function returns the # of 1 bits in the bitset
-std::cout << s.count << "\n"; // 4
-```
-
-Also, bit operations can be directly applied on bitsets:
-
-```cpp
-bitset<10> a, b;
-// ...
-bitset<10> c = a&b;
-bitset<10> d = a|b;
-bitset<10> e = a^b;
-```
