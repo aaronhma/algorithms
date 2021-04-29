@@ -28,8 +28,6 @@ typedef vector<pii> vpii;
 #define LB lower_bound
 #define UB upper_bound
 #define BINS binary_search
-#define READ(x) ifstream cin(x ".in");
-#define OUT(x) ofstream cout(x ".out");
 #define IT(x) for (auto it = begin(x); it != end(x); it++)
 #define RIT(x) for (auto it = rbegin(x); it != rend(x); it++)
 #define FORE(i, a, b) for (int i = a; i < b; i++)
@@ -53,8 +51,7 @@ int ceildiv(int a, int b)
 // INPUT
 template <class T>
 void read(T &x) { cin >> x; }
-template <class Arg, class... Args>
-void read(Arg &first, Args &...rest);
+
 void read(double &x)
 {
   string t;
@@ -69,40 +66,28 @@ void read(ld &x)
 }
 
 template <class T>
-void read(complex<T> &x);
-template <class T1, class T2>
-void read(pair<T1, T2> &p);
-template <class T>
-void read(vector<T> &a);
-template <class T, size_t SZ>
-void read(array<T, SZ> &a);
-
-template <class Arg, class... Args>
-void read(Arg &first, Args &...rest)
-{
-  read(first);
-  read(rest...);
-}
-template <class T>
 void read(complex<T> &x)
 {
   T a, b;
   read(a, b);
   x = cd(a, b);
 }
+
 template <class T1, class T2>
 void read(pair<T1, T2> &p) { read(p.f, p.s); }
+
 template <class T>
 void read(vector<T> &a)
 {
   FORE(i, 0, sz(a))
   read(a[i]);
 }
-template <class T>
-void read(vector<T> &a, int n)
+
+template <class Arg, class... Args>
+void read(Arg &first, Args &...rest)
 {
-  FORE(i, 0, n)
-  read(a[i]);
+  read(first);
+  read(rest...);
 }
 
 // OUTPUT
@@ -128,11 +113,7 @@ ostream &printArray(ostream &os, const T &a, int SZ)
   os << '}';
   return os;
 }
-template <class T, size_t SZ>
-ostream &operator<<(ostream &os, const array<T, SZ> &a)
-{
-  return printArray(os, a, SZ);
-}
+
 template <class T>
 ostream &operator<<(ostream &os, const vector<T> &a)
 {
@@ -162,10 +143,52 @@ void pr(const Arg &first, const Args &...rest)
 
 mt19937 rng((uint32_t)chrono::steady_clock::now().time_since_epoch().count());
 
+// Fast I/O
+void setIO(str s = "", bool use_file = false, bool use_txt = false)
+{
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
+
+  if (use_file)
+  {
+    if (use_txt)
+    {
+      freopen((s + ".txt").c_str(), "r", stdin);
+      freopen((s + ".txt").c_str(), "w", stdout);
+    }
+    else
+    {
+      freopen((s + ".in").c_str(), "r", stdin);
+      freopen((s + ".out").c_str(), "w", stdout);
+    }
+  }
+}
+
+// Custom hash for unordered_map and unordered_set (works only for integers)
+struct custom_hash
+{
+  static uint64_t splitmix64(uint64_t x)
+  {
+    // http://xorshift.di.unimi.it/splitmix64.c
+    x += 0x9e3779b97f4a7c15;
+    x = (x ^ (x >> 30)) * 0xbf58476d1ce4e5b9;
+    x = (x ^ (x >> 27)) * 0x94d049bb133111eb;
+    return x ^ (x >> 31);
+  }
+
+  size_t operator()(uint64_t x) const
+  {
+    static const uint64_t FIXED_RANDOM = chrono::steady_clock::now().time_since_epoch().count();
+    return splitmix64(x + FIXED_RANDOM);
+  }
+};
+
 int main()
 {
   ios_base::sync_with_stdio(false);
   cin.tie(NULL);
+
+  setIO(); // Disable this during interactive problems
 
   return 0;
 }
