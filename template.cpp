@@ -185,9 +185,6 @@ struct custom_hash
 
 int main()
 {
-  ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-
   setIO(); // Disable this during interactive problems
 
   return 0;
