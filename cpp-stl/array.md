@@ -4,7 +4,8 @@
 
 An array in C++ is a static array that is defined upon initialization.
 
-## Syntax
+<details>
+  <summary>Creating an Array</summary>
 
 ```cpp
 int arr[50];
@@ -16,7 +17,10 @@ If we were to access the $6$-th element, we can access it with $arr[6]$.
 
 **WARNING: The $i$-th index in $arr[i]$ must be an integer from $0$ to $n - 1$ where $n$ is the size of the vector.**
 
-## Sorting an Array
+</details>
+
+<details>
+  <summary>Sorting an Array</summary>
 
 We can sort an array in $\theta(n \ log \ n)$ using the `sort` function:
 
@@ -34,3 +38,5 @@ If we were to sort the entire array, we have to do $sort(arr, arr + n)$ where $n
 int arr[] = {4, 1, 2, 5, 3};
 sort(arr, arr + 5);
 ```
+
+</details>

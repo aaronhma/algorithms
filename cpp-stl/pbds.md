@@ -1,5 +1,8 @@
 # Policy-Based Sets
 
+<details>
+  <summary>Getting Started with Policy-Based Sets</summary>
+
 The `g++` compiler provides some data structures not part of the C++ STL. These structures are called policy-based structures. To use these, we must add the following lines of code:
 
 ```cpp
@@ -7,7 +10,12 @@ The `g++` compiler provides some data structures not part of the C++ STL. These 
 using namespace __gnu_pbds;
 ```
 
-After this, if we were to create a set with a index (like `vector`), we can do this:
+</details>
+
+<details>
+  <summary>Creating a Policy-Based Data Structure</summary>
+
+After including the PBDS data structure, if we were to create a Policy-Based set with a index (like `vector`), we can do this:
 
 ```cpp
 typedef tree<int,null_type,less<int>,rb_tree_tag,
@@ -30,3 +38,5 @@ cout << s.order_of_key(8) << "\n"; // 3
 ```
 
 **NOTE: Both functions work in $\theta(log \ n)$.**
+
+</details>

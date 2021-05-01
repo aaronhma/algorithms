@@ -1,6 +1,7 @@
 # Other Structures
 
-## Deque
+<details>
+  <summary>Deque</summary>
 
 A `deque` is a dynamic array that can be efficiently manipulated at both ends. Like a `vector`, a `deque` contains `push_back` and `pop_back`, but it also provides `push_front` and `pop_front` which isn't available with a vector. See the below code for an example:
 
@@ -28,7 +29,10 @@ s.pop(); // [2]
 cout << s.top() << "\n"; // 2
 ```
 
-## Queue
+</details>
+
+<details>
+  <summary>Queue</summary>
 
 The other specialized data structure besides a stack is `queue`. In a queue, elements are inserted at the front of the structure. The functions `push`, `pop`, `front`, and `back` are provided in a `queue`.
 
@@ -40,3 +44,5 @@ cout << q.front() << "\n"; // 2
 q.pop(); // [5]
 cout << q.back() << "\n"; // 5
 ```
+
+</details>
