@@ -144,22 +144,22 @@ void pr(const Arg &first, const Args &...rest)
 mt19937 rng((uint32_t)chrono::steady_clock::now().time_since_epoch().count());
 
 // Fast I/O
-void setIO(str s = "", bool use_file = false, bool use_txt = false)
+void setIO(str S = "", bool use_txt = false)
 {
   ios_base::sync_with_stdio(false);
   cin.tie(NULL);
 
-  if (use_file)
+  if (!S.empty())
   {
     if (use_txt)
     {
-      freopen((s + ".txt").c_str(), "r", stdin);
-      freopen((s + ".txt").c_str(), "w", stdout);
+      freopen((S + ".txt").c_str(), "r", stdin);
+      freopen((S + ".txt").c_str(), "w", stdout);
     }
     else
     {
-      freopen((s + ".in").c_str(), "r", stdin);
-      freopen((s + ".out").c_str(), "w", stdout);
+      freopen((S + ".in").c_str(), "r", stdin);
+      freopen((S + ".out").c_str(), "w", stdout);
     }
   }
 }
