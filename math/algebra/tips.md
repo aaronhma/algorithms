@@ -6,8 +6,8 @@
 
 For example, if we were to solve $2.5 * 0.25 * 1.\overline{3} * 1.2$, we would convert the decimals to fractions, then solve.
 
-> * $\overline{3} = 333333 ...$
-> In this case,  $1.\overline{3} = 1.333333 ... = \frac{4}{3}$.
+> -   $\overline{3} = 333333 ...$
+>     In this case, $1.\overline{3} = 1.333333 ... = \frac{4}{3}$.
 
 Let's solve the problem!
 
@@ -77,7 +77,7 @@ When given a word problem, **ALWAYS** convert the words into numbers.
 
 > #### It is impossible to create a non-cubical rectangular box with all sides having the same ratio of length to width. The only shape that has all sides having the same ratio of length to width is a cube.
 
-Let's suppose that it is possible to find a $3$-D box that has all sides with width and length in the same ratio. We can choose a ratio that is simple to imagine, like $1 : 2$.  That means that for each side, the following would be true:
+Let's suppose that it is possible to find a $3$-D box that has all sides with width and length in the same ratio. We can choose a ratio that is simple to imagine, like $1 : 2$. That means that for each side, the following would be true:
 
 $$\frac{length}{width} = 2$$
 
@@ -109,7 +109,7 @@ It's not possible to get a rectangular box with all sides having width and lengt
 
 > #### In competition math, knowing useful numbers is very helpful. Presented below are some useful, frequently used numbers that should be memorized.
 
-- $1001 = 7 * 11 * 13$
+-   $1001 = 7 * 11 * 13$
 
 12. **Tip #12:**
 

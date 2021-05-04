@@ -20,7 +20,6 @@ Unlike a [`map`](map.md), an `unordered_map` in C++ uses a hash table and **the 
 
 </details>
 
-
 <details>
 
 <summary>Creating our Own Hash Function</summary>

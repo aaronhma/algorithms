@@ -22,7 +22,7 @@ $$x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$$
 
 when $ax^2 + bx + c = 0$.
 
-**The discriminant of a quadratic equation is $\Delta = b^2 - 4ac$. If $\Delta > 0$, there are $2$ real solutions ($2$ real $x$). If $\Delta = 0$,  then there is $1$ real solution. If $D < 0$, there are $2$ imaginary solutions.**
+**The discriminant of a quadratic equation is $\Delta = b^2 - 4ac$. If $\Delta > 0$, there are $2$ real solutions ($2$ real $x$). If $\Delta = 0$, then there is $1$ real solution. If $D < 0$, there are $2$ imaginary solutions.**
 
 6. Distance Formula Between $(x_1, y_1)$ and $(x_2, y_2)$
 

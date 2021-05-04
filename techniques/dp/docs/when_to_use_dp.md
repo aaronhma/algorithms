@@ -24,7 +24,7 @@ When you have an optimization problem, first identify what you're optimizing for
 
 Counting problems (eg. counting arrangements under a certain condition or certain probability problems) **usually** can be solved using DP (though combinatorics can be used in some problems).
 
-- When Greedy doesn't work.
+-   When Greedy doesn't work.
 
 When solving a problem that Greedy fails, you **usually** turn to Dynamic Programming to solve the problem.
 

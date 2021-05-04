@@ -60,9 +60,9 @@ Then, we compare $\frac{ad}{bd}$ with $\frac{cb}{db}$. **Note that we don't have
 
 ## Interesting Facts About Comparing Fractions
 
-* $\frac{a}{b} < \frac{a + 1}{b + 1} < 1$ if $a < b$ (The fraction $\frac{a + 1}{b + 1}$ gets closer to $1$ as $\frac{4 + 1 million}{9 + 1 million} \approx \frac{1 million}{1 million} = 1$)
-* $+\infty > \frac{a}{b} > \frac{a + 1}{b + 1}$ if $a > b$.
-* If we have fractions $\frac{a}{b}$ and $\frac{c}{d}$, where $\frac{a}{b} < \frac{c}{d}$, then:
+-   $\frac{a}{b} < \frac{a + 1}{b + 1} < 1$ if $a < b$ (The fraction $\frac{a + 1}{b + 1}$ gets closer to $1$ as $\frac{4 + 1 million}{9 + 1 million} \approx \frac{1 million}{1 million} = 1$)
+-   $+\infty > \frac{a}{b} > \frac{a + 1}{b + 1}$ if $a > b$.
+-   If we have fractions $\frac{a}{b}$ and $\frac{c}{d}$, where $\frac{a}{b} < \frac{c}{d}$, then:
 
 $$\frac{a}{b} < \frac{a + c}{b + d} < \frac{c}{d}$$
 
@@ -76,7 +76,7 @@ We immediately know that $\frac{33}{10}$ is the middle number. Then, we only hav
 
 **If we compare $\frac{33}{10}$ with one of the other fractions, we have two cases:**
 
-- $\frac{33}{10} > \text{Some fraction}$: We're done.
-- $\frac{33}{10} < \text{Some fraction}$: The other fraction is bigger
+-   $\frac{33}{10} > \text{Some fraction}$: We're done.
+-   $\frac{33}{10} < \text{Some fraction}$: The other fraction is bigger
 
 Let's compare $\frac{33}{10}$ with $\frac{11}{3}$. We find that $\frac{11}{3}$ is the biggest of these three fractions.
