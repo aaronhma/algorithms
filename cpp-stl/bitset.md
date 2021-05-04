@@ -109,58 +109,58 @@ bitset<10> e = a^b;
 
   Assume that we have a bitset `std::bitset<8> b(42)`:
 
- <details>
-  <summary>Converting to a string</summary>
+  - <details>
+      <summary>Converting to a string</summary>
 
-  ```cpp
-  std::cout << b.to_string() << "\n";  // 00101010
-  std::cout << b.to_string('*') << "\n"; // **1*1*1*
-  std::cout << b.to_string('O', 'X') << "\n"; // OOXOXOXO
-  ```
+      ```cpp
+      std::cout << b.to_string() << "\n";  // 00101010
+      std::cout << b.to_string('*') << "\n"; // **1*1*1*
+      std::cout << b.to_string('O', 'X') << "\n"; // OOXOXOXO
+      ```
 
-</details>
+    </details>
 
-<details>
-  <summary>Converting to a unsigned long</summary>
+    <details>
+      <summary>Converting to a unsigned long</summary>
 
-  ```cpp
-  cout << b.to_ulong() << "\n"; // 42
-  ```
+      ```cpp
+      cout << b.to_ulong() << "\n"; // 42
+      ```
 
-</details>
+    </details>
 
-<details>
-  <summary>Converting to a unsigned long long</summary>
+    <details>
+      <summary>Converting to a unsigned long long</summary>
 
-  ```cpp
-  cout << b.to_ullong() << "\n"; // 42
-  ```
+      ```cpp
+      cout << b.to_ullong() << "\n"; // 42
+      ```
 
-</details>
+    </details>
 
 </details>
 
 <details>
   <summary>Flipping a Bit/Bitset</summary>
 
+  - <details>
+    <summary>Flipping a Bit</summary>
+
+    Assume that we have a bitset:
+
+    ```cpp
+    bitset<2> b("01");
+    ```
+
+    We can change the bitset to $11$ using `bitset.flip(1)`:
+
+    ```cpp
+    b.flip(1); // Flip 0 -> 1 at index 1 (as we go from LSD -> MSD)
+    ```
+  </details>
+
   <details>
-  <summary>Flipping a Bit</summary>
-
-  Assume that we have a bitset:
-
-  ```cpp
-  bitset<2> b("01");
-  ```
-
-  We can change the bitset to $11$ using `bitset.flip(1)`:
-
-  ```cpp
-  b.flip(1); // Flip 0 -> 1 at index 1 (as we go from LSD -> MSD)
-  ```
-</details>
-
-<details>
-  <summary>Flipping a Bitset</summary>
+    <summary>Flipping a Bitset</summary>
 
   Assume that we have a bitset:
 
@@ -173,7 +173,8 @@ bitset<10> e = a^b;
   ```cpp
   b.flip(); // Flip entire bitset
   ```
-</details>
+
+  </details>
 </details>
 
 <details>

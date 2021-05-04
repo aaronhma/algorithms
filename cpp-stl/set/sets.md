@@ -1,6 +1,8 @@
 # Sets
 
-## About
+<details>
+
+<summary>Why Sets?</summary>
 
 A `set` is a map with no values (we're only interested in the keys). Another way of saying this (in C++ code):
 
@@ -12,7 +14,11 @@ map[key] = true;
 map.insert({key, true});
 ```
 
-## C++ Implementation
+</details>
+
+<details>
+
+<summary>C++ Set Usage</summary>
 
 C++'s Standard Template Library contains 2 implementations of a `set`:
 
@@ -72,7 +78,11 @@ cout << *s.lower_bound(x) << "\n";
 cout << *s.upper_bound(x) << "\n";
 ```
 
-## Multisets
+</details>
+
+<details>
+
+<summary>Multisets</summary>
 
 Multisets allow multiple copies of the same element in a `set`. To resemble `set` and `unordered_set`, there are `multiset` and `unordered_multiset`.
 
@@ -119,3 +129,5 @@ s.erase(s.find(5));
 
 cout << s.count(5) << "\n"; // 2
 ```
+
+</details>

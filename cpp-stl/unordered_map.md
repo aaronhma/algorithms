@@ -8,7 +8,9 @@
 
 ---
 
-## About
+<details>
+
+<summary>Why Unordered Map?</summary>
 
 Unlike a [`map`](map.md), an `unordered_map` in C++ uses a hash table and **the order in which the $(key, value)$ pairs are stored is random**.
 
@@ -16,9 +18,12 @@ Unlike a [`map`](map.md), an `unordered_map` in C++ uses a hash table and **the 
 
 **WARNING: An `unordered_map` can only store $key$ data types that are [hashable - click to see hashable data types](http://www.cplusplus.com/reference/functional/hash/) (provided by C++ STL). If the data type for $key$ is not supported (eg. `pair`), we must create our own hash function.**
 
----
+</details>
 
-## Example: Creating our Own Hash Function
+
+<details>
+
+<summary>Creating our Own Hash Function</summary>
 
 ```cpp
 unordered_map<pair<int, int>, int> mp;
@@ -39,16 +44,47 @@ unordered_map<pair<int, int>, int, HASH> mp;
 
 Now you have a unordered_map of `pair<int, int>` (it doesn't matter what the value is - only the key matters). Creating hash function for other unsupported data types is same.
 
----
+</details>
 
-## `map` vs. `unordered_map`
+<details>
+
+<summary>A Faster Hash Function for Unordered Map</summary>
+
+A faster hash function for unordered map that works only on integers:
+
+```cpp
+struct custom_hash {
+    static uint64_t splitmix64(uint64_t x) {
+        // http://xorshift.di.unimi.it/splitmix64.c
+        x += 0x9e3779b97f4a7c15;
+        x = (x ^ (x >> 30)) * 0xbf58476d1ce4e5b9;
+        x = (x ^ (x >> 27)) * 0x94d049bb133111eb;
+        return x ^ (x >> 31);
+    }
+
+    size_t operator()(uint64_t x) const {
+        static const uint64_t FIXED_RANDOM = chrono::steady_clock::now().time_since_epoch().count();
+        return splitmix64(x + FIXED_RANDOM);
+    }
+};
+```
+
+([Source: Neal Wu's Blog](https://codeforces.com/blog/entry/62393))
+
+</details>
+
+<details>
+
+<summary><code>map</code> vs. <code>unordered_map</code></summary>
 
 -   `unordered_map` is 4 times faster than `map`.
 -   `map` is sorted, while `unordered_map` is not. Also, there isn't a `lower_bound`/`upper_bound` function in `unordered_map`, while `map` does.
 
----
+</details>
 
-## Unordered Map Creation, Adding Keys, and the `.count()` Function
+<details>
+
+<summary>Unordered Map Usage</summary>
 
 The following code creates a unordered map where the keys are strings and the values are integers:
 
@@ -91,9 +127,11 @@ for (auto i : m) {
 }
 ```
 
----
+</details>
 
-## Iterators in a Unordered Map
+<details>
+
+<summary>Iterators in a Unordered Map</summary>
 
 Unlike vectors, using iterators with a unordered map is the same as a linked list. We cannot directly do `map.begin() + 2`/`map.end() - 2`/`map.begin() * 2`. We also cannot subtract/add iterators from an iterator. Instead, we have to do the following:
 
@@ -112,9 +150,11 @@ for (int i = 1; i <= 4; i++)
 advance(it, 2); // move ahead 2 spaces forward
 ```
 
----
+</details>
 
-## Time Complexity of Operations
+<details>
+
+<summary>Time Complexity of Operations</summary>
 
 | Operation      | Average Case | Worst Case  |
 | -------------- | ------------ | ----------- |
@@ -125,3 +165,5 @@ advance(it, 2); // move ahead 2 spaces forward
 | `map.insert()` | $\theta(1)$  | $\theta(n)$ |
 | `map.size()`   | $\theta(1)$  | $\theta(1)$ |
 | `map.empty()`  | $\theta(1)$  | $\theta(1)$ |
+
+</details>

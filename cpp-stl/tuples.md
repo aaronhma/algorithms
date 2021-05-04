@@ -1,8 +1,16 @@
 # Tuples
 
-## About
+<details>
+
+<summary>Why Tuples?</summary>
 
 A tuple is an object capable to hold a collection of elements. Each element can be of different data types.
+
+</details>
+
+<details>
+
+<summary>Accessing/Updating Elements in a Tuple</summary>
 
 ## Accessing Elements in a Tuple
 
@@ -31,7 +39,26 @@ cout << get<string>(tp) << "\n"; // print the value with data type "string" in t
 get<string>(tp) = "C++ is awesome";
 ```
 
-## Resources
+</details>
+
+<details>
+
+<summary>Checking if Two Tuples are the Same</summary>
+
+If we have two tuples $tuple1$ and $tuple2$, we can check if they are the same using the $=$ operator.
+
+```cpp
+if (tuple1 == tuple2) cout << "The two tuples are the same!\n";
+else cout << "The two tuples are not the same!\n";
+```
+
+</details>
+
+<details>
+
+<summary>Resources</summary>
 
 -   [**cplusplus.com Tuple Example**](http://www.cplusplus.com/reference/tuple/tuple/)
 -   [**cppreference.com Tuple Example**](https://en.cppreference.com/w/cpp/utility/tuple/get)
+
+</details>

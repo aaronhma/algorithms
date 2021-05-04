@@ -1,10 +1,16 @@
 # String
 
-## About
+<details>
+
+<summary>What's a String</summary>
 
 A string contains characters.
 
-## `str.compare()` in C++
+</details>
+
+<details>
+
+<summary>Comparing Strings</summary>
 
 ### Syntax 1
 
@@ -33,6 +39,12 @@ where $s1$ is the first string, $s2$ is the second string, $start$ is the first 
 
 #### **[View GeeksForGeeks Article](https://www.geeksforgeeks.org/stdstringcompare-in-c/)**
 
+</details>
+
+<details>
+
+<summary>Resizing Strings</summary>
+
 ## `str.resize(k)`
 
 This operations resizes the string to $k$ characters (basically $str = str.substr(0, k)$).
@@ -40,3 +52,5 @@ This operations resizes the string to $k$ characters (basically $str = str.subst
 If $n$ is smaller than the current string length, the current value is shortened to its first $n$ character, removing the characters beyond the $n$-th.
 
 If $n$ is greater than the current string length, a character $m$ must be specified (eg. $str.resize(max\_length + 2, '+')$). Otherwise, an `length_error` exception is thrown.
+
+</details>

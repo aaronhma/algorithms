@@ -8,13 +8,17 @@
 
 ---
 
-## About
+<details>
+
+<summary>What is a Map?</summary>
 
 A map is a set in the form of key-value pairs (eg. $\{("Test 1", 1), ("Test 2", 2)\}$) that is **always sorted**. While the keys in an ordinary array are integers, there are no such requirements in a map.
 
----
+</details>
 
-## C++ Implementation
+<details>
+
+<summary>C++ Usage</summary>
 
 C++'s STL provides two map structures:
 
@@ -62,9 +66,11 @@ for (auto i : m) {
 }
 ```
 
----
+</details>
 
-## Iterators in a Map
+<details>
+
+<summary>Iterators in a Map</summary>
 
 Unlike vectors, using iterators with a map is the same as a linked list. We cannot directly do `map.begin() + 2`/`map.end() - 2`/`map.begin() * 2`. We also cannot subtract/add iterators from an iterator. Instead, we have to do the following:
 
@@ -83,9 +89,11 @@ for (int i = 1; i <= 4; i++)
 advance(it, 2); // move ahead 2 spaces forward
 ```
 
----
+</details>
 
-## Time Complexity of Operations
+<details>
+
+<summary>Time Complexity of Operations</summary>
 
 | Operation      | Time Complexity   |
 | -------------- | ----------------- |
@@ -96,3 +104,5 @@ advance(it, 2); // move ahead 2 spaces forward
 | `map.insert()` | $\theta(log \ n)$ |
 | `map.size()`   | $\theta(1)$       |
 | `map.empty()`  | $\theta(1)$       |
+
+</details>

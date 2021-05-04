@@ -1,10 +1,16 @@
 # Permutations
 
-## About
+<details>
+
+<summary>What's a Permutation</summary>
 
 Mathematically speaking, a permutation is the arrangement of the array ${a_1, a_2, ..., a_n}$ to ${a_1\hat{}, a_2\hat{}, ..., a_n\hat{}}$.
 
-## C++ Implementation
+</details>
+
+<details>
+
+<summary>C++ Usage</summary>
 
 Assume we have an array $arr = \{a_1, a_2, a_3, ..., a_n\}$. We can have 3 different "variants" of C++'s built-in `next_permutation`:
 
@@ -23,6 +29,8 @@ do {
   // Includes original array before permutated in sorted order
 } while (next_permutation(arr.begin(), arr.end()));
 ```
+
+</details>
 
 # ⚠️ IMPORTANT ⚠️
 
