@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
+#include <ext/pb_ds/assoc_container.hpp> // PBDS
 
 using namespace std;
+using namespace __gnu_pbds; // PBDS
 
 typedef long long ll;
 typedef long double ld;
@@ -13,6 +15,8 @@ typedef vector<str> vstr;
 typedef vector<vi> vvi;
 typedef pair<int, int> pii;
 typedef vector<pii> vpii;
+typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_update>
+    indexed_set;
 
 #define f first
 #define s second
@@ -23,6 +27,7 @@ typedef vector<pii> vpii;
 #define rtn return
 #define rsz resize
 #define ins insert
+#define PBB
 #define ft front()
 #define bk back()
 #define LB lower_bound
@@ -30,8 +35,8 @@ typedef vector<pii> vpii;
 #define BINS binary_search
 #define IT(x) for (auto it = begin(x); it != end(x); it++)
 #define RIT(x) for (auto it = rbegin(x); it != rend(x); it++)
-#define FORE(i, a, b) for (int i = a; i < b; i++)
-#define FORI(i, a, b) for (int i = a; i <= b; i++)
+#define FORE(i, a, b) for (auto i = a; i < b; i++)
+#define FORI(i, a, b) for (auto i = a; i <= b; i++)
 #define each(i, x) for (auto &i : x)
 
 const int MOD = 1e9 + 7;
@@ -55,13 +60,13 @@ void read(T &x) { cin >> x; }
 void read(double &x)
 {
   string t;
-  read(t);
+  cin >> t;
   x = stod(t);
 }
 void read(ld &x)
 {
   string t;
-  read(t);
+  cin >> t;
   x = stold(t);
 }
 
@@ -69,18 +74,18 @@ template <class T>
 void read(complex<T> &x)
 {
   T a, b;
-  read(a, b);
+  cin >> a >> b;
   x = cd(a, b);
 }
 
 template <class T1, class T2>
-void read(pair<T1, T2> &p) { read(p.f, p.s); }
+void read(pair<T1, T2> &p) { cin >> p.f >> p.s; }
 
 template <class T>
 void read(vector<T> &a)
 {
-  FORE(i, 0, sz(a))
-  read(a[i]);
+  for (int i = 0; i < (int)a.size(); i++)
+    cin >> a[i];
 }
 
 template <class Arg, class... Args>
