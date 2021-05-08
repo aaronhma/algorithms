@@ -8,7 +8,7 @@ A percent is a part out of $100$. For example, $30 \%$ is $\frac{30}{100} = \fra
 
 ### #1
 
-A shoe maker sells shoes for \$10. He marks up the price of a shoe by $30 \%$, then decreases it by $30 \%$.
+A shoe maker sells shoes for $$10$. He marks up the price of a shoe by $30 \%$, then decreases it by $30 \%$.
 
 **WARNING: The answer isn't \$10.**
 
