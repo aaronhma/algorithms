@@ -114,3 +114,11 @@ It's not possible to get a rectangular box with all sides having width and lengt
 12. **Tip #12:**
 
 > #### When taking a multiple-choice test that asks for the biggest/smaller number, if some of the options are the same, the biggest/smallest number can't be the options that are the same (they're tied - there is no biggest/smallest number).
+
+13. **Tip #13:**
+
+> #### Don't multiply until the end - sometimes, we can cancel terms. Also, this reduces the chance of any errors.
+
+14. **Tip #14:**
+
+> #### Don't multiply until the end - sometimes, we can cancel terms. Also, this reduces the chance of any errors.

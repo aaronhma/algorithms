@@ -1,5 +1,7 @@
 # Percents
 
+## WARNING: READ THIS ARTICLE IN YOUR TEXT EDITOR IN ORDER FOR $L^AT_EX$ to work.
+
 ## About
 
 A percent is a part out of $100$. For example, $30 \%$ is $\frac{30}{100} = \frac{3}{10}$ or $0.3$.

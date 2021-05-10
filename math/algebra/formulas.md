@@ -39,3 +39,13 @@ This is essentially the $m$ value in $y = mx + b$.
 The midpoint of the points $(x_1, y_1)$ and $(x_2, y_2)$ is:
 
 $$(\frac{x_1 + x_2}{2}, \frac{y_1 + y_2}{2})$$
+
+
+9. Circle Formulas
+
+### $\pi$ Approximation: $\pi \approx \frac{22}{7}$
+
+$$\text{diameter of a circle } = 2r$$
+$$\text{radius of a circle } = \frac{d}{2}$$
+$$\text{circumference of a circle } = 2 \pi r = \pi d$$
+$$\text{area of a circle } = \pi r^2$$

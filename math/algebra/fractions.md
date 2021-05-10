@@ -22,9 +22,13 @@ We can work from the bottom, taking reciprocals as we go (eg. $\frac{a}{\frac{b}
 
 Compute $1 + \frac{1}{2 + \frac{1}{2 + \frac{1}{...}}}$.
 
+#### _**Hints:**_
+
 **Hint 1: This is the same problem as before, but we have a twist: the fraction never ends.**
 
 **Hint 2: Think how we can use algebra to solve this problem.**
+
+#### _**Solution:**_
 
 We let $1 + \frac{1}{2 + \frac{1}{2 + \frac{1}{...}}} = x$. Then, we realize that $x + 1 = 2 + \frac{1}{2 + \frac{1}{2 + \frac{1}{...}}}$. So, the fraction on the bottom of the first $1$ is $x + 1$, and we can simplify our expression as shown:
 
