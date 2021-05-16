@@ -57,7 +57,7 @@ In the AMC competitions, where word problems is a common type of problem, as it 
 
 > #### Checking your work.
 
-**When solving math problems, STAY ORGANIZED.** It helps with checking your work. When checking your work, remember to **USE A DIFFERENT STATEGY THAN THE ONE YOU USED TO SOLVE THE PROBLEM** (so you don't make the same mistake that you possibly might have made again when solving the problem). Also, re-read the problem and make sure that you are computing the correct answer.
+**When solving math problems, STAY ORGANIZED.** It helps with checking your work. When checking your work, remember to **USE A DIFFERENT STATEGY THAN THE ONE YOU USED TO SOLVE THE PROBLEM** (so you don't make the same mistake that you possibly might have made again when solving the problem). Also, re-read the problem and make sure that you are computing the correct answer. While taking the AMC or MATHCOUNTS, make sure that your answer makes sense!
 
 7. **Tip #7:**
 
@@ -107,9 +107,7 @@ It's not possible to get a rectangular box with all sides having width and lengt
 
 11. **Tip #11:**
 
-> #### In competition math, knowing useful numbers is very helpful. Presented below are some useful, frequently used numbers that should be memorized.
-
--   $1001 = 7 * 11 * 13$
+> #### When facing large numbers, usually, they have interesting factorizations that can be used to simplify the problem.
 
 12. **Tip #12:**
 
@@ -121,4 +119,17 @@ It's not possible to get a rectangular box with all sides having width and lengt
 
 14. **Tip #14:**
 
-> #### Don't multiply until the end - sometimes, we can cancel terms. Also, this reduces the chance of any errors.
+> #### If you don't know what something is, call it a variable!
+
+
+15. **Tip #15:**
+
+> #### In some problems where not all the information is given, you can create a variable and hope that the variable cancels out, or let the variable be a fixed constant.
+
+16. **Tip #16:**
+
+> #### Let large numbers be a variable.
+
+For example, to compute the following fraction, let $A = 57$ and $B = 75$ to simplify it:
+
+$$\frac{1}{75} * \frac{1}{\frac{1}{57} - \frac{1}{75}} = \frac{1}{B} * \frac{1}{\frac{1}{A} - \frac{1}{B}} = \frac{1}{B} * \frac{1}{\frac{B - A}{AB}} = \frac{1}{B} * \frac{AB}{B - A} = \frac{A}{B - A} = \frac{57}{75 - 57} = \frac{57}{18} = \frac{3 * 19}{3 * 6} = \frac{19}{6}$$
