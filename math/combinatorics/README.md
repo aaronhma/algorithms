@@ -1,5 +1,9 @@
 # Combinatorics
 
+## About
+
+This section contains content from [The Daily Challenge with Po-Shen Loh - Module 3: Combinatorics](https://daily.poshenloh.com/courses/3-combinatorics), [the Art of Problem Solving: Introduction to Counting & Probability](https://artofproblemsolving.com/store/item/intro-counting), and [the Art of Problem Solving: Intermediate Counting & Probability](https://artofproblemsolving.com/store/item/intermediate-counting).
+
 ## # of Subsets
 
 The # of subsets that a array with $n$ elements is $2^n$ (with $\emptyset$) or $2^n - 1$(without $\emptyset$).

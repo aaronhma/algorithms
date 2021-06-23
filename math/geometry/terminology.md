@@ -6,13 +6,15 @@
 
 ![Image](images/terminology/point.png)
 
-A dot. A speck. It's a point. A point has no dimensions and no direction.
+A dot. A speck. It's a point. A point has no dimensions and no direction. It is a specific location in space, and is typically named with a single letter.
 
 ### Line Segments
 
 ![Image](images/terminology/line-segment.png)
 
-A line segment connects two points. The figure below has 3 line segments and the lines marks that the length with the line segments have the same length. Also, the point $M$ marks the midpoint of the line segment $\overline{XY}$. Note that the length of the line segment is $XY$.
+A line segment connects two points. A line segment is a finite piece of a line. Unlike lines, a line segment don't extend infinitely in both directions, unlike a line. The points at the ends of a line segment are called endpoints.
+
+The figure below has 3 line segments and the lines marks that the length with the line segments have the same length. Also, the point $M$ marks the midpoint of the line segment $\overline{XY}$. Note that the length of the line segment is $XY$.
 
 ![Image](images/terminology/same-length.png)
 

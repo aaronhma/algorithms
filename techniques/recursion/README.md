@@ -10,6 +10,28 @@ Anything, and everything related to recursion goes here.
 
 Recursion is when a function calls itself and every recursive function has two cases: the base case and the recursive case.
 
+```cpp
+void fun1(int n) {
+  // Base case:
+  if (n <= 0) return;
+
+  cout << n << " ";
+
+  // Recursively call itself until we reach the base case
+  fun1(n - 1);
+}
+
+void fun2(int n) {
+  // Base case:
+  if (n <= 0) return;
+
+  fun2(n - 1);
+
+  // Recursively call itself until we reach the base case
+  cout << n << " ";
+}
+```
+
 A recursive function have to tell it when to stop recursing. Every recursive function has two parts: the base case, and the recursive case. The recursive case is when the function calls itself. The base case is when the function doesn’t call itself again ... so it doesn’t go into an infinite loop.
 
 -   Cons
@@ -39,12 +61,14 @@ Using the stack is convenient, but there’s a cost: saving all that info can ta
 
 -   The call stack with recursion
 
-_factorial(5)_ is written as _5!_, and it’s defined like this: _5! = 5 _ 4 _ 3 _ 2 _ 1_. Similarly, _factorial(3)_ is _3 _ 2 _ 1_. Here’s a recursive function to calculate the factorial of a number:
+$factorial(5)$ is written as $5!$, and it’s defined as $5! = 5 * 4 * 3 * 2 * 1$. Similarly, $factorial(3)$ is $3 * 2 * 1$. Here’s a recursive function to calculate the factorial of a number:
 
-```python
-def fact(x):
-  if x == 1:
-    return 1
-  else:
-    return x * fact(x-1)
+```cpp
+// Note: Sometimes we need to use long long as the answer can be really big.
+int factorial(int x) {
+  if (x <= 1)
+    return 1;
+
+  return x * factorial(x - 1);
+}
 ```

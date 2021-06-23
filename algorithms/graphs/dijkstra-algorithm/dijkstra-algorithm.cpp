@@ -43,7 +43,7 @@ int main()
 
   while (!q.empty())
   {
-    // take the top most node
+    // take the top most node (smallest distance)
     int node = q.top().second;
     q.pop();
 
