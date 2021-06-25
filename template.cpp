@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
-#include <ext/pb_ds/assoc_container.hpp> // PBDS
+// #include <ext/pb_ds/assoc_container.hpp> // PBDS
 
 using namespace std;
-using namespace __gnu_pbds; // PBDS
+// using namespace __gnu_pbds; // PBDS
 
 typedef long long ll;
 typedef long double ld;
@@ -15,8 +15,9 @@ typedef vector<str> vstr;
 typedef vector<vi> vvi;
 typedef pair<int, int> pii;
 typedef vector<pii> vpii;
-typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_update>
-    indexed_set;
+
+// typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_update>
+//     indexed_set;
 
 #define f first
 #define s second
@@ -27,7 +28,6 @@ typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_
 #define rtn return
 #define rsz resize
 #define ins insert
-#define PBB
 #define ft front()
 #define bk back()
 #define LB lower_bound
@@ -35,8 +35,8 @@ typedef tree<int, null_type, less<int>, rb_tree_tag, tree_order_statistics_node_
 #define BINS binary_search
 #define IT(x) for (auto it = begin(x); it != end(x); it++)
 #define RIT(x) for (auto it = rbegin(x); it != rend(x); it++)
-#define FORE(i, a, b) for (auto i = a; i < b; i++)
-#define FORI(i, a, b) for (auto i = a; i <= b; i++)
+#define FORE(i, a, b) for (int i = a; i < b; i++)
+#define FORI(i, a, b) for (int i = a; i <= b; i++)
 #define each(i, x) for (auto &i : x)
 
 const int MOD = 1e9 + 7;
@@ -60,13 +60,13 @@ void read(T &x) { cin >> x; }
 void read(double &x)
 {
   string t;
-  cin >> t;
+  read(t);
   x = stod(t);
 }
 void read(ld &x)
 {
   string t;
-  cin >> t;
+  read(t);
   x = stold(t);
 }
 
@@ -74,18 +74,18 @@ template <class T>
 void read(complex<T> &x)
 {
   T a, b;
-  cin >> a >> b;
+  read(a, b);
   x = cd(a, b);
 }
 
 template <class T1, class T2>
-void read(pair<T1, T2> &p) { cin >> p.f >> p.s; }
+void read(pair<T1, T2> &p) { read(p.f, p.s); }
 
 template <class T>
 void read(vector<T> &a)
 {
-  for (int i = 0; i < (int)a.size(); i++)
-    cin >> a[i];
+  FORE(i, 0, sz(a))
+  read(a[i]);
 }
 
 template <class Arg, class... Args>
@@ -194,3 +194,14 @@ int main()
 
   return 0;
 }
+/**
+ * Steps to solve CP problems:
+ * 1) Carefully extract the important information from the problem.
+ * 2) Find out all the hidden information.
+ * 3) Read input & output & understand the question.
+ * 4) Visualize the problem.
+ *  a. Does my result output the expected output?
+ *  b. Does the idea you think works?
+ *  c. Check for edge cases.
+ * 5) Implementation.
+*/
