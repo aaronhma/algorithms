@@ -1,7 +1,5 @@
 # Tabulation vs. Memoization
 
-## Background
-
 -   Tabulation: Bottom Up
 -   Memoization: Top Down
 
@@ -26,6 +24,8 @@ for (int i = 2; i <= n; i++)
 cout << "Factorial of " << n << ": " dp[n] << "\n";
 ```
 
+One bad thing of tabulation is how we must compute **every single subproblem** even if we don't need it.
+
 ![Image](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Tabulation-vs-Memoization-1.png)
 
 ([Source](https://www.geeksforgeeks.org/tabulation-vs-memoization/))
@@ -44,11 +44,11 @@ int solver(int n) {
     return dp[n];
   }
 
-  dp[n] = n * solver(n - 1);
-
-  return dp[n];
+  return dp[n] = n * solver(n - 1);
 }
 ```
+
+Though memoization take more space, a good thing is that we **only compute the required subproblems**.
 
 ## References
 

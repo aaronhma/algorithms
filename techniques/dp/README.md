@@ -2,13 +2,13 @@
 
 ## What is Dynamic Programming?
 
-**Dynamic programming** (known as DP) is a programming paradigm that stores the result of a problem after solving it. Essentially, DP is brute force, but with a trick: it stores the subproblems that are already computed to avoid recomputation. A DP solution will examine the previously solved subproblems and will combine their solutions to give the best solution for the given problem.
+**Dynamic programming** (known as DP) is a programming paradigm that stores the result of a problem after solving it. Essentially, DP is brute force, but with a trick: it stores the subproblems that are already computed to avoid recomputation. A DP solution breaks a problem into mutliple smaller subproblems and for each subproblem, will solve the subproblem **only if it has not been solved before**.
 
 ![Image](https://miro.medium.com/max/970/1*7pbs4HCE_K6cH6jkcgxw_A.png)
 
 ## The Idea Behind Dynamic Programming
 
-Imagine you are given two bags of coins and you are asked to count the # of coins in the first bag. (There are $51$ coins in the first bag.) Then, you are asked to compute the total # of coins in **both** bags ASAP. Would you count the # of coins in the first bag again? **No!** Since we already know the # of coins in the first bag, all we have to do is add the # of coins in the second bag to the # coins in the first bag (which is $51$). This is the idea behind DP.
+Imagine you are given two bags of coins and you are asked to count the # of coins in the first bag. (There are $51$ coins in the first bag.) Then, you are asked to compute the total # of coins in **both** bags ASAP. Would you count the # of coins in the first bag again? **No!** Since we already know the # of coins in the first bag, all we have to do is add the # of coins in the second bag to the # coins in the first bag (which is $51$). This is the idea behind DP: re-using the values we know and only computing the values we don't know.
 
 ![Image](images/coin_bag.png)
 

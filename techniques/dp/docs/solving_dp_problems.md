@@ -1,32 +1,58 @@
 # How to solve Dynamic Programming problems?
 
-**[Try using the FAST DP strategy](https://learntocodewith.me/posts/dynamic-programming/)** <-- not sure if this is good
-
-## Contents
-
-1. Identify if the problem can be solved with DP
-2. Decide a expression with the base parameters
-3. Formulate a state relationship
-4. Tabulation (or memoization)
-
 ## 1. Identify if the problem can be solved with DP
 
 **[When to Use DP?](when_to_use_dp.md)** <-- Read
 
 All DP problems satisfy the overlapping subproblems property and most classic problems also satisfy the optimal substructure property.
 
-## 2. Decide a expression with the base parameters
+## 2. Find a Recursive Solution
 
-All DP problems are about their state and transition.
+The first step to solve any DP problem is to formulate a recurrence relation.
 
-**Terminology:**
+![Image](2_define.png)
 
--   State: Set of parameters that can identify a certain position or standing in the given problem
-    **NOTE: These base parameters should be as small as possible to reduce the state space.**
--   Transition: Recurrence relation
+Some key things to think about:
 
-For example, in the famous [Knapsack problem](../classic_problems/knapsack_problem.md), the state is defined by 2 parameters: the index and the weight at the specified index.
+1. The solution should be recursive. If not, the problem probably isn’t a good candidate for dynamic programming. For a lot more info on effectively coming up with a recursive solution, [look here](https://www.byte-by-byte.com/recursion/).
+2. Each recursive call must be self-contained. This means that you cannot store your results to a global variable or pass a results variable into your function.
+3. It is important that we minimize the number of variables that we are passing into our recursive function. Dynamic programming solutions rely on there being multiple recursive calls with the same input, and the more variables there are, the less the inputs will overlap.
 
+## 2. Analyzing the Recursive Solution
+
+If the recursive solution is already pretty efficient, there's no reason the optimize it more. If the recursive solution is inefficient, we need to optimize it using DP.
+
+## 3. Adding DP
+
+First, take a look at what recursive calls are being made multiple times. Then, identify a way to represent each function call as $dp[i], dp[i][j], ...$, etc.
+
+-   State: Set of parameters that can identify a certain position or standing in the given problem ($dp[i]$)
+    (**NOTE: These parameters should be as small as possible to reduce the state space.**)
+-   Transition: Recurrence relation - what must be done in order to move between one state to another state ($dp[i] = ... dp[i - 1] ...$)
+
+For example, in the famous [Knapsack problem](../problems/knapsack/README.md), the state is defined by 2 parameters: the index and the weight at the specified index.
+
+## 4. Updating the Implementation
+
+A handy chart for the differences of memoization and bottom-up:
+
+![Image](https://cdn-media-1.freecodecamp.org/images/E-2qbrD5g7UtOJIN7ULrdwAdgiL0jAU7uGFH)
+
+### a. Memoization
+
+Using a `vector` or `map`, store the computed subproblems and check that $f(i)$ doesn't exist in our cache before computing the answer to smaller subproblems.
+
+### b. Bottom-Up
+
+Convert the recursion into a bottom-up approach and redefine our solution in forward direction starting from the most basic case.
+
+## 5. **(OPTIONAL)** Updating the Implementation, Part 2
+
+If the time complexity (time complexity in DP is simple - $\theta(k * |S|)$ where $|S|$ denotes the number of states and $k$ is the time required to compute a state) is still too slow, we can consider reducing the number of states **OR** using an additional data structure to reduce the time needed to compute a single state.
+
+Depending on the problem, we can also bring the space complexity down. For example, in the Fibonnaci problem, instead of using $\theta(n)$ space by storing an entire array, we can bring the space to $\theta(1)$ by using two variables to store $F_{n - 1}$ and $F_{n - 2}$. Note that without an array, we can't directly print $F_k$ ($k \leq n$) in $\theta(1)$. We have to recompute the answer for every query.
+
+<!--
 ## 3. Formulating a State Relationship
 
 This part is quite hard, and requires intuition, observation, and practice.
@@ -84,8 +110,8 @@ or
 state(7) = state (7-1) + state (7-3) + state (7-5)
 
 In general,
-state(n) = state(n-1) + state(n-3) + state(n-5)
+state(n) = state(n-1) + state(n-3) + state(n-5) -->
 
-## Sources Used
+<!-- ## Sources Used
 
--   [Geeks for Geeks: Solving DP Problems](https://www.geeksforgeeks.org/solve-dynamic-programming-problem/)
+-   [Geeks for Geeks: Solving DP Problems](https://www.geeksforgeeks.org/solve-dynamic-programming-problem/) -->

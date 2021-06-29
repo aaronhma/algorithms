@@ -29,6 +29,6 @@ and we need to call it as follows:
 
 **Can you spot the problem?**
 
-It turns out, every single time, we are recomputing `fibonacci(0)` + `fibonacci(1)` + `fibonacci(2)` + ... + `fibonacci(n)`.
+It turns out, every single time we compute `fibonnaci(n)`, we are recomputing `fibonacci(0)` + `fibonacci(1)` + `fibonacci(2)` + ... + `fibonacci(n - 1)`.
 
-This is where Dynamic Programming comes in.
+This is where Dynamic Programming comes in and we can [write a better solution](tabulation_vs_memoization.md).
