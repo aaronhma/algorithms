@@ -10,7 +10,7 @@ The Least Common Multiple (LCM) of two numbers is defined as:
 
 $$\frac{ab}{gcd(a,b)}$$
 
-A possible implementation, that cleverly avoid integer overflows by first dividing $a$ with the GCD before multiplying it with $b$ is shown below:
+A possible implementation, that cleverly avoids integer overflows by first dividing $a$ with the GCD before multiplying it with $b$ is shown below:
 
 ```cpp
 int lcm(int a, int b) {

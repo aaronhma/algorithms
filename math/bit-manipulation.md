@@ -19,13 +19,13 @@ If an number is larger than upper bound of the bit representation, the number wi
 
 ## Bit Operations
 
-### AND Operation
+### AND Operation (Masking)
 
 The & operation between $x$ & $y$ returns 1 for every two bits between $x$ and $y$ that are both 1 at index $i$.
 
 ![AND Operation](images/binary/and.png)
 
-### OR Operation
+### OR Operation (Merging)
 
 The | operation between $x$ | $y$ returns 1 if the bit at position $i$ in $x$ or $y$ is 1.
 

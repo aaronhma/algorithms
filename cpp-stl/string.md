@@ -54,3 +54,24 @@ If $n$ is smaller than the current string length, the current value is shortened
 If $n$ is greater than the current string length, a character $m$ must be specified (eg. $str.resize(max\_length + 2, '+')$). Otherwise, an `length_error` exception is thrown.
 
 </details>
+
+<details>
+<summary>Converting Between Lowercase and Uppercase</summary>
+
+Change a string to uppercase:
+
+```cpp
+for (char &i : str) {
+  i -= 32;
+}
+```
+
+Change a string to lowercase:
+
+```cpp
+for (char &i : str) {
+  i += 32;
+}
+```
+
+</details>

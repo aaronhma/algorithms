@@ -51,4 +51,21 @@ float pow(float x, int y)
 }
 ```
 
+The iterative method:
+
+```cpp
+long long pow(long long base, long long expo) {
+  long long ans = 1;
+
+  while (expo > 0) {
+    if (expo & 1) // Check if the exponent is odd
+      ans *= base;
+    base *= base;
+    expo >>= 1; // Divide by 2
+  }
+
+  return ans;
+}
+```
+
 ## **[Learn More](https://www.geeksforgeeks.org/write-a-c-program-to-calculate-powxn/)**

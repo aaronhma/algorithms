@@ -2,7 +2,7 @@
 
 ## What is Dynamic Programming?
 
-**Dynamic programming** (known as DP) is a programming paradigm that stores the result of a problem after solving it. Essentially, DP is brute force, but with a trick: it stores the subproblems that are already computed to avoid recomputation. A DP solution breaks a problem into mutliple smaller subproblems and for each subproblem, will solve the subproblem **only if it has not been solved before**.
+**Dynamic programming** (known as DP) is a programming paradigm that stores the result of a problem after solving it. Essentially, DP is brute force, but with a trick: it stores the subproblems that are already computed to avoid recomputation. A DP solution breaks a complex problem into mutliple smaller subproblems, solving each subproblem once, and storing their solutions in a array/matrix to avoid unnecessary re-computations.
 
 ![Image](https://miro.medium.com/max/970/1*7pbs4HCE_K6cH6jkcgxw_A.png)
 
