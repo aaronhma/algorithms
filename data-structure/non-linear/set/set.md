@@ -8,10 +8,10 @@ A set (see picture below) is an abstract data type that can store unique values.
 
 The main operations of a set are:
 
--   `union` - Adds the elements from 2 sets into 1, without any duplicates
--   `intersection` - an element that belongs in set A and set B
--   `difference` - elements in either set but not in the intersection
--   `subset` - tests if set A is a subset of set B
+-   `union` - Adds the elements from $2$ sets into $1$, without any duplicates ([set_union](https://www.cplusplus.com/reference/algorithm/set_union/))
+-   `intersection` - an element that belongs in set $A$ and set $B$ ([set_intersection](https://www.cplusplus.com/reference/algorithm/set_intersection/))
+-   `difference` - elements in either set but not in the intersection ([set_difference](https://www.cplusplus.com/reference/algorithm/set_difference/))
+-   `subset` - tests if set $A$ is a subset of set $B$ ([Method $4$/$5$ of this article](https://www.geeksforgeeks.org/find-whether-an-array-is-subset-of-another-array-set-1/))
 
 ## C++ Usage
 

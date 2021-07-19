@@ -1,4 +1,4 @@
-# Tree
+# Tree (connected acyclic graph)
 
 | ☆   | STL                                                  | C++                                                |     |
 | --- | ---------------------------------------------------- | -------------------------------------------------- | --- |
@@ -11,11 +11,9 @@
 |     | [Suffix Tree](./suffix-tree/README.md)               | [C++](./suffix-tree/suffix-tree.cpp)               |     |
 |     | [Tree](./tree/README.md)                             | [C++](./tree/tree.cpp)                             |     |
 
-A tree is a frequently-used data structure to simulate a hierarchical tree structure.
+## About
 
-Each node of the tree will have a root value and a list of references to other nodes which are called child nodes. From graph view, a tree can also be defined as a directed acyclic graph which has _N_ nodes and _N-1 edges_.
-
-A _Binary Tree_ is a tree data structure in which each node has _at most two children_, which are referred to as the _left child_ and the _right child_.
+A tree (directed acyclic graph) is a type of graph with $v$ nodes, $v - 1$ edges and no cycles.
 
 ## Complexity analysis
 
