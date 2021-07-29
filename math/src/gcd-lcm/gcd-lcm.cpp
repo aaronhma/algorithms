@@ -5,10 +5,14 @@ using namespace std;
 
 int gcd(int a, int b)
 {
-  if (b == 0)
-    return a;
-
-  return gcd(b, a % b);
+  // Fast GCD:
+  while (b) // As long as b != 0
+  {
+    // Compute "return gcd(b, a % b);"
+    a %= b; // a % b
+    swap(a, b); // Swap a and b
+  }
+  return a; // If b == 0 return a
 }
 
 int lcm(int a, int b)

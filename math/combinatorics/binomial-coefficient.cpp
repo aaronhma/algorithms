@@ -3,24 +3,25 @@
 using namespace std;
 
 typedef long long ll;
-
-// 1000001 == 1e6 + 1
-ll cache[1000001][1000001];
+#define FORI(i, a, b) for (int i = a; i <= b; i++)
 
 // Formula:
 // C(n, k) = C(n-1, k-1) + C(n-1, k)
 // C(n, 0) = C(n, n) = 1
-ll C(ll n, ll k) {
-  if (k > n) {
-    cerr << "ERROR: " << k << " > " << n << ", expected " << k << " <= " << n << "\n";
-    exit(EXIT_FAILURE);
-  }
-  if (k == 0 || n == k) return 1;
-  if (cache[n][k] != 0) return cache[n][k];
+int binomial(int n, int k) {
+  if (n == k || n == 0 || k == 0) return 1;
+  if (k > n) exit(EXIT_FAILURE);
 
-  cache[n][k] = C(n - 1, k - 1) + C(n - 1, k);
+  vector<vector<int>> dp(n + 1, vector<int>(k + 1));
 
-  return cache[n][k];
+  FORI(i, 0, n) // k = 0
+    dp[i][0] = 1;
+
+  FORI(i, 1, n)
+    FORI(j, 1, k)
+      dp[i][j] = dp[i - 1][j - 1] + dp[i - 1][j];
+
+  return dp[n][k];
 }
 
 int main()
@@ -28,7 +29,8 @@ int main()
   ios_base::sync_with_stdio(false);
   cin.tie(NULL);
 
-  cout << C(5, 2) << "\n"; // 10
+  cout << binomial(4, 2) << "\n"; // 6
+  cout << binomial(5, 2) << "\n"; // 10
 
   return 0;
 }

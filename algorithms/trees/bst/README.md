@@ -44,6 +44,94 @@ Also, we can determine the # of nodes for each subtree given the number of nodes
 
 ![Image](../images/tree/nodes.png)
 
+## Deleting from a BST
+
+1. Node to be deleted is the leaf: Simply remove from the tree.
+
+```
+              50                            50
+           /     \         delete(20)      /   \
+          30      70       --------->    30     70
+         /  \    /  \                     \    /  \
+       20   40  60   80                   40  60   80
+```
+
+2. Node to be deleted has only one child: Copy the child to the node and delete the child
+
+```
+              50                            50
+           /     \         delete(30)      /   \
+          30      70       --------->    40     70
+            \    /  \                          /  \
+            40  60   80                       60   80
+```
+
+3. Node to be deleted has two children: Find inorder successor (minimum element on the right) of the node. Copy contents of the inorder successor to the node and delete the inorder successor. Note that inorder predecessor can also be used.
+
+```
+              50                            60
+           /     \         delete(50)      /   \
+          40      70       --------->    40    70
+                 /  \                            \
+                60   80                           80
+```
+
+C++ code:
+
+```cpp
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+ *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+ * };
+ */
+class Solution {
+public:
+    TreeNode* deleteNode(TreeNode* root, int key) {
+        if (root == NULL) return NULL;
+
+        if (key < root->val)
+            root->left = deleteNode(root->left, key);
+        else if (key > root->val)
+            root->right = deleteNode(root->right, key);
+        else {
+            if (root->left == NULL && root->right == NULL)
+                return NULL;
+
+            if (root->left == NULL) {
+                TreeNode *tmp = root->right;
+                // free(root);
+                return tmp;
+            }
+
+            if (root->right == NULL) {
+                TreeNode *tmp = root->left;
+                // free(root);
+                return tmp;
+            }
+
+
+            TreeNode *tmp = root->right;
+
+            while (tmp->left != NULL) {
+                tmp = tmp->left;
+            }
+
+            root->val = tmp->val;
+
+            root->right = deleteNode(root->right, tmp->val);
+        }
+
+        return root;
+    }
+};
+```
+
 ## Bonus: What BST means
 
 -   B: Binary - The tree is a [binary tree](../binary-tree/README.md).

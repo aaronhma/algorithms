@@ -1,4 +1,4 @@
-# Implement `pow(x, n)` or $x^n$
+# Implement `pow(x, n)` or $x^n$ (Binary Exponentiation)
 
 ## Example
 
@@ -51,16 +51,18 @@ float pow(float x, int y)
 }
 ```
 
-The iterative method:
+The second approach accomplishes the same task without recursion. It computes all the powers in a loop, and multiplies the ones with the corresponding set bit in $n$. Although the complexity of both approaches is identical, this approach will be faster in practice since we have the overhead of the recursive calls.
+
+![Image](ex.png)
 
 ```cpp
 long long pow(long long base, long long expo) {
   long long ans = 1;
 
-  while (expo > 0) {
+  while (expo) { // As long as the exponent isn't equal to 0,
     if (expo & 1) // Check if the exponent is odd
-      ans *= base;
-    base *= base;
+      ans *= base; // If the exponent is odd, we must multiply the answer with base.
+    base *= base; // Even: Compute x^(n / 2) * x^(n / 2)
     expo >>= 1; // Divide by 2
   }
 
