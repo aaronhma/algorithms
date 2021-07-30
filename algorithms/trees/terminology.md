@@ -6,7 +6,6 @@
 
 In a tree, any node that has at least one non-empty child is an internal node.
 
-
 ### leaf node
 
 A leaf node is a node that does not have any children.

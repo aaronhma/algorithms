@@ -33,16 +33,13 @@ There's a problem: `fib(2)` is re-calculated **three times**!. To solve this sub
 2. We start by looking to define the problem _recursively_. Solve $f(0), f(1), f(2), ...$ until a pattern can be identified and we can write the _recurrence relation_.
 3. Implement!
 
-
 ## [Types of Recursion](https://www.geeksforgeeks.org/types-of-recursions/)
 
 There are $6$ types of recursion:
 
 ### 1. Tail Recursion
 
-
 Tail Recursion is a specialized type of recursion where there is a guarantee that nothing is left to execute in the function after a recursive call. In other words, the function returns the result of a recursive call.
-
 
 Typically in recursion, you have a base-case which is what stops the recursive calls and begins popping the call stack. To use a classic example, the factorial function below illustrates tail recursion. The recursive call occurs after checking the base-case condition.
 

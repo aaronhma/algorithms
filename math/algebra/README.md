@@ -44,6 +44,7 @@
         > [View results](https://expii.onlinetests.app/assess.aspx?a=U1&guid=BB40270BF8694EC7B1933DCA7C0C6ACC) (Click **"Review Results"**)
 
 -   Week 4
+
     -   Day 13: Working Together
         > Rate-time problems, rates, factors, fractions with algebraic terms simplification.
     -   Day 14: $100$ Bottles
@@ -53,14 +54,15 @@
     -   Day 16: Changing Speed
         > Combinatorics, problem solving tips.
     -   Quiz
-        > 🔓 Unlocked with private key 🔑 (****************) - test window is <span style="color:mediumseagreen">Today</span> - <span style="color:mediumseagreen">June 14</span> To override this, use your key 🔑 to lock 🔒 the test.
+
+        > 🔓 Unlocked with private key 🔑 (******\*\*\*\*******) - test window is <span style="color:mediumseagreen">Today</span> - <span style="color:mediumseagreen">June 14</span> To override this, use your key 🔑 to lock 🔒 the test.
 
         > <a href="https://expii.onlinetests.app/assess.aspx?id=M1W4ALGEBRA" target="_blank"><button style="background: mediumseagreen; color:#fff">Attempt opportunity 1 out of 4</button></a> (**Start test**)
 
         <!-- > [Attempt opportunity 1 out of 4](https://expii.onlinetests.app/assess.aspx?id=M1W4ALGEBRA) (**Start test**) -->
 
 -   Course Challenge
-  <!-- > 🔒 Locked - you are not allowed to attempt the Course Challenge, as you have not met the pre-requisites in Week 4 Challenge. To override this, use your key 🔑 to unlock 🔐 the test. -->
+<!-- > 🔒 Locked - you are not allowed to attempt the Course Challenge, as you have not met the pre-requisites in Week 4 Challenge. To override this, use your key 🔑 to unlock 🔐 the test. -->
 
   <!-- > 🔓 Unlocked with private key 🔑 (****************) - test window is <span style="color:mediumseagreen">Today</span> - <span style="color:mediumseagreen">July 14</span> To override this, use your key 🔑 to lock 🔒 the test.-->
 

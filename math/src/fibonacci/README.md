@@ -4,15 +4,15 @@
 
 Fibonacci numbers have the following identities:
 
-* Cassini's identity:
+-   Cassini's identity:
 
 $$F_{n - 1}F_{n + 1} - F_n^2 = (-1)^n$$
 
-* The "addition" rule:
+-   The "addition" rule:
 
 $$F_{n+k} = F_k F_{n+1} + F_{k-1} F_n$$
 
-* With $k = n$ in the previous equation:
+-   With $k = n$ in the previous equation:
 
 $$F_{2n} = F_n (F_{n+1} + F_{n-1})$$
 

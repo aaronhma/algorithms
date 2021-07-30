@@ -42,7 +42,7 @@ So, you should draw the head **21** long.
 
 ## Direct Proportion
 
-Direct proportion is the direct relationship between two quantities.  In simple words, if one quantity increases, the other quantity also increases and vice-versa. For example, if the speed of a car is increased, it covers more distance in a fixed amount of time. In notation, the direct proportion is written as $y \propto x$.
+Direct proportion is the direct relationship between two quantities. In simple words, if one quantity increases, the other quantity also increases and vice-versa. For example, if the speed of a car is increased, it covers more distance in a fixed amount of time. In notation, the direct proportion is written as $y \propto x$.
 
 ## Indirect Proportion
 

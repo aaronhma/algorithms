@@ -65,6 +65,6 @@ Output : mypqueue1 = {9, 7, 5, 3}
 ```
 
 **Note: In `priority_queue` containers, the elements are printed
-      in reverse order of the sorted array because the top element (max element in max-heap) is printed first, then the next max-element, etc.**
+in reverse order of the sorted array because the top element (max element in max-heap) is printed first, then the next max-element, etc.**
 
 </details>

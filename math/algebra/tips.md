@@ -121,7 +121,6 @@ It's not possible to get a rectangular box with all sides having width and lengt
 
 > #### If you don't know what something is, call it a variable!
 
-
 15. **Tip #15:**
 
 > #### In some problems where not all the information is given, you can create a variable and hope that the variable cancels out, or let the variable be a fixed constant.

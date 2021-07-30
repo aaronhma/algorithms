@@ -40,7 +40,6 @@ The midpoint of the points $(x_1, y_1)$ and $(x_2, y_2)$ is:
 
 $$(\frac{x_1 + x_2}{2}, \frac{y_1 + y_2}{2})$$
 
-
 9. Circle Formulas
 
 ### $\pi$ Approximation: $\pi \approx \frac{22}{7}$
@@ -54,13 +53,13 @@ $$\text{area of a circle } = \pi r^2$$
 
 Assuming that $d$ is the distance, $r$ is the rate, and $t$ is the time, the following formulas will always hold true:
 
-* $d = rt$
-* $r = \frac{d}{t}$
-* $t = \frac{d}{r}$
+-   $d = rt$
+-   $r = \frac{d}{t}$
+-   $t = \frac{d}{r}$
 
 11. Average Distance
-5
-**Problem: You rode your bike up a hill for $4$ mph and rode your bike down a hill for $12$ mph. What is the average speed?**
+    5
+    **Problem: You rode your bike up a hill for $4$ mph and rode your bike down a hill for $12$ mph. What is the average speed?**
 
 **Solution 1:**
 

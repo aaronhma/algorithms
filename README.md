@@ -59,9 +59,13 @@
 
 #### [**Strings**](algorithms/strings/README.md)
 
-| ☆   | Name (Content)                                             | C++                                                 | Python | Editorials |
-| --- | ---------------------------------------------------------- | --------------------------------------------------- | ------ | ---------- |
-|     | [Z algorithm](string-algorithm/z-algorithm/z-algorithm.md) | [C++](string-algorithm/z-algorithm/z-algorithm.cpp) |        |            |
+| ☆   | Name (Content)                                                | C++                                                         | Python | Editorials                                                       |
+| --- | ------------------------------------------------------------- | ----------------------------------------------------------- | ------ | ---------------------------------------------------------------- |
+|     | [Knuth-Morris-Pratt (KMP)](algorithms/strings/kmp/README.md)  | [C++](algorithms/strings/kmp/kmp.cpp)                       |        | [cp-algo](https://cp-algorithms.com/string/prefix-function.html) |
+|     | [Rabin Karp](algorithms/strings/rabin-karp/README.md)         | [C++](algorithms/strings/rabin-karp/rabin-karp.cpp)         |        | [cp-algo](https://cp-algorithms.com/string/rabin-karp.html)      |
+|     | [Spy String](algorithms/strings/spy-string/README.md)         | [C++](algorithms/strings/spy-string/spy-string.cpp)         |        |                                                                  |
+|     | [String Hashing](algorithms/strings/string-hashing/README.md) | [C++](algorithms/strings/string-hashing/string-hashing.cpp) |        | [cp-algo](https://cp-algorithms.com/string/string-hashing.html)  |
+|     | [Z Algorithm](algorithms/strings/z-algorithm/README.md)       | [C++](algorithms/strings/z-algorithm/z-algorithm.cpp)       |        | [cp-algo](https://cp-algorithms.com/string/z-function.html)      |
 
 ---
 

@@ -1,12 +1,11 @@
 # Tower of Hanoi
 
-
 The Tower of Hanoi, is a mathematical problem which consists of three rods and multiple disks. Initially, all the disks are placed on one rod, one over the other in ascending order of size similar to a cone-shaped tower.
 
 The objective of this problem is to move the stack of disks from the initial rod to another rod, following these rules:
 
-* Only one disk can be moved at once.
-* A larger disk cannot be placed on top of a smaller disk.
+-   Only one disk can be moved at once.
+-   A larger disk cannot be placed on top of a smaller disk.
 
 The goal is to move all the disks from the leftmost rod to the rightmost rod. To move $n$ disks from one rod to another, $2^n - 1$ steps are required (This can be proven mathematically). So, to move $3$ disks from starting the rod to the ending rod, a total of $2^3 - 1 = 8 - 1 = 7$ steps are required.
 

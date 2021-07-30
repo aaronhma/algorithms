@@ -9,7 +9,7 @@ We want to solve the problem of comparing strings efficiently. The brute force w
 ## Calculating Hashes
 
 $$hash(s) = (s[0] + s[1] * p + s[2] * p^2 + ... + s[n - 1] * p^{n - 1}) \ \% \ m$$
-$$ = \sum_{i=0}^{n-1} \ (s[i] * p^i) \ \% \ m$$
+$$ = \sum\_{i=0}^{n-1} \ (s[i] \* p^i) \ \% \ m$$
 
 where $p$ and $m$ are some positive numbers. This is a **polynomial rolling hash function**.
 

@@ -16,7 +16,7 @@ The most popular type of rate is a unit rate of two quantities of a ratio such t
 
 **Example:**
 
-- There are $60$ minutes in $\bold  \color{#399}1$ hour.
+-   There are $60$ minutes in $\bold  \color{#399}1$ hour.
 
 ---
 
@@ -40,20 +40,20 @@ The plane flew at a rate of $765 \div 3 = 255$ kilometers ($km$) per hour. We ca
 
 _Answer choices:_
 
-- 1
-- 3
-- 9
+-   1
+-   3
+-   9
 
 <details>
 
 <summary>1. Try to use unit rates that are <b>in the same units (Convert them all into the same unit)</b>, it'll make it much easier!</summary>
 
-* $1$ hot-dog-eating champion eats $71 \div 10 = 7.1$ hot dogs per minute ($\frac{hot \ dogs}{minute}$).
-* $1$ football player eats $31 \div 10 = 3.1$ hot dogs per minute ($\frac{hot \ dogs}{minute}$).
+-   $1$ hot-dog-eating champion eats $71 \div 10 = 7.1$ hot dogs per minute ($\frac{hot \ dogs}{minute}$).
+-   $1$ football player eats $31 \div 10 = 3.1$ hot dogs per minute ($\frac{hot \ dogs}{minute}$).
 
 This information is relevant to us, as if we have $1$ hot-dog-eating champion and $1$ football player, their rates add up! Together, they eat at a rate of $7.1 + 3.1 = 10.2$ hot dogs per minute ($\frac{hot \ dogs}{minute}$).
 
-* $1$ hot-dog-eating champion and $n$ football players eats $35$ hot dogs per minute ($\frac{hot \ dogs}{minute}$).
+-   $1$ hot-dog-eating champion and $n$ football players eats $35$ hot dogs per minute ($\frac{hot \ dogs}{minute}$).
 
 This is why thinking in rates or speeds is useful, as we can add/subtract rates, and say our target rate is $\frac{35 \text{ (number of hot dogs)}}{1 \text{ (no. of minutes)}} = 35$ hot dogs per minute ($\frac{hot \ dogs}{minute}$) (what we did above).
 

@@ -40,10 +40,11 @@ The KMP Algorithm is simple:
 
 1. Compute the prefix array
 2. We iterate from indexes 0 to n - m (inclusive):
-  - Find the last character in the text equal to the pattern
-  - If no characters match, $i = i + 1$
-  - If all characters match, add the current index $i$ to the answer
-  - If some characters match, update $i$ and $j$ for the next possible position
+
+-   Find the last character in the text equal to the pattern
+-   If no characters match, $i = i + 1$
+-   If all characters match, add the current index $i$ to the answer
+-   If some characters match, update $i$ and $j$ for the next possible position
 
 Notice that we only scan the $text$ string once, resulting in $\theta(n + k)$, where $n$ is the size of the $text$ string and $k$ is the size of the pattern (the pattern string is used for the prefix function and also finding the last character in the text equal to the pattern).
 
