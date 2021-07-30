@@ -61,11 +61,11 @@
 
 | ☆   | Name (Content)                                                | C++                                                         | Python | Editorials                                                       |
 | --- | ------------------------------------------------------------- | ----------------------------------------------------------- | ------ | ---------------------------------------------------------------- |
-|     | [Knuth-Morris-Pratt (KMP)](algorithms/strings/kmp/README.md)  | [C++](algorithms/strings/kmp/kmp.cpp)                       |        | [cp-algo](https://cp-algorithms.com/string/prefix-function.html) |
-|     | [Rabin Karp](algorithms/strings/rabin-karp/README.md)         | [C++](algorithms/strings/rabin-karp/rabin-karp.cpp)         |        | [cp-algo](https://cp-algorithms.com/string/rabin-karp.html)      |
+| ★★★ | [Knuth-Morris-Pratt (KMP)](algorithms/strings/kmp/README.md)  | [C++](algorithms/strings/kmp/kmp.cpp)                       |        | [cp-algo](https://cp-algorithms.com/string/prefix-function.html) |
+| ★★★ | [Rabin Karp](algorithms/strings/rabin-karp/README.md)         | [C++](algorithms/strings/rabin-karp/rabin-karp.cpp)         |        | [cp-algo](https://cp-algorithms.com/string/rabin-karp.html)      |
 |     | [Spy String](algorithms/strings/spy-string/README.md)         | [C++](algorithms/strings/spy-string/spy-string.cpp)         |        |                                                                  |
 |     | [String Hashing](algorithms/strings/string-hashing/README.md) | [C++](algorithms/strings/string-hashing/string-hashing.cpp) |        | [cp-algo](https://cp-algorithms.com/string/string-hashing.html)  |
-|     | [Z Algorithm](algorithms/strings/z-algorithm/README.md)       | [C++](algorithms/strings/z-algorithm/z-algorithm.cpp)       |        | [cp-algo](https://cp-algorithms.com/string/z-function.html)      |
+| ★★★ | [Z Algorithm](algorithms/strings/z-algorithm/README.md)       | [C++](algorithms/strings/z-algorithm/z-algorithm.cpp)       |        | [cp-algo](https://cp-algorithms.com/string/z-function.html)      |
 
 ---
 
@@ -135,30 +135,28 @@
 
 ### [**Misc**](misc/README.md)
 
-| ☆ | Name (Content) | C++ | Python | Editorials |
-| --- | ------------------------------------------------------------------- | ----------------------------------------------------- | ------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | |
-| | [Efficiency](misc/efficiency.md) | - | - | |
-| | [Solving Problems](misc/solving-problems.md) | - | - | |
-| | [Union-Find Algorithm (Disjoint-Set Data Structure)]() | | | [1](https://www.techiedelight.com/disjoint-set-data-structure-union-find-algorithm/) |
-| | [Kruskal Algorithm (Finding Minimum Spanning Tree)]() | | | [1](https://www.techiedelight.com/kruskals-algorithm-for-finding-minimum-spanning-tree/) |
-| | [Kadane Algorithm (Maximum Sum Subarray Problem)]() | | | [1](https://www.techiedelight.com/maximum-subarray-problem-kadanes-algorithm/) |
-| | [Floyd Cycle Detection Algorithm]() | | | [1](https://www.techiedelight.com/detect-cycle-linked-list-floyds-cycle-detection-algorithm/) |
-| | [Flood fill Algorithm]() | | | [1](https://www.techiedelight.com/flood-fill-algorithm/) |
-| | [Lee Algorithm (Shortest path in a maze)]() | | | [1](https://www.techiedelight.com/lee-algorithm-shortest-path-in-a-maze/) |
-| | [Mo Algorithm]() | | | |
-| | [Approximation Algorithm]() | | | |
-| | [Knuth-Morris-Pratt Algorithm (KMP)]() | | | |
-| | [Rabin-Karp Algorithm]() | | | |
-| | [Euclid's Extended Algorithm]() | | | |
-| | [Matrix multiplication]() | | | |
-| | [Factorial]() | | | |
-| | [Statistical Method]() | | | |
-| | [Probabilistic Methods]() | | | |
-| | [Minimum Spanning Tree]() | | | |
-| | [Max-flow min cut theorem: Ford-fulkerson OR Edmond-Karp]() | | | |
-| | [Topological Sorting in a DAG]() | | | [1](https://www.techiedelight.com/topological-sorting-dag/) |
-| | [Longest Increasing Subsequence]() | | | [1](https://www.techiedelight.com/longest-increasing-subsequence/) |
-| | [Number theory algorithms]() | | | GCD, inverse of the number using extended euler's algorithm, fast power, prime number, Modular Exponentiation, Sieve of Eratosthenes, Fermat’s theorem, Miller Rabin |
+| ☆   | Name (Content)                                              | C++ | Python | Editorials                                                                                                                                                           |
+| --- | ----------------------------------------------------------- | --- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|     | [Efficiency](misc/efficiency.md)                            | -   | -      |                                                                                                                                                                      |
+|     | [Solving Problems](misc/solving-problems.md)                | -   | -      |                                                                                                                                                                      |
+|     | [Union-Find Algorithm (Disjoint-Set Data Structure)]()      |     |        | [1](https://www.techiedelight.com/disjoint-set-data-structure-union-find-algorithm/)                                                                                 |
+|     | [Kruskal Algorithm (Finding Minimum Spanning Tree)]()       |     |        | [1](https://www.techiedelight.com/kruskals-algorithm-for-finding-minimum-spanning-tree/)                                                                             |
+|     | [Kadane Algorithm (Maximum Sum Subarray Problem)]()         |     |        | [1](https://www.techiedelight.com/maximum-subarray-problem-kadanes-algorithm/)                                                                                       |
+|     | [Floyd Cycle Detection Algorithm]()                         |     |        | [1](https://www.techiedelight.com/detect-cycle-linked-list-floyds-cycle-detection-algorithm/)                                                                        |
+|     | [Flood fill Algorithm]()                                    |     |        | [1](https://www.techiedelight.com/flood-fill-algorithm/)                                                                                                             |
+|     | [Lee Algorithm (Shortest path in a maze)]()                 |     |        | [1](https://www.techiedelight.com/lee-algorithm-shortest-path-in-a-maze/)                                                                                            |
+|     | [Mo Algorithm]()                                            |     |        |                                                                                                                                                                      |
+|     | [Approximation Algorithm]()                                 |     |        |                                                                                                                                                                      |
+|     | [Euclid's Extended Algorithm]()                             |     |        |                                                                                                                                                                      |
+|     | [Matrix multiplication]()                                   |     |        |                                                                                                                                                                      |
+|     | [Factorial]()                                               |     |        |                                                                                                                                                                      |
+|     | [Statistical Method]()                                      |     |        |                                                                                                                                                                      |
+|     | [Probabilistic Methods]()                                   |     |        |                                                                                                                                                                      |
+|     | [Minimum Spanning Tree]()                                   |     |        |                                                                                                                                                                      |
+|     | [Max-flow min cut theorem: Ford-fulkerson OR Edmond-Karp]() |     |        |                                                                                                                                                                      |
+|     | [Topological Sorting in a DAG]()                            |     |        | [1](https://www.techiedelight.com/topological-sorting-dag/)                                                                                                          |
+|     | [Longest Increasing Subsequence]()                          |     |        | [1](https://www.techiedelight.com/longest-increasing-subsequence/)                                                                                                   |
+|     | [Number theory algorithms]()                                |     |        | GCD, inverse of the number using extended euler's algorithm, fast power, prime number, Modular Exponentiation, Sieve of Eratosthenes, Fermat’s theorem, Miller Rabin |
 
 ---
 

@@ -1,4 +1,4 @@
-# Knuth-Morris-Pratt Algorithm
+# Knuth-Morris-Pratt (KMP) Algorithm - Prefix function [(C++)](./kmp.cpp)
 
 ## About
 

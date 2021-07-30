@@ -55,7 +55,7 @@
         > Combinatorics, problem solving tips.
     -   Quiz
 
-        > 🔓 Unlocked with private key 🔑 (******\*\*\*\*******) - test window is <span style="color:mediumseagreen">Today</span> - <span style="color:mediumseagreen">June 14</span> To override this, use your key 🔑 to lock 🔒 the test.
+        > 🔓 Unlocked with private key 🔑 (**\*\***\*\*\*\***\*\***) - test window is <span style="color:mediumseagreen">Today</span> - <span style="color:mediumseagreen">June 14</span> To override this, use your key 🔑 to lock 🔒 the test.
 
         > <a href="https://expii.onlinetests.app/assess.aspx?id=M1W4ALGEBRA" target="_blank"><button style="background: mediumseagreen; color:#fff">Attempt opportunity 1 out of 4</button></a> (**Start test**)
 
