@@ -4,9 +4,9 @@ Intro video. (Great one) https://www.youtube.com/watch?v=HkNdNpKUByM&list=WL&ind
 
 https://codeburst.io/a-guide-to-important-graph-algorithms-for-competitive-programming-e59127634e2d
 
--                           	Walk: Any sequence of edges joining a sequence of vertices. Suppose you go from node 1 to 2 to 4 — it would constitute a walk 1->2,2->4.
--                           	Trail: A walk in which all edges are distinct. So, you do not travel a given edge more than once.
--                           	Cycle: A non-empty trail starting and ending at the same vertex.
+-                             	Walk: Any sequence of edges joining a sequence of vertices. Suppose you go from node 1 to 2 to 4 — it would constitute a walk 1->2,2->4.
+-                             	Trail: A walk in which all edges are distinct. So, you do not travel a given edge more than once.
+-                             	Cycle: A non-empty trail starting and ending at the same vertex.
     https://medium.com/the-acm-manipal-blog/breaking-the-ice-with-graphs-7a3cdcad7b55
 
 Discrete Mathematics 1 & 2 https://www.youtube.com/watch?v=tyDKR4FG3Yw&list=PLDDGPdw7e6Ag1EIznZ-m-qXu4XX3A0cIz

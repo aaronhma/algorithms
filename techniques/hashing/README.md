@@ -1,8 +1,14 @@
-# Hashing
+# String Hashing
 
 ## About
 
 Hashing is how `unordered_map` is implemented. We have an array $arr$ of size $n$ and for every $key$, we have a hash function $f(key)$ that puts $val$ into $arr[key]$. We strive to write a hash function to reduce collisions (where $f(key_1) = f(key _2)$ but $key_1 \neq key_2$).
+
+## Sections
+
+| ☆   | Name (Content)                                                | C++                                                         | Python | Editorials                                                      |
+| --- | ------------------------------------------------------------- | ----------------------------------------------------------- | ------ | --------------------------------------------------------------- |
+|     | [String Hashing](techniques/hashing/string-hashing/README.md) | [C++](techniques/hashing/string-hashing/string-hashing.cpp) |        | [cp-algo](https://cp-algorithms.com/string/string-hashing.html) |
 
 ## Collision Handling
 
