@@ -52,11 +52,11 @@ void setIO()
   cin.tie(NULL);
 }
 
-vi prefix(str &pattern) {
-  int n = sz(pattern);
-  vi prefix(n);
+vector<int> prefix(str &pattern) {
+  int n = (int)pattern.size();
+  vector<int> prefix(n);
 
-  FORE(i, 1, n) {
+  for (int i = 1; i < n; i++) {
     int j = prefix[i - 1];
 
     while (j != 0 && pattern[i] != pattern[j]) j = prefix[j - 1];
@@ -67,20 +67,27 @@ vi prefix(str &pattern) {
   return prefix;
 }
 
-vi kmp(str &text, str &pattern) {
-  int n = sz(text), m = sz(pattern), i = 0, j = 0;
-  vi ans, pref = prefix(pattern);
+vector<int> kmp(str &text, str &pattern) {
+  // 1. Compute prefix array
+  int n = (int)text.size(), m = (int)pattern.size(), i = 0, j = 0;
+  vector<int> ans, pref = prefix(pattern);
 
+  // 2. While loop: We only go to the indexes 0 to n - m (inclusive)
   while (i <= n - m) {
+    // Find the last character in the text equal to the pattern
     while (j < m) {
       if (pattern[j] != text[i + j]) break;
       j++;
     }
 
+    // If no characters match, i = i + 1
     if (j == 0) {
       i++;
     } else {
-      if (j == m) ans.PB(i);
+      // If all characters match, add the current index i to the answer
+      if (j == m) ans.push_back(i);
+
+      // If some characters match, update i and j for the next possible position
       i += j - pref[j - 1];
       j = pref[j - 1];
     }

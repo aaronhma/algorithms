@@ -183,30 +183,30 @@ struct custom_hash
   }
 };
 
-vll rabin_karp(str text, str pattern) {
-  int n = sz(text), m = sz(pattern), pattern_hash = (pattern[0] - 'a' + 1);
+vector<long long> rabin_karp(str text, str pattern) {
+  int n = (int)text.size(), m = (int)pattern.size(), pattern_hash = (pattern[0] - 'a' + 1);
 
-  vll pow(max(n, m), 1), hash(n), ans;
+  vector<long long> pow(max(n, m), 1), hash(n), ans;
 
-  FORE(i, 1, max(n, m))
+  for (int i = 1; i < max(n, m); i++)
     pow[i] = (pow[i - 1] * 31) % MOD;
 
   hash[0] = (text[0] - 'a' + 1);
 
-  FORE(i, 1, n)
+  for (int i = 1; i < n; i++)
     hash[i] = (hash[i - 1] + (pow[i] * (text[i] - 'a' + 1))) % MOD;
 
-  FORE(i, 1, m)
+  for (int i = 1; i < m; i++)
     pattern_hash = (pattern_hash + (pow[i] * (pattern[i] - 'a' + 1))) % MOD;
 
   for (int i = 0; i + m - 1 < n; i++) {
-    ll curr_hash;
+    long long curr_hash;
 
     if (i == 0) curr_hash = (hash[i + m - 1] + MOD) % MOD;
     else curr_hash = (hash[i + m - 1] + MOD - hash[i - 1]) % MOD;
 
     if (curr_hash == (pattern_hash * pow[i]) % MOD)
-      ans.PB(i);
+      ans.push_back(i);
   }
 
   return ans;
