@@ -22,9 +22,9 @@ In other words, $z[i]$ is the length of the longest common prefix between $s$ an
 
 For example, here are the values of the Z-function computed for different strings:
 
-* $"aaaaa" - [0,4,3,2,1]$
-* $"aaabaab" - [0,2,1,0,2,1,0]$
-* $"abacaba" - [0,0,1,0,3,0,1]$
+-   $"aaaaa" - [0,4,3,2,1]$
+-   $"aaabaab" - [0,2,1,0,2,1,0]$
+-   $"abacaba" - [0,0,1,0,3,0,1]$
 
 ### Explanation
 

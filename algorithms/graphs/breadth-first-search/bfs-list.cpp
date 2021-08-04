@@ -187,8 +187,7 @@ class Graph {
   public:
     Graph(int sz) {
       size = sz;
-      graph.rsz(sz);
-      visited.rsz(size);
+      graph.resize(sz);
     }
 
     ~Graph() {}
@@ -209,29 +208,52 @@ class Graph {
       }
     }
 
-    void dfsHelper(int source) {
-      if (visited[source]) return;
+    void bfs(int source, int dest = -1) {
+      queue<int> Q;
 
-      cout << source << " ";
+      vb visited(size);
+      vi distance(size, INF_INT), parent(size, -1);
+      distance[source] = 0;
+
+      Q.push(source);
       visited[source] = 1;
 
-      for (int i : graph[source])
-        dfsHelper(i);
-    }
+      while (!Q.empty()) {
+        int node = Q.front();
+        Q.pop();
+        cout << node << " ";
 
-    void dfs(int source) {
-      visited.rsz(size);
-      dfsHelper(source);
-    }
+        for (int i : graph[node])
+          if (!visited[i]) {
+            Q.push(i);
+            visited[i] = 1;
+            distance[i] = distance[node] + 1;
+            parent[i] = node;
+          }
+      }
 
-    bool ok(int node) {
-      return visited[node];
+      cout << "\n";
+      cout << distance << "\n";
+
+      if (dest != -1) {
+        if (!visited[dest])
+          cout << "No Path\n";
+        else {
+          vi path;
+
+          for (int i = dest; i != source; i = parent[i])
+            path.PB(i);
+
+          path.PB(source);
+          reverse(all(path));
+          cout << path << "\n";
+        }
+      }
     }
 
   private:
     int size;
     vector<list<int>> graph;
-    vb visited;
 };
 
 int main()
@@ -240,33 +262,13 @@ int main()
 
   Graph *graph = new Graph(7);
 
-  vpii edges {{0, 1}, {0, 4}, {1, 2}, {2, 3}, {5, 6}};
+  vpii edges {{0, 1}, {0, 4}, {4, 5}, {1, 2}, {2, 3}, {3, 5}, {5, 6}};
 
   for (auto i : edges)
     graph->addEdge(i.f, i.s);
 
   graph->print();
-
-  int k = 1;
-
-  FORE(i, 1, 7) {
-    if (!graph->ok(i)) {
-      cout << "Connected component #" << k++ << ": ";
-      graph->dfs(i);
-      cout << "\n";
-    }
-  }
+  graph->bfs(1, 6);
 
   return 0;
 }
-/**
- * Steps to solve CP problems:
- * 1) Carefully extract the important information from the problem.
- * 2) Find out all the hidden information.
- * 3) Read input & output & understand the question.
- * 4) Visualize the problem.
- *  a. Does my result output the expected output?
- *  b. Does the idea you think works?
- *  c. Check for edge cases.
- * 5) Implementation.
-*/
