@@ -48,6 +48,7 @@ int main()
     q.pop();
 
     // if we've already seen this node, skip it
+    // this check prevents the time complexity increasing up to O(nm)
     if (processed[node])
       continue;
 
@@ -78,12 +79,17 @@ int main()
 
   for (int i = 1; i <= n; i++)
   {
+    // Distance from node 1 -> node 1: 0
+    // Distance from node 1 -> node 2: 5
+    // Distance from node 1 -> node 3: 7
+    // Distance from node 1 -> node 4: 3
+    // Distance from node 1 -> node 5: 1
     cout << "Distance from node " << x << " -> node " << i << ": " << distance[i] << "\n";
   }
 
   int fin = 3;
 
-  cout << "Weight from node 1 -> 3: " << distance[fin] << "\n";
+  cout << "Weight from node 1 -> 3: " << distance[fin] << "\n"; // 7
 
   return 0;
 }
