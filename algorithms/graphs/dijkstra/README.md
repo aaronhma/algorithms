@@ -10,7 +10,7 @@ Figure $7.20$ shows how Dijkstra’s algorithm processes a graph. Like in the Be
 
 ![Figure 7.20](../images/dijkstras/dijkstras.png)
 
-## Implementation
+## Implementation of Dijkstra's on Sparse Graphs
 
 An efficient implementation of Dijkstra's algorithm requries that we can efficiently find the minimum distance node that has not been processed. An appropriate data structure for this is the priority queue. With a priority queue, we can retrieve items in logarithmic time.
 
@@ -20,7 +20,7 @@ from a node $x$ to all other nodes of the graph. The graph is stored as adjacenc
 so that $adj[a]$ contains a pair $(b,w)$ always when there is an edge from node $a$ to
 node $b$ with weight $w$. The priority queue contains pairs of the form $(−d, x)$, meaning that the current distance to node $x$ is $d$. The array distance contains the distance to each node, and the array processed indicates whether a node has been processed. Note that the priority queue contains negative distances to nodes. The reason for this is that the default version of the C++ priority queue finds maximum elements, while we want to find minimum elements. By exploiting negative distances, we can directly use the default priority queue. Also note that while there may be several instances of a node in the priority queue, only the instance with the minimum distance will be processed.
 
-The implementation is as follows:
+The $\theta(n + m \ log \ n)$ implementation is as follows:
 
 ```cpp
 priority_queue<pair<int,int>> q;
@@ -47,5 +47,53 @@ while (!q.empty()) {
       q.push({-distance[b],b});
     }
   }
+}
+```
+
+## Implementation of Dijkstra's on Dense Graphs
+
+A $\theta(n^2 + m)$ solution:
+
+Dijkstra's algorithm performs $n$ iterations. On each iteration it selects an unmarked vertex $v$ with the lowest value $d[v]$, marks it and checks all the edges $(v,\text{to})$ attempting to improve the value $d[\text{to}]$.
+
+The running time of the algorithm consists of:
+
+* $n$ searches for a vertex with the smallest value $d[v]$ among $\theta(n)$ unmarked vertices
+* $m$ relaxation attempts
+
+For the simplest implementation of these operations on each iteration vertex search requires $\theta(n)$ operations, and each relaxation can be performed in $\theta(1)$.
+
+```cpp
+const int INF = 1000000000;
+vector<vector<pair<int, int>>> adj;
+
+void dijkstra(int s, vector<int> & d, vector<int> & p) {
+    int n = adj.size();
+    d.assign(n, INF);
+    p.assign(n, -1);
+    vector<bool> u(n, false);
+
+    d[s] = 0;
+    for (int i = 0; i < n; i++) {
+        int v = -1;
+        for (int j = 0; j < n; j++) {
+            if (!u[j] && (v == -1 || d[j] < d[v]))
+                v = j;
+        }
+
+        if (d[v] == INF)
+            break;
+
+        u[v] = true;
+        for (auto edge : adj[v]) {
+            int to = edge.first;
+            int len = edge.second;
+
+            if (d[v] + len < d[to]) {
+                d[to] = d[v] + len;
+                p[to] = v;
+            }
+        }
+    }
 }
 ```
