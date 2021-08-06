@@ -1,4 +1,4 @@
-# Storing Graphs
+# Storing Graphs [(Adjacency List)](./adjacency-list.cpp), [(Adjacency Metrix)](./adjacency-matrix.cpp)
 
 ## Adjacency List
 

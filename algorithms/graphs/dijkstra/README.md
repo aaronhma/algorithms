@@ -1,4 +1,4 @@
-# Dijkstra's Algorithm
+# Dijkstra's Algorithm [(C++)](./dijkstra.cpp)
 
 ## About
 
@@ -58,8 +58,8 @@ Dijkstra's algorithm performs $n$ iterations. On each iteration it selects an un
 
 The running time of the algorithm consists of:
 
-* $n$ searches for a vertex with the smallest value $d[v]$ among $\theta(n)$ unmarked vertices
-* $m$ relaxation attempts
+-   $n$ searches for a vertex with the smallest value $d[v]$ among $\theta(n)$ unmarked vertices
+-   $m$ relaxation attempts
 
 For the simplest implementation of these operations on each iteration vertex search requires $\theta(n)$ operations, and each relaxation can be performed in $\theta(1)$.
 
