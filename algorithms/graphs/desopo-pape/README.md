@@ -1,1 +1,1 @@
-# D´Esopo-Pape algorithm [(C++)](./desopo-pape.cpp)
+# D´Esopo-Pape Algorithm [(C++)](./desopo-pape.cpp)

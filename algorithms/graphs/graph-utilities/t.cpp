@@ -183,58 +183,90 @@ struct custom_hash
   }
 };
 
-#define INF 1e9 + 7
+void addEdge(vector<vpii> &graph, int a, int b, int weight) {
+  graph[a].PB({b, weight});
+}
 
-vector<vector<int>> updateMatrix(vector<vector<int>> &mat)
-{
-  int n = mat.size(), m = mat[0].size();
-  queue<pair<int, int>> Q;
-  vector<vector<int>> dist(n, vector<int>(m, INF));
+void bfs01(vector<vpii> &graph, int start, int n) {
+  vi distance(n, INF_INT);
 
-  for (int i = 0; i < n; i++)
-  {
-    for (int j = 0; j < m; j++)
-    {
-      if (!mat[i][j])
-      {
-        Q.push({i, j});
-        dist[i][j] = 0;
+  distance[start] = 0;
+
+  deque<pii> DQ;
+  DQ.push_back({0, start});
+
+  while (!DQ.empty()) {
+    int node = DQ.front().s;
+    DQ.pop_front();
+
+    for (pii i : graph[node]) {
+      int b = i.f, w = i.s;
+      int new_dist = w + distance[node];
+
+      if (new_dist < distance[b]) {
+        distance[b] = new_dist;
+
+        if (w)
+          DQ.PB({distance[b], b});
+        else
+          DQ.push_front({distance[b], b});
       }
     }
   }
 
-  while (!Q.empty())
-  {
-    int x = Q.front().first, y = Q.front().second;
-    Q.pop();
+  cout << distance << "\n";
+}
 
-    for (int i = 0; i < 4; i++)
-    {
-      int new_x = x + dx[i], new_y = y + dy[i];
+void dijkstra(vector<vpii> &graph, int start, int n) {
+  vi distance(n, INF_INT);
+  vb visited(n);
 
-      if (new_x >= 0 && new_y >= 0 && new_x < n && new_y < m && dist[new_x][new_y] == INF)
-      {
-        Q.push({new_x, new_y});
-        dist[new_x][new_y] = dist[x][y] + 1;
+  priority_queue<pii> PQ;
+  PQ.push({0, start});
+  distance[start] = 0;
+
+  while (!PQ.empty()) {
+    int node = PQ.top().s;
+    PQ.pop();
+
+    if (visited[node]) continue;
+
+    visited[node] = 1;
+
+    for (pii i : graph[node]) {
+      int b = i.f, w = i.s;
+
+      int new_dist = distance[node] + w;
+
+      if (new_dist < distance[b]) {
+        distance[b] = new_dist;
+        PQ.push({-distance[b], b});
       }
     }
   }
 
-  return dist;
+  cout << distance << "\n";
 }
 
 int main()
 {
   setIO(); // Disable this during interactive problems
 
-  vvi arr {{0,0,0},{0,1,0},{0,0,0}};
+  int n = 7;
 
-  cout << updateMatrix(arr) << "\n"; // {{0, 0, 0}, {0, 1, 0}, {0, 0, 0}}
+  vector<vpii> graph(n);
+  vector<tuple<int, int, int>> edges {{1, 2, 2}, {1, 3, 4}, {2, 3, 1}, {2, 5, 2}, {3, 5, 3}, {5, 4, 3}, {2, 4, 4}, {5, 6, 2}, {4, 6, 2}};
+
+  for (auto i : edges)
+    addEdge(graph, get<0>(i), get<1>(i), get<2>(i));
+
+  // bfs01(graph, 1, n);
+  dijkstra(graph, 1, n);
 
   return 0;
 }
 /**
- * Steps to solve CP problems:3
+ * Steps to solve CP problems:
  * 1) Carefully extract the important information from the problem.
  * 2) Find out all the hidden information.
  * 3) Read input & output & understand the question.

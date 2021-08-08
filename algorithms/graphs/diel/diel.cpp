@@ -183,58 +183,16 @@ struct custom_hash
   }
 };
 
-#define INF 1e9 + 7
-
-vector<vector<int>> updateMatrix(vector<vector<int>> &mat)
-{
-  int n = mat.size(), m = mat[0].size();
-  queue<pair<int, int>> Q;
-  vector<vector<int>> dist(n, vector<int>(m, INF));
-
-  for (int i = 0; i < n; i++)
-  {
-    for (int j = 0; j < m; j++)
-    {
-      if (!mat[i][j])
-      {
-        Q.push({i, j});
-        dist[i][j] = 0;
-      }
-    }
-  }
-
-  while (!Q.empty())
-  {
-    int x = Q.front().first, y = Q.front().second;
-    Q.pop();
-
-    for (int i = 0; i < 4; i++)
-    {
-      int new_x = x + dx[i], new_y = y + dy[i];
-
-      if (new_x >= 0 && new_y >= 0 && new_x < n && new_y < m && dist[new_x][new_y] == INF)
-      {
-        Q.push({new_x, new_y});
-        dist[new_x][new_y] = dist[x][y] + 1;
-      }
-    }
-  }
-
-  return dist;
-}
-
 int main()
 {
   setIO(); // Disable this during interactive problems
 
-  vvi arr {{0,0,0},{0,1,0},{0,0,0}};
 
-  cout << updateMatrix(arr) << "\n"; // {{0, 0, 0}, {0, 1, 0}, {0, 0, 0}}
 
   return 0;
 }
 /**
- * Steps to solve CP problems:3
+ * Steps to solve CP problems:
  * 1) Carefully extract the important information from the problem.
  * 2) Find out all the hidden information.
  * 3) Read input & output & understand the question.

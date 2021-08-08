@@ -183,58 +183,64 @@ struct custom_hash
   }
 };
 
-#define INF 1e9 + 7
-
-vector<vector<int>> updateMatrix(vector<vector<int>> &mat)
-{
-  int n = mat.size(), m = mat[0].size();
-  queue<pair<int, int>> Q;
-  vector<vector<int>> dist(n, vector<int>(m, INF));
-
-  for (int i = 0; i < n; i++)
-  {
-    for (int j = 0; j < m; j++)
-    {
-      if (!mat[i][j])
-      {
-        Q.push({i, j});
-        dist[i][j] = 0;
-      }
+class Solution {
+public:
+    void solveSudoku(vector<vector<char>>& board) {
+        solve(board, 0, 0);
     }
-  }
 
-  while (!Q.empty())
-  {
-    int x = Q.front().first, y = Q.front().second;
-    Q.pop();
+private:
+    // 9x9 Sudoku Solver
+    bool solve(vector<vector<char>>& board, int i, int j) {
+        if (i == 9) return true; // Check if we've already solved the entire sudoku
+        if (j == 9) return solve(board, i + 1, 0);
+        if (board[i][j] != '.') return solve(board, i, j + 1);
 
-    for (int i = 0; i < 4; i++)
-    {
-      int new_x = x + dx[i], new_y = y + dy[i];
+        for (int k = 1; k <= 9; k++) {
+            if (isSafe(board, i, j, k)) {
+                board[i][j] = '0' + k; // See https://stackoverflow.com/a/4629196
+                if (solve(board, i, j + 1))
+                    return true;
+            }
+        }
 
-      if (new_x >= 0 && new_y >= 0 && new_x < n && new_y < m && dist[new_x][new_y] == INF)
-      {
-        Q.push({new_x, new_y});
-        dist[new_x][new_y] = dist[x][y] + 1;
-      }
+        // No options work, backtrack
+        board[i][j] = '.';
+        return false;
     }
-  }
 
-  return dist;
-}
+    bool isSafe(vector<vector<char>>& board, int i, int j, int k) {
+        char K = '0' + k;
+
+        // Check the row and column
+        for (int a = 0; a < 9; a++) {
+            if (board[a][j] == K || board[i][a] == K) return false;
+        }
+
+        // Check the square in the matrix
+        int x = (i / 3) * 3;
+        int y = (j / 3) * 3;
+
+        for (int a = x; a < x + 3; a++) {
+            for (int b = y; b < y + 3; b++) {
+                if (board[a][b] == K) return false;
+            }
+        }
+
+        return true;
+    }
+};
 
 int main()
 {
   setIO(); // Disable this during interactive problems
 
-  vvi arr {{0,0,0},{0,1,0},{0,0,0}};
 
-  cout << updateMatrix(arr) << "\n"; // {{0, 0, 0}, {0, 1, 0}, {0, 0, 0}}
 
   return 0;
 }
 /**
- * Steps to solve CP problems:3
+ * Steps to solve CP problems:
  * 1) Carefully extract the important information from the problem.
  * 2) Find out all the hidden information.
  * 3) Read input & output & understand the question.

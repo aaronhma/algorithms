@@ -1,104 +1,265 @@
+// https://cses.fi/problemset/task/1193
 #include <bits/stdc++.h>
 
 using namespace std;
 
-#define ROW 9
-#define COL 10
+typedef long long ll;
+typedef long double ld;
+typedef string str;
+typedef vector<int> vi;
+typedef vector<bool> vb;
+typedef vector<ll> vll;
+typedef vector<char> vc;
+typedef vector<str> vstr;
+typedef vector<vi> vvi;
+typedef pair<int, int> pii;
+typedef vector<pii> vpii;
 
-// To store matrix cell coordinates
-struct Point {
-  int x;
-  int y;
-};
+#define f first
+#define s second
+#define all(x) begin(x), end(x)
+#define rall(x) rbegin(x), rend(x)
+#define PB push_back
+#define sz(x) (int)x.size()
+#define rtn return
+#define rsz resize
+#define ins insert
+#define ft front()
+#define bk back()
+#define LB lower_bound
+#define UB upper_bound
+#define BINS binary_search
+#define IT(x) for (auto it = begin(x); it != end(x); it++)
+#define RIT(x) for (auto it = rbegin(x); it != rend(x); it++)
+#define FORE(i, a, b) for (int i = a; i < b; i++)
+#define FORI(i, a, b) for (int i = a; i <= b; i++)
+#define each(i, x) for (auto &i : x)
 
-// A Data Structure for queue used in bfs
-struct queueNode {
-  Point pt; // The coordinates of a cell
-  int dist; // cell's minimum distance from the source
-};
+const int MOD = 1e9 + 7;
+const int INF_INT = 2147483647;
+const long INF_L = 1000000000000000003;
+const ll INF_LL = 9223372036854775807;
+const ld PI = acos((ld)-1);
 
-// check whether given cell (row, col) is a valid cell or not. within boundary
-bool isValid(int row, int col) {
-  // return true if row number and column number is in range
-  return (row >= 0) && (row < ROW) && (col >= 0) && (col < COL);
+const int dx[4] = {1, 0, -1, 0}, dy[4] = {0, 1, 0, -1};
+
+// Returns ceil(a / b) (b != 0)
+int ceildiv(int a, int b)
+{
+  rtn a / b + !(a < 0 || a % b == 0);
 }
 
-// Used to get row and column numbers of 4 neighbours of a given cell
-int rowNum[] = {-1, 0, 0, 1};
-int colNum[] = {0, -1, 1, 0};
+// INPUT
+template <class T>
+void read(T &x) { cin >> x; }
 
-// function to find the shortest path between
-// a given source cell to a destination cell.
-int bfs(int mat[][COL], Point src, Point dest){
-  // Create a queue for bfs
-  queue<queueNode> queue;
+void read(double &x)
+{
+  string t;
+  read(t);
+  x = stod(t);
+}
+void read(ld &x)
+{
+  string t;
+  read(t);
+  x = stold(t);
+}
 
-  // construct a matrix to keep track of visited cells
-  bool visited[ROW][COL];
-  // initially, all cells are unvisited
-  memset(visited, false, sizeof visited);
-  // Mark the source cell as visited
-  visited[src.x][src.y] = true;
+template <class T>
+void read(complex<T> &x)
+{
+  T a, b;
+  read(a, b);
+  x = cd(a, b);
+}
 
-  // Distance of source cell is 0
-  queueNode s = {src, 0};
-  queue.push(s); // Enqueue source cell
+template <class T1, class T2>
+void read(pair<T1, T2> &p) { read(p.f, p.s); }
 
-  // Do a bfs starting from source cell
-  while (!queue.empty()) {
-    queueNode top = queue.front();
-    Point pt = top.pt;
+template <class T>
+void read(vector<T> &a)
+{
+  FORE(i, 0, sz(a))
+  read(a[i]);
+}
 
-    // If we have reached the destination cell, we are done
-    if (pt.x == dest.x && pt.y == dest.y) return top.dist;
+template <class Arg, class... Args>
+void read(Arg &first, Args &...rest)
+{
+  read(first);
+  read(rest...);
+}
 
-    // Otherwise dequeue the front cell in the queue and enqueue its adjacent cells
-    queue.pop();
+// OUTPUT
+template <class T1, class T2>
+ostream &operator<<(ostream &os, const pair<T1, T2> &a)
+{
+  os << '{' << a.f << ", " << a.s << '}';
+  return os;
+}
 
-    for (int i = 0; i < 4; i++) {
-      int row = pt.x + rowNum[i];
-      int col = pt.y + colNum[i];
+template <class T>
+ostream &printArray(ostream &os, const T &a, int SZ)
+{
+  os << '{';
+  FORE(i, 0, SZ)
+  {
+    if (i)
+    {
+      os << ", ";
+    }
+    os << a[i];
+  }
+  os << '}';
+  return os;
+}
 
-      // if adjacent cell is valid, has path and not visited yet, enqueue it.
-      if (isValid(row, col) && mat[row][col] && !visited[row][col]) {
-        // mark cell as visited and enqueue it
-        visited[row][col] = true;
+template <class T>
+ostream &operator<<(ostream &os, const vector<T> &a)
+{
+  return printArray(os, a, sz(a));
+}
+template <class T>
+ostream &operator<<(ostream &os, const set<T> &a)
+{
+  os << vector<T>(all(a));
+  return os;
+}
+template <class T1, class T2>
+ostream &operator<<(ostream &os, const map<T1, T2> &a)
+{
+  os << vector<pair<T1, T2>>(all(a));
+  return os;
+}
 
-        // add node for exploration
-        queueNode Adjcell = { {row, col}, top.dist + 1 };
-        queue.push(Adjcell);
+template <class T>
+void pr(const T &x) { cout << x << '\n'; }
+template <class Arg, class... Args>
+void pr(const Arg &first, const Args &...rest)
+{
+  cout << first << ' ';
+  pr(rest...);
+}
+
+mt19937 rng((uint32_t)chrono::steady_clock::now().time_since_epoch().count());
+
+// Fast I/O
+void setIO(str S = "", bool use_txt = false)
+{
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
+
+  if (!S.empty())
+  {
+    if (use_txt)
+    {
+      freopen((S + ".txt").c_str(), "r", stdin);
+      freopen((S + ".txt").c_str(), "w", stdout);
+    }
+    else
+    {
+      freopen((S + ".in").c_str(), "r", stdin);
+      freopen((S + ".out").c_str(), "w", stdout);
+    }
+  }
+}
+
+// Custom hash for unordered_map and unordered_set (works only for integers)
+struct custom_hash
+{
+  static uint64_t splitmix64(uint64_t x)
+  {
+    // http://xorshift.di.unimi.it/splitmix64.c
+    x += 0x9e3779b97f4a7c15;
+    x = (x ^ (x >> 30)) * 0xbf58476d1ce4e5b9;
+    x = (x ^ (x >> 27)) * 0x94d049bb133111eb;
+    return x ^ (x >> 31);
+  }
+
+  size_t operator()(uint64_t x) const
+  {
+    static const uint64_t FIXED_RANDOM = chrono::steady_clock::now().time_since_epoch().count();
+    return splitmix64(x + FIXED_RANDOM);
+  }
+};
+
+int main()
+{
+  setIO(); // Disable this during interactive problems
+
+  /**
+   * Data:
+    5 8
+    ########
+    #.A#...#
+    #.##.#B#
+    #......#
+    ########
+  */
+  int n, m, start_x = -1, start_y = -1, end_x = -1, end_y = -1, ans = -1;
+  read(n, m);
+  str S;
+  vstr arr(n);
+
+  FORE(i, 0, n) {
+    read(S);
+
+    FORE(j, 0, m) {
+      if (S[j] == 'A') {
+        start_x = i;
+        start_y = j;
+      }
+
+      if (S[j] == 'B') {
+        end_x = i;
+        end_y = j;
+      }
+    }
+
+    arr[i] = S;
+  }
+
+  vector<vb> visited(n, vb(m));
+  queue<pair<int, pii>> Q;
+  Q.push({0, {start_x, start_y}});
+  visited[start_x][start_y] = 1;
+
+  while (!Q.empty()) {
+    pair<int, pii> node = Q.front();
+    Q.pop();
+
+    if (node.s.f == end_x && node.s.s == end_y) {
+      ans = node.f;
+      break;
+    }
+
+    FORE(i, 0, 4) {
+      int x = node.s.f + dx[i], y = node.s.s + dy[i];
+
+      if (x >= 0 && x < n && y >= 0 && y < m && !visited[x][y] && arr[x][y] != '#') {
+        visited[x][y] = 1;
+        Q.push({node.f + 1, {x, y}});
       }
     }
   }
 
-  // Return -1 if destination cannot be reached
-  return -1;
-}
-
-// Driver program to test above function
-int main()
-{
-  int mat[ROW][COL] =
-      {
-          {1, 0, 1, 1, 1, 1, 0, 1, 1, 1},
-          {1, 0, 1, 0, 1, 1, 1, 0, 1, 1},
-          {1, 1, 1, 0, 1, 1, 0, 1, 0, 1},
-          {0, 0, 0, 0, 1, 0, 0, 0, 0, 1},
-          {1, 1, 1, 0, 1, 1, 1, 0, 1, 0},
-          {1, 0, 1, 1, 1, 1, 0, 1, 0, 0},
-          {1, 0, 0, 0, 0, 0, 0, 0, 0, 1},
-          {1, 0, 1, 1, 1, 1, 0, 1, 1, 1},
-          {1, 1, 0, 0, 0, 0, 1, 0, 0, 1} };
-
-  Point source = {0, 0};
-  Point dest = {3, 4};
-
-  int dist = bfs(mat, source, dest);
-
-  if (dist != -1)
-    cout << "Shortest Path is " << dist << "\n"; // Shortest Path is 11
-  else
-    cout << "Shortest Path doesn't exist";
+  if (ans == -1) {
+    cout << "NO\n";
+  } else {
+    cout << "YES\n" << ans << "\n";
+  }
 
   return 0;
 }
+/**
+ * Steps to solve CP problems:
+ * 1) Carefully extract the important information from the problem.
+ * 2) Find out all the hidden information.
+ * 3) Read input & output & understand the question.
+ * 4) Visualize the problem.
+ *  a. Does my result output the expected output?
+ *  b. Does the idea you think works?
+ *  c. Check for edge cases.
+ * 5) Implementation.
+*/
