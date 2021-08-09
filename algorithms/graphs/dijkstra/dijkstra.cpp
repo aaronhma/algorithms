@@ -11,24 +11,9 @@ void addEdge(vector<vector<pair<int, int>>> &graph, int a, int b, int weight)
   graph[b].push_back({a, weight});
 }
 
-int main()
+vector<int> dijkstra(vector<vector<pair<int, int>>> &graph, int x, int n)
 {
-  ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-
-  int n = 5;
-
-  vector<vector<pair<int, int>>> graph(n + 1);
-  addEdge(graph, 1, 4, 9);
-  addEdge(graph, 1, 5, 1);
-  addEdge(graph, 1, 2, 5);
-  addEdge(graph, 2, 3, 2);
-  addEdge(graph, 3, 4, 6);
-  addEdge(graph, 4, 5, 2);
-
   priority_queue<pair<int, int>> q;
-
-  const int x = 1;
 
   // array of n nodes containing distance from node x to node i
   // Set distance from node x to all other nodes as infinity
@@ -76,6 +61,26 @@ int main()
       }
     }
   }
+
+  return distance;
+}
+
+int main()
+{
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
+
+  int n = 5, x = 1;
+
+  vector<vector<pair<int, int>>> graph(n + 1);
+  addEdge(graph, 1, 4, 9);
+  addEdge(graph, 1, 5, 1);
+  addEdge(graph, 1, 2, 5);
+  addEdge(graph, 2, 3, 2);
+  addEdge(graph, 3, 4, 6);
+  addEdge(graph, 4, 5, 2);
+
+  vector<int> distance = dijkstra(graph, x, n);
 
   for (int i = 1; i <= n; i++)
   {

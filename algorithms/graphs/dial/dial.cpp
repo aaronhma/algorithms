@@ -183,69 +183,77 @@ struct custom_hash
   }
 };
 
+int max_weight = 0;
+
 void addEdge(vector<vpii> &graph, int a, int b, int weight) {
   graph[a].PB({b, weight});
+  graph[b].PB({a, weight});
+  max_weight = max(max_weight, weight);
 }
 
-void bfs01(vector<vpii> &graph, int start, int n) {
-  vi distance(n, INF_INT);
+void dial(vector<vpii> &graph, int source) {
+  int n = sz(graph), buckets_size = n * max_weight, i = 0;
 
-  distance[start] = 0;
+  // Initialize all the distances to infinity
+  vector<pair<int, list<int>::iterator>> distance(n);
 
-  deque<pii> DQ;
-  DQ.push_back({0, start});
+  for (auto &i : distance)
+    i.f = INF_INT;
 
-  while (!DQ.empty()) {
-    int node = DQ.front().s;
-    DQ.pop_front();
+  // Create the buckets
+  vector<list<int>> buckets(buckets_size + 1);
 
-    for (pii i : graph[node]) {
-      int b = i.f, w = i.s;
-      int new_dist = w + distance[node];
+  // Distance for the source is 0
+  distance[source].f = 0;
 
-      if (new_dist < distance[b]) {
-        distance[b] = new_dist;
+  // Add source to the bucket with weight 0
+  buckets[0].PB(source);
 
-        if (w)
-          DQ.PB({distance[b], b});
-        else
-          DQ.push_front({distance[b], b});
+  for (;;) {
+    // Find the first non-empty bucket
+    while (i < buckets_size && buckets[i].empty()) i++;
+
+    // If all buckets are empty, we are done
+    if (i == buckets_size) break;
+
+    // Select the node at the front
+    int node = buckets[i].front();
+    buckets[i].pop_front();
+
+    // Distance to the current node
+    int distance_node = distance[node].f;
+
+    // Go through this node's neighbors
+    for (auto neighbor : graph[node]) {
+      // Get the neighbor's node and the weight of the edge
+      int b = neighbor.f, w = neighbor.s;
+
+      // Get the current neighbor's distance
+      int distance_neighbor = distance[b].f;
+
+      // New possible distance
+      int new_dist = distance_node + w;
+
+      // Check if there exists a shorter path
+      if (new_dist < distance_neighbor) {
+        // If the current neighbor's distance is not infinity, this means that the node is in a bucket.
+        // Remove the node from that bucket
+        if (distance_neighbor != INF_INT)
+          buckets[distance_neighbor].erase(distance[b].s);
+
+        // Update the distance
+        distance[b].f = distance_neighbor = new_dist;
+
+        // Add the distance to the front of the bucket
+        buckets[distance_neighbor].push_front(b);
+        distance[b].s = buckets[distance_neighbor].begin();
       }
     }
   }
 
-  cout << distance << "\n";
-}
-
-void dijkstra(vector<vpii> &graph, int start, int n) {
-  vi distance(n, INF_INT);
-  vb visited(n);
-
-  priority_queue<pii> PQ;
-  PQ.push({0, start});
-  distance[start] = 0;
-
-  while (!PQ.empty()) {
-    int node = PQ.top().s;
-    PQ.pop();
-
-    if (visited[node]) continue;
-
-    visited[node] = 1;
-
-    for (pii i : graph[node]) {
-      int b = i.f, w = i.s;
-
-      int new_dist = distance[node] + w;
-
-      if (new_dist < distance[b]) {
-        distance[b] = new_dist;
-        PQ.push({-distance[b], b});
-      }
-    }
+  FORI(i, 1, n) {
+    cout << "Distance from " << source << " -> " << i << ": " << distance[i].f << "\n";
   }
-
-  cout << distance << "\n";
 }
 
 int main()
@@ -255,13 +263,12 @@ int main()
   int n = 7;
 
   vector<vpii> graph(n);
-  vector<tuple<int, int, int>> edges {{1, 2, 2}, {1, 3, 4}, {2, 3, 1}, {2, 5, 2}, {3, 5, 3}, {5, 4, 3}, {2, 4, 4}, {5, 6, 2}, {4, 6, 2}};
+  vector<tuple<int, int, int>> edges {{1, 2, 2}, {1, 3, 4}, {2, 3, 1}, {2, 5, 2}, {2, 4, 4}, {3, 5, 3}, {4, 6, 2}, {5, 4, 3}, {5, 6, 2}};
 
   for (auto i : edges)
     addEdge(graph, get<0>(i), get<1>(i), get<2>(i));
 
-  // bfs01(graph, 1, n);
-  dijkstra(graph, 1, n);
+  dial(graph, 1); // 0, 2, 3, 6, 4, 6
 
   return 0;
 }

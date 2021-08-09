@@ -202,6 +202,7 @@ int main()
   str S;
   vstr arr(n);
 
+  // Read data row-by-row and find starting and ending coordinates
   FORE(i, 0, n) {
     read(S);
 
@@ -220,30 +221,37 @@ int main()
     arr[i] = S;
   }
 
-  vector<vb> visited(n, vb(m));
+  vector<vb> visited(n, vb(m)); // Visited boolean array
+  // {minimum distance, {x-coordinate, y-coordinate}}
   queue<pair<int, pii>> Q;
   Q.push({0, {start_x, start_y}});
-  visited[start_x][start_y] = 1;
+  visited[start_x][start_y] = 1; // Mark starting cell as visited
 
+  // BFS from source cell
   while (!Q.empty()) {
     pair<int, pii> node = Q.front();
     Q.pop();
 
+    // If we're reached the final cell, update the answer and stop searching.
     if (node.s.f == end_x && node.s.s == end_y) {
       ans = node.f;
       break;
     }
 
+    // Iterate through this node's possible neighbors
     FORE(i, 0, 4) {
+      // Possible neighbor cell coordinates
       int x = node.s.f + dx[i], y = node.s.s + dy[i];
 
+      // Make sure this cell is valid
       if (x >= 0 && x < n && y >= 0 && y < m && !visited[x][y] && arr[x][y] != '#') {
-        visited[x][y] = 1;
-        Q.push({node.f + 1, {x, y}});
+        visited[x][y] = 1; // Mark cell as visited
+        Q.push({node.f + 1, {x, y}}); // Add to queue for exploration
       }
     }
   }
 
+  // Print answer
   if (ans == -1) {
     cout << "NO\n";
   } else {

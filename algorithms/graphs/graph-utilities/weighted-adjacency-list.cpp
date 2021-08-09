@@ -183,11 +183,89 @@ struct custom_hash
   }
 };
 
+void addEdge(vector<vpii> &graph, int a, int b, int weight, bool directed = true) {
+  graph[a].PB({b, weight});
+
+  if (!directed) graph[b].PB({a, weight});
+}
+
+// 0-1 BFS
+void bfs01(vector<vpii> &graph, int start, int n) {
+  vi distance(n, INF_INT);
+
+  distance[start] = 0;
+
+  deque<pii> DQ;
+  DQ.push_back({0, start});
+
+  while (!DQ.empty()) {
+    int node = DQ.front().s;
+    DQ.pop_front();
+
+    for (pii i : graph[node]) {
+      int b = i.f, w = i.s;
+      int new_dist = w + distance[node];
+
+      if (new_dist < distance[b]) {
+        distance[b] = new_dist;
+
+        if (w)
+          DQ.PB({distance[b], b});
+        else
+          DQ.push_front({distance[b], b});
+      }
+    }
+  }
+
+  cout << distance << "\n";
+}
+
+// Dijkstra's
+void dijkstra(vector<vpii> &graph, int start, int n) {
+  vi distance(n, INF_INT);
+  vb visited(n);
+
+  priority_queue<pii> PQ;
+  PQ.push({0, start});
+  distance[start] = 0;
+
+  while (!PQ.empty()) {
+    int node = PQ.top().s;
+    PQ.pop();
+
+    if (visited[node]) continue;
+
+    visited[node] = 1;
+
+    for (pii i : graph[node]) {
+      int b = i.f, w = i.s;
+
+      int new_dist = distance[node] + w;
+
+      if (new_dist < distance[b]) {
+        distance[b] = new_dist;
+        PQ.push({-distance[b], b});
+      }
+    }
+  }
+
+  cout << distance << "\n";
+}
+
 int main()
 {
   setIO(); // Disable this during interactive problems
 
+  int n = 7;
 
+  vector<vpii> graph(n);
+  vector<tuple<int, int, int>> edges {{1, 2, 2}, {1, 3, 4}, {2, 3, 1}, {2, 5, 2}, {3, 5, 3}, {5, 4, 3}, {2, 4, 4}, {5, 6, 2}, {4, 6, 2}};
+
+  for (auto i : edges)
+    addEdge(graph, get<0>(i), get<1>(i), get<2>(i));
+
+  bfs01(graph, 1, n);
+  dijkstra(graph, 1, n);
 
   return 0;
 }
