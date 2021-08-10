@@ -183,38 +183,75 @@ struct custom_hash
   }
 };
 
-vvi floydWarshall(vvi &graph)
+struct Edge
 {
-  vvi distance(graph);
-  int n = sz(graph);
+  int a, b, w;
+};
 
-  FORE(k, 0, n) // Phase we are on
-    // Iterate over the matrix
-    FORE(i, 0, n)
-      FORE(j, 0, n)
-        // If the distance from i - k and distance from k - j is already calculated, then update the distance with the sum of the two distances if the distance is smaller than the current distance.
-        if (distance[i][k] != INF_INT && distance[k][j] != INF_INT)
-          // Reduce the distance
-          distance[i][j] = min(distance[i][j], distance[i][k] + distance[k][j]);
+vi findNegativeWeight(vector<Edge> &graph, int n)
+{
+  vector<int> distance(n), parent(n, -1), cycle;
 
-  return distance;
+  // x: Ending vertice of the cycle (-1 if no cycle)
+  int x = -1;
+
+  FORE(op, 0, n)
+  {
+    x = -1;
+
+    // Find ending cell of the cycle
+    for (Edge i : graph)
+    {
+      if (distance[i.a] + i.w < distance[i.b])
+      {
+        distance[i.b] = distance[i.a] + i.w;
+        parent[i.b] = i.a;
+        x = i.b;
+      }
+    }
+  }
+
+  // x == -1 means no cycle
+  if (x == -1)
+    return {};
+
+  // Find starting node of cycle
+  FORE(i, 0, n)
+    x = parent[x];
+
+  // Backtrack
+  for (int i = x;; i = parent[i])
+  {
+    cycle.push_back(i);
+
+    if (i == x && sz(cycle) > 1) break;
+  }
+
+  // Return cycle in reverse order
+  reverse(all(cycle));
+
+  return cycle;
 }
 
 int main()
 {
   setIO(); // Disable this during interactive problems
 
-  vvi graph = {
-      {0, INF_INT, -2, INF_INT},
-      {4, 0, 3, INF_INT},
-      {INF_INT, INF_INT, 0, 2},
-      {INF_INT, -1, INF_INT, 0}};
+  int n = 5;
 
-  vvi distance = floydWarshall(graph);
+  vector<Edge> graph(n);
+  vector<tuple<int, int, int>> edges{{1, 2, -2}, {2, 3, -1}, {3, 4, -3}, {4, 1, -4}};
 
-  for (vi i : distance) {
-    cout << i << "\n";
+  for (auto i : edges)
+  {
+    Edge ne;
+    ne.a = get<0>(i);
+    ne.b = get<1>(i);
+    ne.w = get<2>(i);
+    graph.PB(ne);
   }
+
+  cout << findNegativeWeight(graph, n) << "\n";
 
   return 0;
 }

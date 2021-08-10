@@ -61,6 +61,8 @@ vector<int> prefix(str &pattern) {
 
     while (j != 0 && pattern[i] != pattern[j]) j = prefix[j - 1];
 
+    if (pattern[i] == pattern[j]) j++;
+
     prefix[i] = j;
   }
 
