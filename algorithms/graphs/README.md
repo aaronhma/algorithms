@@ -23,7 +23,14 @@
 
 | ☆   | Shortest path between all pairs of vertices            | C++                                                            | Features                                                                                             | Resources |
 | --- | ------------------------------------------------------ | -------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | --------- |
-|     | [Floyd Warshall](./floyd-warshall-algorithm/README.md) | [C++](./floyd-warshall-algorithm/floyd-warshall-algorithm.cpp) | Weighted graph, All pairs of vertices, DP based algorithms (O(n^3)), Work with positive/negative weight edges, can detect negative cycles with an extra step |           |
+|     | [Floyd Warshall](./floyd-warshall-algorithm/README.md) | [C++](./floyd-warshall-algorithm/floyd-warshall-algorithm.cpp) | Weighted graph, All pairs of vertices, DP based algorithms (O(n^3)), Work with positive/negative weight edges, can detect negative cycles with an extra step |     [cp-algo](https://cp-algorithms.com/graph/all-pair-shortest-path-floyd-warshall.html) [Techie Delight](https://www.techiedelight.com/pairs-shortest-paths-floyd-warshall-algorithm/) |
+
+### Minimum Spanning Trees
+
+| ☆   | Algorithms          | C++                                                            | Features                                                                                             | Resources |
+| --- | ------------------------------------------------------ | -------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | --------- |
+|     | [Kruskal](./kruskal-algorithm/README.md) | [C++](./kruskal-algorithm/kruskal.cpp) |  |           |
+|     | [Prim](./prim-algorithm/README.md) | [C++](./prim-algorithm/prim.cpp) | Weighted undirected graph, Greedy Algorithm, Use a priority Queue |           |
 
 **Graphs Algorithms** can be used to model many types of relations and processes in physical, biological, social and information systems. Graphs are used to represent networks of communication, data organization, computational devices, the flow of computation, etc.
 
