@@ -183,36 +183,52 @@ struct custom_hash
   }
 };
 
-struct DisjointSet {
-  unordered_map<int, int> parent;
-
-  DisjointSet(vi arr) {
-    makeSet(arr);
+class DisjointSet
+{
+public:
+  DisjointSet(ll n)
+  {
+    rank.resize(n);
+    parent.resize(n);
+    makeSet(n);
   }
 
-  void makeSet(vi arr) {
-    // Create a new set
-    for (int i : arr)
+  // Create a n sets
+  void makeSet(ll n) {
+    FORE(i, 0, n) {
       parent[i] = i;
+      rank[i] = 0;
+    }
   }
 
-  int find(int i) {
-    // If set i is it's own set, then i is the parent of the set i
-    if (parent[i] == i)
-      return i;
+  // Find the representative (parent) of the set that i is in
+  ll find_parent(ll i) {
+    if (parent[i] == i) return i;
 
-    // O(log n) way instead of O(n) 'return find(parent[i]);':
-    return parent[i] = find(parent[i]);
+    return parent[i] = find_parent(parent[i]);
   }
 
-  void Union(int a, int b) {
-    int set_a = find(a); // Parent of set a
-    int set_b = find(b); // Parent of set b
+  // Join nodes in set a and nodes in set b together
+  void Union(ll a, ll b) {
+    ll parent_a = find_parent(a);
+    ll parent_b = find_parent(b);
 
-    // If the two sets aren't connected, connect the two sets
-    if (set_a != set_b)
-      parent[set_b] = set_a;
+    // Union by rank based on depth
+    if (parent_a != parent_b) {
+      if (rank[parent_a] < rank[parent_b])
+        swap(parent_a, parent_b);
+
+      // Attach smaller set to the larger set
+      parent[parent_b] = parent_a;
+
+      // Increase ranking of the now bigger set
+      if (rank[parent_a] == rank[parent_b])
+        rank[parent_a]++;
+    }
   }
+
+private:
+  vi parent, rank;
 };
 
 int main()
@@ -220,10 +236,10 @@ int main()
   setIO(); // Disable this during interactive problems
 
   vi arr {6, 7, 1, 2, 3};
-  DisjointSet set(arr);
+  DisjointSet set(2);
   set.Union(7, 6);
 
-  cout << boolalpha << set.find(1) << "\n";
+  cout << set.find_parent(1) << "\n";
 
   return 0;
 }

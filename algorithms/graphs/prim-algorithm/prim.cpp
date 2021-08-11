@@ -1,3 +1,4 @@
+// https://www.spoj.com/problems/MST/
 #include <bits/stdc++.h>
 
 using namespace std;
