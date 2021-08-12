@@ -4,19 +4,6 @@
 
 A spanning tree is a subgraph of a graph. A spanning tree always have $n$ vertices and $n - 1$ edges and there can not be a cycle in a spanning tree. There can be many spanning trees in a graph. The weight of a spanning tree is the sum of weights given to each edge of the spanning tree.
 
-### How Many Spanning Trees are in a Graph?
-
-#### Case 1: The Graph is a Complete Graph
-
-If a graph is a complete graph with n vertices, then total number of spanning trees is $n^{(n-2)}$. (Counting the number of different labeled trees with $n$ nodes uses Cayley's formula, which is the same here)
-
-#### Case 2: The Graph is **NOT** a Complete Graph (Kirchoff's Theorem)
-
-1. Create a adjacency matrix for the graph.
-2. Replace all the diagonal elements with the degree of nodes. For example, the element at $(1,1)$ in the adjacency matrix will be replaced by the degree of node $1$, the element at $(2,2)$ position of adjacency matrix will be replaced by the degree of node $2$, etc.
-3. Replace all the non-diagonal $1$s with $-1$.
-4. At this step, we have a Laplacian Matrix. We calculate the [cofactor of any element in the matrix](https://youtu.be/NcOYysnlx-0?t=314). The cofactor of that element is the number of spanning trees that can be formed.
-
 ## Minimum Spanning Trees (MST)
 
 A minimum spanning tree (MST) or minimum weight spanning tree for a weighted, connected, and undirected graph is a spanning tree with a weight less than or equal to the weight of every other spanning tree. The weight of a spanning tree is the sum of weights given to each edge of the spanning tree.
