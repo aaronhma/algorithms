@@ -8,7 +8,7 @@ Hashing is how `unordered_map` is implemented. We have an array $arr$ of size $n
 
 | ☆   | Name (Content)                                                | C++                                                         | Python | Editorials                                                      |
 | --- | ------------------------------------------------------------- | ----------------------------------------------------------- | ------ | --------------------------------------------------------------- |
-|     | [String Hashing](string-hashing/README.md) | [C++](string-hashing/string-hashing.cpp) |        | [cp-algo](https://cp-algorithms.com/string/string-hashing.html) |
+|     | [String Hashing](string-hashing/README.md) | [C++](string-hashing/string-hashing.cpp) |        | [cp-algo](https://cp-algorithms.web.app/string/string-hashing.html) |
 
 ## Collision Handling
 

@@ -10,4 +10,4 @@ A treap is a binary tree that can store the contents of an array in such a way t
 
 When a new node is added to the treap, it is assigned a random weight. This guarantees that the tree is balanced (its height is $\theta(log \ n)$) with high probability and its operations can be performed efficiently.
 
-# **TODO: Couldn't understand. Read [this](https://cp-algorithms.com/data_structures/treap.html#:~:text=Treap%20is%20a%20data%20structure,a%20binary%20heap%20by%20Y.) for more info.**
+# **TODO: Couldn't understand. Read [this](https://cp-algorithms.web.app/data_structures/treap.html#:~:text=Treap%20is%20a%20data%20structure,a%20binary%20heap%20by%20Y.) for more info.**
