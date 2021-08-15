@@ -24,7 +24,6 @@ Now, obviously, the answer to LCA will be $parent[u][0]$ - i.e., the smallest no
 
 So answering a LCA query will iterate $i$ from $ceil(log(N))$ to $0$ and checks in each iteration if one node is the ancestor of the other.
 
-
 ### Time Complexity
 
 The idea described will need $\theta(n \ log \ n)$ for preprocessing and $\theta(log \ n)$ for each LCA query.

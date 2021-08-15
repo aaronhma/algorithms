@@ -47,7 +47,6 @@ void union_sets(int a, int b) {
 }
 ```
 
-
 ### Optimization 1: Path Compression
 
 This optimization is designed for speeding up `find_set`.
@@ -74,7 +73,6 @@ This simple modification of the operation already achieves the time complexity $
 ### Optimization 2: Union by Size/Rank
 
 #### Union by Size
-
 
 ```cpp
 void make_set(int v) {

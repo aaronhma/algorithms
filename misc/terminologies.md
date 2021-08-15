@@ -1,1 +1,0 @@
-# Frequently Terminologies in CP

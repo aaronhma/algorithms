@@ -348,14 +348,3 @@ int main()
 
   return 0;
 }
-/**
- * Steps to solve CP problems:
- * 1) Carefully extract the important information from the problem.
- * 2) Find out all the hidden information.
- * 3) Read input & output & understand the question.
- * 4) Visualize the problem.
- *  a. Does my result output the expected output?
- *  b. Does the idea you think works?
- *  c. Check for edge cases.
- * 5) Implementation.
-*/
