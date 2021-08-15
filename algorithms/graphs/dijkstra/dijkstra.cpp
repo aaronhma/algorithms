@@ -3,7 +3,7 @@
 
 using namespace std;
 
-const int INF = 1000001; // 10^6 + 1
+const int INF_INT = 2147483647;
 
 void addEdge(vector<vector<pair<int, int>>> &graph, int a, int b, int weight)
 {
@@ -17,7 +17,7 @@ vector<int> dijkstra(vector<vector<pair<int, int>>> &graph, int x, int n)
 
   // array of n nodes containing distance from node x to node i
   // Set distance from node x to all other nodes as infinity
-  vector<int> distance(n + 1, INF);
+  vector<int> distance(n + 1, INF_INT);
   vector<bool> processed(n + 1, false);
 
   // Distance from node x to itself is 0

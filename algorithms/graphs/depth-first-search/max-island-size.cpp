@@ -47,5 +47,6 @@ int main()
     {1, 1, 0, 0, 0}, // 2
     {0, 0, 0, 0, 0}}; // 3
   cout << maxAreaOfIsland(grid) << "\n";
+
   return 0;
 }

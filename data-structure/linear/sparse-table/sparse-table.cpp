@@ -1,4 +1,3 @@
-// TODO: Not working
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -184,167 +183,27 @@ struct custom_hash
   }
 };
 
-
-// TODO: Fix determinant
-void fillRow(vvi &graph, vvi &coefficient, int p, int q, int n) {
-  int I = 0, J = 0;
-
-  FORE(i, 0, n) {
-    FORE(j, 0, n) {
-      if (i != p && j != q) {
-        coefficient[I][J++] = graph[i][j];
-
-        if (J == n - 1) {
-          j = 0;
-          i++;
-        }
-      }
-    }
-  }
-}
-
-void getCofactor(vvi &mat, vvi &temp, int p,
-                 int q, int n)
-{
-    int i = 0, j = 0;
-
-    // Looping for each element of the matrix
-    for (int row = 0; row < n; row++)
-    {
-        for (int col = 0; col < n; col++)
-        {
-            //  Copying into temporary matrix only those
-            //  element which are not in given row and
-            //  column
-            if (row != p && col != q)
-            {
-                temp[i][j++] = mat[row][col];
-
-                // Row is filled, so increase row index and
-                // reset col index
-                if (j == n - 1)
-                {
-                    j = 0;
-                    i++;
-                }
-            }
-        }
-    }
-}
-
-
-int det(vvi &graph, int n) {
-  int ans = 0, sign = 1;
-
-  if (n == 1) return graph[0][0];
-
-  vvi coefficient(n, vi(n));
-
-  FORE(i, 0, n) {
-    getCofactor(graph, coefficient, 0, i, n);
-    cout << coefficient << "\n------\n";
-    ans += sign * graph[0][i] * det(graph, n - 1);
-    sign = -sign;
-  }
-
-  return ans;
-}
-
-int determinantOfMatrix(vvi &mat, int n)
-{
-    int D = 0; // Initialize result
-
-    //  Base case : if matrix contains single element
-    if (n == 1)
-        return mat[0][0];
-
-    vvi temp(n, vi(n)); // To store cofactors
-
-    int sign = 1; // To store sign multiplier
-
-    // Iterate for each element of first row
-    for (int f = 0; f < n; f++)
-    {
-        // Getting Cofactor of mat[0][f]
-        // getCofactor(mat, temp, 0, f, n);
-        fillRow(mat, temp, 0, f, n);
-        D += sign * mat[0][f]
-             * determinantOfMatrix(temp, n - 1);
-
-        // terms are to be added with alternate sign
-        sign = -sign;
-    }
-
-    return D;
-}
-
-// TODO: Fix determinant
-int noSpanningTrees(vvi &graph) {
-  int n = sz(graph);
-
-  vi degree(n);
-  vvi result(n, vi(n));
-
-  FORE(i, 0, n) {
-    for (int j : graph[i])
-      degree[i] += j;
-  }
-
-  FORE(i, 0, n) {
-    FORE(j, 0, n) {
-      if (i == j)
-        result[i][j] = degree[i];
-      else
-        result[i][j] = -graph[i][j];
-    }
-  }
-
-  result.erase(result.begin());
-
-  FORE(i, 0, n - 1) {
-    result[i].erase(result[i].begin());
-  }
-
-  cout << result << "\n";
-
-  return determinantOfMatrix(result, n - 1);
-}
-
 int main()
 {
   setIO(); // Disable this during interactive problems
 
-/**
- * Input:
-1
-4 5
-1 2
-1 3
-3 4
-2 4
-1 4
+  int n, q, a, b;
+  read(n);
 
-  * Output:
-8
-*/
+  vi arr(n);
+  read(arr);
 
-  int t, n, m, a, b;
-  read(t);
+  // TODO Preprocess
 
-  FORI(cas_no, 1, t) {
-    read(n, m);
 
-    vvi graph(n, vi(n));
+  read(q);
 
-    while (m--) {
-      read(a, b);
-      a--; b--;
-      graph[a][b] = 1;
-      graph[b][a] = 1;
-    }
+  while (q--) {
+    read(a, b);
 
-    cout << "Case " << cas_no << ": " << noSpanningTrees(graph) << "\n";
+    // TODO Answer Queries
   }
+
 
   return 0;
 }

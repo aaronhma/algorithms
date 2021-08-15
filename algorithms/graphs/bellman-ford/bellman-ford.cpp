@@ -3,19 +3,18 @@
 
 using namespace std;
 
-const int INF = 1000001; // 10^6 + 1
+const int INF_INT = 2147483647;
 
 void addEdge(vector<tuple<int, int, int>> &graph, int a, int b, int weight)
 {
   graph.push_back({a, b, weight});
-  // graph.push_back({b, a, weight});
 }
 
 vector<int> bellmanFord(vector<tuple<int, int, int>> &graph, int n, int x)
 {
   // array of n nodes containing distance from node x to node i
   // Set distance from node x to all other nodes as infinity
-  vector<int> distance(n + 1, INF);
+  vector<int> distance(n + 1, INF_INT);
 
   // Distance from node x to itself is 0
   distance[x] = 0;
@@ -62,13 +61,6 @@ int main()
 
   vector<tuple<int, int, int>> edges(n);
   vector<pair<int, pair<int, int>>> edge{{10, {0, 1}}, {1, {2, 1}}, {-2, {3, 2}}, {8, {0, 5}}, {1, {5, 4}}, {-4, {4, 1}}, {-1, {4, 3}}, {2, {1, 3}}};
-  // addEdge(edges, 1, 3, 1);
-  // addEdge(edges, 1, 4, 7);
-  // addEdge(edges, 1, 2, 2);
-  // addEdge(edges, 3, 4, 3);
-  // addEdge(edges, 2, 4, 3);
-  // addEdge(edges, 2, 5, 5);
-  // addEdge(edges, 4, 5, 2);
 
   for (auto i : edge)
   {
@@ -84,7 +76,7 @@ int main()
 
   int fin = 5;
 
-  cout << "Weight from node 1 -> 5: " << distance[fin] << "\n";
+  cout << "Distance from node 1 -> 5: " << distance[fin] << "\n";
 
   return 0;
 }
