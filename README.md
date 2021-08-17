@@ -79,14 +79,13 @@
 | --- | ------------------------------------------------------------- | ----------------------------------------------------------- | ------ | ------------------------------------------------------------------- |
 |     | [String Hashing](algorithms/hashing/string-hashing/README.md) | [C++](algorithms/hashing/string-hashing/string-hashing.cpp) |        | [cp-algo](https://cp-algorithms.web.app/string/string-hashing.html) |
 
-
 ---
 
 #### [**Range Query**](algorithms/range-query/README.md)
 
 https://cp-algorithms.web.app/sequences/rmq.html
 
-Solve RMQ (Range Minimum Query) by finding LCA 
+Solve RMQ (Range Minimum Query) by finding LCA
 
 https://www.topcoder.com/thrive/articles/Range%20Minimum%20Query%20and%20Lowest%20Common%20Ancestor
 
@@ -94,9 +93,7 @@ https://www.topcoder.com/thrive/articles/Range%20Minimum%20Query%20and%20Lowest%
 | --- | ------------------------------------------------------------- | ----------------------------------------------------------- | ------ | ------------------------------------------------------------------- |
 |     | [String Hashing](algorithms/hashing/string-hashing/README.md) | [C++](algorithms/hashing/string-hashing/string-hashing.cpp) |        | [cp-algo](https://cp-algorithms.web.app/string/string-hashing.html) |
 
-
 ---
-
 
 #### [**Sorting**](algorithms/sorting/README.md)
 
@@ -124,7 +121,6 @@ https://www.topcoder.com/thrive/articles/Range%20Minimum%20Query%20and%20Lowest%
 | ★★★ | [Rabin Karp](algorithms/strings/rabin-karp/README.md)        | [C++](algorithms/strings/rabin-karp/rabin-karp.cpp)   |        | [cp-algo](https://cp-algorithms.web.app/string/rabin-karp.html)      |
 |     | [Spy String](algorithms/strings/spy-string/README.md)        | [C++](algorithms/strings/spy-string/spy-string.cpp)   |        |                                                                      |
 | ★★★ | [Z Algorithm](algorithms/strings/z-algorithm/README.md)      | [C++](algorithms/strings/z-algorithm/z-algorithm.cpp) |        | [cp-algo](https://cp-algorithms.web.app/string/z-function.html)      |
-
 
 ---
 
@@ -157,11 +153,10 @@ https://www.topcoder.com/thrive/articles/Range%20Minimum%20Query%20and%20Lowest%
 
 ---
 
-
 #### [**Tree**](data-structure/trees/README.md)
 
-| ☆   | Name (Content)                                                                | C++                                                    | Python | Editorials                                                                       |
-| --- | ----------------------------------------------------------------------------- | ------------------------------------------------------ | ------ | -------------------------------------------------------------------------------- |
+| ☆   | Name (Content)                                                                    | C++                                                        | Python | Editorials                                                                       |
+| --- | --------------------------------------------------------------------------------- | ---------------------------------------------------------- | ------ | -------------------------------------------------------------------------------- |
 |     | [AVL Tree](data-structure/trees/avl-tree/README.md)                               | [C++](data-structure/trees/avl-tree/avl-tree.cpp)          |        |                                                                                  |
 |     | [B Tree](data-structure/trees/b-tree/README.md)                                   | [C++](data-structure/trees/b-tree/b-tree.cpp)              |        |                                                                                  |
 |     | [Binary Search Tree](data-structure/trees/binary-search-tree/README.md)           | [C++](data-structure/trees/binary-search-tree/bst.cpp)     |        |                                                                                  |
@@ -188,32 +183,32 @@ https://www.topcoder.com/thrive/articles/Range%20Minimum%20Query%20and%20Lowest%
 
 #### [**Combinatorics**](math/combinatorics/README.md)
 
-| ☆   | Name (Content) | C++     | Python | Editorials |
-| --- | -------------- | ------- | ------ | ---------- |
-|     |                | |        |            |
+| ☆   | Name (Content) | C++ | Python | Editorials |
+| --- | -------------- | --- | ------ | ---------- |
+|     |                |     |        |            |
 
 ---
 
 #### [**Geometry**](math/geometry/README.md)
 
-| ☆   | Name (Content) | C++     | Python | Editorials |
-| --- | -------------- | ------- | ------ | ---------- |
-|     |                |  |        |            |
+| ☆   | Name (Content) | C++ | Python | Editorials |
+| --- | -------------- | --- | ------ | ---------- |
+|     |                |     |        |            |
 
 ---
 
 #### [**Linear Algebra**](math/linear-algebra/README.md)
 
-| ☆   | Name (Content) | C++     | Python | Editorials |
-| --- | -------------- | ------- | ------ | ---------- |
+| ☆   | Name (Content) | C++ | Python | Editorials |
+| --- | -------------- | --- | ------ | ---------- |
 |     |                |     |        |            |
 
 ---
 
 #### [**Number Theory**](math/number-theory/README.md)
 
-| ☆   | Name (Content) | C++     | Python | Editorials |
-| --- | -------------- | ------- | ------ | ---------- |
+| ☆   | Name (Content) | C++ | Python | Editorials |
+| --- | -------------- | --- | ------ | ---------- |
 |     |                |     |        |            |
 
 ---
@@ -279,8 +274,6 @@ https://www.topcoder.com/thrive/articles/Range%20Minimum%20Query%20and%20Lowest%
 
 ---
 
-
-
 #### [**Recursion**](techniques/recursion/README.md)
 
 | ☆   | Name (Content)     | C++ | Python | Editorials |
@@ -298,7 +291,6 @@ https://www.topcoder.com/thrive/articles/Range%20Minimum%20Query%20and%20Lowest%
 |     | [Linear Search](searching/linear-search/linear-search.md) | [C++](searchin/linear-search/linear-search.cpp)  |        | [1](https://www.techiedelight.com/Tags/hashing/)  |
 
 ---
-
 
 #### Notes
 
