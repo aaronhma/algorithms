@@ -14,6 +14,7 @@
 
     -   [**Graphs**](#graphs)
     -   [**Hashing**](#hashing)
+    -   [**Range Query**](#range-query)
     -   [**Sorting**](#sorting)
     -   [**String**](#strings)
 
@@ -73,6 +74,21 @@
 ---
 
 #### [**Hashing**](algorithms/hashing/README.md)
+
+| ☆   | Name (Content)                                                | C++                                                         | Python | Editorials                                                          |
+| --- | ------------------------------------------------------------- | ----------------------------------------------------------- | ------ | ------------------------------------------------------------------- |
+|     | [String Hashing](algorithms/hashing/string-hashing/README.md) | [C++](algorithms/hashing/string-hashing/string-hashing.cpp) |        | [cp-algo](https://cp-algorithms.web.app/string/string-hashing.html) |
+
+
+---
+
+#### [**Range Query**](algorithms/range-query/README.md)
+
+https://cp-algorithms.web.app/sequences/rmq.html
+
+Solve RMQ (Range Minimum Query) by finding LCA 
+
+https://www.topcoder.com/thrive/articles/Range%20Minimum%20Query%20and%20Lowest%20Common%20Ancestor
 
 | ☆   | Name (Content)                                                | C++                                                         | Python | Editorials                                                          |
 | --- | ------------------------------------------------------------- | ----------------------------------------------------------- | ------ | ------------------------------------------------------------------- |

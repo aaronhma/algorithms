@@ -44,10 +44,6 @@
 
 ### [Lowest Common Ancestor](https://www.youtube.com/watch?v=X5pp8L_lypw)
 
-Solve RMQ (Range Minimum Query) by finding LCA 
-
-https://www.topcoder.com/thrive/articles/Range%20Minimum%20Query%20and%20Lowest%20Common%20Ancestor
-
 | ☆   | Algorithms             | C++                             | Features                                 | Resources |
 | --- | ---------------------- | ------------------------------- | ---------------------------------------- | --------- |
 |     | [LCA](./lca/README.md) | [Binary Lifting](./lca/lca.cpp) | Two pointers, Euler Tour, Binary lifting |           |
