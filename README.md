@@ -13,19 +13,23 @@
 -   [**Algorithms**](#algorithms)
 
     -   [**Graphs**](#graphs)
-    -   [**Strings**](#strings)
-    -   [**Tree Algorithm**](#tree-algorithm)
-
--   [**C++ STL**](#c++-stl)
+    -   [**Hashing**](#hashing)
+    -   [**Sorting**](#sorting)
+    -   [**String**](#strings)
 
 -   [**Data Structure**](#data-structure)
 
-    -   [Linear Data Structure](#linear-data-structure)
-    -   [Non-Linear Data Structure](#non-linear-data-structure)
+    -   [**Linear Data Structure**](#linear-data-structure)
+    -   [**Non-Linear Data Structure**](#non-linear-data-structure)
+    -   [**Tree**](#tree)
 
 -   [**Math**](#math)
 
+    -   [**Algebra**](#algebra)
+    -   [**Combinatorics**](#combinatorics)
     -   [**Geometry**](#geometry)
+    -   [**Linear Algebra**](#linear-algebra)
+    -   [**Number Theory**](#number-theory)
 
 -   [**Misc**](#misc)
 
@@ -36,10 +40,8 @@
     -   [**Divide Conquer**](#divide-conquer)
     -   [**Dynamic Proramming**](#dynamic-proramming)
     -   [**Greedy Algorithm**](#greedy-algorithm)
-    -   [**Hashing**](#hashing)
     -   [**Recursion**](#recursion)
     -   [**Searching**](#searching)
-    -   [**Sorting**](#sorting)
 
 ---
 
@@ -70,7 +72,35 @@
 
 ---
 
-#### [**Strings**](algorithms/strings/README.md)
+#### [**Hashing**](algorithms/hashing/README.md)
+
+| ☆   | Name (Content)                                                | C++                                                         | Python | Editorials                                                          |
+| --- | ------------------------------------------------------------- | ----------------------------------------------------------- | ------ | ------------------------------------------------------------------- |
+|     | [String Hashing](algorithms/hashing/string-hashing/README.md) | [C++](algorithms/hashing/string-hashing/string-hashing.cpp) |        | [cp-algo](https://cp-algorithms.web.app/string/string-hashing.html) |
+
+
+---
+
+
+#### [**Sorting**](algorithms/sorting/README.md)
+
+| ☆   | Name (Content)                                                | C++                                                         | Python | Editorials                                                                                                                                     |
+| --- | ------------------------------------------------------------- | ----------------------------------------------------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+|     | [Bubble Sort](algorithms/sorting/bubble-sort/README.md)       | [C++](algorithms/sorting/bubble-sort/bubble-sort.cpp)       |        | [1](https://www.techiedelight.com/bubble-sort-iterative-recursive/)                                                                            |
+|     | [Bucket Sort](algorithms/sorting/bucket-sort/README.md)       | [C++](algorithms/sorting/bucket-sort/bucket-sort.cpp)       |        |                                                                                                                                                |
+|     | [Counting Sort](algorithms/sorting/counting-sort/README.md)   | [C++](algorithms/sorting/counting-sort/counting-sort.cpp)   |        |                                                                                                                                                |
+|     | [Heap Sort](algorithms/sorting/heap-sort/README.md)           | [C++](algorithms/sorting/heap-sort/heap-sort.cpp)           |        | [1](https://www.techiedelight.com/heap-sort-place-place-implementation-c-c/)                                                                   |
+|     | [Insertion Sort](algorithms/sorting/insertion-sort/README.md) | [C++](algorithms/sorting/insertion-sort/insertion-sort.cpp) |        | [1](https://www.techiedelight.com/insertion-sort-iterative-recursive/)                                                                         |
+|     | [Merge Sort](algorithms/sorting/merge-sort/README.md)         | [C++](algorithms/sorting/merge-sort/merge-sort.cpp)         |        | [1](https://www.techiedelight.com/merge-sort/)                                                                                                 |
+| ★★★ | [Quick Sort](algorithms/sorting/quick-sort/README.md)         | [C++](algorithms/sorting/quick-sort/quick-sort.cpp)         |        | [1](//www.techiedelight.com/quicksort/)                                                                                                        |
+| ★☆☆ | [Radix Sort](algorithms/sorting/radix-sort/README.md)         | [C++](algorithms/sorting/radix-sort/radix-sort.cpp)         |        |                                                                                                                                                |
+|     | [Selection Sort](algorithms/sorting/selection-sort/README.md) | [C++](algorithms/sorting/selection-sort/selection-sort.cpp) |        | [1](https://www.techiedelight.com/selection-sort-iterative-recursive/), [2](https://www.techiedelight.com/selection-sort-iterative-recursive/) |
+|     | [Shell Sort](algorithms/sorting/shell-sort/README.md)         | [C++](algorithms/sorting/shell-sort/shell-sort.cpp)         |        |                                                                                                                                                |
+|     | [Tree Sort](algorithms/sorting/tree-sort/README.md)           | [C++](algorithms/sorting/tree-sort/tree-sort.cpp)           |        |                                                                                                                                                |
+
+---
+
+#### [**String**](algorithms/strings/README.md)
 
 | ☆   | Name (Content)                                               | C++                                                   | Python | Editorials                                                           |
 | --- | ------------------------------------------------------------ | ----------------------------------------------------- | ------ | -------------------------------------------------------------------- |
@@ -79,27 +109,6 @@
 |     | [Spy String](algorithms/strings/spy-string/README.md)        | [C++](algorithms/strings/spy-string/spy-string.cpp)   |        |                                                                      |
 | ★★★ | [Z Algorithm](algorithms/strings/z-algorithm/README.md)      | [C++](algorithms/strings/z-algorithm/z-algorithm.cpp) |        | [cp-algo](https://cp-algorithms.web.app/string/z-function.html)      |
 
----
-
-#### [**Tree Algorithm**](algorithms/trees/README.md)
-
-| ☆   | Name (Content)                                                                | C++                                                    | Python | Editorials                                                                       |
-| --- | ----------------------------------------------------------------------------- | ------------------------------------------------------ | ------ | -------------------------------------------------------------------------------- |
-|     | [AVL Tree](algorithms/trees/avl-tree/README.md)                               | [C++](algorithms/trees/avl-tree/avl-tree.cpp)          |        |                                                                                  |
-|     | [B Tree](algorithms/trees/b-tree/README.md)                                   | [C++](algorithms/trees/b-tree/b-tree.cpp)              |        |                                                                                  |
-|     | [Binary Search Tree](algorithms/trees/binary-search-tree/README.md)           | [C++](algorithms/trees/binary-search-tree/bst.cpp)     |        |                                                                                  |
-|     | [Binary Tree](algorithms/trees/binary-tree/README.md)                         | [C++](algorithms/trees/binary-tree/binary-tree.cpp)    |        |                                                                                  |
-|     | [N-ary Tree](algorithms/trees/n-ary-tree/README.md)                           | [C++](algorithms/trees/n-ary-tree/n-ary-tree.cpp)      |        |                                                                                  |
-|     | [Segment Tree](algorithms/trees/segment-tree/README.md)                       | [C++](algorithms/trees/segment-tree/segment-tree.cpp)  |        |                                                                                  |
-|     | [Suffix Tree](algorithms/trees/suffix-tree/README.md)                         | [C++](algorithms/trees/suffix-tree/suffix-tree.cpp)    |        |                                                                                  |
-|     | [Tree](algorithms/trees/tree/README.md)                                       | [C++](algorithms/trees/tree/tree.cpp)                  |        |                                                                                  |
-|     | [Tree Traversals (Inorder)](algorithms/trees/tree-traversals/in-order.md)     | [C++](algorithms/trees/tree-traversals/in-order.cpp)   |        | [1](https://www.techiedelight.com/inorder-tree-traversal-iterative-recursive/)   |
-|     | [Tree Traversals (Preorder)](algorithms/trees/tree-traversals/pre-order.md)   | [C++](algorithms/trees/tree-traversals/pre-order.cpp)  |        | [1](https://www.techiedelight.com/preorder-tree-traversal-iterative-recursive/)  |
-|     | [Tree Traversals (Postorder)](algorithms/trees/tree-traversals/post-order.md) | [C++](algorithms/trees/tree-traversals/post-order.cpp) |        | [1](https://www.techiedelight.com/postorder-tree-traversal-iterative-recursive/) |
-
----
-
-### [**C++ STL**](cpp-stl/README.md)
 
 ---
 
@@ -132,7 +141,28 @@
 
 ---
 
+
+#### [**Tree**](data-structure/trees/README.md)
+
+| ☆   | Name (Content)                                                                | C++                                                    | Python | Editorials                                                                       |
+| --- | ----------------------------------------------------------------------------- | ------------------------------------------------------ | ------ | -------------------------------------------------------------------------------- |
+|     | [AVL Tree](data-structure/trees/avl-tree/README.md)                               | [C++](data-structure/trees/avl-tree/avl-tree.cpp)          |        |                                                                                  |
+|     | [B Tree](data-structure/trees/b-tree/README.md)                                   | [C++](data-structure/trees/b-tree/b-tree.cpp)              |        |                                                                                  |
+|     | [Binary Search Tree](data-structure/trees/binary-search-tree/README.md)           | [C++](data-structure/trees/binary-search-tree/bst.cpp)     |        |                                                                                  |
+|     | [Binary Tree](data-structure/trees/binary-tree/README.md)                         | [C++](data-structure/trees/binary-tree/binary-tree.cpp)    |        |                                                                                  |
+|     | [N-ary Tree](data-structure/trees/n-ary-tree/README.md)                           | [C++](data-structure/trees/n-ary-tree/n-ary-tree.cpp)      |        |                                                                                  |
+|     | [Segment Tree](data-structure/trees/segment-tree/README.md)                       | [C++](data-structure/trees/segment-tree/segment-tree.cpp)  |        |                                                                                  |
+|     | [Suffix Tree](data-structure/trees/suffix-tree/README.md)                         | [C++](data-structure/trees/suffix-tree/suffix-tree.cpp)    |        |                                                                                  |
+|     | [Tree](data-structure/trees/tree/README.md)                                       | [C++](data-structure/trees/tree/tree.cpp)                  |        |                                                                                  |
+|     | [Tree Traversals (Inorder)](data-structure/trees/tree-traversals/in-order.md)     | [C++](data-structure/trees/tree-traversals/in-order.cpp)   |        | [1](https://www.techiedelight.com/inorder-tree-traversal-iterative-recursive/)   |
+|     | [Tree Traversals (Preorder)](data-structure/trees/tree-traversals/pre-order.md)   | [C++](data-structure/trees/tree-traversals/pre-order.cpp)  |        | [1](https://www.techiedelight.com/preorder-tree-traversal-iterative-recursive/)  |
+|     | [Tree Traversals (Postorder)](data-structure/trees/tree-traversals/post-order.md) | [C++](data-structure/trees/tree-traversals/post-order.cpp) |        | [1](https://www.techiedelight.com/postorder-tree-traversal-iterative-recursive/) |
+
+---
+
 ### [**Math**](math/README.md)
+
+#### [**Algebra**](math/algebra/README.md)
 
 | ☆   | Name (Content) | C++     | Python | Editorials |
 | --- | -------------- | ------- | ------ | ---------- |
@@ -140,11 +170,35 @@
 
 ---
 
-#### [**Geometry**](geometry/README.md)
+#### [**Combinatorics**](math/combinatorics/README.md)
 
 | ☆   | Name (Content) | C++     | Python | Editorials |
 | --- | -------------- | ------- | ------ | ---------- |
-|     |                | [C++]() |        |            |
+|     |                | |        |            |
+
+---
+
+#### [**Geometry**](math/geometry/README.md)
+
+| ☆   | Name (Content) | C++     | Python | Editorials |
+| --- | -------------- | ------- | ------ | ---------- |
+|     |                |  |        |            |
+
+---
+
+#### [**Linear Algebra**](math/linear-algebra/README.md)
+
+| ☆   | Name (Content) | C++     | Python | Editorials |
+| --- | -------------- | ------- | ------ | ---------- |
+|     |                |     |        |            |
+
+---
+
+#### [**Number Theory**](math/number-theory/README.md)
+
+| ☆   | Name (Content) | C++     | Python | Editorials |
+| --- | -------------- | ------- | ------ | ---------- |
+|     |                |     |        |            |
 
 ---
 
@@ -209,13 +263,7 @@
 
 ---
 
-### [**Hashing**](techniques/hashing/README.md)
 
-| ☆   | Name (Content)                                                | C++                                                         | Python | Editorials                                                          |
-| --- | ------------------------------------------------------------- | ----------------------------------------------------------- | ------ | ------------------------------------------------------------------- |
-|     | [String Hashing](techniques/hashing/string-hashing/README.md) | [C++](techniques/hashing/string-hashing/string-hashing.cpp) |        | [cp-algo](https://cp-algorithms.web.app/string/string-hashing.html) |
-
----
 
 #### [**Recursion**](techniques/recursion/README.md)
 
@@ -235,23 +283,6 @@
 
 ---
 
-#### [**Sorting**](techniques/sorting/README.md)
-
-| ☆   | Name (Content)                                                | C++                                                         | Python | Editorials                                                                                                                                     |
-| --- | ------------------------------------------------------------- | ----------------------------------------------------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-|     | [Bubble Sort](techniques/sorting/bubble-sort/README.md)       | [C++](techniques/sorting/bubble-sort/bubble-sort.cpp)       |        | [1](https://www.techiedelight.com/bubble-sort-iterative-recursive/)                                                                            |
-|     | [Bucket Sort](techniques/sorting/bucket-sort/README.md)       | [C++](techniques/sorting/bucket-sort/bucket-sort.cpp)       |        |                                                                                                                                                |
-|     | [Counting Sort](techniques/sorting/counting-sort/README.md)   | [C++](techniques/sorting/counting-sort/counting-sort.cpp)   |        |                                                                                                                                                |
-|     | [Heap Sort](techniques/sorting/heap-sort/README.md)           | [C++](techniques/sorting/heap-sort/heap-sort.cpp)           |        | [1](https://www.techiedelight.com/heap-sort-place-place-implementation-c-c/)                                                                   |
-|     | [Insertion Sort](techniques/sorting/insertion-sort/README.md) | [C++](techniques/sorting/insertion-sort/insertion-sort.cpp) |        | [1](https://www.techiedelight.com/insertion-sort-iterative-recursive/)                                                                         |
-|     | [Merge Sort](techniques/sorting/merge-sort/README.md)         | [C++](techniques/sorting/merge-sort/merge-sort.cpp)         |        | [1](https://www.techiedelight.com/merge-sort/)                                                                                                 |
-| ★★★ | [Quick Sort](techniques/sorting/quick-sort/README.md)         | [C++](techniques/sorting/quick-sort/quick-sort.cpp)         |        | [1](//www.techiedelight.com/quicksort/)                                                                                                        |
-| ★☆☆ | [Radix Sort](techniques/sorting/radix-sort/README.md)         | [C++](techniques/sorting/radix-sort/radix-sort.cpp)         |        |                                                                                                                                                |
-|     | [Selection Sort](techniques/sorting/selection-sort/README.md) | [C++](techniques/sorting/selection-sort/selection-sort.cpp) |        | [1](https://www.techiedelight.com/selection-sort-iterative-recursive/), [2](https://www.techiedelight.com/selection-sort-iterative-recursive/) |
-|     | [Shell Sort](techniques/sorting/shell-sort/README.md)         | [C++](techniques/sorting/shell-sort/shell-sort.cpp)         |        |                                                                                                                                                |
-|     | [Tree Sort](techniques/sorting/tree-sort/README.md)           | [C++](techniques/sorting/tree-sort/tree-sort.cpp)           |        |                                                                                                                                                |
-
----
 
 #### Notes
 

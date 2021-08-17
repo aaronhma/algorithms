@@ -42,7 +42,11 @@
 |     | [Kirchhoff Theorem: # of spinning trees](algorithms/graphs/number-of-spanning-trees/README.md) | [C++](algorithms/graphs/number-of-spanning-trees/spanning-tree-not-complete-graph.cpp) |                                                                   | [cp-algo](https://cp-algorithms.web.app/graph/kirchhoff-theorem.html) |
 |     | [Prim](./prim-algorithm/README.md)                                                             | [C++](./prim-algorithm/prim.cpp)                                                       | Weighted undirected graph, Greedy Algorithm, Use a priority Queue |                                                                       |
 
-### Lowest Common Ancestor
+### [Lowest Common Ancestor](https://www.youtube.com/watch?v=X5pp8L_lypw)
+
+Solve RMQ (Range Minimum Query) by finding LCA 
+
+https://www.topcoder.com/thrive/articles/Range%20Minimum%20Query%20and%20Lowest%20Common%20Ancestor
 
 | ☆   | Algorithms             | C++                             | Features                                 | Resources |
 | --- | ---------------------- | ------------------------------- | ---------------------------------------- | --------- |
