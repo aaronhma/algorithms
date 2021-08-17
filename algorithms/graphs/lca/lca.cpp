@@ -1,4 +1,5 @@
 // TODO: https://www.spoj.com/problems/LCA/
+// https://www.spoj.com/problems/QTREE2/
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -207,7 +208,7 @@ void preprocess(vvi &graph, vvi &parent, int root, int n) {
   time_in.resize(n);
   time_out.resize(n);
   timer = 0;
-  dfs(graph, parent, root, -1);
+  dfs(graph, parent, root, 0);
 }
 
 // (u, v)
@@ -236,21 +237,22 @@ int main()
 
   FORI(cas_no, 1, t) {
     read(n);
+    n++;
 
     cout << "Case " << cas_no << ":\n";
 
     l = ceil(log2(n));
     vvi graph(n), parent(n, vi(l + 1));
 
-    preprocess(graph, parent, 0, n);
+    preprocess(graph, parent, 1, n);
 
-    FORE(i, 0, n) {
+    FORE(i, 0, n - 1) {
       read(q);
 
       while (q--) {
         read(k);
-        graph[i].PB(k - 1);
-        graph[k - 1].PB(i);
+        graph[i].PB(k);
+        graph[k].PB(i);
       }
     }
 
@@ -258,7 +260,6 @@ int main()
 
     while (q--) {
       read(k, k1);
-      k--; k1--;
       cout << lca(parent, k, k1) << "\n";
     }
   }

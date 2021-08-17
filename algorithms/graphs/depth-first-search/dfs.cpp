@@ -39,10 +39,10 @@ int main()
   for (auto i : edges)
     addEdge(graph, i.first, i.second);
 
+  distance[0] = 0;
   dfs(graph, visited, distance, parent, 0);
 
-  distance[0] = 0;
-  cout << "Distance from 0 -> 4: " << distance[4] << "\n";
+  cout << "\nDistance from 0 -> 3: " << distance[3] << "\n"; // 3
   cout << "Path from 0->3: ";
 
   vector<int> path;
@@ -53,7 +53,7 @@ int main()
 
   reverse(path.begin(), path.end());
 
-  for (int i : path) cout << i << " ";
+  for (int i : path) cout << i << " "; // 0 1 2 3
   cout << "\n";
 
   return 0;

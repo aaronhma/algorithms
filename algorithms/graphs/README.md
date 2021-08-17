@@ -7,7 +7,7 @@
 |     | [Depth First Search](./depth-first-search/README.md) | [DFS](./depth-first-search/dfs.cpp), [Connected Comp](./depth-first-search/connected-components.cpp), [Max Island](./depth-first-search/max-island-size.cpp)                               |          | [cp-algo](https://cp-algorithms.web.app/graph/depth-first-search.html) |
 |     | [Flood Fill](./flood-fill/README.md)                 | [C++](./flood-fill/flood-fill.cpp)                                                                                                                                                         |          |                                                                        |
 |     | [Graph Utilities](./graph-utilities/README.md)       | [Adj List](./graph-utilities/adjacency-list.cpp), [Adj Matrix](./graph-utilities/adjacency-matrix.cpp), [Weighted Adj List](algorithms/graphs/graph-utilities/weighted-adjacency-list.cpp) |          |                                                                        |
-|     | [Eulerian](./eulerian/README.md)                     |                                                                                                                                                                                            |          | [cp-algo](https://cp-algorithms.web.app/graph/euler_path.html)         |
+|     | [Eulerian](./eulerian/README.md)                     |            TODO: In progress                                                                                                                                                                                |          | [cp-algo](https://cp-algorithms.web.app/graph/euler_path.html)         |
 
 ### Single Source Shortest Path (SSSP) Algorithms
 
@@ -39,14 +39,14 @@
 | ☆   | Algorithms                                                                                     | C++                                                                                    | Features                                                          | Resources                                                             |
 | --- | ---------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- | ----------------------------------------------------------------- | --------------------------------------------------------------------- |
 |     | [Kruskal](./kruskal-algorithm/README.md)                                                       | [C++](./kruskal-algorithm/kruskal.cpp)                                                 |                                                                   |                                                                       |
-|     | [Kirchhoff Theorem: # of spinning trees](algorithms/graphs/number-of-spanning-trees/README.md) | [C++](algorithms/graphs/number-of-spanning-trees/spanning-tree-not-complete-graph.cpp) |                                                                   | [cp-algo](https://cp-algorithms.web.app/graph/kirchhoff-theorem.html) |
+|     | [Kirchhoff Theorem: # of spanning trees](algorithms/graphs/number-of-spanning-trees/README.md) | [C++](algorithms/graphs/number-of-spanning-trees/spanning-tree-not-complete-graph.cpp) |      TODO: Determinant of matrix not working                                                             | [cp-algo](https://cp-algorithms.web.app/graph/kirchhoff-theorem.html) |
 |     | [Prim](./prim-algorithm/README.md)                                                             | [C++](./prim-algorithm/prim.cpp)                                                       | Weighted undirected graph, Greedy Algorithm, Use a priority Queue |                                                                       |
 
 ### [Lowest Common Ancestor](https://www.youtube.com/watch?v=X5pp8L_lypw)
 
 | ☆   | Algorithms             | C++                             | Features                                 | Resources |
 | --- | ---------------------- | ------------------------------- | ---------------------------------------- | --------- |
-|     | [LCA](./lca/README.md) | [Binary Lifting](./lca/lca.cpp) | Two pointers, Euler Tour, Binary lifting |           |
+|     | [LCA](./lca/README.md) | [Binary Lifting](./lca/lca.cpp) | Two pointers, Euler Tour, Binary lifting, TODO: Code not working |           |
 
 ## Graphs
 
