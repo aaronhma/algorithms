@@ -1,4 +1,4 @@
-// A C++ Program to implement A* Search Algorithm
+// NOTE: Keep this
 #include <bits/stdc++.h>
 using namespace std;
 

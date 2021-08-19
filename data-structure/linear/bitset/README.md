@@ -54,7 +54,7 @@ bitset<16> my_bitset;
 
 ## Bit Operations
 
-### [Moved Here](../math/bit-manipulation.md#from=bitset)
+### [Moved Here](https://github.com/aaronhma/algorithms/blob/master/math/bit-manipulation.md#from=bitset)
 
 ---
 

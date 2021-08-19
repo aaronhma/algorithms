@@ -1,4 +1,4 @@
-# Policy-Based Sets
+# Policy-Based Data Structure (PBDS)
 
 <details>
   <summary>Getting Started with Policy-Based Sets</summary>
@@ -13,9 +13,9 @@ using namespace __gnu_pbds;
 </details>
 
 <details>
-  <summary>Creating a Policy-Based Data Structure</summary>
+  <summary>Creating a Policy-Based Indexed Set</summary>
 
-After including the PBDS data structure, if we were to create a Policy-Based set with a index (like `vector`), we can do this:
+After including the PBDS library, if we were to create a Policy-Based set with a index (like `vector`), we can do this:
 
 ```cpp
 typedef tree<int,null_type,less<int>,rb_tree_tag,

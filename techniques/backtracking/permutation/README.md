@@ -42,6 +42,8 @@ To return all permutations in a loop until next_permutation returns false, the v
 next_permutation returns the permutations in ascending order. So if you start off with an unsorted vector, it will begin part way through the series of permutations.
 ```
 
+-   Variant #3:
+
 ```cpp
 std::sort(arr.begin(), arr.end());
 do {

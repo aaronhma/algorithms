@@ -15,7 +15,7 @@ int main()
   {
     cout << "The size of the priority queue is: " << to_string(queue.size()) << " elements!"
          << "\n";
-    cout << "Top element: " <<  to_string(queue.top())) << "\n"; // 125 100 75 50 25
+    cout << "Top element: " << to_string(queue.top()) << "\n"; // 125 100 75 50 25
     queue.pop();                                                 // pops the max element
   }
 

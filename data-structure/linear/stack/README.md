@@ -2,9 +2,6 @@
 
 ## Background
 
-![Stack Image](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Stacks%20and%20Queues/pix/stack.bmp)
-([Source](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Stacks%20and%20Queues/Stacks%20and%20Queues.html))
-
 A stack is a collection of items following a Last-In, First-Out (LIFO) order that supports the following core operations:
 
 ## Stack Operations
@@ -40,6 +37,8 @@ A stack is a collection of items following a Last-In, First-Out (LIFO) order tha
 -   Space complexity: O(n)
 
 ## C++ Usage
+
+C++ provides a specialized data structured based on the `deque`. It provides `push`, `pop`, and `top`, which retrieves the most element added to the `stack`.
 
 ```cpp
 // Assume the standard library has been included

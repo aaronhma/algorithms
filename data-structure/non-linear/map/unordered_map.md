@@ -4,7 +4,7 @@
 
 -   [Map](map.md)
 -   [Unordered map](#)
--   [Multimap](multimap.md)
+-   [Multimap - Coming Soon]
 
 ---
 
@@ -28,7 +28,7 @@ Unlike a [`map`](map.md), an `unordered_map` in C++ uses a hash table and **the 
 unordered_map<pair<int, int>, int> mp;
 ```
 
-You will get Compilation Error! Why? See [this page](http://www.cplusplus.com/reference/functional/hash) for `unordered_map` supported types. For unsupported types, you have to create your own hash function for use. For example, let's see how we can create a hash function for `pair<int, int>`.
+You will get Compilation Error! Why? See [this page](http://www.cplusplus.com/reference/functional/hash) for `unordered_map` hash function supported data types. For unsupported types, you have to create your own hash function for use. For example, let's see how we can create a hash function for `pair<int, int>`.
 
 As you know, any `int` value is between $-2^{31}+1$ to $2^{31}-1$. So, if we create a hash function that for every `pair<int, int>` returns distinct values in type `size_t` (alias of `unsigned int`), it will be done. It is pretty easy: `x.first^(x.second<<32)` is good. But be careful about overflow. For having a good hash function, we use `hash<long long>`. The code looks like this:
 

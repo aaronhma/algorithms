@@ -1,5 +1,5 @@
-// TODO: https://www.spoj.com/problems/LCA/
-// https://www.spoj.com/problems/QTREE2/
+// Code is tested against https://www.spoj.com/problems/LCA/
+// Bonus problem: https://www.spoj.com/problems/QTREE2/
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -221,7 +221,7 @@ int lca(vvi &parent, int u, int v) {
   if (is_ancestor(v, u)) return v;
 
   for (int i = l; i >= 0; i--) {
-    if (!is_ancestor(parent[u][i], v))
+    if (parent[u][i] != 0 && !is_ancestor(parent[u][i], v))
       u = parent[u][i];
   }
 
@@ -237,16 +237,15 @@ int main()
 
   FORI(cas_no, 1, t) {
     read(n);
-    n++;
+
+    int no_nodes = n + 1;
 
     cout << "Case " << cas_no << ":\n";
 
-    l = ceil(log2(n));
-    vvi graph(n), parent(n, vi(l + 1));
+    l = ceil(log2(no_nodes));
+    vvi graph(no_nodes), parent(no_nodes, vi(l + 1));
 
-    preprocess(graph, parent, 1, n);
-
-    FORE(i, 0, n - 1) {
+    FORI(i, 1, n) {
       read(q);
 
       while (q--) {
@@ -255,6 +254,8 @@ int main()
         graph[k].PB(i);
       }
     }
+
+    preprocess(graph, parent, 1, no_nodes);
 
     read(q);
 
@@ -266,14 +267,3 @@ int main()
 
   return 0;
 }
-/**
- * Steps to solve CP problems:
- * 1) Carefully extract the important information from the problem.
- * 2) Find out all the hidden information.
- * 3) Read input & output & understand the question.
- * 4) Visualize the problem.
- *  a. Does my result output the expected output?
- *  b. Does the idea you think works?
- *  c. Check for edge cases.
- * 5) Implementation.
-*/

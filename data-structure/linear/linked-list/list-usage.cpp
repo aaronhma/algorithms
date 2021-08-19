@@ -56,7 +56,7 @@ int main()
   // v.empty() - true if linked list is empty
   //           - false if linked list is not empty
   if (v.empty()) cout << "Linked list is empty!\n";
-  else cout << "Linked list in not empty!\n";
+  else cout << "Linked list is not empty!\n";
 
   cout << "Size: " << v.size() << "\n"; // Size of the array
   cout << "Front: " << v.front() << "\n"; // First element in the linked list

@@ -7,7 +7,7 @@
 ![Stack Image](https://cdn.programiz.com/sites/tutorial2program/files/queue.png)
 ([Source](https://www.programiz.com/dsa/queue))
 
-A queue is a collection of items following a First-In, First-Out (FIFO) order. Elements are inserted to the queue in the back with `push()`, and leaves from the front of the queue with `pop()`.
+C++ provides a queue data structure, based on the `deque`. A queue is a collection of items following a First-In, First-Out (FIFO) order. Elements are inserted to the queue in the back with `push()`, and leaves from the front of the queue with `pop()`.
 
 ## Pros of Queue
 
@@ -21,6 +21,7 @@ A queue is a collection of items following a First-In, First-Out (FIFO) order. E
 | Enqueue   | O(1)           |
 | Dequeue   | O(1)           |
 | Peek      | O(1)           |
+| Pop      | O(1)           |
 
 ## C++ Usage
 
@@ -84,6 +85,10 @@ The first car that enters, in this case, Car #1, will exit out of the highway fi
 
 -   [Geeks For Geeks: Queue in C++'s Standard Library](https://www.geeksforgeeks.org/queue-cpp-stl/)
 -   [Interview Cake: Queue](https://www.interviewcake.com/concept/cpp/queue)
+
+<details>
+
+<summary>Writing Your Own <code>queue</code> Data Structure (Ideas)</summary>
 
 # Queue
 
