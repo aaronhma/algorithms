@@ -1,4 +1,4 @@
-# Stack
+# Stack [C++ Code](./stack.cpp)
 
 ## Background
 

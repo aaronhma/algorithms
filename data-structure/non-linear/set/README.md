@@ -1,4 +1,4 @@
-# Set
+# Set [C++](./set.cpp)
 
 ## Background
 
@@ -18,8 +18,8 @@ map.insert({key, true});
 
 The main operations of a set are:
 
--  `insert` - Inserts an element into a set and re-sorts the set
-- `count` - Returns $1$ if element exists in set, otherwise it returns $0$ (For `multiset`, this is not the case - it returns the number of times the element exists in the multiset)
+-   `insert` - Inserts an element into a set and re-sorts the set
+-   `count` - Returns $1$ if element exists in set, otherwise it returns $0$ (For `multiset`, this is not the case - it returns the number of times the element exists in the multiset)
 -   `union` - Adds the elements from $2$ sets into $1$, without any duplicates ([set_union](https://www.cplusplus.com/reference/algorithm/set_union/))
 -   `intersection` - an element that belongs in set $A$ and set $B$ ([set_intersection](https://www.cplusplus.com/reference/algorithm/set_intersection/))
 -   `difference` - elements in either set but not in the intersection ([set_difference](https://www.cplusplus.com/reference/algorithm/set_difference/))

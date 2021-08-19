@@ -1,4 +1,4 @@
-# Maximum Sum Subarray (Divide & Conquer)
+# Maximum Sum Subarray (Divide & Conquer) [C++](./max-subarray.cpp)
 
 Using the Divide and Conquer approach, we can find the maximum subarray sum in $\theta(n \ log \ n)$ time. We only need to check for $3$ cases assuming that we've divided the given array into two halves:
 

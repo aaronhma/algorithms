@@ -4,16 +4,6 @@ C++'s Standard Template Library (STL) is nothing more than implementations of co
 
 The data structures provided in C++'s STL is just a container where you can store things.
 
-| ☆   | STL                                  | C++     |     |
-| --- | ------------------------------------ | ------- | --- |
-|     | [Array](./array.md)                  | [C++]() |     |
-|     | [Map](./map.md)                      | [C++]() |     |
-|     | [Permutation](./permutation.md)      | [C++]() |     |
-|     | [Priority Queue](./piority-queue.md) | [C++]() |     |
-|     | [Set](./set.md)                      | [C++]() |     |
-|     | [String](./string.md)                | [C++]() |     |
-|     | [Vectors](./vectors.md)              | [C++]() |     |
-
 ## STL Algorithms on Vectors & More
 
 If we had a vector $arr$, we could apply some possible operations:
@@ -55,4 +45,37 @@ count(set1.begin(), set1.end(), 5); // O(n)
 
 // good:
 set1.count(5); // O(log n)
+```
+
+## `static` Keyword in C++
+
+When a variable is declared as static, space for it gets allocated for the lifetime of the program.
+
+```cpp
+#include <bits/stdc++.h>
+
+using namespace std;
+
+// static int count = 0;
+// is the equivalent of doing the following **globally**
+// int count = 0;
+
+void demo()
+{
+    // static variable
+    static int count = 0;
+    cout << count << " ";
+
+    // value is updated and
+    // will be carried to next
+    // function calls
+    count++;
+}
+
+int main()
+{
+    for (int i=0; i<5; i++)
+        demo();
+    return 0;
+}
 ```

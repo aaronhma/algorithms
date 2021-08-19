@@ -1,7 +1,4 @@
-# Other Structures
-
-<details>
-  <summary>Deque (Double-Ended Queue)</summary>
+# Deque (Double-Ended Queue)
 
 A `deque` is a dynamic array that can be efficiently manipulated at both ends. Like a `vector`, a `deque` contains `push_back` and `pop_back`, but it also provides `push_front` and `pop_front` which isn't available with a vector. See the below code for an example:
 
