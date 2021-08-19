@@ -10,6 +10,8 @@
 | Insert after a Specified Element | O(n)                              | O(1)        |
 | Delete after a Specified Element | O(n)                              | O(1)        |
 
+![image](./time-complexity-comparison.png)
+
 ## Summary
 
 -   Both arrays and linked lists are ordered collections with sacrifices on speed and usability.

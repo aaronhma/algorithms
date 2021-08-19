@@ -1,4 +1,4 @@
-# Hash Table
+# Hash Table [C++ code](./hash-map.cpp)
 
 ## Background
 

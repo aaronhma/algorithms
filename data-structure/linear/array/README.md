@@ -1,4 +1,16 @@
-# Arrays
+# Arrays [C++ Code](./vector.cpp)
+
+## Examples
+
+| ☆   | Math Technique                                            | C++                                         | Problems |
+| --- | --------------------------------------------------------- | ------------------------------------------- | -------- |
+|     | [Frequency Array](./freq-array/README.md)                 | [C++](./freq-array/freq-array.cpp)          |          |
+|     | [Longest Consecutive Number Subarray](./lcsa/README.md)   | [C++](./lcsa/lcsa.cpp)                      |          |
+|     | [Maximum Sum Subarray](./max-subarray/README.md)          | [C++](./max-subarray/max-subarray.cpp)      |          |
+|     | [Prefix Sum Array](./range-query/README.md)               | [C++](./range-query/prefix-sum-array.cpp)   |          |
+|     | [Range Update Trick](./range-query/range-update-trick.md) | [C++](./range-query/range-update-trick.cpp) |          |
+|     | [Sum Queries](./range-query/README.md)                    | [C++](./range-query/sum-queries.cpp)        |          |
+|     | [Sliding window](./sliding-window/README.md)              | [C++](./sliding-window/sliding-window.cpp)  |          |
 
 ## Background
 
@@ -9,6 +21,7 @@
 ([Source](https://www.geeksforgeeks.org/c-sharp-arrays/))
 
 An array is a list of items stored in sequential order. The idea behind arrays is where a collection of items of the same type are stored with a index from $0$ - $n - 1$, where $n$ is the size of the array.
+
 ## When to Use In-Place Array Operations
 
 If we'll need the original array values later, then we shouldn't be overwriting them. In these cases, it's best to create a copy to work with, or to simply not use _in-place_ techniques.
@@ -46,7 +59,6 @@ It means you can jump directly to the 10th element. Array is faster at read beca
 | Insertion/Removing Elements from beginning | O(n)           |
 | Insert/Removing from the end               | O(1)           |
 | Insert/Removing from the middle            | O(n)           |
-
 
 ## C++ Array
 
@@ -105,7 +117,6 @@ sort(arr, arr + 5);
 </details>
 
 ## C++ Vector
-
 
 A `vector` is a dynamic array that satisfies the **Random Access Property**:
 

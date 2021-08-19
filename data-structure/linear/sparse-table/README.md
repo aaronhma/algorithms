@@ -1,4 +1,4 @@
-# Sparse Table
+# Sparse Table [C++ Code](./sparse-table.cpp)
 
 ## About
 

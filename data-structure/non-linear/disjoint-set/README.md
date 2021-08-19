@@ -1,4 +1,4 @@
-# Disjoint Set (Union-Find)
+# Disjoint Set (Union-Find) [C++ code](./disjoint-set.cpp)
 
 ## About
 

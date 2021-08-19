@@ -1,4 +1,4 @@
-# Queue
+# Queue [C++ Code](./queue.cpp)
 
 ## Background
 
@@ -21,7 +21,7 @@ C++ provides a queue data structure, based on the `deque`. A queue is a collecti
 | Enqueue   | O(1)           |
 | Dequeue   | O(1)           |
 | Peek      | O(1)           |
-| Pop      | O(1)           |
+| Pop       | O(1)           |
 
 ## C++ Usage
 

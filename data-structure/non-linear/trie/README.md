@@ -1,4 +1,4 @@
-# Trie
+# Trie [C++ code](./trie.cpp)
 
 ## Background
 

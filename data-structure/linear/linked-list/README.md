@@ -1,4 +1,4 @@
-# Linked List
+# Linked List [C++ Code](./linked-list.cpp)
 
 ## About
 
@@ -136,9 +136,7 @@ On the other hand, Linked Lists can be put anywhere in RAM, so if the next memor
 
 Basically in general, if we had a problem of seating friends at a theater, arrays put all of the friends together in **one long row**, while Linked Lists basically does, **"Let's split up and watch the movie"**. [Reference: 2](#reference-two)
 
-
 <a name="sll-dll" />
-
 
 ## Singly Linked List vs. Doubly Linked List
 
@@ -218,7 +216,6 @@ struct DoublyLinkedList
 <a name="references-two" />
 
 -   [2: Grokking Algorithms from Safari Books](https://www.oreilly.com/)
-
 
 </details>
 

@@ -1,4 +1,4 @@
-# Maximum Size Square Full of $1$s
+# Maximum Size Square Full of $1$s [C++ Code](./max-square.cpp)
 
 ## The Problem
 

@@ -1,4 +1,4 @@
-# Queries on Static Arrays
+# Queries on Static Arrays [(C++)](./suffix-sum-array.cpp)
 
 ## About
 

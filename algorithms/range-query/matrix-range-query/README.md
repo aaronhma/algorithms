@@ -1,4 +1,4 @@
-# Queries on Matrices
+# Queries on Matrices [C++ Code](./sum-query.cpp)
 
 ## The Problem
 

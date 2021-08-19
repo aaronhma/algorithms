@@ -83,15 +83,11 @@
 
 #### [**Range Query**](algorithms/range-query/README.md)
 
-https://cp-algorithms.web.app/sequences/rmq.html
+@TODO: Aaron
 
-Solve RMQ (Range Minimum Query) by finding LCA
-
-https://www.topcoder.com/thrive/articles/Range%20Minimum%20Query%20and%20Lowest%20Common%20Ancestor
-
-| ☆   | Name (Content)                                                | C++                                                         | Python | Editorials                                                          |
-| --- | ------------------------------------------------------------- | ----------------------------------------------------------- | ------ | ------------------------------------------------------------------- |
-|     | [String Hashing](algorithms/hashing/string-hashing/README.md) | [C++](algorithms/hashing/string-hashing/string-hashing.cpp) |        | [cp-algo](https://cp-algorithms.web.app/string/string-hashing.html) |
+| ☆   | Name (Content) | C++ | Python | Editorials                                              |
+| --- | -------------- | --- | ------ | ------------------------------------------------------- |
+|     |                |     |        | [cp-algo](https://cp-algorithms.com/sequences/rmq.html) |
 
 ---
 
@@ -128,28 +124,35 @@ https://www.topcoder.com/thrive/articles/Range%20Minimum%20Query%20and%20Lowest%
 
 #### [**Linear Data Structure**](data-structure/linear/README.md)
 
-| ☆   | Name (Content)                                                   | C++                                                            | Python | Editorials |
-| --- | ---------------------------------------------------------------- | -------------------------------------------------------------- | ------ | ---------- |
-|     | [Array](data-structure/linear/array/README.md)                   | [C++](data-structure/linear/array/array.cpp)                   |        |            |
-|     | [Linked List](data-structure/linear/linked-list/README.md)       | [C++](data-structure/linear/linked-list/linked-list.cpp)       |        |            |
-|     | [Matrix](data-structure/linear/matrix/README.md)                 |                                                                |        |            |
-|     | [Priority Queue](data-structure/linear/priority-queue/README.md) | [C++](data-structure/linear/priority-queue/priority-queue.cpp) |        |            |
-|     | [Queue](data-structure/linear/queue/README.md)                   | [C++](data-structure/linear/queue/queue.cpp)                   |        |            |
-|     | [Sparse Table](data-structure/linear/sparse-table/README.md)     | [C++](data-structure/linear/sparse-table/sparse-table.cpp)     |        |            |
-|     | [Stack](data-structure/linear/stack/README.md)                   | [C++](data-structure/linear/stack/stack.cpp)                   |        |            |
+| ☆   | Name (Content)                                                   | C++                                                                                                                                                                                                       | Python | Editorials |
+| --- | ---------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ---------- |
+|     | [Array](data-structure/linear/array/README.md)                   | [C++](data-structure/linear/array/array.cpp)                                                                                                                                                              |        |            |
+|     | [Bitset](data-structure/linear/bitset/README.md)                 |                                                                                                                                                                                                           |        |            |
+|     | [Deque](data-structure/linear/deque/README.md)                   |                                                                                                                                                                                                           |        |            |
+|     | [Linked List](data-structure/linear/linked-list/README.md)       | [C++](data-structure/linear/linked-list/linked-list.cpp)                                                                                                                                                  |        |            |
+|     | [Matrix](data-structure/linear/matrix/README.md)                 | [Max Square](data-structure/linear/matrix/max-square/README.md), [Max Submatrix](data-structure/linear/matrix/max-submatrix/README.md), [Range Query](data-structure/linear/matrix/range-query/README.md) |        |            |
+|     | [Priority Queue](data-structure/linear/priority-queue/README.md) | [C++](data-structure/linear/priority-queue/priority-queue.cpp)                                                                                                                                            |        |            |
+|     | [Queue](data-structure/linear/queue/README.md)                   | [C++](data-structure/linear/queue/queue.cpp)                                                                                                                                                              |        |            |
+|     | [Sparse Table](data-structure/linear/sparse-table/README.md)     | [C++](data-structure/linear/sparse-table/sparse-table.cpp)                                                                                                                                                |        |            |
+|     | [Stack](data-structure/linear/stack/README.md)                   | [C++](data-structure/linear/stack/stack.cpp)                                                                                                                                                              |        |            |
 
 #### [**Non-Linear Data Structure**](data-structure/non-linear/README.md)
 
-| ☆   | Name (Content)                                                   | C++                                                            | Python | Editorials                                                                                        |
-| --- | ---------------------------------------------------------------- | -------------------------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------- |
-|     | [Disjoint Set](data-structure/non-linear/disjoint-set/README.md) | [C++](data-structure/non-linear/disjoint-set/disjoint-set.cpp) |        | [Techie Delight](https://www.techiedelight.com/disjoint-set-data-structure-union-find-algorithm/) |
-|     | [Hash Map](data-structure/non-linear/hash-map/README.md)         | [C++](data-structure/non-linear/hash-map/hash-map.cpp)         |        |                                                                                                   |
-|     | [Heap](data-structure/non-linear/heap/README.md)                 | [C++](data-structure/non-linear/heap/heap.cpp)                 |        |                                                                                                   |
-|     | [LRU Cache](data-structure/non-linear/lru-cache/README.md)       | [C++](data-structure/non-linear/lru-cache/lru-cache.cpp)       |        |                                                                                                   |
-|     | [Map](data-structure/non-linear/map/README.md)                   | [C++](data-structure/non-linear/map/map.cpp)                   |        |                                                                                                   |
-|     | [Set](data-structure/non-linear/set/README.md)                   | [C++](data-structure/non-linear/set/set.cpp)                   |        |                                                                                                   |
-|     | [Trie](data-structure/non-linear/trie/README.md)                 | [C++](data-structure/non-linear/trie/trie.cpp)                 |        |                                                                                                   |
-|     | [Tuple](data-structure/non-linear/tuple/README.md)               | [C++](data-structure/non-linear/tuple/tuple.cpp)               |        |                                                                                                   |
+| ☆   | Name (Content)                                                          | C++                                                              | Python | Editorials                                                                                        |
+| --- | ----------------------------------------------------------------------- | ---------------------------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------- |
+|     | [Disjoint Set](data-structure/non-linear/disjoint-set/README.md)        | [C++](data-structure/non-linear/disjoint-set/disjoint-set.cpp)   |        | [Techie Delight](https://www.techiedelight.com/disjoint-set-data-structure-union-find-algorithm/) |
+|     | [Hash Map](data-structure/non-linear/hash-map/README.md)                | [C++](data-structure/non-linear/hash-map/hash-map.cpp)           |        |                                                                                                   |
+|     | [Heap](data-structure/non-linear/heap/README.md)                        | [C++](data-structure/non-linear/heap/heap.cpp)                   |        |                                                                                                   |
+|     | [LRU Cache](data-structure/non-linear/lru-cache/README.md)              | [C++](data-structure/non-linear/lru-cache/lru-cache.cpp)         |        |                                                                                                   |
+|     | [Map](data-structure/non-linear/map/README.md)                          | [C++](data-structure/non-linear/map/map.cpp)                     |        |                                                                                                   |
+|     | [Multi Set](data-structure/non-linear/multi-set/README.md)              | [C++](data-structure/non-linear/multi-set/multi-set.cpp)         |        |                                                                                                   |
+|     | [Pair](data-structure/non-linear/pair/README.md)                        |                                                                  |        |                                                                                                   |
+|     | [Policy Based Data Structure](data-structure/non-linear/pbds/README.md) |                                                                  |        |                                                                                                   |
+|     | [Set](data-structure/non-linear/set/README.md)                          | [C++](data-structure/non-linear/set/set.cpp)                     |        |                                                                                                   |
+|     | [Trie](data-structure/non-linear/trie/README.md)                        | [C++](data-structure/non-linear/trie/trie.cpp)                   |        |                                                                                                   |
+|     | [Tuple](data-structure/non-linear/tuple/README.md)                      | [C++](data-structure/non-linear/tuple/tuple.cpp)                 |        |                                                                                                   |
+|     | [Unordered Map](data-structure/non-linear/unordered-map/README.md)      | [C++](data-structure/non-linear/unordered-map/unordered-map.cpp) |        |                                                                                                   |
+|     | [Unordered Set](data-structure/non-linear/unordered-set/README.md)      | [C++](data-structure/non-linear/unordered-set/unordered-set.cpp) |        |                                                                                                   |
 
 ---
 

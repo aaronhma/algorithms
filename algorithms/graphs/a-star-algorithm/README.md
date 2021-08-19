@@ -1,1 +1,1 @@
-# A* Algorithm
+# A\* Algorithm

@@ -1,4 +1,4 @@
-# Priority Queue
+# Priority Queue [C++ Code](./priority-queue.cpp)
 
 <details>
 

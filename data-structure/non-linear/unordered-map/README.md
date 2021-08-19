@@ -1,12 +1,6 @@
-# Unordered Map
+# Unordered Map [C++ code](./unordered-map.cpp)
 
 ## Contents
-
--   [Map](map.md)
--   [Unordered map](#)
--   [Multimap - Coming Soon]
-
----
 
 <details>
 
