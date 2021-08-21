@@ -55,7 +55,6 @@ private:
 
 int main()
 {
-  vector<int> arr {6, 7, 1, 2, 3};
   DisjointSet set(2);
   set.Union(7, 6);
 
