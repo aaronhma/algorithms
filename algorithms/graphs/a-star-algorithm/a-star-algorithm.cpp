@@ -3,13 +3,10 @@
 using namespace std;
 
 typedef long long ll;
-typedef long double ld;
-typedef string str;
 typedef vector<int> vi;
 typedef vector<bool> vb;
 typedef vector<ll> vll;
 typedef vector<char> vc;
-typedef vector<str> vstr;
 typedef vector<vi> vvi;
 typedef pair<int, int> pii;
 typedef vector<pii> vpii;
@@ -18,104 +15,111 @@ typedef vector<pii> vpii;
 #define s second
 #define sz(x) (int)x.size()
 
+// 8-sided direction vector
 const int dx[8] = {1, 1, 0, -1, -1, -1, 0, 1}, dy[8] = {0, 1, 1, 1, 0, -1, -1, -1};
 
 struct Cell {
-  int parent_i, parent_j;
-  double f, g, h;
+  int parent_i = -1, parent_j = -1; // Parent of current cell
+  // g = movement cost from starting cell to current cell
+  // h = estimated movement remaining
+  // f = g + h
+  double f = DBL_MAX, g = DBL_MAX, h = DBL_MAX;
 };
 
-double calculateHValue(int row, int col, pii dest) {
-  // Return using the distance formula
+// Calculate the heuristic using the distance formula (see https://www.google.com/search?q=distance+formula)
+double calculateHValue(int &new_x, int &new_y, pii &dest) {
   return ((double)sqrt(
-      (row - dest.first) * (row - dest.first) + (col - dest.second) * (col - dest.second)));
+      (new_x - dest.first) * (new_x - dest.first) + (new_y - dest.second) * (new_y - dest.second)));
 }
 
-void tracePath(vector<vector<Cell>> &cellDetails, pii dest) {
-  printf("\nThe Path is ");
-  int row = dest.first;
-  int col = dest.second;
+void tracePath(vector<vector<Cell>> &cellDetails, pii &dest) {
+  int x = dest.first, y = dest.second;
 
-  stack<pii> Path;
+  stack<pii> path;
 
-  while (!(cellDetails[row][col].parent_i == row && cellDetails[row][col].parent_j == col)) {
-    Path.push(make_pair(row, col));
-    int temp_row = cellDetails[row][col].parent_i;
-    int temp_col = cellDetails[row][col].parent_j;
-    row = temp_row;
-    col = temp_col;
+  while (!(cellDetails[x][y].parent_i == x && cellDetails[x][y].parent_j == y)) {
+    path.push({x, y});
+    int tmp_x = x;
+    x = cellDetails[x][y].parent_i;
+    y = cellDetails[tmp_x][y].parent_j;
   }
 
-  Path.push({row, col});
+  path.push({x, y});
 
-  while (!Path.empty()) {
-    pair<int, int> p = Path.top();
-    Path.pop();
-    printf("-> (%d,%d) ", p.first, p.second);
+  while (!path.empty()) {
+    pii p = path.top();
+    path.pop();
+    cout << "-> (" << p.f << ", " << p.s << ") ";
   }
 
-  return;
+  cout << "\n";
 }
 
+// NOTE: Use `double` instead of `float` for higher precision
 void aStarSearch(vvi &arr, pii &start, pii &end, int n, int m) {
-  if (!(start.f >= 0 && start.s >= 0 && end.f >= 0 && end.s >= 0 && start.f < n && start.s < m && end.f < n && end.s < m && arr[start.f][start.s])) return;
-
-  vector<vb> visited(n, vb(m));
-  vector<vector<Cell>> cellDetails(n, vector<Cell>(m));
-
-  int i, j;
-
-  for (i = 0; i < n; i++) {
-    for (j = 0; j < m; j++) {
-      cellDetails[i][j].f = FLT_MAX;
-      cellDetails[i][j].g = FLT_MAX;
-      cellDetails[i][j].h = FLT_MAX;
-      cellDetails[i][j].parent_i = -1;
-      cellDetails[i][j].parent_j = -1;
-    }
+  // Base case 1: If the starting and ending vertices isn't valid, return
+  if (!(start.f >= 0 && start.s >= 0 && end.f >= 0 && end.s >= 0 && start.f < n && start.s < m && end.f < n && end.s < m && arr[start.f][start.s] && arr[end.f][end.s])) {
+    cout << "No path exists.\n";
+    return;
   }
 
-  i = start.f, j = start.s;
-  cellDetails[i][j].f = 0.0;
-  cellDetails[i][j].g = 0.0;
-  cellDetails[i][j].h = 0.0;
-  cellDetails[i][j].parent_i = i;
-  cellDetails[i][j].parent_j = j;
+  // Base case 2: If the starting and ending vertices is the same, return
+  if (start == end) {
+    cout << "Path exists.\n(" << start.f << ", " << start.s << ")\n";
+    return;
+  }
 
-  queue<pair<float, pii>> Q;
+  vector<vector<bool>> visited(n, vector<bool>(m)); // Visited array
+  vector<vector<Cell>> cellDetails(n, vector<Cell>(m)); // Details of cell (i, j)
+
+  // Update starting cell value
+  cellDetails[start.f][start.s].f = 0.0;
+  cellDetails[start.f][start.s].g = 0.0;
+  cellDetails[start.f][start.s].h = 0.0;
+  cellDetails[start.f][start.s].parent_i = start.f;
+  cellDetails[start.f][start.s].parent_j = start.s;
+
+  // {f, {i, j}}
+  // f = g + h
+  queue<pair<double, pii>> Q;
   Q.push({0.0, {start.f, start.s}});
 
   while (!Q.empty()) {
-    pair<float, pii> node = Q.front();
-    // cout << node << "\n";
+    // Take top node from the queue
+    pair<double, pii> node = Q.front();
     Q.pop();
 
-    i = node.s.f;
-    j = node.s.s;
-    visited[i][j] = 1;
+    int i = node.s.f, j = node.s.s;
+    visited[i][j] = 1; // Mark current node as visited
 
-    float gNew, hNew, fNew;
+    double gNew, hNew, fNew; // Variables to store the new g, h, and f value
 
+    // Check through neighbors
     for (int k = 0; k < 8; k++) {
+      // New neighbor index
       int new_x = i + dx[k], new_y = j + dy[k];
 
-      if (new_x >= 0 && new_y >= 0 && new_x < n && new_y < m) {
-        // cout << "(" << new_x << ", " << new_y << ")\n";
+      // Make sure this neighbor is valid
+      if (new_x >= 0 && new_y >= 0 && new_x < n && new_y < m && arr[new_x][new_y]) {
+        // If we've reached the destination, backtrack to re-trace the path and return.
         if (new_x == end.f && new_y == end.s) {
-          cout << "REACHED\n";
+          cout << "Path exists.\nThe path from (" << start.f << ", " << start.s << ") to (" << end.f << ", " << end.s << ") is:\n";
           cellDetails[new_x][new_y].parent_i = i;
           cellDetails[new_x][new_y].parent_j = j;
           tracePath(cellDetails, end);
-          exit(EXIT_SUCCESS);
+          return;
         }
 
-        if (!visited[new_x][new_y] && arr[new_x][new_y]) {
-          float val = (dx[k] != 0 && dy[k] != 0) ? 1.414 : 1.0;
-          gNew = cellDetails[i][j].g + val;
-          hNew = calculateHValue(new_x, new_y, end);
-          fNew = gNew + hNew;
+        // If we haven't visited this neighbor, visit it.
+        if (!visited[new_x][new_y]) {
+          double val = (dx[k] != 0 && dy[k] != 0) ? 1.414 : 1.0;
+          gNew = cellDetails[i][j].g + val; // movement cost from starting cell to current cell
+          hNew = calculateHValue(new_x, new_y, end); // estimated movement remaining
+          fNew = gNew + hNew; // f = g + h
 
-          if (cellDetails[new_x][new_y].f == FLT_MAX || cellDetails[new_x][new_y].f > fNew) {
+          // If the new f is less than the previous f, select this cell for further exploration.
+          if (cellDetails[new_x][new_y].f > fNew) {
+            // Add this cell to queue for exploration
             Q.push({fNew, {new_x, new_y}});
 
             // Update the details of this cell
@@ -129,6 +133,8 @@ void aStarSearch(vvi &arr, pii &start, pii &end, int n, int m) {
       }
     }
   }
+
+  cout << "No path exists.\n";
 }
 
 int main()
