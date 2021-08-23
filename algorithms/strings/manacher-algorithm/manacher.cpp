@@ -58,13 +58,38 @@ int main() {
   }
   cout << "\n";
 
+  int centerIndex = 5;
+  int centerK = 5;
+  cout << "Max Length of the Palindromes: " << centerK * 2 - 1 << "\n";
+
+  int start = centerIndex - (centerK - 1);
+  int end = centerIndex + (centerK - 1);
+
+  cout << "Odd start: " << start << "\n";
+  cout << "Odd end: " << end << "\n";
+
+	for(int i = start; i <= end; i++)
+		printf("%c", s[i]);
+	printf("\n");
+
   for (int i = 0; i < n; i++) {
     cout << evenPalindromes[i] << " ";
   }
   cout << "\n";
 
-  // Total:  max(oddPalindromes) * 2 - 1
-  // Total:  max(evenPalindromes) * 2
+  // int centerIndex = 3;
+  // int centerK = 2;
+  // cout << "Max Length of the Palindromes: " << centerK * 2 << "\n";
+
+  // int start = centerIndex - centerK;
+  // int end = centerIndex + (centerK - 1);
+
+  // cout << "Even start: " << start << "\n";
+  // cout << "Even end: " << end << "\n";
+
+	// for(int i = start; i <= end; i++)
+	// 	printf("%c", s[i]);
+	// printf("\n");
 
   return 0;
 }
