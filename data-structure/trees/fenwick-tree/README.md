@@ -29,11 +29,23 @@ Note the fact that if $i$ is a power of $2$, then $bit[i] = \sum arr[i] \text{ w
 
 ## Fenwick Tree Update Queries
 
-
+Updating values in the Fenwick Tree is easy. We update $bit[i]$, then the parent of $bit[i]$, the parent of parent of $bit[i]$, etc. until we reach $bit[n - 1]$.
 
 ## Fenwick Tree Sum Queries
 
+Answering queries is simple. We add all segments from indexes $[0, b]$.
 
+## Fenwick Tree vs. Segment Tree
+
+| Type | Fenwick Tree | Segment Tree |
+| --- | --- | --- |
+| Preprocessing | $\theta(n \ log \ n)$ | $\theta(n)$ |
+| Query | $\theta(log \ n)$ | $\theta(log \ n)$ |
+| Overall Time | Suitable for time-constraint problems, as smaller hidden constants (see **applications**) | Ok for general problems, for time-constraint problems, consider using a Fenwick Tree (see **applications**) |
+| Applications | Only answers on queries from $[0, b]$ | All queries |
+| Code | Short | Long, prepare a template |
+| Online | Online | Not online, can be online using a [Dynamic Segment Tree](https://www.geeksforgeeks.org/dynamic-segment-trees-online-queries-for-range-sum-with-point-updates/) |
+| Memory Usage | $n$ | Up to $2n$, though using more memory allows more problems to be solved |
 
 ## 2D Fenwick Tree
 
@@ -60,4 +72,14 @@ struct FenwickTree2D {
                 bit[i][j] += delta;
     }
 };
-````
+```
+
+## Fenwick Tree Supported Range Operations
+
+A Fenwick tree can support the following range operations:
+
+1. Point Update and Range Query
+2. Range Update and Point Query
+3. Range Update and Range Query
+
+# TODO: More on this later

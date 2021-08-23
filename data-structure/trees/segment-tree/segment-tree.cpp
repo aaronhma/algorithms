@@ -4,19 +4,6 @@ using namespace std;
 
 typedef long long ll;
 
-// See https://graphics.stanford.edu/~seander/bithacks.html#RoundUpPowerOf2
-ll nextPowerOf2(ll n)
-{
-  n--;
-  n |= n >> 1;
-  n |= n >> 2;
-  n |= n >> 4;
-  n |= n >> 8;
-  n |= n >> 16;
-  n++;
-  return n;
-}
-
 struct SegmentTree
 {
   ll size; // Size of array
@@ -26,7 +13,9 @@ struct SegmentTree
   void init(ll n)
   {
     // Increase size of array to the closest power of 2
-    size = nextPowerOf2(n);
+    size = 1;
+
+    while (size < n) size *= 2;
 
     // Resize the segment tree by 2 * size to avoid overflow
     segment_tree.resize(2 * size);

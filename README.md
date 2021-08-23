@@ -16,7 +16,7 @@
     -   [**Hashing**](#hashing)
     -   [**Range Query**](#range-query)
     -   [**Sorting**](#sorting)
-    -   [**String**](#strings)
+    -   [**String**](#string)
 
 -   [**Data Structure**](#data-structure)
 

@@ -33,9 +33,15 @@ For each operation of the second type print the corresponding sum.
 14
 ```
 
+## The Problem with Prefix Sums
+
+We could use prefix sums for this problem for $\theta(1)$ queries, but we $\theta(n)$ updates, which is too slow.
+
+One approach is to use segment tree for $\theta(log \ n)$ time on both operations. [Fenwick Tree](../fenwick-tree/README.md) also has $\theta(log \ n)$ time for both operations, but has a smaller constant factor.
+
 ## **Important Note on the Code - READ THIS TO AVOID $\color{red}{\text{WA}}$**
 
--   See [this](https://graphics.stanford.edu/~seander/bithacks.html#RoundUpPowerOf2) to learn more on round a number up to a number $\geq n$.
+-   See [this](https://graphics.stanford.edu/~seander/bithacks.html#RoundUpPowerOf2) to learn more on round a number up to a number $\geq n$ when $n$ is an integer. For most content problems, this is not the case and the code doesn't use `bithacks` for this reason.
 -   The $sum$ operation on the code only returns the sum of $\sum arr[i] \text{ where } i \in [a, b)$. If $b$ is included in the sum, $\text{++}b$ must be performed.
 
 ## Structure of a Segment Tree
@@ -88,5 +94,17 @@ Let's try to build the sum on the segment $[l, r]$ from these already calculated
 Here, the crosses indicate the vertices at which the recursion broke off in the first cutoff, and the vertices in which the number was added to the answer are circled.
 
 How long does such a tree traversal work? To answer this question, we need to understand how many nodes none of the cutoffs will happen in, and we will need to go deeper into the tree. Each such case gives us a new branch of recursion. It turns out that there will be quite a few such nodes. The fact is that in order for none of the cutoffs to work, the segment corresponding to the node of the tree must intersect the query segment, but not be contained in it entirely. This is only possible if it contains one of the boundaries of the segment $[l, r]$. But on each layer of the tree of segments there can be no more than one segment containing each of the boundaries. Thus, there can be no more than $2 \ log \ n$ nodes at which cutoffs did not work, and, therefore, the general asymptotic time of this procedure will be $\theta(log \ n)$.
+
+## Fenwick Tree vs. Segment Tree
+
+| Type | Fenwick Tree | Segment Tree |
+| --- | --- | --- |
+| Preprocessing | $\theta(n \ log \ n)$ | $\theta(n)$ |
+| Query | $\theta(log \ n)$ | $\theta(log \ n)$ |
+| Overall Time | Suitable for time-constraint problems, as smaller hidden constants (see **applications**) | Ok for general problems, for time-constraint problems, consider using a Fenwick Tree (see **applications**) |
+| Applications | Only answers on queries from $[0, b]$ | All queries |
+| Code | Short | Long, prepare a template |
+| Online | Online | Not online, can be online using a [Dynamic Segment Tree](https://www.geeksforgeeks.org/dynamic-segment-trees-online-queries-for-range-sum-with-point-updates/) |
+| Memory Usage | $n$ | Up to $2n$, though using more memory allows more problems to be solved |
 
 # TODO: Add https://cp-algorithms.com/data_structures/segment_tree.html advanced segment tree version
