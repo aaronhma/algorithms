@@ -22,9 +22,9 @@ pair<int, int> start {8, 0}, end {0, 0};
 
 ## Idea
 
-### Properties of A* Algorithm
+### Properties of A\* Algorithm
 
-The A* Algorithm achieves **optimality** and **completeness**, two valuable properties of search algorithms.
+The A\* Algorithm achieves **optimality** and **completeness**, two valuable properties of search algorithms.
 
 > When a search algorithm has the property of **optimality**, it means it is guaranteed to find the **best possible solution**.
 
@@ -32,10 +32,11 @@ The A* Algorithm achieves **optimality** and **completeness**, two valuable prop
 
 ### $f = g + h$
 
-One important aspect of A* is $f = g + h$. The $f$, $g$, and $h$ variables are in our `Cell` class and get calculated every time we create a new node. Quickly, I’ll go over what these variables mean.
-* $f$ is the total cost of the node ($f = g + h$).
-* $g$ is the distance between the current node and the start node.
-* $h$ is the heuristic — estimated distance from the current node to the end node. In the provided code, the heuristic used is [the Distance Formula](https://www.google.com/search?q=distance+formula).
+One important aspect of A\* is $f = g + h$. The $f$, $g$, and $h$ variables are in our `Cell` class and get calculated every time we create a new node. Quickly, I’ll go over what these variables mean.
+
+-   $f$ is the total cost of the node ($f = g + h$).
+-   $g$ is the distance between the current node and the start node.
+-   $h$ is the heuristic — estimated distance from the current node to the end node. In the provided code, the heuristic used is [the Distance Formula](https://www.google.com/search?q=distance+formula).
 
 At each step, we pick the smallest $f$ among all the valid neighbors among cell $(i, j)$.
 

@@ -97,14 +97,14 @@ How long does such a tree traversal work? To answer this question, we need to un
 
 ## Fenwick Tree vs. Segment Tree
 
-| Type | Fenwick Tree | Segment Tree |
-| --- | --- | --- |
-| Preprocessing | $\theta(n \ log \ n)$ | $\theta(n)$ |
-| Query | $\theta(log \ n)$ | $\theta(log \ n)$ |
-| Overall Time | Suitable for time-constraint problems, as smaller hidden constants (see **applications**) | Ok for general problems, for time-constraint problems, consider using a Fenwick Tree (see **applications**) |
-| Applications | Only answers on queries from $[0, b]$ | All queries |
-| Code | Short | Long, prepare a template |
-| Online | Online | Not online, can be online using a [Dynamic Segment Tree](https://www.geeksforgeeks.org/dynamic-segment-trees-online-queries-for-range-sum-with-point-updates/) |
-| Memory Usage | $n$ | Up to $2n$, though using more memory allows more problems to be solved |
+| Type          | Fenwick Tree                                                                              | Segment Tree                                                                                                                                                   |
+| ------------- | ----------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Preprocessing | $\theta(n \ log \ n)$                                                                     | $\theta(n)$                                                                                                                                                    |
+| Query         | $\theta(log \ n)$                                                                         | $\theta(log \ n)$                                                                                                                                              |
+| Overall Time  | Suitable for time-constraint problems, as smaller hidden constants (see **applications**) | Ok for general problems, for time-constraint problems, consider using a Fenwick Tree (see **applications**)                                                    |
+| Applications  | Only answers on queries from $[0, b]$                                                     | All queries                                                                                                                                                    |
+| Code          | Short                                                                                     | Long, prepare a template                                                                                                                                       |
+| Online        | Online                                                                                    | Not online, can be online using a [Dynamic Segment Tree](https://www.geeksforgeeks.org/dynamic-segment-trees-online-queries-for-range-sum-with-point-updates/) |
+| Memory Usage  | $n$                                                                                       | Up to $2n$, though using more memory allows more problems to be solved                                                                                         |
 
 # TODO: Add https://cp-algorithms.com/data_structures/segment_tree.html advanced segment tree version
