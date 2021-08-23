@@ -1,4 +1,4 @@
-# Fenwick Tree/Binary Indexed Tree (BIT)
+# Fenwick Tree/Binary Indexed Tree (BIT) [Fenwick Tree Max](./fenwick-tree-max.cpp), [Fenwick Tree Min](./fenwick-tree-min.cpp), [Fenwick Tree Sum](./fenwick-tree-sum.cpp)
 
 ## About
 
