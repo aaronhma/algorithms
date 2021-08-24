@@ -2,7 +2,36 @@
 
 ## About
 
-Given a tree $G$, and queries of the form $(v_1, v_2)$, for each query you need to find the lowest common ancestor (or least common ancestor), i.e. a vertex $v$ that lies on the path from the root to $v_1$ and the path from the root to $v_2$, and the vertex should be the lowest. In other words, the desired vertex $v$ is the first common ancestor of $v_1$ and v2. It is obvious that their lowest common ancestor lies on a shortest path from $v_$1 and $v_2$. Also, if $v_1$ is the ancestor of $v_2$, $v_1$ is their lowest common ancestor.
+#### **[Go to OJ](https://www.spoj.com/problems/LCA/)**
+
+Given a tree $G$, and queries of the form $(v_1, v_2)$, for each query you need to find the lowest common ancestor (or least common ancestor), i.e. a vertex $v$ that lies on the path from the root to $v_1$ and the path from the root to $v_2$, and the vertex should be the lowest. In other words, the desired vertex $v$ is the first common ancestor of $v_1$ and $v_2$. It is obvious that their lowest common ancestor lies on a shortest path from $v_1$ and $v_2$. Also, if $v_1$ is the ancestor of $v_2$, $v_1$ is their lowest common ancestor (vice versa).
+
+**Input:**
+
+```
+1
+7
+3 2 3 4
+0
+3 5 6 7
+0
+0
+0
+0
+2
+5 7
+2 7
+```
+
+**Output:**
+
+```
+Case 1:
+3
+1
+```
+
+## NOTE
 
 ## Idea
 

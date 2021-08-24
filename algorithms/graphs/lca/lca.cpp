@@ -4,239 +4,93 @@
 
 using namespace std;
 
-typedef long long ll;
-typedef long double ld;
-typedef string str;
 typedef vector<int> vi;
-typedef vector<bool> vb;
-typedef vector<ll> vll;
-typedef vector<char> vc;
-typedef vector<str> vstr;
 typedef vector<vi> vvi;
-typedef pair<int, int> pii;
-typedef vector<pii> vpii;
 
-#define f first
-#define s second
-#define all(x) begin(x), end(x)
-#define rall(x) rbegin(x), rend(x)
-#define PB push_back
-#define sz(x) (int)x.size()
-#define rtn return
-#define rsz resize
-#define ins insert
-#define ft front()
-#define bk back()
-#define LB lower_bound
-#define UB upper_bound
-#define BINS binary_search
-#define IT(x) for (auto it = begin(x); it != end(x); it++)
-#define RIT(x) for (auto it = rbegin(x); it != rend(x); it++)
-#define FORE(i, a, b) for (int i = a; i < b; i++)
-#define FORI(i, a, b) for (int i = a; i <= b; i++)
-#define each(i, x) for (auto &i : x)
-
-const int MOD = 1e9 + 7;
-const int INF_INT = 2147483647;
-const long INF_L = 1000000000000000003;
-const ll INF_LL = 9223372036854775807;
-const ld PI = acos((ld)-1);
-
-const int dx[4] = {1, 0, -1, 0}, dy[4] = {0, 1, 0, -1};
-
-// Returns ceil(a / b) (b != 0)
-int ceildiv(int a, int b)
-{
-  rtn a / b + !(a < 0 || a % b == 0);
-}
-
-// INPUT
-template <class T>
-void read(T &x) { cin >> x; }
-
-void read(double &x)
-{
-  string t;
-  read(t);
-  x = stod(t);
-}
-void read(ld &x)
-{
-  string t;
-  read(t);
-  x = stold(t);
-}
-
-template <class T>
-void read(complex<T> &x)
-{
-  T a, b;
-  read(a, b);
-  x = cd(a, b);
-}
-
-template <class T1, class T2>
-void read(pair<T1, T2> &p) { read(p.f, p.s); }
-
-template <class T>
-void read(vector<T> &a)
-{
-  FORE(i, 0, sz(a))
-  read(a[i]);
-}
-
-template <class Arg, class... Args>
-void read(Arg &first, Args &...rest)
-{
-  read(first);
-  read(rest...);
-}
-
-// OUTPUT
-template <class T1, class T2>
-ostream &operator<<(ostream &os, const pair<T1, T2> &a)
-{
-  os << '{' << a.f << ", " << a.s << '}';
-  return os;
-}
-
-template <class T>
-ostream &printArray(ostream &os, const T &a, int SZ)
-{
-  os << '{';
-  FORE(i, 0, SZ)
-  {
-    if (i)
-    {
-      os << ", ";
-    }
-    os << a[i];
-  }
-  os << '}';
-  return os;
-}
-
-template <class T>
-ostream &operator<<(ostream &os, const vector<T> &a)
-{
-  return printArray(os, a, sz(a));
-}
-template <class T>
-ostream &operator<<(ostream &os, const set<T> &a)
-{
-  os << vector<T>(all(a));
-  return os;
-}
-template <class T1, class T2>
-ostream &operator<<(ostream &os, const map<T1, T2> &a)
-{
-  os << vector<pair<T1, T2>>(all(a));
-  return os;
-}
-
-template <class T>
-void pr(const T &x) { cout << x << '\n'; }
-template <class Arg, class... Args>
-void pr(const Arg &first, const Args &...rest)
-{
-  cout << first << ' ';
-  pr(rest...);
-}
-
-mt19937 rng((uint32_t)chrono::steady_clock::now().time_since_epoch().count());
-
-// Fast I/O
-void setIO(str S = "", bool use_txt = false)
-{
-  ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
-
-  if (!S.empty())
-  {
-    if (use_txt)
-    {
-      freopen((S + ".txt").c_str(), "r", stdin);
-      freopen((S + ".txt").c_str(), "w", stdout);
-    }
-    else
-    {
-      freopen((S + ".in").c_str(), "r", stdin);
-      freopen((S + ".out").c_str(), "w", stdout);
-    }
-  }
-}
-
-// Custom hash for unordered_map and unordered_set (works only for integers)
-struct custom_hash
-{
-  static uint64_t splitmix64(uint64_t x)
-  {
-    // http://xorshift.di.unimi.it/splitmix64.c
-    x += 0x9e3779b97f4a7c15;
-    x = (x ^ (x >> 30)) * 0xbf58476d1ce4e5b9;
-    x = (x ^ (x >> 27)) * 0x94d049bb133111eb;
-    return x ^ (x >> 31);
-  }
-
-  size_t operator()(uint64_t x) const
-  {
-    static const uint64_t FIXED_RANDOM = chrono::steady_clock::now().time_since_epoch().count();
-    return splitmix64(x + FIXED_RANDOM);
-  }
-};
-
-vi time_in, time_out;
+vi time_in, time_out, dist; // NOTE: Can't create distance named array in global scope
 int timer, l;
 
-void dfs(vvi &graph, vvi &parent, int node, int prev) {
-  time_in[node] = ++timer;
+// Modified DFS for trees (see https://github.com/aaronhma/algorithms/blob/master/data-structure/trees/tree/README.md#tree-traversals)
+void dfs(vvi &graph, vvi &parent, int node, int prev)
+{
+  time_in[node] = ++timer; // Keep track of when we first looked at this node
 
-  parent[node][0] = prev;
+  parent[node][0] = prev; // the 2^0-st parent above this node is the parent
+  dist[node] = dist[prev] + 1; // Keep track of distances for the distance(parent, u, v) function
 
-  FORI(i, 1, l)
+  // Use previously computed values to find the 2^i-th parent of current node (0 if the parent doesn't exist)
+  for (int i = 1; i <= l; i++)
     parent[node][i] = parent[parent[node][i - 1]][i - 1];
 
-  for (int i : graph[node]) {
+  for (int i : graph[node])
+  {
     if (i != prev)
       dfs(graph, parent, i, node);
   }
 
-  time_out[node] = ++timer;
+  time_out[node] = ++timer; // Keep track of when we last looked at this node
 }
 
-void preprocess(vvi &graph, vvi &parent, int root, int n) {
+// Reset all arrays and variables and fill the parent, time_in, and time_out array
+void preprocess(vvi &graph, vvi &parent, int root, int n)
+{
   time_in.resize(n);
   time_out.resize(n);
+  dist.resize(n);
   timer = 0;
   dfs(graph, parent, root, 0);
 }
 
-// (u, v)
-bool is_ancestor(int u, int v) {
+// Node u is the ancestor of node v is we visit node u before node v and exit node v before exiting node u
+bool is_ancestor(int u, int v)
+{
+  // NOTE: We use <= so if u == v, we return the lca(u, v) = u (or v as they're the same)
   return time_in[u] <= time_in[v] && time_out[u] >= time_out[v];
 }
 
-int lca(vvi &parent, int u, int v) {
-  if (is_ancestor(u, v)) return u;
-  if (is_ancestor(v, u)) return v;
+int lca(vvi &parent, int u, int v)
+{
+  // If node u is the ancestor of node v, then lca(u, v) = u
+  if (is_ancestor(u, v))
+    return u;
 
-  for (int i = l; i >= 0; i--) {
+  // If node v is the ancestor of node u, then lca(u, v) = v
+  if (is_ancestor(v, u))
+    return v;
+
+  // Try to move 2^i nodes up, 2^{i - 1}, 2^{i - 2}, ..., 2^0 nodes above
+  for (int i = l; i >= 0; i--)
+  {
+    // If the parent exists and is not an ancestor of node v, move to that node.
     if (parent[u][i] != 0 && !is_ancestor(parent[u][i], v))
       u = parent[u][i];
   }
 
+  // We now have u as the node at the same or higher lever than node v. The parent of nove u is the LCA of nodes u and v.
   return parent[u][0];
+}
+
+// Distance between (u, v)
+int distance(vvi &parent, int u, int v)
+{
+  // Find the middle node (LCA) of (u, v)
+  int lca = ::lca(parent, u, v);
+
+  // Distance is the distance from node 1 to node u + distance from node 1 to node v - 2 * (distance from node 1 to node lca)
+  return dist[u] + dist[v] - 2 * dist[lca];
 }
 
 int main()
 {
-  setIO(); // Disable this during interactive problems
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
 
   int t, n, q, k, k1;
-  read(t);
+  cin >> t;
 
-  FORI(cas_no, 1, t) {
-    read(n);
+  for (int cas_no = 1; cas_no <= t; cas_no++)
+  {
+    cin >> n;
 
     int no_nodes = n + 1;
 
@@ -245,22 +99,32 @@ int main()
     l = ceil(log2(no_nodes));
     vvi graph(no_nodes), parent(no_nodes, vi(l + 1));
 
-    FORI(i, 1, n) {
-      read(q);
+    // Read the graph
+    for (int i = 1; i <= n; i++)
+    {
+      cin >> q;
 
-      while (q--) {
-        read(k);
-        graph[i].PB(k);
-        graph[k].PB(i);
+      while (q--)
+      {
+        cin >> k;
+        graph[i].push_back(k);
+        graph[k].push_back(i);
       }
     }
 
+    // Preprocess the graph with node 1 as the root
     preprocess(graph, parent, 1, no_nodes);
 
-    read(q);
+    cin >> q;
 
-    while (q--) {
-      read(k, k1);
+    while (q--)
+    {
+      cin >> k >> k1;
+
+      // Print the lca with the distance:
+      // cout << lca(parent, k, k1) << " | " << distance(parent, k, k1) << "\n";
+
+      // For SPOJ problem
       cout << lca(parent, k, k1) << "\n";
     }
   }
