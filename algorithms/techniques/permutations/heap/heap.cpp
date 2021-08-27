@@ -2,27 +2,17 @@
 
 using namespace std;
 
-// Prints the array
-void printArr(int arr[], int n) {
-	for (int i = 0; i < n; i++)
-    cout << arr[i] << " ";
-  cout << "\n";
-}
-
 // Generating permutation using Heap Algorithm
-void generatePermutation(int arr[], int size, int n)
+void generatePermutation(vector<vector<int>> &ans, vector<int> &arr, int size, int n)
 {
-  // vector<vector<int>> ans;
 	// if size becomes 1 then prints the obtained permutation
 	if (size == 1) {
-		printArr(arr, n);
-    // ans.push_back(n);
-		// return ans;
+		ans.push_back(arr);
     return;
 	}
 
 	for (int i = 0; i < size; i++) {
-		generatePermutation(arr, size - 1, n);
+		generatePermutation(ans, arr, size - 1, n);
 
 		// if size is odd, swap 0th (first) and (size-1)(last) element
 		if (size % 2 == 1)
@@ -35,10 +25,16 @@ void generatePermutation(int arr[], int size, int n)
 
 int main()
 {
-	int arr[] = { 3, 2, 1 };
-  int n = sizeof arr / sizeof arr[0];
+	vector<int> arr = { 3, 2, 1 };
+  int n = (int)arr.size();
+  vector<vector<int>> ans;
 
-	generatePermutation(arr, n, n);
+	generatePermutation(ans, arr, n, n);
+
+  for (vector<int> i : ans) {
+    for (int j : i) cout << j << " ";
+    cout << "\n";
+  }
 
 	return 0;
 }
