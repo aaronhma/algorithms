@@ -2,94 +2,82 @@
 
 using namespace std;
 
-int main() {
-  string s = "abaxabaxabb"; // Odd Palindromes
-  // string s = "cbaab"; // Even Palindromes
-  int n = s.size();
+int main()
+{
+  string S = "abb";
+  int n = (int)S.size();
 
-  // oddPalindromes: find all the sub-palindromes with odd length
-  // evenPalindromes: find all the sub-palindromes with even length
-  vector<int> oddPalindromes(n),  evenPalindromes(n);
-  // l & r boundary. r cannot be decreased
-  int l = 0, r = -1;
+  vector<int> d1(n), d2(n);
 
-  // i is the index of the center letter of the current palindrome.
-  // If i exceeds r, k is initialized to 1, as a single letter is a palindrome in itself. For evenPalindromes[], k will be initialized to 0.
-  // If i does not exceed r, k is either initialized to the oddPalindromes[j], where j is the mirror position of i in (l,r), or k is restricted to the size of the "outer" palindrome.
-  for (int i = 0; i < n; i++) {
-    // If i is outside the current sub-palindrome, i. e. i>r, we'll just launch the trivial algorithm.
-    int k = (i > r) ? 1 : min(oddPalindromes[r - i + l], r - i + 1);
-    cout << "k: " << k << "\n";
+  // Find th
+  for (int i = 0, l = 0, r = -1; i < n; i++)
+  {
+    // Find the number of odd-length palindromes with index i as the center.
+    int k = (i > r) ? 1 : min(d1[l + r - i], r - i + 1);
 
-    // Char comparison: grown from the center `i`
-    while (0 <= i - k && i + k < n && s[i - k] == s[i + k])
+    while (i - k >= 0 && i + k < n && S[i - k] == S[i + k])
       k++;
 
-    // `i` is the center of palindrome centered, then oddPalindromes[i] stores (i+1)/2. Store `k` as value, then decrease by 1
-    oddPalindromes[i] = k--;
-    cout << "i: " << i << " - k: " << k << " - oddPalindromes[i]: " << oddPalindromes[i] << "\n";
-    // Update l & r boundary
-    if (i + k > r) {
+    d1[i] = k--;
+
+    // Update boundaries
+    if (i + k > r)
+    {
       l = i - k;
       r = i + k;
-      cout << "l: " << l << " - r: " << r << "\n";
     }
   }
 
-  l = 0, r = -1;
+  for (int i = 0, l = 0, r = -1; i < n; i++)
+  {
+    // Find the number of even-length palindromes with index i as the center.
+    int k = (i > r) ? 0 : min(d2[l + r - i + 1], r - i + 1);
 
-  // Since an even palidrome will have two centers, i is the latter of the two center indices.
-  // if i exceeds r, k is initialized to 0, as a single letter is not an even palindrome.
-  // If the size of palindrome centered at i is x, then d2[i] stores x/2
-  for (int i = 0; i < n; i++) {
-    int k = (i > r) ? 0 : min(evenPalindromes[r - i + 1 + l], r - i + 1);
-    while (0 <= i - k - 1 && i + k < n && s[i - k - 1] == s[i + k])
+    while (i - k - 1 >= 0 && i + k < n && S[i - k - 1] == S[i + k])
       k++;
 
-    evenPalindromes[i] = k--;
-    if (i + k > r) {
+    d2[i] = k--;
+
+    // Update boundaries
+    if (i + k > r)
+    {
       l = i - k - 1;
       r = i + k;
     }
   }
 
-  for (int i = 0; i < n; i++) {
-    cout << oddPalindromes[i] << " ";
+  int max_odd = d1[0], max_odd_i = 0, max_even = d2[0], max_even_i = 0;
+
+  for (int i = 1; i < n; i++)
+  {
+    if (d1[i] > d1[max_odd_i])
+    {
+      max_odd = d1[i];
+      max_odd_i = i;
+    }
+
+    if (d2[i] > d2[max_even_i])
+    {
+      max_even = d2[i];
+      max_even_i = i;
+    }
   }
-  cout << "\n";
 
-  int centerIndex = 5;
-  int centerK = 5;
-  cout << "Max Length of the Palindromes: " << centerK * 2 - 1 << "\n";
+  int max = ::max(max_even, max_odd);
+  cout << max << ", " << max_even << " , " << max_odd << "\n";
 
-  int start = centerIndex - (centerK - 1);
-  int end = centerIndex + (centerK - 1);
-
-  cout << "Odd start: " << start << "\n";
-  cout << "Odd end: " << end << "\n";
-
-	for(int i = start; i <= end; i++)
-		printf("%c", s[i]);
-	printf("\n");
-
-  for (int i = 0; i < n; i++) {
-    cout << evenPalindromes[i] << " ";
+  if (max == max_even)
+  {
+    int length = max_even * 2;
+    int start = max_even_i - max_even, end = max_even_i + max_even - 1;
+    cout << length << " " << S.substr(start, end + 1) << "\n";
   }
-  cout << "\n";
-
-  // int centerIndex = 3;
-  // int centerK = 2;
-  // cout << "Max Length of the Palindromes: " << centerK * 2 << "\n";
-
-  // int start = centerIndex - centerK;
-  // int end = centerIndex + (centerK - 1);
-
-  // cout << "Even start: " << start << "\n";
-  // cout << "Even end: " << end << "\n";
-
-	// for(int i = start; i <= end; i++)
-	// 	printf("%c", s[i]);
-	// printf("\n");
+  else
+  {
+    int length = max_odd * 2 - 1;
+    int start = max_odd_i - max_odd + 1, end = max_odd_i + max_odd - 1;
+    cout << length << " " << S.substr(start, end + 1) << "\n";
+  }
 
   return 0;
 }

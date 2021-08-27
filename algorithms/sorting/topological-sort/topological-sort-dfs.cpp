@@ -1,4 +1,4 @@
-// Breadth-First Search
+// DFS
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -8,65 +8,38 @@ struct Edge
   int start, end;
 };
 
-void dfs(int source, vector<bool> &visited, list<int> &ordering, vector<vector<int>> &graph)
-{
-  visited[source] = 1;
+void dfs(vector<vector<int>> &graph, int i, vector<bool> &visited, vector<int> &ans) {
+  if (visited[i]) return;
+  visited[i] = 1;
 
-  for (int i : graph[source]) {
-    if (!visited[i]) {
-      dfs(i, visited, ordering, graph);
-    }
-  }
+  for (int j : graph[i])
+    dfs(graph, j, visited, ans);
 
-  // at this point, source node has no more child to visit. going back to its parent
-  ordering.push_front(source);
-  return ;
-}
-
-void topSort(int n, vector<vector<int>> &graph)
-{
-  // how many direct edges connect to current node
-  vector<bool> visited(n, 0);
-  list<int> ordering;
-
-  // Call dfs from every node if it is not visited
-  for (int i = 0; i < n; i++) {
-    if (!visited[i])
-      dfs(i, visited, ordering, graph);
-  }
-
-  // print out the ordering
-  for (int i : ordering)
-    cout << i << " ";
-}
-
-void addEdge(int start, int end, vector<vector<int>> &graph)
-{
-  // directed graph: add nodes to both start
-  graph[start].push_back(end);
-  // graph[end].push_back(start);
+  // Add this value to our answer array
+  ans.push_back(i);
 }
 
 int main()
 {
-  ios_base::sync_with_stdio(false);
-  cin.tie(NULL);
+  int n = 6;
+  vector<vector<int>> graph(n);
+  vector<bool> visited(n);
+  vector<int> ans;
+  vector<Edge> edges {{0, 2}, {2, 3}, {3, 5}, {4, 5}, {1, 4}, {1, 2}};
 
-  int n = 6;                         // number of nodes
-  vector<vector<int>> graph(n + 1);   // adjacency list
-  vector<bool> visited(n + 1, false); // place to store if the node is visited or not
-
-  // edges for directed graph
-  vector<Edge> edges = {{0, 2}, {2, 3}, {3, 5}, {4, 5}, {1, 4}, {1, 2}};
-
-  // add edges to the graph
-  for (auto i : edges)
-  {
-    addEdge(i.start, i.end, graph);
+  // Directed Acyclic Graph (DAG)
+  for (Edge i : edges) {
+    graph[i.start].push_back(i.end);
   }
 
-  topSort(n, graph); // expected: 1 4 0 2 3 5
+  for (int i = 0; i < n; i++)
+    if (!visited[i])
+      dfs(graph, i, visited, ans);
 
+  // Reverse the answer array to get one (of the many possible) topological sort of the graph
+  reverse(ans.begin(), ans.end());
+
+  for (int i : ans) cout << i << " ";
   cout << "\n";
 
   return 0;
