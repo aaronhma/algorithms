@@ -12,11 +12,11 @@ For fast calculation we'll maintain the borders $(l,r)$ of the rightmost found s
 
 So, we want to calculate $d_1[i]$ for the next $i$, and all the previous values in $d_1[]$ have been already calculated. We do the following:
 
-* If $i$ is outside the current sub-palindrome, i. e. $i>r$, we'll just launch the trivial algorithm.
+-   If $i$ is outside the current sub-palindrome, i. e. $i>r$, we'll just launch the trivial algorithm.
 
 So we'll increase $d_1[i]$ consecutively and check each time if the current rightmost substring $[i - d_1[i] \ ... \ i + d_1[i]]$ is a palindrome. When we find the first mismatch or meet the boundaries of $s$, we'll stop. In this case we've finally calculated $d_1[i]$. After this, we must not forget to update $(l,r)$. $r$ should be updated in such a way that it represents the last index of the current rightmost sub-palindrome.
 
-* Now consider the case when $i \leq r$. We'll try to extract some information from the already calculated values in $d_1[]$. So, let's find the "mirror" position of $i$ in the sub-palindrome $(l,r)$, i.e. we'll get the position $j=l+(r−i)$, and we check the value of $d_1[j]$. Because $j$ is the position symmetrical to $i$, we'll almost always can assign $d_1[i] = d_1[j]$.
+-   Now consider the case when $i \leq r$. We'll try to extract some information from the already calculated values in $d_1[]$. So, let's find the "mirror" position of $i$ in the sub-palindrome $(l,r)$, i.e. we'll get the position $j=l+(r−i)$, and we check the value of $d_1[j]$. Because $j$ is the position symmetrical to $i$, we'll almost always can assign $d_1[i] = d_1[j]$.
 
 Again, we should not forget to update the values $(l,r)$ after calculating each $d_1[i]$.
 

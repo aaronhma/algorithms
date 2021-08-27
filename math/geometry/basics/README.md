@@ -6,7 +6,7 @@ The problem of representing a point $(x, y)$ (also $z$ if $3$D) is complex. You 
 
 ## Idea
 
-We store the $(x, y)$ (also $z$ if $3$D) coordinates as a $type$ data type. (We initialize $type$ with `template <typename type>`). Then, we override the $+$, $*$, $\div$, $-$, $<<$ operations using `point_d operator_` (fill in _).
+We store the $(x, y)$ (also $z$ if $3$D) coordinates as a $type$ data type. (We initialize $type$ with `template <typename type>`). Then, we override the $+$, $*$, $\div$, $-$, $<<$ operations using `point_d operator_` (fill in \_).
 
 ## Cross Product of $2$ Coordinates
 

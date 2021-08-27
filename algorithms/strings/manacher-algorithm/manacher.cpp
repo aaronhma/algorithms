@@ -4,7 +4,9 @@ using namespace std;
 
 int main()
 {
-  string S = "abb";
+  string S = "abaxabaxabb"; // odd case - answer: 9 baxabaxab
+  // string S = "cbaab"; // even case - answer: 4 baab
+  // string S = "cbbd"; // even case - answer: 2 bb
   int n = (int)S.size();
 
   vector<int> d1(n), d2(n);
@@ -64,19 +66,26 @@ int main()
   }
 
   int max = ::max(max_even, max_odd);
-  cout << max << ", " << max_even << " , " << max_odd << "\n";
 
   if (max == max_even)
   {
     int length = max_even * 2;
     int start = max_even_i - max_even, end = max_even_i + max_even - 1;
-    cout << length << " " << S.substr(start, end + 1) << "\n";
+
+    cout << length << " ";
+    for (int i = start; i <= end; i++)
+      cout << S[i];
+    cout << "\n";
   }
   else
   {
     int length = max_odd * 2 - 1;
     int start = max_odd_i - max_odd + 1, end = max_odd_i + max_odd - 1;
-    cout << length << " " << S.substr(start, end + 1) << "\n";
+
+    cout << length << " ";
+    for (int i = start; i <= end; i++)
+      cout << S[i];
+    cout << "\n";
   }
 
   return 0;
