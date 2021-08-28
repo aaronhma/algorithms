@@ -30,6 +30,7 @@ vector<int> z_function(string const &s)
 
 int get_z(vector<int> const &z, int i)
 {
+  // Check if it is out of the boundary
   if (0 <= i && i < (int)z.size())
     return z[i];
   else
@@ -43,13 +44,13 @@ void convert_to_repetitions(int shift, bool left, int i, int l, int k1, int k2)
     if (left && l1 == l)
       break;
 
-    int l2 = l - l1;
     int pos = shift + (left ? i - l1 : i - l - l1 + 1);
 
     repetitions.emplace_back(pos, pos + 2 * l - 1);
   }
 }
 
+// `O(n log n)` using divide-and-conquer algorithm
 void find_repetitions(string s, int shift = 0)
 {
   int n = s.size();
@@ -64,48 +65,56 @@ void find_repetitions(string s, int shift = 0)
   string leftStrReverted(leftStr.rbegin(), leftStr.rend());
   string rightStrReverted(rightStr.rbegin(), rightStr.rend());
 
+  // Finds all repetitions starting in the first half
+  // and ending in the second half (AKA, crossing repetitions)
+  // divide-and-conquer algorithm - recursively divided into half
+  // cout << "shift: " << shift << " - " << shift + leftLen << " : " << leftStr << " + " << rightStr << "\n";
   find_repetitions(leftStr, shift);
   find_repetitions(rightStr, shift + leftLen);
 
+  // cout << "z1 - leftStrReverted: " << leftStrReverted << "\n";
+  // cout << "z2 - rightStr + '#' + leftStr: " << rightStr << '#' << leftStr << "\n";
+  // cout << "z3 - leftStrReverted + '#' + rightStrReverted: " << leftStrReverted << '#' << rightStrReverted << "\n";
+  // cout << "z4 - rightStr: " << rightStr << "\n\n";
   vector<int> z1 = z_function(leftStrReverted);
   vector<int> z2 = z_function(rightStr + '#' + leftStr);
   vector<int> z3 = z_function(leftStrReverted + '#' + rightStrReverted);
   vector<int> z4 = z_function(rightStr);
 
-  // cout << "z1: " << z1 << "\n";
-  // cout << "z2: " << z2 << "\n";
-  // cout << "z3: " << z3 << "\n";
-  // cout << "z4: " << z4 << "\n";
+  // for (int i = 0; i < (int)z4.size(); i++)
+  //   cout << z4[i] << " ";
+  // cout << "\n\n";
 
-  for (int i = 0; i < n; i++)
-  {
+  // cout << "Current String: " << s << " - size: " << n << "\n";
+  for (int i = 0; i < n; i++) {
+    // k1 - the largest number in left part of the string
+    // k2 - the largest number in right part of the string
     int l, k1, k2;
 
-    if (i < leftLen)
-    {
+    // cout << "i: " << i << " - leftLen: " << leftLen << "\n";
+    if (i < leftLen) {
       l = leftLen - i;
       k1 = get_z(z1, leftLen - i);
       k2 = get_z(z2, rightLen + 1 + i);
-    }
-    else
-    {
+    } else {
       l = i - leftLen + 1;
       k1 = get_z(z3, leftLen + 1 + rightLen - 1 - (i - leftLen));
       k2 = get_z(z4, (i - leftLen) + 1);
     }
 
-    if (k1 + k2 >= l)
-      convert_to_repetitions(shift, i < leftLen, i, l, k1, k2);
-
     // cout << "l: " << l << "\n";
     // cout << "k1: " << k1 << "\n";
     // cout << "k2: " << k2 << "\n";
+
+    if (k1 + k2 >= l)
+      convert_to_repetitions(shift, i < leftLen, i, l, k1, k2);
   }
 }
 
 int main()
 {
-  string S = "abaaba"; // [{2, 3}, {0, 5}]
+  string S = "abcc"; // [{2, 3}]
+  // string S = "abaaba"; // [{2, 3}, {0, 5}]
   // string S = "acababaee"; // [{7, 8}, {3, 6}, {2, 5}]
 
   find_repetitions(S);
