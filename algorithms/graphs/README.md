@@ -52,7 +52,8 @@
 
 | ☆   | Algorithms             | C++                             | Features                                                         | Resources |
 | --- | ---------------------- | ------------------------------- | ---------------------------------------------------------------- | --------- |
-|     | [LCA](./lca/README.md) | [Binary Lifting](./lca/lca.cpp) | Two pointers, Euler Tour, Binary lifting, TODO: Code not working |           |
+|     | [Binary Lifting](./lca/binary-lifting/README.md) | [C++](./lca/binary-lifting/lca-binary-lifting.cpp) | Binary lifting, |           |
+|     | |  | Two pointers, Euler Tour,  TODO: No Code yet |           |
 
 ## Graphs
 
