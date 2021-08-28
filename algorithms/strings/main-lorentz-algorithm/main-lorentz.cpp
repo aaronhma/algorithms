@@ -56,41 +56,46 @@ void find_repetitions(string s, int shift = 0)
   if (n == 1)
     return;
 
-  int nu = n / 2;
-  int nv = n - nu;
+  int leftLen = n / 2;
+  int rightLen = n - leftLen;
 
-  string u = s.substr(0, nu);
-  string v = s.substr(nu);
-  string ru(u.rbegin(), u.rend());
-  string rv(v.rbegin(), v.rend());
+  string leftStr = s.substr(0, leftLen);
+  string rightStr = s.substr(leftLen);
+  string leftStrReverted(leftStr.rbegin(), leftStr.rend());
+  string rightStrReverted(rightStr.rbegin(), rightStr.rend());
 
-  find_repetitions(u, shift);
-  find_repetitions(v, shift + nu);
+  find_repetitions(leftStr, shift);
+  find_repetitions(rightStr, shift + leftLen);
 
-  vector<int> z1 = z_function(ru);
-  vector<int> z2 = z_function(v + '#' + u);
-  vector<int> z3 = z_function(ru + '#' + rv);
-  vector<int> z4 = z_function(v);
+  vector<int> z1 = z_function(leftStrReverted);
+  vector<int> z2 = z_function(rightStr + '#' + leftStr);
+  vector<int> z3 = z_function(leftStrReverted + '#' + rightStrReverted);
+  vector<int> z4 = z_function(rightStr);
+
+  // cout << "z1: " << z1 << "\n";
+  // cout << "z2: " << z2 << "\n";
+  // cout << "z3: " << z3 << "\n";
+  // cout << "z4: " << z4 << "\n";
 
   for (int i = 0; i < n; i++)
   {
     int l, k1, k2;
 
-    if (i < nu)
+    if (i < leftLen)
     {
-      l = nu - i;
-      k1 = get_z(z1, nu - i);
-      k2 = get_z(z2, nv + 1 + i);
+      l = leftLen - i;
+      k1 = get_z(z1, leftLen - i);
+      k2 = get_z(z2, rightLen + 1 + i);
     }
     else
     {
-      l = i - nu + 1;
-      k1 = get_z(z3, nu + 1 + nv - 1 - (i - nu));
-      k2 = get_z(z4, (i - nu) + 1);
+      l = i - leftLen + 1;
+      k1 = get_z(z3, leftLen + 1 + rightLen - 1 - (i - leftLen));
+      k2 = get_z(z4, (i - leftLen) + 1);
     }
 
     if (k1 + k2 >= l)
-      convert_to_repetitions(shift, i < nu, i, l, k1, k2);
+      convert_to_repetitions(shift, i < leftLen, i, l, k1, k2);
 
     // cout << "l: " << l << "\n";
     // cout << "k1: " << k1 << "\n";
@@ -100,8 +105,8 @@ void find_repetitions(string s, int shift = 0)
 
 int main()
 {
-  // string S = "abaaba"; // [{2, 3}, {0, 5}]
-  string S = "acababaee"; // [{7, 8}, {3, 6}, {2, 5}]
+  string S = "abaaba"; // [{2, 3}, {0, 5}]
+  // string S = "acababaee"; // [{7, 8}, {3, 6}, {2, 5}]
 
   find_repetitions(S);
 
