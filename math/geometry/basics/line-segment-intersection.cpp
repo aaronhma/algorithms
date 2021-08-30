@@ -99,11 +99,21 @@ type cross(const point2d<type> &a, const point2d<type> &b)
   return a.x * b.y - a.y * b.x;
 }
 
-int sign() {}
-bool intersection1(point2d &a, point2d &b, point2d &c, point2d &d) {}
-bool intersection(point2d &a, point2d &b, point2d &c, point2d &d)
+template <typename type>
+int sign(type x) {
+  return x >= 0 ? (x ? 1 : 0) : -1;
+}
+
+template <typename type>
+bool intersection1(type &a, type &b, type &c, type &d) {}
+
+template <typename type>
+bool intersection(point2d<type> &a, point2d<type> &b, point2d<type> &c, point2d<type> &d)
 {
-  if ()
+  if (cross(a, d) == 0 && cross(b, d) == 0)
+    return intersection1(a.x, b.x, c.x, d.x) && intersection1(a.y, b.y, c.y, d.y);
+
+  return sign();
 }
 
 int main()

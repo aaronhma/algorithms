@@ -50,10 +50,10 @@
 
 ### [Lowest Common Ancestor](https://www.youtube.com/watch?v=X5pp8L_lypw)
 
-| ☆   | Algorithms             | C++                             | Features                                                         | Resources |
-| --- | ---------------------- | ------------------------------- | ---------------------------------------------------------------- | --------- |
-|     | [Binary Lifting](./lca/binary-lifting/README.md) | [C++](./lca/binary-lifting/lca-binary-lifting.cpp) | Binary lifting, |           |
-|     | |  | Two pointers, Euler Tour,  TODO: No Code yet |           |
+| ☆   | Algorithms                                       | C++                                                | Features                                    | Resources |
+| --- | ------------------------------------------------ | -------------------------------------------------- | ------------------------------------------- | --------- |
+|     | [Binary Lifting](./lca/binary-lifting/README.md) | [C++](./lca/binary-lifting/lca-binary-lifting.cpp) | Binary lifting,                             |           |
+|     |                                                  |                                                    | Two pointers, Euler Tour, TODO: No Code yet |           |
 
 ## Graphs
 
