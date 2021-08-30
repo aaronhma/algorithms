@@ -27,6 +27,14 @@ struct Point {
   bool operator==(const Point &other) {
     return x == other.x && y == other.y;
   }
+
+  void update(int px, int py) {
+    parent_x = px, parent_y = py;
+  }
+
+  void update(int px, int py, double nf, double ng, double nh) {
+    parent_x = px, parent_y = py, f = nf, g = ng, h = nh;
+  }
 };
 
 // Calculate the heuristic using the distance formula (see https://www.google.com/search?q=distance+formula)
@@ -81,24 +89,20 @@ void aStarSearch(vvi &arr, Point &start, Point &end, int n, int m)
   vector<vector<Point>> points(n, vector<Point>(m)); // Details of cell (i, j)
 
   // Update starting cell value
-  points[start.x][start.y].f = 0.0;
-  points[start.x][start.y].g = 0.0;
-  points[start.x][start.y].h = 0.0;
-  points[start.x][start.y].parent_x = start.x;
-  points[start.x][start.y].parent_y = start.y;
+  points[start.x][start.y].update(start.x, start.y, 0.0, 0.0, 0.0);
 
   // {f, {i, j}}
   // f = g + h
   queue<pair<double, Point>> Q;
-  Q.push({0.0, {start.x, start.y}});
+  Q.push({0.0, start});
 
   while (!Q.empty())
   {
     // Take top node from the queue
-    pair<double, Point> node = Q.front();
+    Point node = Q.front().second;
     Q.pop();
 
-    int i = node.second.x, j = node.second.y;
+    int i = node.x, j = node.y;
     visited[i][j] = 1; // Mark current node as visited
 
     // Check through neighbors
@@ -114,8 +118,7 @@ void aStarSearch(vvi &arr, Point &start, Point &end, int n, int m)
         if (neighbor.x == end.x && neighbor.y == end.y)
         {
           cout << "Path exists.\nThe path from (" << start.x << ", " << start.y << ") to (" << end.x << ", " << end.y << ") is:\n";
-          points[neighbor.x][neighbor.y].parent_x = i;
-          points[neighbor.x][neighbor.y].parent_y = j;
+          points[neighbor.x][neighbor.y].update(i, j);
           tracePath(points, end);
           return;
         }
@@ -138,11 +141,7 @@ void aStarSearch(vvi &arr, Point &start, Point &end, int n, int m)
             Q.push({fNew, {neighbor.x, neighbor.y}});
 
             // Update the details of this cell
-            points[neighbor.x][neighbor.y].f = fNew;
-            points[neighbor.x][neighbor.y].g = gNew;
-            points[neighbor.x][neighbor.y].h = hNew;
-            points[neighbor.x][neighbor.y].parent_x = i;
-            points[neighbor.x][neighbor.y].parent_y = j;
+            points[neighbor.x][neighbor.y].update(i, j, fNew, gNew, hNew);
           }
         }
       }
