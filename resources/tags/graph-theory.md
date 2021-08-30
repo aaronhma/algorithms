@@ -9,7 +9,8 @@ Walk: Any sequence of edges joining a sequence of vertices. Suppose you go from 
 Trail: A walk in which all edges are distinct. So, you do not travel a given edge more than once.
 
 Cycle: A non-empty trail starting and ending at the same vertex.
-    https://medium.com/the-acm-manipal-blog/breaking-the-ice-with-graphs-7a3cdcad7b55
+
+https://medium.com/the-acm-manipal-blog/breaking-the-ice-with-graphs-7a3cdcad7b55
 
 Discrete Mathematics 1 & 2 https://www.youtube.com/watch?v=tyDKR4FG3Yw&list=PLDDGPdw7e6Ag1EIznZ-m-qXu4XX3A0cIz
 
