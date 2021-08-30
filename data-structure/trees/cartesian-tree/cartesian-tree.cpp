@@ -1,3 +1,4 @@
+// TODO: Not working
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -146,7 +147,7 @@ mt19937 rng((uint32_t)chrono::steady_clock::now().time_since_epoch().count());
 
 struct item
 {
-  int key, priority;
+  int key, priority, size;
   item *left, *right;
   item() {}
   item(int key) : key(key), priority(rng()), left(NULL), right(NULL) {}
@@ -162,10 +163,20 @@ void split(item *t, int key, item *&l, item *&r)
     split(t->left, key, l, t->left), r = t;
 }
 
+int update_size(item *t) {
+  if (!t) return 0;
+
+  return t->size = 1 + update_size(t->left) + update_size(t->right);
+}
+
 int main()
 {
-  if (!NULL)
-    cout << NULL << "\n";
+  item *l = NULL, *r = NULL, *t, *lf = new item(6), *rf = new item(4);
+  t->left = lf; t->right = rf;
+  split(t, 5, l, r);
+
+  if (l) cout << "Left subtree size " << l->size << "\n";
+  if (r) cout << "Right subtree size " << r->size << "\n";
 
   return 0;
 }

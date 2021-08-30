@@ -6,11 +6,9 @@
 
 Given a weighted, undirected graph $G$ with $n$ vertices and $m$ edges. You want to find a spanning tree of this graph which connects all vertices and has the least weight (i.e. the sum of weights of edges is minimal). A spanning tree is a set of edges such that any vertex can reach any other by exactly one simple path. The spanning tree with the least weight is called a minimum spanning tree.
 
-In the left image you can see a weighted undirected graph, and in the right image you can see the corresponding minimum spanning tree.
+![Steps](../images/prims_steps.png)
 
-![Image](https://raw.githubusercontent.com/e-maxx-eng/e-maxx-eng/master/img/MST_before.png) ![Image](https://raw.githubusercontent.com/e-maxx-eng/e-maxx-eng/master/img/MST_after.png)
-
-It is easy to see that any spanning tree will only contain $n − 1$ edges, thus there are no cycles.
+It is easy to see that any spanning tree will only contain $n - 1$ edges, thus there are no cycles.
 
 ## The Idea (For Sparse Graphs)
 

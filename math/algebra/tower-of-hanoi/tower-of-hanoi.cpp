@@ -7,11 +7,11 @@ void TowerOfHanoi(int n, string from_tower, string to_tower, string aux_tower)
 {
     if (n == 1)
     {
-    cout << "Move disk 1 from rod " << from_tower <<  " to rod " << to_tower<<endl;
+    cout << "Move disk 1 from rod " << from_tower <<  " to rod " << to_tower<<"\n";
     return;
     }
     TowerOfHanoi(n - 1, from_tower, aux_tower, to_tower);
-    cout << "Move disk " << n << " from rod " << from_tower << " to rod " << to_tower << endl;
+    cout << "Move disk " << n << " from rod " << from_tower << " to rod " << to_tower << "\n";
     TowerOfHanoi(n - 1, aux_tower, to_tower, from_tower);
 }
 

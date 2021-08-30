@@ -18,14 +18,14 @@ void TowerOfHanoi(int n, string from_tower, string to_tower, string aux_tower)
 {
     if (n == 1)
     {
-    cout << "Move disk 1 from rod " << from_tower <<  " to rod " << to_tower<<endl;
+    cout << "Move disk 1 from rod " << from_tower <<  " to rod " << to_tower<< "\n";
     return;
     }
     // Move n - 1 disks to the auxiliary (B) rod
     TowerOfHanoi(n - 1, from_tower, aux_tower, to_tower);
 
     // Move the bottom disk to the end (C) rod
-    cout << "Move disk " << n << " from rod " << from_tower << " to rod " << to_tower << endl;
+    cout << "Move disk " << n << " from rod " << from_tower << " to rod " << to_tower << "\n";
 
     // Move the n - 1 disks from the auxiliary (B) rod to the end (C) rod
     TowerOfHanoi(n - 1, aux_tower, to_tower, from_tower);

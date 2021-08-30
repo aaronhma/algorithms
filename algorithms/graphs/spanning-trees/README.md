@@ -4,9 +4,28 @@
 
 A spanning tree is a subgraph of a graph. A spanning tree always have $n$ vertices and $n - 1$ edges and there can not be a cycle in a spanning tree. There can be many spanning trees in a graph. The weight of a spanning tree is the sum of weights given to each edge of the spanning tree.
 
-## [Minimum Spanning Trees (MST)](./minimum-spanning-tree.md)
+## Minimum Spanning Trees (MST)
 
 A minimum spanning tree (MST) or minimum weight spanning tree for a weighted, connected, and undirected graph is a spanning tree with a weight less than or equal to the weight of every other spanning tree. The MST has $n$ vertices and $n - 1$ edges. The weight of a spanning tree is the sum of weights given to each edge of the spanning tree.
+
+-   minimum spanning tree: a graph whose weight is the smallest
+-   maximum spanning tree: a graph whose weight is the largest
+
+## Example
+
+Suppose we have the following graph:
+
+![Fig 7.35](images/fig_7.35.png)
+
+The minimum spanning tree of the graph has a weight of 20:
+
+![Fig 7.36](images/fig_7.36.png)
+
+The maximum spanning tree of the graph has a weight of 32:
+
+![Fig 7.37](images/fig_7.37.png)
+
+**ℹ️ NOTE: A graph may have multiple minimum and maximum spanning trees.**
 
 ## Kruskal's vs. Prim's
 
