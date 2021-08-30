@@ -1,7 +1,3 @@
-# AoPS Geometry Notes
+## Geometry
 
-## About Geometry
-
-Geometry is the study of things like points, lines, and surfaces.
-
-This folder contains notes for AoPS Introduction to Geometry.
+> Geometry is the study of things like points, lines, and surfaces.

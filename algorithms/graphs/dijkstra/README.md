@@ -8,7 +8,7 @@ Like the Bellman–Ford algorithm, Dijkstra’s algorithm maintains distances to
 
 Figure $7.20$ shows how Dijkstra’s algorithm processes a graph. Like in the Bellman–Ford algorithm, the initial distance to all nodes, except for the starting node, is infinite. The algorithm processes the nodes in the order $1$, $5$, $4$, $2$, $3$, and at each node reduces distances using edges that start at the node. Note that the distance to a node never changes after processing the node.
 
-![Figure 7.20](../images/dijkstras/dijkstras.png)
+![Figure 7.20](./images/dijkstras.png)
 
 ## Implementation of Dijkstra's on Sparse Graphs
 

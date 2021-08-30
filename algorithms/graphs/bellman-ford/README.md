@@ -18,7 +18,7 @@ can be used to reduce distances, which means that the distances are final.
 
 ### **[Video Explanation](https://www.youtube.com/watch?v=obWXjtg0L64)**
 
-![Figure 7.18](../images/bellman-ford/fig_7_18.png)
+![Figure 7.18](./images/bellman-ford.png)
 
 ## Implementation
 
