@@ -6,6 +6,6 @@
 
 Every year, there is at least $365$ days each year.
 
-* There is an **extra** day every $4$ years
-* but **not** every $100$ years
-* **except** every $400$th year.
+-   There is an **extra** day every $4$ years
+-   but **not** every $100$ years
+-   **except** every $400$th year.
