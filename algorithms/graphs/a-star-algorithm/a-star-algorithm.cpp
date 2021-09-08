@@ -2,8 +2,10 @@
 
 using namespace std;
 
-// 8-sided direction vector
+// 8-sided direction vector (with Euclidean distances)
 const int dx[8] = {1, 1, 0, -1, -1, -1, 0, 1}, dy[8] = {0, 1, 1, 1, 0, -1, -1, -1};
+// 4-sided direction vector (with Manhattan distances)
+// const int dx[4] = {1, 0, -1, 0}, dy[4] = {0, 1, 0, -1};
 
 struct Point
 {
@@ -42,7 +44,10 @@ struct Point
 // Calculate the heuristic using the Euclidean Distance formula (see https://wikipedia.org/wiki/Euclidean_distance#Two_dimensions)
 double calculateHValue(int &new_x, int &new_y, Point &dest)
 {
+  // calculating Euclidean distance
   return sqrt((new_x - dest.x) * (new_x - dest.x) + (new_y - dest.y) * (new_y - dest.y));
+  // calculating Manhattan distances
+  // return abs(new_x - dest.x) + abs(new_y - dest.y);
 }
 
 void tracePath(vector<vector<Point>> &points, Point &dest)
