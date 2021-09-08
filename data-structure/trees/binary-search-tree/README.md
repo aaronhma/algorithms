@@ -2,10 +2,12 @@
 
 ## Background
 
-A binary search tree is a [binary tree](../binary_tree/README.md) where nodes are always ordered by a properties as shown:
+A binary search tree is a [binary tree](../binary-tree/README.md) where nodes are always ordered by a properties as shown:
 
 -   left nodes are smaller than the current node
 -   right nodes are larger than the current node
+
+The in-order traversal of a BST is the sorted order of the BST.
 
 ![Image](https://www.interviewcake.com/images/svgs/bst__binary_search_tree.svg?bust=206)
 
@@ -18,14 +20,12 @@ A binary search tree is a [binary tree](../binary_tree/README.md) where nodes ar
 -   Pros:
 
     -   Good performance:
-        -   All operations: $\theta(log \ n)$ time
+        -   All operations: $\theta(log \ n)$ time for insert, delete, search
         -   Better worst case performance than hash map
-    -   BSTs are sorted, so finding closest elements to a value is $
-    \theta(log \ n)$ time
 
 -   Cons:
-    -   No constant time operations
-    -   $\theta(n)$ worst case time if unbalanced to make it balanced
+    -   No constant time operations for insert, delete, search
+    -   $\theta(n)$ worst case time if unbalanced for insert, delete, search - This problem is fixed using a self-balanced BST (see [AVL Tree](../avl-tree/README.md)).
 
 ## Balanced vs. Un-balanced BSTs
 
@@ -40,9 +40,23 @@ A balanced binary search tree follows the BST properties along with additional p
 
 ([Source](https://www.interviewcake.com/concept/cpp/binary-search-tree))
 
+> [AVL Tree](../avl-tree/README.md) is a self-balanced BST.
+
 Also, we can determine the # of nodes for each subtree given the number of nodes in the tree ($n$):
 
 ![Image](../images/tree/nodes.png)
+
+## Insertion in a BST
+
+We check that the BST is not empty. If the BST is empty, we simply add the node with value $x$. Then, if $x < root.val$, we perform $root.left = insert(root.left, x)$. Otherwise, we perform $root.right = insert(root.right, x)$.
+
+**NOTE: For a BST supporting duplicates, we only add the node $x$ if the value doesn't exist. If $x$ exists, we update $x$'s count.**
+
+## Searching in a BST
+
+We check that the BST is not empty. If the BST is not empty, we check that the current value is not equal to the target value $x$. Then, if $x < root.val$, we check if $x$ is in the left subtree. Otherwise, we check if $x$ is in the right subtree.
+
+**NOTE: For a BST supporting duplicates, the # of times the value $x$ exists in the BST should be printed.**
 
 ## Deleting from a BST
 
@@ -76,68 +90,4 @@ Also, we can determine the # of nodes for each subtree given the number of nodes
                 60   80                           80
 ```
 
-C++ code:
-
-```cpp
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
- */
-class Solution {
-public:
-    TreeNode* deleteNode(TreeNode* root, int key) {
-        if (root == NULL) return NULL;
-
-        if (key < root->val)
-            root->left = deleteNode(root->left, key);
-        else if (key > root->val)
-            root->right = deleteNode(root->right, key);
-        else {
-            if (root->left == NULL && root->right == NULL)
-                return NULL;
-
-            if (root->left == NULL) {
-                TreeNode *tmp = root->right;
-                // free(root);
-                return tmp;
-            }
-
-            if (root->right == NULL) {
-                TreeNode *tmp = root->left;
-                // free(root);
-                return tmp;
-            }
-
-
-            TreeNode *tmp = root->right;
-
-            while (tmp->left != NULL) {
-                tmp = tmp->left;
-            }
-
-            root->val = tmp->val;
-
-            root->right = deleteNode(root->right, tmp->val);
-        }
-
-        return root;
-    }
-};
-```
-
-## Bonus: What BST means
-
--   B: Binary - The tree is a [binary tree](../binary-tree/README.md).
--   S: Search - The tree is organized in a fashion suitable for sorting (see BST properties).
--   T: Tree - It's a tree.
-
-## References
-
--   [Interview Cake: Binary Search Tree](https://www.interviewcake.com/concept/cpp/binary-search-tree)
+**NOTE: For a BST supporting duplicates, we only remove the node of the node's count is equal to $1$. Otherwise, we only decrease the count.**

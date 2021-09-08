@@ -69,5 +69,3 @@ long long pow(long long base, long long expo) {
   return ans;
 }
 ```
-
-## **[Learn More](https://www.geeksforgeeks.org/write-a-c-program-to-calculate-powxn/)**
