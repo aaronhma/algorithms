@@ -4,6 +4,7 @@ using namespace std;
 
 // 8-sided direction vector (with Euclidean distances)
 const int dx[8] = {1, 1, 0, -1, -1, -1, 0, 1}, dy[8] = {0, 1, 1, 1, 0, -1, -1, -1};
+
 // 4-sided direction vector (with Manhattan distances)
 // const int dx[4] = {1, 0, -1, 0}, dy[4] = {0, 1, 0, -1};
 
@@ -44,9 +45,9 @@ struct Point
 // Calculate the heuristic using the Euclidean Distance formula (see https://wikipedia.org/wiki/Euclidean_distance#Two_dimensions)
 double calculateHValue(int &new_x, int &new_y, Point &dest)
 {
-  // calculating Euclidean distance
+  // calculating Euclidean distance - diagonal allowed
   return sqrt((new_x - dest.x) * (new_x - dest.x) + (new_y - dest.y) * (new_y - dest.y));
-  // calculating Manhattan distances
+  // calculating Manhattan distance - NO diagonal
   // return abs(new_x - dest.x) + abs(new_y - dest.y);
 }
 
@@ -54,22 +55,22 @@ void tracePath(vector<vector<Point>> &points, Point &dest)
 {
   int x = dest.x, y = dest.y;
 
-  stack<Point> path;
+  vector<Point> path;
 
   while (!(points[x][y].parent_x == x && points[x][y].parent_y == y))
   {
-    path.push({x, y});
+    path.push_back({x, y});
     int tmp_x = x;
     x = points[x][y].parent_x;
     y = points[tmp_x][y].parent_y;
   }
 
-  path.push({x, y});
+  path.push_back({x, y});
 
-  while (!path.empty())
+  reverse(path.begin(), path.end());
+
+  for (Point p : path)
   {
-    Point p = path.top();
-    path.pop();
     cout << "-> (" << p.x << ", " << p.y << ") ";
   }
 
@@ -111,7 +112,7 @@ void aStarSearch(vector<vector<int>> &arr, Point &start, Point &end, int n, int 
     node.visited = 1; // Mark current node as visited
 
     // Check through neighbors
-    for (int k = 0; k < 8; k++)
+    for (int k = 0; k < (int)size(dx); k++)
     {
       // New neighbor index
       Point neighbor(i + dx[k], j + dy[k]);
@@ -131,7 +132,7 @@ void aStarSearch(vector<vector<int>> &arr, Point &start, Point &end, int n, int 
         // If we haven't visited this neighbor, visit it.
         if (!neighbor.visited)
         {
-          // Diagonal case
+          // Diagonal + no diagonal case
           double val = (dx[k] != 0 && dy[k] != 0) ? 1.414 : 1.0;
 
           // Variables to store the new g, h, and f value
