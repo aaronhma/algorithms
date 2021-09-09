@@ -1,5 +1,24 @@
 # Combinatorics
 
+## Table of Contents
+
+- [ ] Fundamentals
+  - [ ] [Finding Power of Factorial Divisor]
+  - [ ] [Binomial Coefficients]
+  - [ ] [Catalan Numbers]
+
+- [ ] Techniques
+  - [ ] [The Inclusion-Exclusion Principle]
+  - [ ] [Burnside's lemma / Pólya enumeration theorem]
+  - [ ] [Stars and bars]
+  - [ ] [Generating all K-combinations]
+
+- [ ] Tasks
+- [ ] [Placing Bishops on a Chessboard]
+- [ ] [Balanced bracket sequences]
+- [ ] [Counting labeled graphs]
+
+
 ## About
 
 This section contains content from [The Daily Challenge with Po-Shen Loh - Module 3: Combinatorics](https://daily.poshenloh.com/courses/3-combinatorics), [the Art of Problem Solving: Introduction to Counting & Probability](https://artofproblemsolving.com/store/item/intro-counting), and [the Art of Problem Solving: Intermediate Counting & Probability](https://artofproblemsolving.com/store/item/intermediate-counting).
