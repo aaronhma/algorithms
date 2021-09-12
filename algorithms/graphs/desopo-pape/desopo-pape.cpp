@@ -68,6 +68,7 @@ int main()
   vector<int> parent(n, -1);
   vector<int> distance = desopoPape(graph, parent, 0, n);
 
+  // 0 5 5 7 9 8
   for (int i : distance) cout << i << " ";
   cout << "\n";
 

@@ -5,11 +5,6 @@ using namespace std;
 
 const int INF_INT = 2147483647;
 
-void addEdge(vector<tuple<int, int, int>> &graph, int a, int b, int weight)
-{
-  graph.push_back({a, b, weight});
-}
-
 vector<int> bellmanFord(vector<tuple<int, int, int>> &graph, int n, int x)
 {
   // array of n nodes containing distance from node x to node i
@@ -40,7 +35,7 @@ vector<int> bellmanFord(vector<tuple<int, int, int>> &graph, int n, int x)
       // Reduce the distance
       if (new_dist < distance[b])
       {
-        distance[b] = min(distance[b], new_dist);
+        distance[b] = new_dist;
         any = 1;
       }
     }
@@ -57,19 +52,26 @@ int main()
   ios_base::sync_with_stdio(false);
   cin.tie(NULL);
 
-  int n = 6, x = 0;
+  int n = 6, x = 1;
 
   vector<tuple<int, int, int>> edges(n);
-  vector<pair<int, pair<int, int>>> edge{{10, {0, 1}}, {1, {2, 1}}, {-2, {3, 2}}, {8, {0, 5}}, {1, {5, 4}}, {-4, {4, 1}}, {-1, {4, 3}}, {2, {1, 3}}};
+  vector<vector<int>> graph{{1, 3, 1}, {1, 2, 2}, {1, 4, 7}, {3, 4, 3}, {2, 4, 3}, {2, 5, 5}, {4, 5, 2}};
 
-  for (auto i : edge)
+  for (auto i : graph)
   {
-    addEdge(edges, i.second.first, i.second.second, i.first);
+    edges.push_back({i[0], i[1], i[2]});
   }
 
   vector<int> distance = bellmanFord(edges, n, x);
 
-  for (int i = 1; i <= n; i++)
+  // Distance from node 0 -> node 1: -2147483648
+  // Distance from node 0 -> node 2: -2147483648
+  // Distance from node 0 -> node 3: -2147483646
+  // Distance from node 0 -> node 4: 9
+  // Distance from node 0 -> node 5: 8
+  // Distance from node 0 -> node 6: 2147483647
+  // Distance from node 1 -> 5: 8
+  for (int i = 0; i <= n; i++)
   {
     cout << "Distance from node " << x << " -> node " << i << ": " << distance[i] << "\n";
   }

@@ -16,7 +16,7 @@ int main()
 
   // Preprocess
   int n = (int)arr.size();
-  int len = ceil(sqrt(n));
+  int len = (int)sqrt(n + .0) + 1;
 
   // b[i] - Sum of the i-th segment (each segment is of length len)
   vector<int> b(len);

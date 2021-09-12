@@ -6,13 +6,19 @@
 
 ![Image](https://miro.medium.com/max/970/1*7pbs4HCE_K6cH6jkcgxw_A.png)
 
-## The Idea Behind Dynamic Programming
+<details>
+
+<summary>The Idea Behind Dynamic Programming</summary>
 
 Imagine you are given two bags of coins and you are asked to count the # of coins in the first bag. (There are $51$ coins in the first bag.) Then, you are asked to compute the total # of coins in **both** bags ASAP. Would you count the # of coins in the first bag again? **No!** Since we already know the # of coins in the first bag, all we have to do is add the # of coins in the second bag to the # coins in the first bag (which is $51$). This is the idea behind DP: re-using the values we know and only computing the values we don't know.
 
 ![Image](images/coin_bag.png)
 
-## The Approaches of Dynamic Programming
+</details>
+
+<details>
+
+<summary>The Approaches of Dynamic Programming</summary>
 
 ### 1. Top-Down Approach (Memoization)
 
@@ -55,15 +61,15 @@ $$dp[i] = dp[i - 1] + dp[i - 2]$$
 
 Though tabulation is hard to code (we need to come up with a specific order when dealing with a lot of conditions), tabulation is _(generally)_ **faster** than memoization.
 
----
+</details>
 
 ## The Formula to Solve Any DP Problem
 
 1. [Recognize if the problem can be solved with DP](docs/when_to_use_dp.md)
-
-2. Identify the problem variables
-3. Express the recurrence relation
-4. Identify the base cases
+2. Identify the problem variables (How many parameters we need to store? - If we need to store $n$ parameters, we need a $n$-D array)
+3. Identify the base case(s)
+4. Express the recurrence relation (At each step what we're going to do using previously computed values - using the top (`dp[i - 1][j]`) or left diagonal (`dp[i - 1][j - 1]`) or right diagonal (`dp[i - 1][j + 1]`) or left (`dp[i][j - 1]`) or top previous value (`dp[i - 1][j - val[i]]`) or left previous value (`dp[i][j - val[i]]`), min/max of a range, etc).
 5. [Decide if you want to implement it iteratively or recursively](docs/tabulation_vs_memoization.md)
 6. Add memoization
-7. Determine the time complexity. Optimize the solution if the time complexity gives us a TLE when submitting.
+7. Determine the time complexity. Optimize the solution if the time complexity gives us a $\color{red}{\text{TLE}}$ when submitting.
+8. Print the solution - The answer may be the max/min of the last row/last column/entire matrix, or the last value in the matrix, etc.
