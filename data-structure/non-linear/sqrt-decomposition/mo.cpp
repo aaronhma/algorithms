@@ -1,3 +1,6 @@
+// https://github.com/Ashishgup1/Competitive-Coding/blob/master/Z%20Algorithm.cpp
+// Sample Problem 1: http://codeforces.com/problemset/problem/127/D
+// Sample Solution 1: http://codeforces.com/contest/127/submission/39791421
 #include <bits/stdc++.h>
 
 using namespace std;
