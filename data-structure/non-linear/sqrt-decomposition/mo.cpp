@@ -7,24 +7,27 @@ using namespace std;
 
 const int N = 10;
 const int M = 10;
-const int SZ = (int)sqrt(N + .0) + 1;
+const int blockSize = (int)sqrt(N + .0) + 1;
+int freq[M];
+long long sum = 0;
 
 struct Query {
   int l, r, idx;
 
   Query() {}
   Query(int L, int R, int I) : l(L), r(R), idx(I) {}
-};
 
-int n, q = 3;
-int freq[M];
-long long cur = 0;
+  // sorting comparator
+  bool operator<(Query other) const {
+    return make_pair(l / blockSize, r) < make_pair(other.l / blockSize, other.r);
+  }
+};
 
 // sorting comparator
 bool comp(struct Query &d1, struct Query &d2) {
   // query 1 or 2 starting block index
-  int b1 = d1.l / SZ;
-  int b2 = d2.l / SZ;
+  int b1 = d1.l / blockSize;
+  int b2 = d2.l / blockSize;
 
   // query 1 and query 2 are not in the same block
   if (b1 != b2)
@@ -34,58 +37,69 @@ bool comp(struct Query &d1, struct Query &d2) {
 }
 
 inline void add(int x) {
-  cur -= 1LL * freq[x] * freq[x] * x;
+  sum -= 1LL * freq[x] * x;
   freq[x]++;
-  cur += 1LL * freq[x] * freq[x] * x;
+  sum += 1LL * freq[x] * x;
 }
 
 inline void remove(int x) {
-  cur -= 1LL * freq[x] * freq[x] * x;
+  sum -= 1LL * freq[x] * x;
   freq[x]--;
-  cur += 1LL * freq[x] * freq[x] * x;
+  sum += 1LL * freq[x] * x;
 }
 
-void mo(vector<Query> query, vector<int> &arr) {
-  sort(query.begin(), query.end(), comp);
-  vector<int> ans(query.size());
+vector<int> mo(vector<int> &arr, vector<Query> queries) {
+  vector<int> ans(queries.size());
+  sort(queries.begin(), queries.end());
 
   int l = 1, r = 0;
-  cur = 0;
+  // int l = 0, r = -1;  // work the same above
+  sum = 0;
 
-  for (int i = 1; i <= q; i++) {
-    while (l < query[i].l)
-      remove(arr[l++]);
-    while (l > query[i].l)
-      add(arr[--l]);
-    while (r < query[i].r)
-      add(arr[++r]);
-    while (r > query[i].r)
-      remove(arr[r--]);
+  // invariant: data structure will always reflect the range [cur_l, cur_r]
+  for (Query query : queries) {
+    while (l > query.l) {
+      l--;
+      add(arr[l]);
+    }
 
-    cout << query[i].idx << " | " << cur << "\n";
+    while (r < query.r) {
+      r++;
+      add(arr[r]);
+    }
 
-    ans[query[i].idx] = cur;
+    while (l < query.l) {
+      remove(arr[l]);
+      l++;
+    }
+
+    while (r > query.r) {
+      remove(arr[r]);
+      r--;
+    }
+
+    ans[query.idx] = sum;
   }
 
-  for (int i : ans) {
-    cout << i << " ";
-  }
-  cout << "\n";
-
-  // return ans;
+  return ans;
 }
 
 int main()
 {
   vector<int> arr{2, 3, 4, 1, 5, 1, 4, 3, 1, 1}; // length of 10
   // vector<Query> queries {
-  //   l=3, r=7, idx=0,   // {1, 5, 1, 4, 3} 4
-  //   l=0, r=1, idx=1,   // {2, 3} 2
-  //   l=6, r=9, idx=2,   // {4, 3, 1, 1} 3
+  //   l=3, r=7, idx=0,   // {1, 5, 1, 4, 3}  14
+  //   l=0, r=1, idx=1,   // {2, 3}  5
+  //   l=6, r=9, idx=2,   // {4, 3, 1, 1}  9
   // }
   vector<Query> queries {Query(3, 7, 0), Query(0, 1, 1), Query(6, 9, 2)};
+  // vector<Query> queries {Query(1, 2, 0), Query(0, 1, 1)};  // much simpler example
 
-  mo(queries, arr);
+  vector<int> ans = mo(arr, queries); // 14 5 9
+
+  for (int i : ans)
+    cout << i << " ";
+  cout << "\n";
 
   return 0;
 }
