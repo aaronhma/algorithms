@@ -15,7 +15,7 @@ Sqrt Decomposition allows us to answer queries in $\theta(\sqrt{n})$, and the im
 
 We "decompose" the array into $\sqrt{n}$ blocks, where each block is of size $\sqrt{n}$ (hence the name Sqrt Decomposition).
 
-![Image](https://jojozhuang.github.io/assets/images/algorithm/1232/build_blocks.png)
+![Image](./images/sqrt-de-1.png)
 
 If the length of array $n$ is not a perfect square, we'll create $\lceil \sqrt{n} \ \rceil$ blocks, with the remaining unused elements filled with $0$.
 
@@ -27,11 +27,11 @@ There are two cases for the query.
 
 If the range is on block boundaries, we can get the sum from blocks directly. For example, if the range is from $3$ to $8$, then $block[1]$ and $block[2]$ perfectly cover this range.
 
-![Image](https://jojozhuang.github.io/assets/images/algorithm/1232/query1.png)
+![Image](./images/sqrt-de-2.png)
 
 If range crosses blocks partially, we cannot get the sum from blocks directly. For example, if the range is from $2$ to $7$, we can get the sum for array $[3, 4, 5]$ from $block[1]$, however, we have to get other sums from the array.
 
-![Image](https://jojozhuang.github.io/assets/images/algorithm/1232/query2.png)
+![Image](./images/sqrt-de-3.png)
 
 The query time is $\theta(\sqrt{n})$.
 
@@ -39,7 +39,7 @@ The query time is $\theta(\sqrt{n})$.
 
 If we update the array, we need to update the block accordingly. For example, $update(2,7)$ will modify the $array[2]$ from $1$ to $7$, and update $block[0]$ from $9$ to $15$.
 
-![Image](https://jojozhuang.github.io/assets/images/algorithm/1232/update.png)
+![Image](./images/sqrt-de-4.png)
 
 The update operation takes $\theta(1)$ time.
 
