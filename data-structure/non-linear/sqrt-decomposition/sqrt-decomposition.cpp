@@ -2,6 +2,14 @@
 
 using namespace std;
 
+// Update arr[l] = r
+void update(vector<int> &arr, vector<int> &b, int l, int r, int len)
+{
+  int prev = arr[l];
+  b[l / len] += (r - prev);
+  arr[l] = r;
+}
+
 int sqrtDecomposition(vector<int> arr, int ql, int qr) {
   int n = size(arr);
 
@@ -50,14 +58,14 @@ int main() {
   vector<int> arr{1, 1, 1, 1,   1, 1, 1, 1,   1, 1, 1, 1,   1, 1, 1};
 
   // Case 1: else case in the function
-  // int sum = sqrtDecomposition(arr, 3, 12); // 10
+  int sum = sqrtDecomposition(arr, 3, 12); // 10
 
   // Case 2: Special case, both l and r are in the same blocks
   // int sum = sqrtDecomposition(arr, 0, 3); // 4
 
   // Case 3: Update update individual array elements
-  arr[4] = 2;
-  int sum = sqrtDecomposition(arr, 3, 12); // 11
+  // arr[4] = 2;
+  // int sum = sqrtDecomposition(arr, 3, 12); // 11
 
   cout << "sum: " << sum << "\n";
 

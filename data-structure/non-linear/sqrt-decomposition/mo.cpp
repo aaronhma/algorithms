@@ -2,18 +2,19 @@
 
 using namespace std;
 
-const int N = 2e5 + 5;
-const int Q = 2e5 + 5;
-const int M = 1e6 + 5;
-const int SZ = sqrt(N) + 1;
+const int N = 10;
+const int M = 10;
+const int SZ = (int)sqrt(N + .0) + 1;
 
 struct Query {
   int l, r, idx;
-} query[Q];
 
-int n, q, a[N];
+  Query() {}
+  Query(int L, int R, int I) : l(L), r(R), idx(I) {}
+};
+
+int n, q = 3;
 int freq[M];
-long long ans[Q];
 long long cur = 0;
 
 // sorting comparator
@@ -41,23 +42,32 @@ inline void remove(int x) {
   cur += 1LL * freq[x] * freq[x] * x;
 }
 
-void mo() {
-  sort(query + 1, query + q + 1, comp);
+void mo(vector<Query> query, vector<int> &arr) {
+  sort(query.begin(), query.end(), comp);
+  vector<int> ans(query.size());
+
   int l = 1, r = 0;
   cur = 0;
 
   for (int i = 1; i <= q; i++) {
     while (l < query[i].l)
-      remove(a[l++]);
+      remove(arr[l++]);
     while (l > query[i].l)
-      add(a[--l]);
+      add(arr[--l]);
     while (r < query[i].r)
-      add(a[++r]);
+      add(arr[++r]);
     while (r > query[i].r)
-      remove(a[r--]);
+      remove(arr[r--]);
+
+    cout << query[i].idx << " | " << cur << "\n";
 
     ans[query[i].idx] = cur;
   }
+
+  for (int i : ans) {
+    cout << i << " ";
+  }
+  cout << "\n";
 
   // return ans;
 }
@@ -67,11 +77,12 @@ int main()
   vector<int> arr{2, 3, 4, 1, 5, 1, 4, 3, 1, 1}; // length of 10
   // vector<Query> queries {
   //   l=3, r=7, idx=0,   // {1, 5, 1, 4, 3} 4
-  //   l=0, r=1, idx=1,   // {2, 3} 3
+  //   l=0, r=1, idx=1,   // {2, 3} 2
   //   l=6, r=9, idx=2,   // {4, 3, 1, 1} 3
   // }
+  vector<Query> queries {Query(3, 7, 0), Query(0, 1, 1), Query(6, 9, 2)};
 
-  // int ans = mo();
+  mo(queries, arr);
 
   return 0;
 }

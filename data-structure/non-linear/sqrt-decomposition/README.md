@@ -13,10 +13,10 @@ Sqrt Decomposition allows us to answer queries in $\theta(\sqrt{n})$, and the im
 
 ## What problems can it be solved?
 
-Sqrt decomposition can be applied in a similar way to a whole class of other problems
+Sqrt decomposition can be applied in a similar way to a whole class of other problems:
 
 - finding the sum of elements of a continuous subarray
-- finding min/max element of a subarray
+- finding min/max element of a static subarray (can't update without preprocessing again)
 - finding the number of zero elements
 - finding the first non-zero element
 - counting elements which satisfy a certain property
