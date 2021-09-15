@@ -17,7 +17,7 @@ In Competitive Programming, we use the disjiont set data structure to store mult
 
 ### Storing Elements
 
-![Image](https://raw.githubusercontent.com/e-maxx-eng/e-maxx-eng/master/img/DSU_example.png)
+![Image](https://cp-algorithms.com/img/DSU_example.png)
 
 In the beginning, every element starts as a single set, therefore each vertex is its own tree. Then we combine the set containing the element 1 and the set containing the element 2. Then we combine the set containing the element 3 and the set containing the element 4. And in the last step, we combine the set containing the element 1 and the set containing the element 3.
 
@@ -55,7 +55,7 @@ If we call `find_set(v)` for some vertex $v$, we actually find the representativ
 
 You can see the operation in the following image. On the left there is a tree, and on the right side there is the compressed tree after calling `find_set(7)`, which shortens the paths for the visited nodes $7$, $5$, $3$ and $2$.
 
-![Image](https://raw.githubusercontent.com/e-maxx-eng/e-maxx-eng/master/img/DSU_path_compression.png)
+![Image](https://cp-algorithms.com/img/DSU_path_compression.png)
 
 ```cpp
 int find_set(int v) {

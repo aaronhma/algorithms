@@ -1,27 +1,51 @@
 # Divide & Conquer
 
-([Source](udacity.com))
-
-Source: Udacity's Data Structures & Algorithm Nanodegree
-
 ## About
 
-Divide and Conquer approach is suitable to solve a big (scale) problem by breaking it into smaller sub-problems, where each sub-problem looks exactly similar to the original problem. In general, there are three phases:
+The most-well known algorithm design strategy:
 
--   Divide - Break the given problem into smaller sub-problems
--   Conquer - Solve each sub-problem using recursion. The smallest sub-problem (base case) would have a simple straightforward solution.
--   Combine - This phase will automatically execute as a part of the recursion call stack, which combines the solution of smaller sub-problems to generate the final solution.
+1. **Divide** a problem instance into two or more smaller
+instances (ideally of about the same size)
+2. **Conquery** the smaller instances (usually recursively)
+3. **Merge** solutions to the smaller instances to obtain the solution to the original instance
 
--   [x] [Divide & Conquer algorithms](https://www.techiedelight.com/Category/divide-conquer/)
+## Example: Merge Sort
 
-A **divide and conquer** algorithm works by recursively breaking down a problem into two or more sub-problems of the same (or related) type (divide), until these become simple enough to be solved directly (conquer). The solutions to the sub-problems are then combined to give a solution to the original problem.
+Like [Quick Sort](https://github.com/aaronhma/algorithms/blob/master/algorithms/sorting/quick-sort/README.md), [Merge Sort](https://github.com/aaronhma/algorithms/tree/master/algorithms/sorting/merge-sort) is a **Divide and Conquer** algorithm.
 
-Divide and conquer algorithms are recursive algorithms. To solve a problem using D&C, there are two steps:
+Merge sort runs in $\theta(n \ log \ n)$ with $\theta(n)$ space. It divides the input array into two halves ($arr[left:mid]$, $arr[mid + 1: right]$), then repeatedly calls itself with the two halves, and merges the two sorted halves.
 
-1. Figure out the base case. This should be the simplest possible case.
-2. Divide or decrease your problem until it becomes the base case.
+As an example, let's say we want to sort the array $[38, 27, 43, 3, 9, 82, 10]$. The steps taken by merge sort is shown below:
 
-**Divide and conquer works by breaking a problem down into smaller and smaller pieces. If you’re using D&C on a list, the base case is probably an empty array or an array with one element.**
+![Image](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Merge-Sort-Tutorial.png)
+
+The `mergeSort` function can be easily implemented. For the implementation of the `merge` function, see [this](https://www.geeksforgeeks.org/merge-two-sorted-arrays/) article.
+
+```cpp
+// arr: The input array
+// left: Starting index of subarray
+// right: Ending index of subarray
+void mergeSort(vector<int> &arr, int left, int right)
+{
+  // Base case: invalid index
+  // No way to sort, exit
+  if (left >= right) return;
+
+  // Calculate middle element index
+  int mid = left + (right - left) / 2;
+
+  // Call merge sort for first half
+  mergeSort(arr, left, mid);
+
+  // Call merge sort for second half
+  mergeSort(arr, mid + 1, right);
+
+  // Merge the two halves that was sorted previously
+  merge(arr, left, mid, right);
+}
+```
+
+> ### **Extension: [Partition Position and Negative Integers w/ Merge Sort](https://www.techiedelight.com/segregate-positive-negative-integers-using-mergesort/?lang=cpp)**
 
 ## Tips
 
