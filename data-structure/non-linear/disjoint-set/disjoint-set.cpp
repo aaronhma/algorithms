@@ -50,7 +50,7 @@ public:
   }
 
 private:
-  vector<int> parent, rank;
+  vector<ll> parent, rank;
 };
 
 int main()
