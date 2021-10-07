@@ -32,20 +32,20 @@ public:
   // Join nodes in set a and nodes in set b together
   // Note: union is a reserved keyword in C++
   void Union(ll a, ll b) {
-    ll parent_a = find_parent(a);
-    ll parent_b = find_parent(b);
+    a = find_parent(a);
+    b = find_parent(b);
 
     // Union by rank based on depth
-    if (parent_a != parent_b) {
-      if (rank[parent_a] < rank[parent_b])
-        swap(parent_a, parent_b);
+    if (a != b) {
+      if (rank[a] < rank[b])
+        swap(a, b);
 
       // Attach smaller set to the larger set
-      parent[parent_b] = parent_a;
+      parent[b] = a;
 
       // Increase ranking of the now bigger set
-      if (rank[parent_a] == rank[parent_b])
-        rank[parent_a]++;
+      if (rank[a] == rank[b])
+        rank[a]++;
     }
   }
 
