@@ -4,7 +4,7 @@
 
 ## [Basic Geometry Shapes](terminology.md)
 
-## [Formulas for Geometry](images/geometry_formulas.pdf)
+## [Formulas for Geometry](https://drive.google.com/file/d/1fBvjFhF-NYFSsAMq_akboDZs3WZ6BpSa/view?usp=sharing)
 
 ## Table of Contents
 
