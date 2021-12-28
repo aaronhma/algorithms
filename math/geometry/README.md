@@ -2,6 +2,10 @@
 
 > Geometry is the study of things like points, lines, and surfaces.
 
+## [Basic Geometry Shapes](terminology.md)
+
+## [Formulas for Geometry](images/geometry_formulas.pdf)
+
 ## Table of Contents
 
 - [ ] Elementary operations
