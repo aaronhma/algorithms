@@ -18,4 +18,4 @@ int hamming(int a, int b) {
 
 ### Why does it work?
 
-It works because the $XOR$ of $a$ and $b$ returns $1$ if two bits aren't the same. With this in mind, we can use `__builtin_popcount` to count the # of ones there is.
+It works because the $a \oplus b$ ($XOR$ of $a$ and $b$) returns $1$ if two bits aren't the same. With this in mind, we can use `__builtin_popcount` to count the # of ones there is.
