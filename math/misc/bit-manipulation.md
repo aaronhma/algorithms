@@ -92,7 +92,7 @@ An example of these functions:
 
 **⚠️ Warning: The functions mentioned above only works for integers. For `long long` functions, append the `ll` suffix.**
 
-## Representing Sets
+## Representing Sets [Example](set-using-int.cpp)
 
 A example of the binary operations can be used to model the set $S = \{1, 3, 4, 8\}$ with an integer.
 

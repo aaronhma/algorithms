@@ -1,11 +1,15 @@
 # Polygon Area
 
+## Pick's Theorem
+
 **$Area = (B / 2) + I - 1$**
 
 where:
 
 -   $B$: points in the boundary of polygon
 -   $I$: points inside of polygon
+
+![Proof of Pick's  Theorem (retrieved from AoPS)](polygon_area_proof.png)
 
 ## Euler's Formula
 
