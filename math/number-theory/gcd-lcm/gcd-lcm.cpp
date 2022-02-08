@@ -12,11 +12,14 @@ int gcd(int a, int b)
     a %= b; // a % b
     swap(a, b); // Swap a and b
   }
+
   return a; // If b == 0 return a
 }
 
 int lcm(int a, int b)
 {
+  // (a * b) / gcd(a, b)
+  // The strategy below avoids integer overflows by first dividing a with the GCD.
   return (a / gcd(a, b)) * b;
 }
 
