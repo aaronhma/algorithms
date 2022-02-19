@@ -11,8 +11,6 @@ $$e^x = 1 + \frac{x}{1!} + \frac{x^2}{2!} + \frac{x^3}{3!} + ...$$
 To find this value using recursion, we can use [static variables](../../cpp-stl/static_keyword.md).
 
 ```cpp
-#include <bits/stdc++.h>
-
 double e (int x, int n)
 {
     static double p = 1, f = 1;
@@ -51,8 +49,6 @@ https://www.udemy.com/course/datastructurescncpp/learn/lecture/13123986#overview
 We take the first 4 elements of a Taylor Series, simplify it, and end up with $1 + \frac{x * s}{n}$.
 
 ```cpp
-#include <bits/stdc++.h>
-
 double e(int x, int n)
 {
   static double s;

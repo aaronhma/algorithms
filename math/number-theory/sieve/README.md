@@ -32,24 +32,30 @@ The Sieve of Eratosthenes was named after the Greek mathematician Eratosthenes w
 
 ## Approach 1: Simulation
 
-The Sieve of Eratosthenes can be simulated for a time complexity of $\theta(n \ log \ n)$:
+The Sieve of Eratosthenes can be simulated for a time complexity of $\theta(n \ log \ log \ n)$ ([Proof of Time Complexity](https://cp-algorithms.com/algebra/sieve-of-eratosthenes.html#asymptotic-analysis)):
 
 ```cpp
-// 0: prime
-// 1: composite
-vector<int> sieve(n + 1, 0);
-
-// Don't check the numbers after n / 2 because we have already marked them.
-for (int i = 2; i <= n / 2; i++)
+// O(n log log n)
+vector<int> getSieve(int n)
 {
-  // if this number has already been marked as composite, skip this number
-  if (sieve[i])
-    continue;
+  // 0: composite
+  // 1: prime
+  vector<int> sieve(n + 1, 1);
 
-  // mark all multiples of this number as composite
-  for (int j = 2 * i; j <= n; j += i)
-    sieve[j] = 1;
+  sieve[0] = sieve[1] = 0;
+
+  // Don't check the numbers after n / 2 because we have already marked them.
+  for (int i = 2; i * i <= n; i++)
+  {
+    // if this number has already been marked as composite, skip this number
+    if (!sieve[i])
+      continue;
+
+    // mark all multiples of this number as composite
+    for (int j = 2 * i; j <= n; j += i)
+      sieve[j] = 0;
+  }
+
+  return sieve;
 }
-
-return sieve;
 ```
