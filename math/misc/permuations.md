@@ -4,7 +4,7 @@
 
 A permutation is an arrangement of $n$ numbers in an array.
 
-> **FORMULA:** The # of permuations in an array of $n$ numbers is $n!$.
+> **FORMULA:** The # of permutations in an array of $n$ numbers is $n!$.
 
 > ***SIDENOTE:*** ***[Heap's Algorithm for Fast Permutation Generation](https://github.com/aaronhma/algorithms/tree/master/algorithms/techniques/permutations/heap)***
 
@@ -69,7 +69,7 @@ Suppose we want to obtain the following result:
       13  15  14
 ```
 
-It is easy to show that this is impossible. Each arrangement is a permutation of sixteen items, where the blank space is considered as the sixteenth item. Each move involves the exchange of a tile with the blank space. The number of moves must be even, because the space must move up and down equal numbers of spaces, and right and left equal numbers of spaces, if it is to be returned to its original position in the lower right corner.
+It is easy to show that the current game state makes winning impossible. Each arrangement is a permutation of sixteen items, where the blank space is considered as the sixteenth item. Each move involves the exchange of a tile with the blank space. The number of moves must be even, because the space must move up and down equal numbers of spaces, and right and left equal numbers of spaces, if it is to be returned to its original position in the lower right corner.
 
 The desired result is an odd permutation, since it results from a single exchange. Hence it cannot be reached in the specified manner.
 
