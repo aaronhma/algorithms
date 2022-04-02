@@ -1,10 +1,14 @@
-# Algorithms Notes
+# Algorithm Notes
 
-![Algorithms CI](https://github.com/aaronhma/algorithms/workflows/Algorithms%20CI/badge.svg) [![Website Status: Passing](https://img.shields.io/badge/website-passing-brightgreen)](https://github.com/aaronhma/algorithms-notes)
+[![@aaronhma/algorithms - High Quality Notes for CP](https://img.shields.io/badge/@aaronhma/algorithms-%20high%20quality%20notes%20for%20CP-brightgreen)](https://github.com/aaronhma/algorithms-notes)
+
+<!-- -   Run `prettier --write .` before commit to the repo (Install **prettier** via `brew install prettier`) -->
+
+-   Most pages published after 3/31/21 requires the [MathJax for GitHub](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima) extension to view MathJax blocks.
 
 ![Algorithms Image](https://i.ytimg.com/vi/kM9ASKAni_s/maxresdefault.jpg)
 
-([Source](https://www.youtube.com/watch?v=kM9ASKAni_s))
+###### *([Source](https://www.youtube.com/watch?v=kM9ASKAni_s))*
 
 ---
 
@@ -315,8 +319,3 @@
 |     | [Linear Search](searching/linear-search/linear-search.md) | [C++](searchin/linear-search/linear-search.cpp)  |        | [1](https://www.techiedelight.com/Tags/hashing/)  |
 
 ---
-
-#### Notes
-
--   Run `prettier --write .` before commit to the repo (Install **prettier** via `brew install prettier`)
--   Some pages requires the [MathJax for GitHub](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima) extension. You can get it [here](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima).
