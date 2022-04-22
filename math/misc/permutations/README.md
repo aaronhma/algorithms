@@ -40,7 +40,7 @@ For example, if $A = [3, 1, 2]$ (in forward notation), then:
 - $A^1 = A = [3, 1, 2]$
 - $A^2 = [3, 1, 2] \times [3, 1, 2]$
 - If $A^k = I$, then $A^{k + 1} = A$.
-- $A^n = A^{n - k} = A^{n \ \% \ k}$
+- $A^n = A^{n - k} = A^{n \text{ mod } k}$
 
 The order of a permutation is the smallest power needed to raise a permutation to the identity. In other works, if $A^k$ is the identity, $A^1 \text{...} A^{k - 1}$ are **not** the identity, but $A^k$ is.
 
