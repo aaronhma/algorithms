@@ -39,15 +39,21 @@ The ^ operation between $x$ ^ $y$ returns 1 if the bit at position $i$ in $x$ is
 
 ### NOT Operation
 
-The ~ operation returns 1 if the position $i$ at $x$ is 0 or 0 if the position $i$ at $x$ is 1.
+The ~ operation returns $1$ if the position $i$ at $x$ is $0$ or $0$ if the position $i$ at $x$ is $1$.
 
 ![AND Operation](../images/binary/not.png)
 
+> The following code's output is `-1`:
+> ```cpp
+> int x = 0;
+> cout << ~x << "\n"; // -1
+> ```
+
 ## Bit Shifts
 
-### Left Shift <<
+### Left Shift << (Fast Multiplication)
 
-The left shift operation $x << k$ can be used to add $k$ zero bits to $x$.
+The left shift operation $x << k$ can be used to add $k$ zero bits to $x$ (multiplying the number by $10^k$).
 
 **Usage:**
 
@@ -55,9 +61,9 @@ The left shift operation $x << k$ can be used to add $k$ zero bits to $x$.
 x << 2; // adds 2 0s to the end of x
 ```
 
-### Right Shift >>
+### Right Shift >> (Fast Division)
 
-The right shift operation $x >> k$ removes $k$ bits $x$.
+The right shift operation $x >> k$ removes $k$ bits $x$ (dividing the number by $10^k$).
 
 **Usage:**
 
@@ -66,6 +72,16 @@ x >> 2; // removes 2 bits from the end of x
 ```
 
 ## Bit Masks
+
+# TODO: https://stackoverflow.com/questions/10493411/what-is-bit-masking
+
+A mask defines which bits you want to keep, and which bits you want to clear.
+
+Masking is the act of applying a mask to a value. This is accomplished by doing:
+
+- Bitwise $\text{AND}$ing in order to extract a subset of the bits in the value
+- Bitwise $\text{OR}$ing in order to set a subset of the bits in the value
+- Bitwise $\text{XOR}$ing in order to toggle a subset of the bits in the value
 
 A bit mask is of the form $1 << k$. We impose a "mask" over bits. An example of a bit mask using **AND**:
 
