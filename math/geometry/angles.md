@@ -43,7 +43,7 @@ Suppose we have the following triangle:
 
 ![Image](https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Remint3.svg/465px-Remint3.svg.png)
 
-The Exterior Triangle Theorem states that $d = a + c$.
+The Exterior Angle Theorem states that $d = a + c$.
 
 ---
 
@@ -52,6 +52,12 @@ The Exterior Triangle Theorem states that $d = a + c$.
 ![Image](images/angles/parallel.png)
 
 The Parallel Lines Theorem states that the blue shaded angles are the same and the yellow shaded angles are the same. This is correct because of [transversal](<https://en.wikipedia.org/wiki/Transversal_(geometry)#:~:text=First%2C%20if%20a%20transversal%20intersects,then%20the%20lines%20are%20parallel.>) - alternate angles have the same degree.
+
+---
+
+## Inscribed Angle
+
+![Image](https://calcworkshop.com/wp-content/uploads/inscribed-angle-theorem.png)
 
 ---
 

@@ -19,6 +19,7 @@ public:
 
   // set the i-th bit
   void set(int i) {
+    clear(i);
     int mask = 1 << i;
     n |= mask;
   }
@@ -34,8 +35,10 @@ public:
 
 int main()
 {
-  Bit n(5); // 101
-  cout << n.get(0) << "\n";
+  Bit n(13); // 101
+  cout << n.n << "\n"; // 13
+  n.set(1);
+  cout << n.n << "\n"; // 15
 
   return 0;
 }
