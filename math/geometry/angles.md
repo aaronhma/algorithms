@@ -57,7 +57,12 @@ The Parallel Lines Theorem states that the blue shaded angles are the same and t
 
 ## Inscribed Angle
 
-![Image](https://calcworkshop.com/wp-content/uploads/inscribed-angle-theorem.png)
+**Type 1:**
+
+The vertex (corner) of the angle is lying on the circle's circumference. This is called an inscribed angle, and to find the measure of the angle, take the measure of the arc that it inscribes (opens up to), and divide by $2$.
+
+![Image](images/inscribed-angles.png)
+![Image](images/inscribed-angles-2.png)
 
 ---
 
