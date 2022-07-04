@@ -61,11 +61,7 @@
 
 ## Background
 
-A graph is a non-linear data structure that consists of nodes and edges. Each item in a graph is called a node. Nodes are connected by edges.
-
-![Image](https://www.geeksforgeeks.org/wp-content/uploads/undirectedgraph.png)
-
-([Source](https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/))
+A graph is a non-linear data structure that consists of nodes (also vertices) and edges. Each item in a graph is called a node (also vertex). Nodes are connected by edges.
 
 ## Pros & Cons of Graphs
 

@@ -3,15 +3,11 @@
 using namespace std;
 
 long long compute_hash(string s) {
-    const int p = 31;
-    const int m = 1e9 + 9;
-    long long hash_value = 0;
-    long long p_pow = 1;
+    long long hash_value = 0, pow = 1, m = 1e9 + 9, p = 31;
 
-    // compute hash
     for (char c : s) {
-        hash_value = (hash_value + (c - 'a' + 1) * p_pow) % m;
-        p_pow = (p_pow * p) % m;
+        hash_value = (hash_value + (c - 'a' + 1) * pow) % m;
+        pow = (pow * p) % m;
     }
 
     return hash_value;

@@ -119,3 +119,35 @@ A example of the binary operations can be used to model the set $S = \{1, 3, 4, 
 Note that the standard set operations can be modeled with binary operators:
 
 ![Set Operations](../images/binary/set_operations.png)
+
+## [Storing Floating Point Numbers](https://www.bbc.co.uk/bitesize/guides/zsnbr82/revision/4)
+
+Real numbers are numbers that include fractions/values after the decimal point.
+
+For example, $123.75$ is a real number. This type of number is also known as a **floating point number**.
+
+All floating point numbers are stored by a computer system using a **mantissa** and a **exponent**.
+
+The following example is used to illustrate the role of the mantissa and the exponent. It does not fully reflect the computer's method for storing real numbers but gives the general idea.
+
+The number $123.75$ can be represented using mathematical scientific notation as:
+
+$$1.2375 \times 10^2 = 123.75$$
+
+Multiplying by ten to the power of two ($10^2$) moves the values up two places (or the decimal point down two places) so that the number $123$ is before the decimal point, while the number $75$ now comes immediately after the decimal point. In this example the mantissa is $1.2375$ and the exponent is $2$. Generally you can think of this as:
+
+$$M \times 10^E$$
+
+To represent the same value in binary, apply the following rules:
+
+Represent the number $123.75$ as:
+
+![Image](float_ex.png)
+
+The number created in binary is the mantissa:
+
+$$111101111$$
+
+To understand the exponent, place the decimal point after the most significant bit of the mantissa. The most significant bit is the left most bit.
+
+![Image](float_ex2.png)

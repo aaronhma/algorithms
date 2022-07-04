@@ -83,6 +83,8 @@ If $AB = C$, then $B = \frac{C}{A} = A^{-1} \times C$. $A^{-1} \times A = I$.
 - There is only $1$ identity permutation for any given size
 - If $AB = I$, then $BA = I$.
 
+> **NOTE:** The identity permutation of a permutation $A$ is $A^{-1}$.
+
 ## Inverse Permutations
 
 > **DEFINITION:** $A$ and $B$ are "inverses" of each other if $AB$ is the identity and $BA$ is the identity, and $B$ "undoes" $A$ (and vice versa). For example, if $A = [2, 3, 1, 4]$, then $B = [3, 1, 2, 4]$ is the inverse of $A$.
