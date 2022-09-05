@@ -74,7 +74,7 @@ void read(complex<T> &x)
 }
 
 template <class T1, class T2>
-void read(pair<T1, T2> &p) { read(p.f, p.s); }
+void read(pair<T1, T2> &p) { cin >> p.f >> p.s; }
 
 template <class T>
 void read(vector<T> &a)
