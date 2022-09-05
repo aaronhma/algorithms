@@ -59,9 +59,12 @@ int main()
   n.clear(0);
   cout << n.n << "\n"; // 14 (0b1110)
 
-  for (int i = 1; i <= 100; i++) {
+  // basic sanity checks
+  for (int i = 1; i <= 1e6; i++) {
     n.n = i;
-    assert((i & ~i) == (i & (~i)));
+    assert((n.isSet(0) == 1) || (n.isSet(0) == 0));
+    assert((n.get(0) == 1) || (n.get(0) == 0));
+    assert(n.lsbvalue());
   }
 
   return 0;

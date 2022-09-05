@@ -23,25 +23,25 @@ If an number is larger than upper bound of the bit representation, the number wi
 
 The & operation between $x$ & $y$ returns 1 for every two bits between $x$ and $y$ that are both 1 at index $i$.
 
-![AND Operation](../images/binary/and.png)
+![AND Operation](./images/and.png)
 
 ### OR Operation (Merging)
 
 The | operation between $x$ | $y$ returns 1 if the bit at position $i$ in $x$ or $y$ is 1.
 
-![OR Operation](../images/binary/or.png)
+![OR Operation](./images/or.png)
 
 ### XOR Operation
 
 The ^ operation between $x$ ^ $y$ returns 1 if the bit at position $i$ in $x$ is 1 and the bit at position $i$ in $y$ is 0 (or vice versa).
 
-![XOR Operation](../images/binary/xor.png)
+![XOR Operation](./images/xor.png)
 
 ### NOT Operation
 
 The ~ operation returns $1$ if the position $i$ at $x$ is $0$ or $0$ if the position $i$ at $x$ is $1$.
 
-![AND Operation](../images/binary/not.png)
+![AND Operation](./images/not.png)
 
 > The following code's output is `-1`:
 > ```cpp
@@ -104,7 +104,7 @@ A bit mask is of the form $1 << k$. We impose a "mask" over bits. An example of 
 
 An example of these functions:
 
-![Functions Example](../images/binary/functions_example.png)
+![Functions Example](./images/functions_example.png)
 
 **⚠️ Warning: The functions mentioned above only works for integers. For `long long` functions, append the `ll` suffix.**
 
@@ -112,13 +112,13 @@ An example of these functions:
 
 A example of the binary operations can be used to model the set $S = \{1, 3, 4, 8\}$ with an integer.
 
-![Sets C++](../images/binary/sets.png)
+![Sets C++](./images/sets.png)
 
 ## Set Operations
 
 Note that the standard set operations can be modeled with binary operators:
 
-![Set Operations](../images/binary/set_operations.png)
+![Set Operations](./images/set_operations.png)
 
 ## [Storing Floating Point Numbers](https://www.bbc.co.uk/bitesize/guides/zsnbr82/revision/4)
 

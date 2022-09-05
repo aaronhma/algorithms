@@ -17,7 +17,7 @@ ll modpow(ll x, ll n, ll m)
   // This is the same as:
   // (x * x^{n - 1}) % m
   if (n % 2 == 1)
-    return ((x % m) * (modpow(x, n - 1, m) % m)) % m;
+    return ((x % m) * modpow(x, n - 1, m)) % m;
 
   // Case 3: n is even
   // Formula: (x^{n / 2} * x^{n / 2}) % m

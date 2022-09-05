@@ -50,7 +50,7 @@ long long pow(long long base, long long expo) {
 }
 ```
 
-The second approach accomplishes the same task without recursion. It computes all the powers in a loop, and multiplies the ones with the corresponding set bit in $n$. Although the complexity of both approaches is identical, this approach will be faster in practice since we have the overhead of the recursive calls.
+The second approach accomplishes the same task without recursion. It computes all the powers in a loop, and multiplies the ones with the corresponding set bit in $n$. Although the complexity of both approaches is identical, this approach will be faster in practice since we won't have the overhead of the recursive calls.
 
 $$x^n = \begin{cases}
 1 &\text{if } n == 0 \\
